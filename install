@@ -31,7 +31,7 @@ fi
 in_bash=`cat ~/$prompt_bashfile | grep "source .functions"`
 
 if [[ -z "$in_bash" ]]; then
-	echo "source .functions" >> ~/$prompt_bashfile
+	echo "source ~/.functions" >> ~/$prompt_bashfile
 fi
 
 source ~/$prompt_bashfile
