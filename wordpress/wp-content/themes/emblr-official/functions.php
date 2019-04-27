@@ -1,1 +1,3 @@
-<!-- functions.php -->
+<?php
+	# functions.php
+?>
