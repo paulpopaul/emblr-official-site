@@ -27,19 +27,21 @@
 
             <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
 
-            <h3>Navigate to</h3>
+            <h3>Navegar a</h3>
 
             <div class="header-nav__content">
                 
                 <ul class="header-nav__list">
-                    <li><a class="smoothscroll"  href="#home" title="home">Home</a></li>
-                    <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
-                    <li><a class="smoothscroll"  href="#services" title="services">Services</a></li>
-                    <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
-                    <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+                    <li><a class="smoothscroll"  href="#home">Inicio</a></li>
+                    <li><a class="smoothscroll"  href="#about">Sobre Nosotros</a></li>
+                    <li><a class="smoothscroll"  href="#services">Servicios</a></li>
+                    <li><a class="smoothscroll"  href="#works">Portafolio</a></li>
+                    <li><a class="smoothscroll"  href="#contact">Contacto</a></li>
                 </ul>
     
-                <p>Perspiciatis hic praesentium nesciunt. Et neque a dolorum <a href='#0'>voluptatem</a> porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis neque reprehenderit.</p>
+                <p><a href='#0'>Ensambler</a> cree en la visión de tus sueños, y es por eso que queremos brindarte la <b>mejor asesoría y infraestructura del mercado</b>, que te permitan hacerlos realidad.</p>
+
+                
     
                 <ul class="header-nav__social">
                     <li>
@@ -72,10 +74,14 @@
 
     <!-- home
     ================================================== -->
-    <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="<? echo get_template_directory_uri() ?>/images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+    <!--<section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center> -->
 
-        <div class="grid-overlay">
-            <div></div>
+    <section id="home" class="s-home page-hero target-section">
+
+        <div class="grid-overlay" id="particles">
+            <!-- particles -->
+            
+            <!-- <div></div> -->
         </div>
 
         <div class="home-content">
@@ -83,26 +89,26 @@
             <div class="row home-content__main">
 
                 <h1>
-                Sublime
+                <!-- ENSAMBLER -->
                 </h1>
 
                 <h3>
-                We build brands and beautiful experiences
+                Ingeniería de Software para Soluciones Empresariales Integradas
                 </h3>
 
-                <div class="home-content__video">
+                <!-- <div class="home-content__video">
                     <a class="video-link" href="https://player.vimeo.com/video/117310401?color=01aef0&title=0&byline=0&portrait=0" data-lity>
                         <span class="video-icon"></span>
                         <span class="video-text">Watch Video</span>
                     </a>
-                </div>
+                </div> -->
 
                 <div class="home-content__button">
                     <a href="#about" class="smoothscroll btn btn--primary btn--large">
-                        More About Us
+                        sobre nosotros
                     </a>
                     <a href="#contact" class="smoothscroll btn btn--large">
-                        Let's Talk
+                        nuestros servicios
                     </a>
                 </div>
 

@@ -979,8 +979,8 @@ button.btn--primary,
 input[type="submit"].btn--primary,
 input[type="reset"].btn--primary,
 input[type="button"].btn--primary {
-  background: #793ea5;
-  border-color: #793ea5;
+  background: #1FBDA2;
+  border-color: transparent;
   color: #FFFFFF;
 }
 
@@ -995,7 +995,7 @@ input[type="submit"].btn--primary:focus,
 input[type="reset"].btn--primary:focus,
 input[type="button"].btn--primary:focus {
   background: #6b3792;
-  border-color: #6b3792;
+  border-color: transparent;
 }
 
 /* button modifiers
@@ -1488,25 +1488,27 @@ body.menu-is-open {
  * ------------------------------------------------------------------- */
 .grid-overlay {
   display: block;
-  content: "";
+  /* content: ""; */
   position: absolute;
   top: 0;
-  left: 50%;
+  /* left: 50%; */ 
   bottom: 0;
   right: 0;
-  max-width: 1200px;
-  width: 89%;
+  /* max-width: 1200px;
+  width: 89%; */
+  width: 100%;
   height: 100%;
-  opacity: .5;
+  /* opacity: .5;
   border-right: 1px solid rgba(255, 255, 255, 0.1);
   border-left: 1px solid rgba(255, 255, 255, 0.1);
   -webkit-transform: translate3d(-50%, 0, 0);
   -ms-transform: translate3d(-50%, 0, 0);
   transform: translate3d(-50%, 0, 0);
+  */
   z-index: 3;
 }
 
-.grid-overlay > div,
+/* .grid-overlay > div,
 .grid-overlay::before,
 .grid-overlay::after {
   background-color: rgba(255, 255, 255, 0.1);
@@ -1529,14 +1531,14 @@ body.menu-is-open {
 
 .grid-overlay > div {
   left: 50%;
-}
+} */
 
 /* ------------------------------------------------------------------- 
  * responsive:
  * reusable and common theme styles
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:1600px) {
-  .grid-overlay {
+  /* .grid-overlay {
     border-right: none !important;
     border-left: none !important;
   }
@@ -1547,7 +1549,7 @@ body.menu-is-open {
 
   .grid-overlay::after {
     right: 22.5%;
-  }
+  } */
 
 }
 
@@ -1635,11 +1637,11 @@ body.menu-is-open {
     font-size: 2.1rem;
   }
 
-  .grid-overlay > div,
+   .grid-overlay > div,
   .grid-overlay::before,
   .grid-overlay::after {
     display: none;
-  }
+  } 
 
 }
 
@@ -1736,7 +1738,7 @@ body.menu-is-open {
   margin-bottom: 7.2rem;
   margin-top: 1.2rem;
   padding-right: 140px;
-  color: #793ea5;
+  color: #1FBDA2;
   position: relative;
 }
 
@@ -1745,7 +1747,7 @@ body.menu-is-open {
   display: block;
   height: 1px;
   width: 110px;
-  background-color: #793ea5;
+  background-color: #1FBDA2;
   position: absolute;
   top: 50%;
   right: 0;
@@ -1790,6 +1792,10 @@ body.menu-is-open {
   position: relative;
 }
 
+.header-nav__list a:hover {
+  color: #1FBDA2;
+}
+
 .header-nav__list a::before {
   display: block;
   content: counter(ctr, decimal-leading-zero) ".";
@@ -1803,7 +1809,7 @@ body.menu-is-open {
 }
 
 .header-nav__list a:hover::before {
-  color: #793ea5;
+  /* color: #793ea5; */
 }
 
 .header-nav__list .current a::before {
@@ -2071,12 +2077,12 @@ body.menu-is-open {
   width: 100%;
   height: 100vh;
   min-height: 786px;
-  background-color: transparent;
+  background-color: #232323;
   position: relative;
   display: table;
 }
 
-.s-home::before {
+/* .s-home::before {
   display: block;
   content: "";
   position: absolute;
@@ -2102,7 +2108,7 @@ body.menu-is-open {
   left: 50%;
   bottom: 0;
   right: 0;
-}
+} */
 
 .s-home .grid-overlay > div {
   display: none;
@@ -2271,10 +2277,10 @@ body.menu-is-open {
 
 .home-content__scroll .scroll-link:hover,
 .home-content__scroll .scroll-link:focus {
-  color: #793ea5;
+  color: #1FBDA2;
 }
 
-.home-content__scroll::after {
+/* .home-content__scroll::after {
   content: "";
   display: block;
   background-color: rgba(255, 255, 255, 0.08);
@@ -2283,7 +2289,7 @@ body.menu-is-open {
   position: absolute;
   right: 0;
   top: 50%;
-}
+} */
 
 /* ------------------------------------------------------------------- 
  * ## home social

@@ -238,6 +238,14 @@
 
     };
 
+    /* Particles!
+    * ------------------------------------------------------ */
+    var loadParticles = function() {
+
+        /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+        particlesJS.load('particles', 'wp-content/themes/emblr-official/js/particles.json');
+
+    };
 
    /* Initialize
     * ------------------------------------------------------ */
@@ -252,6 +260,7 @@
         ssSmoothScroll();
         ssAlertBoxes();
         ssAOS();
+        loadParticles();
 
     })();
 
