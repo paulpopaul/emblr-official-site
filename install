@@ -28,7 +28,7 @@ if [ ! -z "$ZSH_VERSION" ]; then
    prompt_bashfile=".zshrc"
 fi
 
-in_bash=`cat ~/$prompt_bashfile | grep "source .functions"`
+in_bash=`cat ~/$prompt_bashfile | grep "source ~/.functions"`
 
 if [[ -z "$in_bash" ]]; then
 	echo "source ~/.functions" >> ~/$prompt_bashfile
