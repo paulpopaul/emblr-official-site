@@ -19,7 +19,7 @@
 
         <div class="header-logo">
             <a class="site-logo" href="index.html">
-                <img src="<? echo get_template_directory_uri() ?>/images/logo.svg" alt="Homepage">
+                <img src="<?= get_template_directory_uri() ?>/images/logo.svg" alt="Homepage">
             </a>
         </div> <!-- end header-logo -->
 
@@ -97,13 +97,13 @@
     <footer>
         <div class="row">
             <div class="col-full ss-copyright">
-                <span>© Copyright Sublime 2018</span> 
-                <span>Design by <a href="https://www.styleshout.com/">Styleshout</a></span>
+                <span>&reg; Derechos Reservados 2019</span> 
+                <span>Ingeniería de Software para Soluciones Empresariales Integradas.</span>
             </div>
         </div>
 
         <div class="ss-go-top">
-            <a class="smoothscroll" title="Back to Top" href="#top">Back to Top</a>
+            <a class="smoothscroll" title="Back to Top" href="#top">Volver a inicio</a>
         </div>
     </footer>
 

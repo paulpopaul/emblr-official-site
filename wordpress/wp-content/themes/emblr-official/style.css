@@ -13,7 +13,7 @@
 
 /* =================================================================== 
  *
- *  Sublime v1.0 Main Stylesheet
+ *  Ensambler Main Stylesheet
  *  06-10-2018
  *  ------------------------------------------------------------------
  *
@@ -1993,6 +1993,13 @@ body.menu-is-open {
 
 }
 
+@media only screen and (max-width:1024px) {
+  .header-nav {
+    width: 80%;
+    /*padding: 3.6rem 3rem 3.6rem 5rem;*/
+  }
+}
+
 @media only screen and (max-width:900px) {
   .header-nav h3 {
     padding-right: 0;
@@ -2021,11 +2028,6 @@ body.menu-is-open {
     left: 40px;
   }
 
-  .header-nav {
-    width: calc(100% - 80px);
-    /*padding: 3.6rem 3rem 3.6rem 5rem;*/
-  }
-
   .header-menu-toggle {
     right: 40px;
   }
@@ -2039,6 +2041,7 @@ body.menu-is-open {
   }
 
   .header-nav {
+    width: 110%;
     /*padding: 3.6rem 3rem 3.6rem 4rem;*/
   }
 
@@ -2049,22 +2052,19 @@ body.menu-is-open {
 
 }
 
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:414px) {
   .s-header {
     top: 6px;
   }
 
   .header-logo {
-    left: 30px;
+    /*left: 30px;*/
+    display: none;
   }
 
   .header-logo img {
     /*width: 150px;*/
     height: 35px;
-  }
-
-  .header-nav {
-    width: calc(100% - 40px);
   }
 
   .header-nav h3 {
@@ -2142,7 +2142,7 @@ body.menu-is-open {
 .home-content {
   display: table-cell;
   vertical-align: middle;
-  padding-top: 6.6rem;
+  /*padding-top: 6.6rem;*/
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -2161,7 +2161,7 @@ body.menu-is-open {
 }
 
 .home-content h3 {
-  margin-top: 1.2rem;
+  margin-top: 3rem;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 300;
   font-size: 3.8rem;
@@ -2245,7 +2245,7 @@ body.menu-is-open {
   height: 7.2rem !important;
   line-height: 6.8rem !important;
   margin-right: 0;
-  position: absolute;
+  /*position: absolute;*/
 }
 
 .home-content__button .btn:first-child {
@@ -2493,7 +2493,10 @@ html.no-csstransitions .home-content__main {
  * responsive:
  * home
  * ------------------------------------------------------------------- */
- /* home content main logo */
+
+/* home content logo responsive
+* ------------------------------------------------------------------- */
+
 /* Desktop */
 @media only screen and (max-width:1366px) {
   .home-content__logo {
@@ -2542,7 +2545,8 @@ html.no-csstransitions .home-content__main {
     width: 165px;
   }
 }
- /* end home content main logo */
+/* end home content logo responsive
+* ------------------------------------------------------------------- */
 
 @media only screen and (max-width:1600px) {
   .home-content h1 {
@@ -2572,6 +2576,12 @@ html.no-csstransitions .home-content__main {
 
 }
 
+@media only screen and (max-width:1366px) {
+  .home-content h3 {
+    font-size: 3.2rem;
+  }
+} 
+
 @media only screen and (max-width:1200px) {
   .home-content {
     padding-top: 4.5rem;
@@ -2582,7 +2592,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .home-content h3 {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
   }
 
   .home-content__video {
@@ -2606,7 +2616,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .home-content__button {
-    margin-top: 7.2rem;
+    margin-top: 5.2rem;
   }
 
   .home-content__button .btn {
@@ -2628,6 +2638,38 @@ html.no-csstransitions .home-content__main {
     left: 5.5rem;
   }
 
+}
+
+@media screen and (max-width:1024px) {
+  /*.home-social {
+    list-style: none;
+    display: block;
+    font-size: 2.4rem;
+    position: relative;
+  }
+
+  .home-social i {
+    font-size: inherit;
+  }
+
+  .home-social li {
+    display: inline-block;
+    margin-right: 12px;
+    padding-left: 0;
+  }
+
+  .home-social li a {
+    color: #9C9C9C;
+  }
+
+  .home-social li a:hover,
+  .home-social li a:focus {
+    color: white;
+  }
+
+  .home-social li:last-child {
+    margin: 0;
+  }*/
 }
 
 @media only screen and (max-width:1000px) {
@@ -3913,7 +3955,7 @@ footer {
   padding-top: 9rem;
   padding-bottom: 6rem;
   color: rgba(255, 255, 255, 0.6);
-  background-color: #5e3080;
+  background-color: #000000;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
   position: relative;
@@ -3944,7 +3986,7 @@ footer a {
 
 .ss-go-top a {
   color: #FFFFFF;
-  background-color: #351b48;
+  background-color: #141414;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -3983,7 +4025,7 @@ footer a {
 
 .ss-go-top a:hover,
 .ss-go-top a:focus {
-  background-color: #2d173d;
+  background-color: #181818;
 }
 
 /* ------------------------------------------------------------------- 

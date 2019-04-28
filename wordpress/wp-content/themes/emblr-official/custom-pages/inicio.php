@@ -14,7 +14,7 @@
 
         <div class="row home-content__main">
 
-            <img class="home-content__logo" src="<? echo get_template_directory_uri() ?>/images/logo-home.svg">
+            <img class="home-content__logo" src="<?= get_template_directory_uri() ?>/images/logo-home.svg">
 
             <h3>
                 Ingeniería de Software para Soluciones Empresariales Integradas
