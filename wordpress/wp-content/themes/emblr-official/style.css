@@ -994,7 +994,7 @@ button.btn--primary:focus,
 input[type="submit"].btn--primary:focus,
 input[type="reset"].btn--primary:focus,
 input[type="button"].btn--primary:focus {
-  background: #6b3792;
+  background: #29CEAE;
   border-color: transparent;
 }
 
@@ -1685,7 +1685,7 @@ body.menu-is-open {
 }
 
 .header-logo img {
-  width: 155px;
+/*  width: 155px;*/
   height: 36px;
 }
 
@@ -2041,7 +2041,7 @@ body.menu-is-open {
   }
 
   .header-logo img {
-    width: 150px;
+    /*width: 150px;*/
     height: 35px;
   }
 
@@ -2157,6 +2157,10 @@ body.menu-is-open {
   text-align: center;
 }
 
+.home-content__logo {
+  width: 948px;
+}
+
 /* ------------------------------------------------------------------- 
  * ## home video link
  * ------------------------------------------------------------------- */
@@ -2237,15 +2241,15 @@ body.menu-is-open {
 }
 
 .home-content__button .btn:not(.btn--primary) {
-  background-color: #13161b;
-  border-color: #13161b;
+  background-color: #000000;
+  border-color: transparent;
   color: #FFFFFF;
 }
 
 .home-content__button .btn:not(.btn--primary):hover,
 .home-content__button .btn:not(.btn--primary):focus {
-  background-color: #080a0c;
-  border-color: #080a0c;
+  background-color: #141414;
+  border-color: transparent;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2471,6 +2475,48 @@ html.no-csstransitions .home-content__main {
  * responsive:
  * home
  * ------------------------------------------------------------------- */
+@media only screen and (max-width:1366px) {
+  .home-content__logo {
+    width: 649px;
+  }
+}
+
+@media only screen and (max-width:800px) {
+  .home-content__logo {
+    width: 462px;
+  }
+}
+
+@media only screen and (max-width:1024px) {
+  .home-content__logo {
+    width: 596px;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .home-content__logo {
+    width: 487px;
+  }
+}
+
+@media only screen and (max-width:414px) {
+  .home-content__logo {
+    width: 328px;
+  }
+}
+
+@media only screen and (max-width:375px) {
+  .home-content__logo {
+    width: 303px;
+  }
+}
+
+@media only screen and (max-width:320px) {
+  .home-content__logo {
+    width: 165px;
+  }
+}
+
 @media only screen and (max-width:1600px) {
   .home-content h1 {
     font-size: 17rem;

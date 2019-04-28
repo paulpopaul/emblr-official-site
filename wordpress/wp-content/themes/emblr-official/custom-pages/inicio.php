@@ -4,7 +4,7 @@
 
 <section id="home" class="s-home page-hero target-section">
 
-    <div class="grid-overlay" id="particles">
+    <div class="grid-overlay" id="particles-no">
         <!-- particles -->
         
         <!-- <div></div> -->
@@ -14,12 +14,10 @@
 
         <div class="row home-content__main">
 
-            <h1>
-            <!-- ENSAMBLER -->
-            </h1>
+            <img class="home-content__logo" src="<? echo get_template_directory_uri() ?>/images/logo-home.svg">
 
             <h3>
-            Ingeniería de Software para Soluciones Empresariales Integradas
+                Ingeniería de Software para Soluciones Empresariales Integradas
             </h3>
 
             <!-- <div class="home-content__video">
