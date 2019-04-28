@@ -1719,9 +1719,10 @@ body.menu-is-open {
   right: -20%;
   height: 140%;
   width: 100%;
-  overflow: auto;
+  overflow: visible;
   background-color: rgba(0, 0, 0, 0.9);
   filter: blur(25px); /* or 15px */
+  -webkit-filter: blur(25px);
 }
 
 .header-nav__content-container {
