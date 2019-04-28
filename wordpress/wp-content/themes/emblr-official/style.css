@@ -1699,7 +1699,7 @@ body.menu-is-open {
   padding: 3.6rem 3rem 3.6rem 6rem;
   height: 100%;
   width: 50%;
-  background: #0C0C0C;
+  background-color: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 0.25);
   overflow-y: auto;
   overflow-x: hidden;
@@ -2475,47 +2475,56 @@ html.no-csstransitions .home-content__main {
  * responsive:
  * home
  * ------------------------------------------------------------------- */
+ /* home content main logo */
+/* Desktop */
 @media only screen and (max-width:1366px) {
   .home-content__logo {
     width: 649px;
   }
 }
 
+/* Desktop */
 @media only screen and (max-width:800px) {
   .home-content__logo {
     width: 462px;
   }
 }
 
+/* Tablet iPad Pro 12.9 */
 @media only screen and (max-width:1024px) {
   .home-content__logo {
     width: 596px;
   }
 }
 
+/* Tablet iPad 9.7 */
 @media only screen and (max-width:768px) {
   .home-content__logo {
     width: 487px;
   }
 }
 
+/* iPhone 678+ */
 @media only screen and (max-width:414px) {
   .home-content__logo {
     width: 328px;
   }
 }
 
+/* iPhone 6,7,8 */
 @media only screen and (max-width:375px) {
   .home-content__logo {
     width: 303px;
   }
 }
 
+/* iPhone 4,5,5c */
 @media only screen and (max-width:320px) {
   .home-content__logo {
     width: 165px;
   }
 }
+ /* end home content main logo */
 
 @media only screen and (max-width:1600px) {
   .home-content h1 {
