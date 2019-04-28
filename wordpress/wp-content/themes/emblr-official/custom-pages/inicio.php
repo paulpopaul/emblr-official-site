@@ -4,7 +4,7 @@
 
 <section id="home" class="s-home page-hero target-section">
 
-    <div class="grid-overlay" id="particles-no">
+    <div class="grid-overlay" id="no-particles">
         <!-- particles -->
         
         <!-- <div></div> -->

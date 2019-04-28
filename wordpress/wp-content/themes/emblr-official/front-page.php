@@ -24,44 +24,47 @@
         </div> <!-- end header-logo -->
 
         <nav class="header-nav">
+            <div class="header-nav__bg"> <!-- blur background efx --> </div>
 
-            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+            <div class="header-nav__content-container">
+                <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
 
-            <h3>Navegar a</h3>
+                <h3>Navegar a</h3>
 
-            <div class="header-nav__content">
-                
-                <ul class="header-nav__list">
-                    <li><a class="smoothscroll"  href="#home">Inicio</a></li>
-                    <li><a class="smoothscroll"  href="#about">Sobre Nosotros</a></li>
-                    <li><a class="smoothscroll"  href="#services">Servicios</a></li>
-                    <li><a class="smoothscroll"  href="#works">Portafolio</a></li>
-                    <li><a class="smoothscroll"  href="#contact">Contacto</a></li>
-                </ul>
-    
-                <p><a href='#0'>Ensambler</a> cree en la visión de tus sueños, y es por eso que queremos brindarte la <b>mejor asesoría y infraestructura del mercado</b>, que te permitan hacerlos realidad.</p>
+                <div class="header-nav__content">
+                    
+                    <ul class="header-nav__list">
+                        <li><a class="smoothscroll"  href="#home">Inicio</a></li>
+                        <li><a class="smoothscroll"  href="#about">Sobre Nosotros</a></li>
+                        <li><a class="smoothscroll"  href="#services">Servicios</a></li>
+                        <li><a class="smoothscroll"  href="#works">Portafolio</a></li>
+                        <li><a class="smoothscroll"  href="#contact">Contacto</a></li>
+                    </ul>
+        
+                    <p><a href='#0'>Ensambler</a> cree en la visión de tus sueños, y es por eso que queremos brindarte la <b>mejor asesoría y infraestructura del mercado</b>, que te permitan hacerlos realidad.</p>
 
-                
-    
-                <ul class="header-nav__social">
-                    <li>
-                        <a href="#0"><i class="fab fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fab fa-behance"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fab fa-dribbble"></i></a>
-                    </li>
-                </ul>
+                    
+        
+                    <ul class="header-nav__social">
+                        <li>
+                            <a href="#0"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#0"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#0"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#0"><i class="fab fa-behance"></i></a>
+                        </li>
+                        <li>
+                            <a href="#0"><i class="fab fa-dribbble"></i></a>
+                        </li>
+                    </ul>
 
-            </div> <!-- end header-nav__content -->
+                </div> <!-- end header-nav__content -->
+            <div>
 
         </nav> <!-- end header-nav -->
 

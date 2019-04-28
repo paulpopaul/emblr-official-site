@@ -1696,13 +1696,10 @@ body.menu-is-open {
   z-index: 600;
   font-size: 1.6rem;
   line-height: 1.875;
-  padding: 3.6rem 3rem 3.6rem 6rem;
   height: 100%;
-  width: 50%;
-  background-color: rgba(0, 0, 0, 0.9);
+  width: 60%;
   color: rgba(255, 255, 255, 0.25);
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: visible;
   position: fixed;
   right: 0;
   top: 0;
@@ -1714,6 +1711,23 @@ body.menu-is-open {
   -ms-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
   visibility: hidden;
+}
+
+.header-nav__bg {
+  position: absolute;
+  top: -20%;
+  right: -20%;
+  height: 140%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  filter: blur(25px); /* or 15px */
+}
+
+.header-nav__content-container {
+    padding: 3.6rem 3rem 3.6rem 30%;
+    overflow: auto;
+    height: 100%;
 }
 
 .header-nav a,
@@ -1764,6 +1778,10 @@ body.menu-is-open {
   visibility: hidden;
   -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
+}
+
+.header-nav-bg {
+
 }
 
 .header-nav__content {
@@ -2005,7 +2023,7 @@ body.menu-is-open {
 
   .header-nav {
     width: calc(100% - 80px);
-    padding: 3.6rem 3rem 3.6rem 5rem;
+    /*padding: 3.6rem 3rem 3.6rem 5rem;*/
   }
 
   .header-menu-toggle {
@@ -2021,7 +2039,7 @@ body.menu-is-open {
   }
 
   .header-nav {
-    padding: 3.6rem 3rem 3.6rem 4rem;
+    /*padding: 3.6rem 3rem 3.6rem 4rem;*/
   }
 
   .header-menu-toggle {
