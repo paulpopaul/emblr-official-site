@@ -247,6 +247,22 @@
 
     };
 
+
+    /* Waypoint for scroll dissapear
+    * ------------------------------------------------------ */
+    var scrollWaypoint = function() {
+
+        $('.home-content__scroll').waypoint({
+            handler: function(direction) {
+                $('.home-content__scroll').toggleClass('blurred-element');
+            },
+
+            offset: '75%'
+        });
+
+    };
+
+
    /* Initialize
     * ------------------------------------------------------ */
     (function clInit() {
@@ -261,6 +277,7 @@
         ssAlertBoxes();
         ssAOS();
         loadParticles();
+        scrollWaypoint();
 
     })();
 

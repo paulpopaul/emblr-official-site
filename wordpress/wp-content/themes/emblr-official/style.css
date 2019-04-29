@@ -1427,6 +1427,16 @@ body.menu-is-open {
   background-color: #0f0f0f;
 }
 
+.blurred-element {
+  filter: blur(15px);
+  -webkit-filter: blur(15px);
+
+  transition: filter 0.2s ease-in-out;
+  -webkit-transition: filter 0.2s ease-in-out;
+  -moz-transition: filter 0.2s ease-in-out;
+  -o-transition: filter 0.2s ease-in-out;
+}
+
 /* ------------------------------------------------------------------- 
  * ## display headings
  * ------------------------------------------------------------------- */
@@ -1997,6 +2007,27 @@ body.menu-is-open {
   bottom: -9px;
 }
 
+.header-menu-toggle:hover .header-menu-icon {
+  width: 26px;
+}
+
+.header-menu-toggle:hover .header-menu-icon::after,
+.header-menu-toggle:hover .header-menu-icon::before {
+  width: 50% !important;
+}
+
+.header-menu-icon,
+.header-menu-icon::before,
+.header-menu-icon::after,
+.header-menu-toggle:hover .header-menu-icon::after,
+.header-menu-toggle:hover .header-menu-icon::before {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * header
@@ -2317,7 +2348,7 @@ body.menu-is-open {
   text-align: left;
   color: #FFFFFF;
   position: relative;
-  padding-right: 180px;
+  /*padding-right: 180px;*/
 }
 
 .home-content__scroll .scroll-link:hover,
