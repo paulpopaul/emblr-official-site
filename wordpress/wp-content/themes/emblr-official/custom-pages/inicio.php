@@ -4,7 +4,7 @@
 
 <section id="home" class="s-home page-hero target-section">
 
-    <div class="grid-overlay" id="particles">
+    <div class="grid-overlay" id="no-particles">
         <!-- particles -->
         
         <!-- <div></div> -->
@@ -63,5 +63,7 @@
             <a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i><span>Dribbble</span></a>
         </li>
     </ul> <!-- end home-social -->
+
+    <div class="page-counter">01 / <span>05</span></div>
 
 </section> <!-- end s-home -->
