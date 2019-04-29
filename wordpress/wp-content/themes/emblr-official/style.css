@@ -2010,6 +2010,10 @@ body.menu-is-open {
     right: 60px;
   }
 
+  .page-counter {
+    right: 3.5rem;
+  }
+
 }
 
 @media only screen and (max-width:1024px) {
@@ -2660,6 +2664,10 @@ html.no-csstransitions .home-content__main {
 }
 
 @media screen and (max-width:1024px) {
+  .home-content__scroll, .page-counter {
+    display: none;
+  }
+
   /*.home-social {
     list-style: none;
     display: block;
