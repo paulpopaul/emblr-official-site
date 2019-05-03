@@ -257,7 +257,7 @@
                 $('.home-content__scroll').toggleClass('blurred-element');
             },
 
-            offset: '75%'
+            offset: '80%'
         });
 
     };

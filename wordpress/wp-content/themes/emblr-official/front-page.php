@@ -41,7 +41,7 @@
                         <li><a class="smoothscroll"  href="#contact">Contacto</a></li>
                     </ul>
         
-                    <p><a href='#0'>Ensambler</a> cree en la visión de tus sueños, y es por eso que queremos brindarte la <b>mejor asesoría y infraestructura del mercado</b>, que te permitan hacerlos realidad.</p>
+                    <p><a href='#0'>Ensambler</a> cree en tus sueños, y es por eso que queremos brindarte la <b>mejor asesoría e infraestructura del mercado</b>, aquellos que te permitan hacerlos realidad.</p>
 
                     
         

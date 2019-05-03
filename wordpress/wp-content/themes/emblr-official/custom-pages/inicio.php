@@ -66,4 +66,11 @@
 
     <div class="page-counter">01 / <span>05</span></div>
 
+    <ul class="page-dots">
+        <li class="active"><button type="button"></button></li>
+        <li><button type="button"></button></li>
+        <li><button type="button"></button></li>
+        <li><button type="button"></button></li>
+    </ul>
+
 </section> <!-- end s-home -->

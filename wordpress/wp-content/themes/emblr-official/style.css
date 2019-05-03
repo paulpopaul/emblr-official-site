@@ -1428,13 +1428,13 @@ body.menu-is-open {
 }
 
 .blurred-element {
-  filter: blur(15px);
-  -webkit-filter: blur(15px);
+  opacity: 0;
+  -moz-opacity: 0;
 
-  transition: filter 0.2s ease-in-out;
-  -webkit-transition: filter 0.2s ease-in-out;
-  -moz-transition: filter 0.2s ease-in-out;
-  -o-transition: filter 0.2s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
+  -webkit-transition: opacity 0.1s ease-in-out;
+  -moz-transition: opacity 0.1s ease-in-out;
+  -o-transition: opacity 0.1s ease-in-out;
 }
 
 /* ------------------------------------------------------------------- 
@@ -1909,6 +1909,72 @@ body.menu-is-open {
   transform: rotate(45deg);
 }
 
+.page-counter {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: .35rem;
+  color: #FFFFFF;
+  -ms-transform: rotate(-90deg); /* IE 9 */
+  -webkit-transform: rotate(-90deg); /* Safari 3-8 */
+  transform: rotate(-90deg);
+  position: fixed;
+  right: 6.2rem; /* 6.2rem / 4.9rem */
+  top: 60%;
+}
+
+.page-counter span {
+  color: #1FBDA2;
+}
+
+ul.page-dots {
+  margin: 0;
+  list-style: none;
+  position: fixed;
+  top: 40%;
+  right: 9.2rem;
+}
+
+ul.page-dots li {
+  padding: 0;
+  margin-bottom: 14px;
+}
+
+ul.page-dots button {
+  height: auto;
+  display: block;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  cursor: ;
+}
+
+ul.page-dots button::after {
+  content: "";
+  background: #ffffff;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  display: block;
+}
+
+ul.page-dots li.active button::before {
+  content: "";
+  width: 22px; /* after width * 2 */
+  height: 22px; /* after height * 2 */
+  display: block;
+  border: 1px solid #1FBDA2;
+  border-radius: 11px;
+  position: absolute;
+  top: -7px; /* after width / 2 */
+  left: -7px; /* after height / 2 */
+}
+
+ul.page-dots li.active button::after {
+  background: #1FBDA2;
+}
+
 /* menu is open
  * ----------------------------------------------- */
 .menu-is-open .header-nav {
@@ -1932,24 +1998,6 @@ body.menu-is-open {
   -webkit-transition-delay: 0.5s;
   transition-delay: 0.5s;
   left: 0;
-}
-
-.page-counter {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 700;
-  letter-spacing: .35rem;
-  color: #FFFFFF;
-  -ms-transform: rotate(-90deg); /* IE 9 */
-  -webkit-transform: rotate(-90deg); /* Safari 3-8 */
-  transform: rotate(-90deg);
-  position: fixed;
-  right: 6.2rem; /* 6.2rem / 4.9rem */
-  top: 60%;
-}
-
-.page-counter span {
-  color: #1FBDA2;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2045,12 +2093,20 @@ body.menu-is-open {
     right: 3.5rem;
   }
 
+  ul.page-dots {
+    right: 6.5rem;
+  }
+
 }
 
 @media only screen and (max-width:1024px) {
   .header-nav {
     width: 80%;
     /*padding: 3.6rem 3rem 3.6rem 5rem;*/
+  }
+
+  .page-counter, ul.page-dots {
+    display: none;
   }
 }
 
@@ -2695,7 +2751,7 @@ html.no-csstransitions .home-content__main {
 }
 
 @media screen and (max-width:1024px) {
-  .home-content__scroll, .page-counter {
+  .home-content__scroll {
     display: none;
   }
 
