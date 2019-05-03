@@ -2795,6 +2795,13 @@ html.no-csstransitions .home-content__main {
   }*/
 
   .blurred-element {
+    transition: unset;
+    -webkit-transition: unset;
+    -moz-transition: unset;
+    -o-transition: unset;
+  }
+
+  .home-content__scroll {
     display: none;
   }
 }
@@ -2812,9 +2819,9 @@ html.no-csstransitions .home-content__main {
     width: 24rem;
   }
 
-  .home-content__scroll {
+  /*.home-content__scroll {
     right: 6rem;
-  }
+  }*/
 
   .home-social {
     left: 4.5rem;
