@@ -2760,7 +2760,7 @@ html.no-csstransitions .home-content__main {
 }
 
 @media screen and (max-width:1024px) {
-  /*.home-content__scroll {
+  .home-content__scroll {
     display: none;
   }
 
@@ -2769,6 +2769,7 @@ html.no-csstransitions .home-content__main {
     display: block !important;
     font-size: 2.4rem;
     position: absolute;
+    left: 50% !important;
   }
 
   .home-social i {
@@ -2778,7 +2779,7 @@ html.no-csstransitions .home-content__main {
   .home-social li {
     display: inline-block;
     margin-right: 12px;
-    padding-left: 0;
+    padding: 0;
   }
 
   .home-social li a {
@@ -2792,17 +2793,13 @@ html.no-csstransitions .home-content__main {
 
   .home-social li:last-child {
     margin: 0;
-  }*/
+  }
 
   .blurred-element {
     transition: unset;
     -webkit-transition: unset;
     -moz-transition: unset;
     -o-transition: unset;
-  }
-
-  .home-content__scroll {
-    display: none;
   }
 }
 
@@ -2823,9 +2820,9 @@ html.no-csstransitions .home-content__main {
     right: 6rem;
   }*/
 
-  .home-social {
+  /*.home-social {
     left: 4.5rem;
-  }
+  }*/
 
 }
 
