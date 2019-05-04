@@ -2764,14 +2764,16 @@ html.no-csstransitions .home-content__main {
     display: none;
   }
 
-  .home-social {
-    list-style: none;
-    display: block !important;
+  .home-content {
+    text-align: center;
+  }
+
+  .home-social { border: 1px solid blue;
     font-size: 2.4rem;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
+    position: relative;
+    bottom: initial;
+    left: initial;
+    display: inline-block;
   }
 
   .home-social i {
@@ -2779,6 +2781,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .home-social li {
+    float: left !important;
     display: inline-block;
     margin-right: 12px;
     padding: 0;
@@ -2837,9 +2840,9 @@ html.no-csstransitions .home-content__main {
     font-size: 2.7rem;
   }
 
-  .home-social {
+  /*.home-social {
     display: none;
-  }
+  }*/
 
 }
 
