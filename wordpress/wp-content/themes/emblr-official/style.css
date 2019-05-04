@@ -2768,12 +2768,18 @@ html.no-csstransitions .home-content__main {
     text-align: center;
   }
 
-  .home-social { border: 1px solid blue;
+  .home-social {
     font-size: 2.4rem;
     position: relative;
     bottom: initial;
     left: initial;
     display: inline-block;
+    bottom: 0;
+    margin-top: 4.2rem;
+  }
+
+  .home-social span {
+    display: none;
   }
 
   .home-social i {
@@ -2818,7 +2824,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .home-content__button .btn {
-    width: 24rem;
+    /*width: 24rem;*/
   }
 
   /*.home-content__scroll {
@@ -2879,7 +2885,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .home-content__button .btn {
-    width: 22rem;
+    /*width: 22rem;*/
   }
 
 }
