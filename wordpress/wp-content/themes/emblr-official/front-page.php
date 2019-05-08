@@ -68,6 +68,8 @@
 
         </nav> <!-- end header-nav -->
 
+        <a class="icon-search"></a>
+        
         <a class="header-menu-toggle" href="#0">
             <span class="header-menu-icon"></span>
         </a>

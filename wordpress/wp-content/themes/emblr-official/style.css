@@ -1699,6 +1699,50 @@ body.menu-is-open {
   height: 36px;
 }
 
+/* -------------------------------------------------------------------
+ * ## search
+ * ------------------------------------------------------------------- */
+
+.icon-search {
+  width: 24px;
+  height: 24px;
+  padding-right: 66px;
+  border-right: 1px solid #666;
+  display: flex;
+ 
+  position: fixed;
+  right: 165px;
+  top: 40px;
+}
+
+.icon-search::before {
+  display: block;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 500;
+  margin: auto 0 auto 0;
+  cursor: pointer;
+}
+
+.icon-search::before {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.icon-search:hover::before,
+.icon-search:focus::before,
+.icon-search:active::before {
+  -webkit-transform: scale(1.2) rotate(4deg);
+  transform: scale(1.2) rotate(4deg);
+}
+
 /* ------------------------------------------------------------------- 
  * ## main navigation 
  * ------------------------------------------------------------------- */
@@ -2094,6 +2138,10 @@ ul.page-dots li:not(.active):hover button::after {
     left: 60px;
   }
 
+  .icon-search {
+    right: 145px;
+  }
+
   .header-menu-toggle {
     right: 60px;
   }
@@ -2112,6 +2160,10 @@ ul.page-dots li:not(.active):hover button::after {
   .header-nav {
     width: 80%;
     /*padding: 3.6rem 3rem 3.6rem 5rem;*/
+  }
+
+  .icon-search {
+    display: none;
   }
 
   .page-counter, ul.page-dots {
@@ -2500,6 +2552,7 @@ ul.page-dots li:not(.active):hover button::after {
   -webkit-transform-origin: 0% 50%;
   -ms-transform-origin: 0% 50%;
   transform-origin: 0% 50%;
+  transition-duration: 0.2s;
 }
 
 .home-social span::after {
