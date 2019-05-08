@@ -2880,8 +2880,6 @@ html.no-csstransitions .home-content__main {
 
   .home-content__button .btn {
     /*width: 24rem;*/
-    margin-right:-2px;
-    margin-left:-2px;
   }
 
   /*.home-content__scroll {
@@ -2943,8 +2941,6 @@ html.no-csstransitions .home-content__main {
 
   .home-content__button .btn {
     /*width: 22rem;*/
-    margin-right:-2px;
-    margin-left:-2px;
   }
 
 }
