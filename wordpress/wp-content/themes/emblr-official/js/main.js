@@ -82,6 +82,7 @@
         // open-close menu by clicking on the menu icon
         menuTrigger.on('click', function(e){
             e.preventDefault();
+            $(".target-section").toggleClass('blurred-back');
             siteBody.toggleClass('menu-is-open');
         });
 
@@ -95,6 +96,7 @@
         siteBody.on('click', function(e){
             if( !$(e.target).is('.header-nav, .header-nav__content, .header-menu-toggle, .header-menu-toggle span') ) {
                 siteBody.removeClass('menu-is-open');
+                $(".target-section").removeClass('blurred-back');
             }
         });
 
