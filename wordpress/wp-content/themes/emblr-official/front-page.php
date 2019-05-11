@@ -18,7 +18,7 @@
     <header class="s-header">
 
         <div class="header-logo">
-            <a class="site-logo" href="index.html">
+            <a class="site-logo" href="#">
                 <img src="<?= get_template_directory_uri() ?>/images/logo.svg" alt="Homepage">
             </a>
         </div> <!-- end header-logo -->
