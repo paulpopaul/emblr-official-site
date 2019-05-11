@@ -1438,7 +1438,8 @@ body.menu-is-open {
 }
 
 .blurred-back {
-  filter: blur(10px);
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
   transition: filter 0.1s ease-in-out;
 }
 
