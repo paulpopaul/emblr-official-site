@@ -1438,13 +1438,14 @@ body.menu-is-open {
 }
 
 .blurred-back {
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  transition: filter 0.1s ease-in-out;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  transition: all 0.2s ease-in-out;
+  opacity: .8;
 }
 
 .target-section {
-  transition: filter 0.1s ease-in-out;
+  transition: filter 0.2s ease-in-out;
 }
 
 .spin {
@@ -2075,7 +2076,7 @@ ul.page-dots li:not(.active):hover button::after {
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-delay: 0.5s;
-  transition-delay: 0.5s;
+  transition-delay: 0.3s;
   left: 0;
 }
 

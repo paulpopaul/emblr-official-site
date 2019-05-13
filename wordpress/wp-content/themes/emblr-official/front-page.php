@@ -104,9 +104,9 @@
             </div>
         </div>
 
-        <div class="ss-go-top">
+        <!-- <div class="ss-go-top">
             <a class="smoothscroll" title="Back to Top" href="#top">Volver a inicio</a>
-        </div>
+        </div> -->
     </footer>
 
 
