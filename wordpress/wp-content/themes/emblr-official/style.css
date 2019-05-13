@@ -1438,10 +1438,10 @@ body.menu-is-open {
 }
 
 .blurred-back {
-  filter: blur(10px);
-  -webkit-filter: blur(10px);
+  filter: blur(9.7px);
+  -webkit-filter: blur(9.7px);
   transition: all 0.2s ease-in-out;
-  opacity: .8;
+  opacity: .63;
 }
 
 .target-section {
