@@ -535,7 +535,7 @@
     content: "\e9a9";
 }
 .icon-search:before {
-    content: "\e9aa";
+    /* content: "\e9aa"; */
 }
 .icon-selection:before {
     content: "\e9ab";

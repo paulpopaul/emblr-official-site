@@ -1729,6 +1729,156 @@ body.menu-is-open {
 /* -------------------------------------------------------------------
  * ## search
  * ------------------------------------------------------------------- */
+/* Inicio boton */
+
+.search {
+  position: absolute;
+  /*left: 50%; */
+  top: 50%;
+  margin: -3rem 0 0 -15rem;
+  width: 32rem;
+  height: 6rem;
+  /* checked */
+}
+
+.search #search {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.search .search-init {
+  position: absolute;
+  z-index: 2;
+  top: 2rem;
+  left: 17.2rem;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.search .search-border {
+  position: absolute;
+  left: 58%;
+  top: 46%;
+  transform: translate(-85%, -50%);
+  width: 1.8rem;
+  height: 30%;
+  border: 0.2rem solid white;
+  border-radius: 6rem;
+  transition: width 0.4s 0.4s;
+}
+
+.search .search-border:after {
+  content: "";
+  position: absolute;
+  right: -2rem;
+  bottom: -2rem;
+  width: 1.5rem;
+  height: 0.2rem;
+  transform-origin: 100% 50%;
+  transform: rotate(225deg) translatex(3rem);
+  background: white;
+  border-radius: 0.6rem;
+  transition: width 0.2s 0.8s;
+}
+
+.search .search-field {
+  position: relative;
+  z-index: -1;
+  width: 18.1rem;
+  height: 5.4rem;
+  padding: 1rem 0 1rem 5.6rem;
+  background: transparent;
+  border: 0 none;
+  outline: none;
+  font-size: 1rem;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.search .search-active {
+  position: absolute;
+  z-index: 3;
+  top: 1.5rem;
+  right: 11.5rem;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  transform: scale(0);
+}
+/* Icono de cerrar X */
+.search .close-search {
+  position: absolute;
+  z-index: -1;
+  top: 1.3rem;
+  right: 11.5rem;
+  width: 2rem;
+  height: 0rem;
+}
+.search .close-search:before, .search .close-search:after {
+  content: "";
+  position: absolute;
+  left: 0.2rem;
+  top: 1.3rem;
+  width: 70%;
+  height: 0.2rem;
+  background: white;
+  border-radius: 0.2rem;
+  opacity: 0;
+}
+.search .close-search:before {
+  transform: rotate(-45deg) translatex(2rem);
+  transition: transform 0.2s, opacity 0.1s 0.1s;
+}
+.search .close-search:after {
+  transform: rotate(45deg) translatex(2rem);
+  transition: transform 0.2s 0.2s, opacity 0.1s 0.3s;
+}
+
+.search #search:checked ~ .search-init {
+  transform: scale(0);
+}
+
+/* Transición cuando se pincha en la lupa */ 
+.search #search:checked ~ .search-border {
+  width: 50%;
+  transition: width 0.1s 0.1s; 
+}
+
+/* Transición palito de la lupa */
+.search #search:checked ~ .search-border:after {
+  width: 0%;
+  transition: width 0.2s cubic-bezier(0.10, -0.7, 0.3, 1.25); 
+}
+
+
+.search #search:checked ~ .search-field {
+  z-index: auto;
+  opacity: 1;
+  transition: opacity 0.2s 0.6s;
+}
+.search #search:checked ~ .close-search {
+  z-index: auto;
+}
+
+/* Animación palo izquierdo X */
+.search #search:checked ~ .close-search:before {
+  opacity: 1;
+  transform: rotate(-45deg);
+  transition: transform 0.2s 0.2s cubic-bezier(0.10, 0.14, 0.4, 1.25), opacity 0.1s 0.2s;
+}
+/* Animación palo derecho X */
+.search #search:checked ~ .close-search:after {
+  opacity: 1;
+  transform: rotate(45deg);
+  transition: transform 0.2s 0.2s cubic-bezier(0.10, 0.14, 0.4, 1.25), opacity 0.1s 0.2s;
+} 
+
+.search #search:checked ~ .search-active {
+  transform: scale(1);
+}
+
+/* Final boton */
 
 .icon-search {
   width: 24px;
@@ -1736,38 +1886,10 @@ body.menu-is-open {
   padding-right: 66px;
   border-right: 1px solid #666;
   display: flex;
- 
+
   position: fixed;
   right: 165px;
   top: 40px;
-}
-
-.icon-search::before {
-  display: block;
-  color: #ffffff;
-  font-size: 21px;
-  font-weight: 500;
-  margin: auto 0 auto 0;
-  cursor: pointer;
-}
-
-.icon-search::before {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-
-.icon-search:hover::before,
-.icon-search:focus::before,
-.icon-search:active::before {
-  -webkit-transform: scale(1.2) rotate(4deg);
-  transform: scale(1.2) rotate(4deg);
 }
 
 /* ------------------------------------------------------------------- 

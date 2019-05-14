@@ -68,8 +68,18 @@
 
         </nav> <!-- end header-nav -->
 
-        <a class="icon-search"></a>
-        
+        <a class="icon-search">
+            <div class="search">
+                <input id="search" type="checkbox" /><label class="search-init" for="search"></label>
+                <label class="search-active" for="search"></label> 
+            <div class="search-border"></div>
+                <input class="search-field" id="search-field" type="text" />
+            <div class="close-search"></div> 
+            </div>
+        </a> 
+
+
+
         <a class="header-menu-toggle" href="#0">
             <span class="header-menu-icon"></span>
         </a>
