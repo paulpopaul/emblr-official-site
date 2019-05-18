@@ -106,18 +106,59 @@
 
     <!-- footer
     ================================================== -->
-    <footer>
-        <div class="row">
-            <div class="col-full ss-copyright">
-                <span>&reg; Derechos Reservados 2019</span> 
-                <span>Ingeniería de Software para Soluciones Empresariales Integradas.</span>
-            </div>
-        </div>
+   <footer>
+    <div class="row">
+        <div class="col-full ss-copyright">
+            <div class="fl-col-group">
+                <div class="fl-col  fl-col-small" style="width: 25%;">
+                    <div class="textoSobreNosotros" style="text-align: left;">
+                        <h1><span style="font-size: 30px;"><strong><span style="color: #ffffff;">Sobre nosotros</span></strong></span></h1>
+                        <p align="left" style="font-size: 13px; margin-bottom:1rem;">Ensambler cree en tus sueños, y es por eso que queremos brindarte la mejor asesoría e infraestructura del mercado, aquellos que te permitan hacerlo realidad.</p>
+                        <p style="font-size: 13px;"><span style="color: #1FBDA2;"><a style="color: #1FBDA2; font-size: 12px;" href="sitioleermás"> Leer más...</a></span></p>
+                    </div>
+                </div>
 
-        <!-- <div class="ss-go-top">
-            <a class="smoothscroll" title="Back to Top" href="#top">Volver a inicio</a>
-        </div> -->
-    </footer>
+                <div class="fl-col fl-col-small" style="width: 25%;">
+                    <div class="textoSitio" style="text-align: left; line-height: 25px;">
+                       <h1><span style="font-size: 23px;"><strong><span style="color: #ffffff;" >Sitio</span></strong></span></h1>
+
+                        <div class="textosS" style="font-size: 13px;">
+                            <strong style="color: #1FBDA2;"><a style="color: #1FBDA2;" href="inicio.php"> Inicio </a></strong></br>
+                            <strong style="color: #1FBDA2;"><a style="color: #1FBDA2;"> Sobre Nosotros</a></strong></br>
+                            <strong style="color: #1FBDA2;"><a style="color: #1FBDA2;"> Servicios</a></strong></br>
+                            <strong style="color: #1FBDA2;"><a style="color: #1FBDA2;">Portafolio</a></strong></br>
+                            <strong style="color: #1FBDA2;"><a style="color: #1FBDA2;">Contacto</a></strong></br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fl-col fl-col-small" style="width: 25%;">
+                    <div class="textoContacto" style="text-align: left;">
+                        <h1><span style="font-size: 30px;"><strong><span style="color: #ffffff;">Contacto</span></strong></span></h1>
+                        <p align="left" style="font-size: 13px;"> Telefono: +569 99887744 <br> Email: Info@ensambler.cl
+                            <br> Direccion: #1
+                            <br> Direccion: #2</p>
+                    </div>
+                </div>
+
+                <div class="fl-col  fl-col-small" style="width: 25%;">
+                     <div class="Suscribete" style="text-align: left;">
+                        <h1><span style="font-size: 30px;"><strong><span style="color: #ffffff;">Suscribete</span></strong></span></h1>
+                        <p align="left" style="font-size: 13px; margin-bottom: 1rem;"> Recibe noticias, novedades y más...</p>
+                        <div class="input-group">
+                            <input id="entradaCorreo" placeholder="Ingresa tu email" type="text">
+                            <!-- <button id=botonEnviar type="submit">Enviar</button> -->
+                        </div>
+
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</footer>
+          
+
+
 
 
     <!-- photoswipe background

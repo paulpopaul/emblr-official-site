@@ -1939,6 +1939,31 @@ body.menu-is-open {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.textosS{
+  font-size: 2px;
+}
+
+#entradaCorreo{
+    width:50% !important;
+    height: 5px;
+    border: 0.07rem solid #7f7f80;
+    padding: 1rem 1rem;
+    color: rgba(134, 134, 134, 0.7);
+    font-size: 1.3rem;
+}
+
+#botonEnviar {
+  width:50% !important;
+    background: #1FBDA2;
+    color: white;
+    border: 0;
+    -webkit-appearance: none;
+}
+
+.input-group {
+  width:100%;
+}
+
 .header-nav a:hover,
 .header-nav a:focus,
 .header-nav a:active {
