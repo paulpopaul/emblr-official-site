@@ -1709,7 +1709,7 @@ body.menu-is-open {
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  transform: translateY(-50%);e
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -1943,25 +1943,29 @@ body.menu-is-open {
   font-size: 2px;
 }
 
+.input-group button {
+  margin:0px;
+  margin-left: -1.7px;
+  line-height: 3.12rem;
+  height: 3rem;
+  width: 43%;
+  font-size: 1rem;
+  background-color: #1FBDA2; /* Green background */
+  border: 0; /* Green border */
+  color: white; /* White text */
+  padding: 0px 0px; /* Some padding */
+}
+
 #entradaCorreo{
-    width:50% !important;
-    height: 5px;
+    margin:0px;
+    margin-right:-3px;
+    display:inline;
+    width: 50% !important;
+    height: 3rem;
     border: 0.07rem solid #7f7f80;
     padding: 1rem 1rem;
     color: rgba(134, 134, 134, 0.7);
-    font-size: 1.3rem;
-}
-
-#botonEnviar {
-  width:50% !important;
-    background: #1FBDA2;
-    color: white;
-    border: 0;
-    -webkit-appearance: none;
-}
-
-.input-group {
-  width:100%;
+    font-size: 1.1rem;
 }
 
 .header-nav a:hover,

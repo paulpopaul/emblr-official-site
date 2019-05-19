@@ -110,17 +110,21 @@
     <div class="row">
         <div class="col-full ss-copyright">
             <div class="fl-col-group">
+
+                <!-- Inicio Sobre Nosotros -->
                 <div class="fl-col  fl-col-small" style="width: 25%;">
                     <div class="textoSobreNosotros" style="text-align: left;">
-                        <h1><span style="font-size: 30px;"><strong><span style="color: #ffffff;">Sobre nosotros</span></strong></span></h1>
+                        <h1><span><strong><span style="color: #ffffff; font-size: 20px;">Sobre nosotros</span></strong></span></h1>
                         <p align="left" style="font-size: 13px; margin-bottom:1rem;">Ensambler cree en tus sueños, y es por eso que queremos brindarte la mejor asesoría e infraestructura del mercado, aquellos que te permitan hacerlo realidad.</p>
                         <p style="font-size: 13px;"><span style="color: #1FBDA2;"><a style="color: #1FBDA2; font-size: 12px;" href="sitioleermás"> Leer más...</a></span></p>
                     </div>
                 </div>
+                <!-- Final sobre nosotros -->
 
+                <!-- Inicio Sitio -->
                 <div class="fl-col fl-col-small" style="width: 25%;">
                     <div class="textoSitio" style="text-align: left; line-height: 25px;">
-                       <h1><span style="font-size: 23px;"><strong><span style="color: #ffffff;" >Sitio</span></strong></span></h1>
+                       <h1><span style="font-size: 23px;"><strong><span style="color: #ffffff; font-size: 20px;"  >Sitio</span></strong></span></h1>
 
                         <div class="textosS" style="font-size: 13px;">
                             <strong style="color: #1FBDA2;"><a style="color: #1FBDA2;" href="inicio.php"> Inicio </a></strong></br>
@@ -131,34 +135,55 @@
                         </div>
                     </div>
                 </div>
+                <!-- Inicio Contacto -->
 
                 <div class="fl-col fl-col-small" style="width: 25%;">
                     <div class="textoContacto" style="text-align: left;">
-                        <h1><span style="font-size: 30px;"><strong><span style="color: #ffffff;">Contacto</span></strong></span></h1>
+                        <h1><span style="font-size: 30px;"><strong><span style="color: #ffffff; font-size: 20px;">Contacto</span></strong></span></h1>
                         <p align="left" style="font-size: 13px;"> Telefono: +569 99887744 <br> Email: Info@ensambler.cl
                             <br> Direccion: #1
                             <br> Direccion: #2</p>
                     </div>
                 </div>
 
+                <!-- Inicio suscribete -->
                 <div class="fl-col  fl-col-small" style="width: 25%;">
                      <div class="Suscribete" style="text-align: left;">
-                        <h1><span style="font-size: 30px;"><strong><span style="color: #ffffff;">Suscribete</span></strong></span></h1>
+                        <h1><span style="font-size: 30px;"><strong><span style="color: #ffffff; font-size: 20px;">Suscribete</span></strong></span></h1>
                         <p align="left" style="font-size: 13px; margin-bottom: 1rem;"> Recibe noticias, novedades y más...</p>
                         <div class="input-group">
                             <input id="entradaCorreo" placeholder="Ingresa tu email" type="text">
-                            <!-- <button id=botonEnviar type="submit">Enviar</button> -->
+                            <button>Enviar</button>
                         </div>
-
                     </div>
                 </div>
+                <!-- Final Suscribete -->
             </div> 
+
+            <!-- Inicio Footer Final -->
+        <div class="fl-col-group" style="width: 75%">
+                 <div class="fl-col-group" style="text-align:left;">
+                    <a class="logoFooter" id="footerLogo" >
+                    <img src="http://localhost:8080/wp-content/themes/emblr-official/images/logo.svg" style: width="30px">
+                    </a>
+                    <div class="fl-rich-text" id="textoFinalFooter">
+                        <p><span style="font-size: 14px; float:left;"><strong><span style="color: #ffffff;">2019</span></strong>&nbsp;&nbsp;<strong><span style="color: #1FBDA2;">ENSAMBLER</span></strong></span>
+                            <br>
+                            <span style="font-size: 12px;">TODOS LOS DERECHOS RESERVADOS</span></p>
+                    </div>
+                </div>
+        </div>
+                <div class="fl-col-group" style="width: 25%"> 
+                 <div class="fl-col-group" style="text-align: left; padding: 0 0px;" >
+                        <a style="color: #1FBDA2;" href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i> &nbsp;&nbsp; </a>
+                        <a style="color: #1FBDA2;"href="#0"><i class="fab fa-twitter" aria-hidden="true"></i> &nbsp;&nbsp; </a>
+                        <a style="color: #1FBDA2;" href="#0"><i class="fab fa-instagram" aria-hidden="true"></i>&nbsp;&nbsp;</a>
+                        <a style="color: #1FBDA2;"href="#0"><i class="fab fa-behance" aria-hidden="true"></i>&nbsp;&nbsp;</a>
+                        <a style="color: #1FBDA2;"href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i>&nbsp;&nbsp;</a>
+                </div>
         </div>
     </div>
 </footer>
-          
-
-
 
 
     <!-- photoswipe background
