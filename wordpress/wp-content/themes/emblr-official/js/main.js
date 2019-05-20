@@ -293,7 +293,7 @@
         ssSmoothScroll();
         ssAlertBoxes();
         ssAOS();
-        loadParticles();
+        //loadParticles();
         scrollWaypoint();
         logoEnableDisableParticles();
 
