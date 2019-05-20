@@ -78,8 +78,6 @@
             </div>
         </a> 
 
-
-
         <a class="header-menu-toggle" href="#0">
             <span class="header-menu-icon"></span>
         </a>
@@ -106,86 +104,6 @@
 
     <!-- footer
     ================================================== -->
-    <footer>
-        <div class="row">
-            <div class="col-full ss-copyright">
-                <div class="fl-col-group">
-
-                    <!-- Inicio Sobre Nosotros -->
-                    <div class="fl-col  fl-col-small">
-                        <div class="footer-sobrenosotros">
-                            <h1><span>Sobre nosotros</span></h1>
-                            <p align="left">
-                                Ensambler cree en tus sueños, y es por eso que queremos brindarte la mejor asesoría e infraestructura del mercado, aquellos que te permitan hacerlo realidad.
-                            </p>
-                            <p>
-                                <span><a href="sitioleermás"> Leer más...</a></span>
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Final sobre nosotros -->
-
-                    <!-- Inicio Sitio -->
-                    <div class="fl-col fl-col-small">
-                        <div class="vineta-sitio">
-                           <h1><span>Sitio</span></h1>
-                            <a href="inicio.php"> Inicio </a></br>
-                            <a > Sobre Nosotros</a></br>
-                            <a > Servicios</a></br>
-                            <a >Portafolio</a></br>
-                            <a >Contacto</a></br>
-                        </div>
-                    </div>
-
-                    <!-- Inicio Contacto -->
-                    <div class="fl-col fl-col-small">
-                        <div class="textoContacto">
-                            <h1><span ><span>Contacto</span></span></h1>
-                            <p align="left"> Telefono: +569 99887744 
-                                <br> Email: Info@ensambler.cl
-                                <br> Direccion: #1
-                                <br> Direccion: #2
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Inicio suscríbete -->
-                    <div class="fl-col  fl-col-small">
-                         <div class="suscribete">
-                            <h1><span>Suscribete</span></h1>
-                            <p align="left"> Recibe noticias, novedades y más...</p>
-                            <div class="input-group">
-                                <input id="entradaCorreo" placeholder="Ingresa tu email" type="text">
-                                <button>Enviar</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Final Suscríbete -->
-                </div> 
-
-            <!-- Inicio Footer Final -->
-            <div class="fl-col-group footergeneral">
-                <div class="fl-col-group">
-                    <div class="fl-rich-text marca">
-                        <p>
-                            <span>2019</span><span>ENSAMBLER</span><br>
-                            <span>TODOS LOS DERECHOS RESERVADOS</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="fl-col-group"> 
-                <div class="fl-col-group social">
-                    <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fab fa-behance" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
 
 
     <!-- photoswipe background
@@ -229,3 +147,4 @@
 
 
 <? get_footer() ?>
+
