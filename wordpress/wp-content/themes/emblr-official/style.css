@@ -1765,7 +1765,7 @@ body.menu-is-open {
   height: 30%;
   border: 0.2rem solid white;
   border-radius: 6rem;
-  transition: width 0.4s 0.4s;
+  transition: all 0.4s 0.4s;
 }
 
 .search .search-border:after {
@@ -1784,14 +1784,16 @@ body.menu-is-open {
 
 .search .search-field {
   position: relative;
+  top: 25%;
+  left: -10% !important;
   z-index: -1;
-  width: 18.1rem;
-  height: 5.4rem;
-  padding: 1rem 0 1rem 5.6rem;
+  padding: 0 0px 0 10px !important;
+  width: 58%;
+  height: 50%;
   background: transparent;
   border: 0 none;
   outline: none;
-  font-size: 1rem;
+  font-size: 16px;
   color: white;
   opacity: 0;
   transition: opacity 0.2s;
@@ -1800,7 +1802,7 @@ body.menu-is-open {
   position: absolute;
   z-index: 3;
   top: 1.5rem;
-  right: 11.5rem;
+  right: 14rem;
   width: 2rem;
   height: 2rem;
   cursor: pointer;
@@ -1809,9 +1811,9 @@ body.menu-is-open {
 /* Icono de cerrar X */
 .search .close-search {
   position: absolute;
-  z-index: -1;
-  top: 1.3rem;
-  right: 11.5rem;
+  z-index: 3;
+  top: 1.5rem;
+  right: 14rem;
   width: 2rem;
   height: 0rem;
 }
@@ -1819,7 +1821,7 @@ body.menu-is-open {
   content: "";
   position: absolute;
   left: 0.2rem;
-  top: 1.3rem;
+  top: 1.4rem;
   width: 70%;
   height: 0.2rem;
   background: white;
@@ -1827,12 +1829,12 @@ body.menu-is-open {
   opacity: 0;
 }
 .search .close-search:before {
-  transform: rotate(-45deg) translatex(2rem);
-  transition: transform 0.2s, opacity 0.1s 0.1s;
+  transform: rotate(-45deg) translateX(0.1rem);
+  transition: transform 0.2s, opacity 0.2s 0.2s;
 }
 .search .close-search:after {
-  transform: rotate(45deg) translatex(2rem);
-  transition: transform 0.2s 0.2s, opacity 0.1s 0.3s;
+  transform: rotate(45deg) translateX(0.1rem);
+  transition: transform 0.2s 0.2s, opacity 0.2s 0.3s;
 }
 
 .search #search:checked ~ .search-init {
@@ -1841,8 +1843,13 @@ body.menu-is-open {
 
 /* Transición cuando se pincha en la lupa */ 
 .search #search:checked ~ .search-border {
-  width: 50%;
-  transition: width 0.1s 0.1s; 
+  width: 70%;
+  height: 50%;
+  background: #000;
+  top: 50%;
+  left: 48%;
+  /*border-radius: 0px;*/
+  transition: all 0.2s 0.2s;
 }
 
 /* Transición palito de la lupa */
