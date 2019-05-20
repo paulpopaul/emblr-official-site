@@ -1939,34 +1939,7 @@ body.menu-is-open {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.textosS{
-  font-size: 2px;
-}
 
-.input-group button {
-  margin:0px;
-  margin-left: -1.7px;
-  line-height: 3.12rem;
-  height: 3rem;
-  width: 43%;
-  font-size: 1rem;
-  background-color: #1FBDA2; /* Green background */
-  border: 0; /* Green border */
-  color: white; /* White text */
-  padding: 0px 0px; /* Some padding */
-}
-
-#entradaCorreo{
-    margin:0px;
-    margin-right:-3px;
-    display:inline;
-    width: 50% !important;
-    height: 3rem;
-    border: 0.07rem solid #7f7f80;
-    padding: 1rem 1rem;
-    color: rgba(134, 134, 134, 0.7);
-    font-size: 1.1rem;
-}
 
 .header-nav a:hover,
 .header-nav a:focus,
@@ -4340,9 +4313,97 @@ footer a {
   color: #FFFFFF;
 }
 
+footer .social{
+  padding: 0 0px;
+}
+
 footer .social i {
   color: #1FBDA2 !important;
   margin-right: 10px;
+}
+
+footer .marca{
+  font-size: 14px;
+  float:left;
+  text-align:left;
+}
+footer .marca span:first-child{
+  color: #FFFFFF;
+  margin-right: 0.2px;
+  font-weight: bold;
+}
+footer .marca span:nth-child(2){
+  color: #1FBDA2;;
+  font-weight: bold;
+}
+footer .marca span:last-child{
+  font-size: 12px;
+}
+
+footer .footergeneral{
+  width: 75%;
+}
+
+footer .suscribete p{
+  font-size: 13px; 
+  margin-bottom: 1rem;
+}
+
+footer .fl-col-small{
+  width: 25%;
+  text-align: left;
+  font-size: 13px; 
+}
+
+
+footer .fl-col-small span:first-child{
+  font-size: 20px;
+  color: #ffffff;
+}
+
+footer .footer-sobrenosotros span:first-child{
+  font-weight: bold;
+  font-size:20px;
+} 
+
+footer .footer-sobrenosotros a{
+  font-weight: bold;
+  font-size:13px;
+  color:#1FBDA2 !important;
+} 
+
+.input-group button {
+  margin:0px;
+  margin-left: -1.7px;
+  line-height: 3.12rem;
+  height: 3rem;
+  width: 45%;
+  font-size: 1rem;
+  background-color: #1FBDA2; /* Green background */
+  border: 0; /* Green border */
+  color: white; /* White text */
+  padding: 0px 0px; /* Some padding */
+}
+
+footer .vineta-sitio a{
+  color:#1FBDA2;
+  font-weight: bold;
+}
+footer .vineta-sitio{
+  text-align: left; 
+  line-height: 25px;
+}
+
+#entradaCorreo{
+    margin:0px;
+    margin-right:-3px;
+    display:inline;
+    width: 55% !important;
+    height: 3rem;
+    border: 0.07rem solid #7f7f80;
+    padding: 1rem 1rem;
+    color: rgba(134, 134, 134, 0.7);
+    font-size: 1.1rem;
 }
 
 /* ------------------------------------------------------------------- 
@@ -4354,9 +4415,9 @@ footer .social i {
 }
 
 .ss-copyright span::after {
-  content: "·";
+  content: "";
   display: inline-block;
-  padding: 0 1rem 0 1.2rem;
+  padding: 0 0rem 0 0.3rem;
   color: white;
 }
 
