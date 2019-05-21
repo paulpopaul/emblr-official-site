@@ -1793,7 +1793,9 @@ body.menu-is-open {
   background: transparent;
   border: 0 none;
   outline: none;
-  font-size: 16px;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 600;
   color: white;
   opacity: 0;
   transition: opacity 0.2s;
@@ -1824,7 +1826,7 @@ body.menu-is-open {
   top: 1.4rem;
   width: 70%;
   height: 0.2rem;
-  background: white;
+  background: #fff;
   border-radius: 0.2rem;
   opacity: 0;
 }
@@ -1845,7 +1847,7 @@ body.menu-is-open {
 .search #search:checked ~ .search-border {
   width: 70%;
   height: 50%;
-  background: #000;
+  background: #232323;
   top: 50%;
   left: 48%;
   /*border-radius: 0px;*/
