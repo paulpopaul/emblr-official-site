@@ -46,7 +46,7 @@
                     <div class="fl-col  fl-col-small">
                          <div class="suscribete">
                             <hr>
-                            <h1><span>Suscribete</span></h1>
+                            <h1><span>Suscríbete</span></h1>
                             <p align="left"> Recibe noticias, novedades y más...</p>
                             <div class="input-group">
                                 <input id="entradaCorreo" placeholder="Ingresa tu email" type="text">
