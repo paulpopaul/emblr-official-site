@@ -4329,7 +4329,8 @@ footer .social{
 
 footer .social i {
   color: #1FBDA2 !important;
-  margin-right: 10px;
+  margin-right: 14px;
+  font-size: 24px;
 }
 
 footer .marca{
@@ -4340,14 +4341,18 @@ footer .marca{
 footer .marca span:first-child{
   color: #FFFFFF;
   margin-right: 0.2px;
-  font-weight: bold;
+  font-weight: 800;
+  letter-spacing: 2px;
 }
 footer .marca span:nth-child(2){
   color: #1FBDA2;;
-  font-weight: bold;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 footer .marca span:last-child{
-  font-size: 12px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 800;
 }
 
 footer .footergeneral{
@@ -4355,30 +4360,42 @@ footer .footergeneral{
 }
 
 footer .suscribete p{
-  font-size: 13px; 
+  font-size: 16px; 
   margin-bottom: 1rem;
 }
 
 footer .fl-col-small{
   width: 25%;
   text-align: left;
-  font-size: 13px; 
+  font-size: 16px; 
 }
 
+hr {
+  float: left;
+  height: 22px;
+  width: 8px;
+  background-color: #1FBDA2;
+  /* margin: 0.8rem 0rem 0rem; */
+  margin-top: 16px;
+  margin-right: 4px;
+}
 
 footer .fl-col-small span:first-child{
-  font-size: 20px;
   color: #ffffff;
+  font-weight: 800;
+  font-size:28px;
+  letter-spacing: 0.1px;
 }
 
 footer .footer-sobrenosotros span:first-child{
   font-weight: bold;
-  font-size:20px;
+  font-size:28px;
+  letter-spacing: 0.1px;
 } 
 
 footer .footer-sobrenosotros a{
   font-weight: bold;
-  font-size:13px;
+  font-size:16px;
   color:#1FBDA2 !important;
 } 
 

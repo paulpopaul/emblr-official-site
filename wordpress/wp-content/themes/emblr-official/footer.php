@@ -6,7 +6,7 @@
                     <!-- Inicio Sobre Nosotros -->
                     <div class="fl-col  fl-col-small">
                         <div class="footer-sobrenosotros">
-                            <h1><span>Sobre nosotros</span></h1>
+                            <h1><span>Sobre Nosotros</span></h1>
                             <p align="left">
                                 Ensambler cree en tus sueños, y es por eso que queremos brindarte la mejor asesoría e infraestructura del mercado, aquellos que te permitan hacerlo realidad.
                             </p>
@@ -21,17 +21,18 @@
                     <div class="fl-col fl-col-small">
                         <div class="vineta-sitio">
                            <h1><span>Sitio</span></h1>
-                            <a href="inicio.php"> Inicio </a></br>
-                            <a > Sobre Nosotros</a></br>
-                            <a > Servicios</a></br>
-                            <a >Portafolio</a></br>
-                            <a >Contacto</a></br>
+                            <a href=""> Inicio </a></br>
+                            <a href=""> Sobre Nosotros</a></br>
+                            <a href=""> Servicios</a></br>
+                            <a href="">Portafolio</a></br>
+                            <a href="">Contacto</a></br>
                         </div>
                     </div>
 
                     <!-- Inicio Contacto -->
                     <div class="fl-col fl-col-small">
                         <div class="textoContacto">
+                            <hr>
                             <h1><span ><span>Contacto</span></span></h1>
                             <p align="left"> Telefono: +569 99887744 
                                 <br> Email: Info@ensambler.cl
@@ -44,6 +45,7 @@
                     <!-- Inicio suscríbete -->
                     <div class="fl-col  fl-col-small">
                          <div class="suscribete">
+                            <hr>
                             <h1><span>Suscribete</span></h1>
                             <p align="left"> Recibe noticias, novedades y más...</p>
                             <div class="input-group">
