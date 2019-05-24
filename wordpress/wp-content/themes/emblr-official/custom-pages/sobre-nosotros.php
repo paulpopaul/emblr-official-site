@@ -7,7 +7,7 @@
             <h3 class="subhead">Who We Are</h3>
             <h1 class="display-1">
             We are Sublime, a design and branding agency with partners worldwide. We design thoughtful digital experiences
-            and beautiful brand aesthetics.
+            and beautiful brand aesthetic.
             </h1>
         </div>
     </div> <!-- end section-header -->

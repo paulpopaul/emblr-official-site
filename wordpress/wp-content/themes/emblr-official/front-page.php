@@ -97,7 +97,7 @@
 
     <? #require_once("custom-pages/clients.php") ?>
 
-    <? #require_once("custom-pages/testimonials.php") ?>
+    <? require_once("custom-pages/testimonials.php") ?>
 
     <? #require_once("custom-pages/contacto.php") ?>
 
