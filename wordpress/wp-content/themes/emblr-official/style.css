@@ -4331,8 +4331,7 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 footer {
-  padding-top: 9rem;
-  padding-bottom: 6rem;
+  padding-top: 140px;
   color: rgba(255, 255, 255, 0.6);
   background-color: #000000;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -4418,6 +4417,17 @@ footer .footer-sobrenosotros a{
   font-weight: bold;
   font-size:16px;
   color:#1FBDA2 !important;
+} 
+
+footer .fl-col h1{
+  margin-top:0px;
+} 
+footer .fl-col{
+  margin-bottom:170px;
+} 
+
+footer .fl-col span{
+  margin-bottom:0px;
 } 
 
 .input-group button {
