@@ -3969,7 +3969,7 @@ html.no-csstransitions .home-content__main {
   margin-bottom: 5px;
 }
 
-.testimonials__slider .slick-dots li { border:1px solid red;
+.testimonials__slider .slick-dots li {
   height: auto;
   display: inline-block;
   padding: 0;
