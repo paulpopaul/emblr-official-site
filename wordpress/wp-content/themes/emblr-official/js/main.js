@@ -185,9 +185,9 @@
             slidesToShow: 1,
             slidesToScroll: 1,
             pauseOnFocus: false,
-            autoplaySpeed: 1500
+            autoplaySpeed: 1500,
         });
-    };
+    }; 
 
 
    /* Smooth Scrolling

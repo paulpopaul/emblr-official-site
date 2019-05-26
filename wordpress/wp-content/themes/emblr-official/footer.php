@@ -1,7 +1,7 @@
    <footer>
         <div class="row">
             <div class="col-full ss-copyright">
-                <div class="fl-col-group">
+                <div class="fl-col-group textos" id="grupo-textos">
 
                     <!-- Inicio Sobre Nosotros -->
                     <div class="fl-col  fl-col-small">

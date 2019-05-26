@@ -42,7 +42,6 @@
                     <span>Directora de Microsoft</span>
                 </div>
             </div> <!-- end testimonials__slide -->
-            
         </div> <!-- end testimonials__slider -->
 
     </div> <!-- end testimonials -->
