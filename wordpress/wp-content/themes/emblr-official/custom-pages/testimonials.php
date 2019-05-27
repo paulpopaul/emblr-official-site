@@ -35,6 +35,10 @@
             </div> <!-- end testimonials__slide -->
 
             <div class="testimonials__slide">
+                <div class="foto-persona"> 
+
+                    <a href="#"><img src="<?php echo get_template_directory_uri();?>/images/clientes/cliente1.jpg"/></a>
+                </div>
                 <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
                 Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.</p>
                 <div class="testimonials__author">
