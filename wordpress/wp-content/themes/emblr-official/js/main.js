@@ -184,8 +184,9 @@
             infinite: true, 
             slidesToShow: 1,
             slidesToScroll: 1,
-            pauseOnFocus: false,
-            autoplaySpeed: 1500,
+            pauseOnFocus: true,
+            autoplay:true,
+            autoplaySpeed: 4000,
         });
     }; 
 
