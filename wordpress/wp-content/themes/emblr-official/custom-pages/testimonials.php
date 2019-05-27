@@ -1,8 +1,8 @@
 <!-- testimonies
 ================================================== -->
-<h1 id="titulo-testimonio"> Lo que dicen nuestros clientes </h1>
+
 <section class="s-testimonials">
-    
+    <h1 id="titulo-testimonio"> Lo que dicen nuestros clientes </h1>
     <div class="testimonials__icon" data-aos="fade-up"></div>
 
     <div class="row testimonials narrow">

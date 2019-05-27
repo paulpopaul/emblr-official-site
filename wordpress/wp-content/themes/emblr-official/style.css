@@ -3886,6 +3886,8 @@ html.no-csstransitions .home-content__main {
   font-size:3.2rem;
   color:#fff;
   letter-spacing: 0.1rem;
+  padding-top:6rem;
+  margin-top:0;
 }
 
 
@@ -3894,7 +3896,8 @@ html.no-csstransitions .home-content__main {
   padding-bottom: 21rem;
   text-align: center;
   position: relative;
-  background-image: url(images/hero-bg.jpg);
+  background: #000;
+  /*background-image: url(images/hero-bg.jpg);*/
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -3908,7 +3911,7 @@ html.no-csstransitions .home-content__main {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: .9;
+  opacity: 0;
   background-color: #111111;
 }
 
@@ -3969,7 +3972,7 @@ html.no-csstransitions .home-content__main {
   margin-bottom: 5px;
 }
 
-.testimonials__slider .slick-dots li { border:1px solid red;
+.testimonials__slider .slick-dots li { 
   height: auto;
   display: inline-block;
   padding: 0;
@@ -4005,6 +4008,9 @@ html.no-csstransitions .home-content__main {
   position: relative;
 }
 
+.testimonials__slider #text{
+  display:none;
+}
 
 .testimonials__slider .slick-dots li.slick-active button::before {
   content: "";
@@ -4365,6 +4371,9 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
   position: relative;
+  padding-left: 200px;
+  padding-right: 200px;
+
 }
 
 footer .fl-col-group{
@@ -4373,14 +4382,12 @@ footer .fl-col-group{
 
 footer .row{
   max-width: 1200px;
-  margin-left: 250px;
-  margin-right: 250px;
 }
 
 
 footer .fl-col{
   padding:0;
-  padding-right: 30px;
+  /*margin-right: 10px;*/
 }
 
 footer .col-full{
@@ -4440,6 +4447,8 @@ footer .fl-col-small{
   width: 25%;
   text-align: left;
   font-size: 16px; 
+  padding-right:10px;
+  padding-left:5px;
 }
 
 hr {
@@ -4502,6 +4511,7 @@ footer .vineta-sitio a{
 footer .vineta-sitio{
   text-align: left; 
   line-height: 25px;
+  margin-left: 20px;
 }
 
 #entradaCorreo{
