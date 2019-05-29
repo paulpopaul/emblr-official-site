@@ -3914,9 +3914,14 @@ html.no-csstransitions .home-content__main {
   background-color: #111111;
 }
 
+.section-page{
+  padding-left:12%;
+  padding-right: 12%;
+}
+
 .s-testimonials .draggable{
-  margin-left: 150px;
-    margin-right: 150px;
+  /*margin-left: 12%;
+  margin-right: 12%;*/
 }
 .testimonials__icon {
   margin-top: 33px;
@@ -3933,8 +3938,6 @@ html.no-csstransitions .home-content__main {
   left: 50%;
   margin-left: -2.25rem;
 }
-
-
 
 .testimonials__slider {
   font-size: 18px;
@@ -4097,8 +4100,8 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width:1000px) {
   .s-testimonials {
-    padding-top: 15rem;
-    padding-bottom: 19.2rem;
+    /*padding-top: 15rem;*/
+    /*padding-bottom: 19.2rem;*/
   }
 
 }
@@ -4139,7 +4142,7 @@ html.no-csstransitions .home-content__main {
     height: 3.3rem;
     width: 3.3rem;
     margin-left: -1.65rem;
-    top: 9rem;
+    /*top: 9rem;*/
   }
 
   .testimonials__slider {
