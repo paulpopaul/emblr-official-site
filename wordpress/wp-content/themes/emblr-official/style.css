@@ -132,6 +132,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  margin-top: 6rem;
   margin-bottom: 1.8rem;
 }
 
@@ -245,6 +246,7 @@ strong,
 b {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
+  color:#737171;
 }
 
 small {
@@ -1445,22 +1447,6 @@ body.menu-is-open {
 
 .target-section {
   transition: filter 0.2s ease-in-out;
-}
-
-.section-page {
-  padding-left: 12%;
-  padding-right: 12%;
-
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.section-page > h1 {
-  text-align: center;
-  font-size: 48px;
-  color: #fff;
-  margin-top:0;
-  font-weight: 800;
 }
 
 .spin {
@@ -3896,7 +3882,18 @@ html.no-csstransitions .home-content__main {
  * # testimonials
  *
  * ------------------------------------------------------------------- */
+#titulo-testimonio {
+  text-align: center;
+  font-size: 48px;
+  color:#fff;
+  margin-top:0;
+  font-weight: 800;
+}
+
+
 .s-testimonials {
+  padding-top: 100px;
+  padding-bottom: 100px;
   text-align: center;
   position: relative;
   background: #000;
@@ -3916,6 +3913,16 @@ html.no-csstransitions .home-content__main {
   height: 100%;
   opacity: 0;
   background-color: #111111;
+}
+
+.s-testimonials h1{
+  margin-top: 0;
+  margin-bottom: 0; 
+}
+
+.section-page{
+  padding-left:12%;
+  padding-right: 12%;
 }
 
 .s-testimonials .draggable{
@@ -4092,9 +4099,16 @@ html.no-csstransitions .home-content__main {
  * testimonials
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:1200px) {
-  .testimonials__slider {
-    font-size: 3.3rem;
+  /*.testimonials__slider {
+    font-size: 3rem !important;
+  }*/
+  .testimonials__slider .slick-dots{
+    height: 34px;
   }
+
+  /*.section-page > h1{
+  font-size:52px !important;
+}*/
 
 }
 
@@ -4106,25 +4120,15 @@ html.no-csstransitions .home-content__main {
 
 }
 
-@media only screen and (max-width:900px) {
-  .testimonials__icon {
-    height: 3.9rem;
-    width: 3.9rem;
-    margin-left: -1.95rem;
-  }
-
-  .testimonials__slider {
-    font-size: 3rem;
-  }
-
-}
-
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:1024px) {
   .testimonials__icon {
     height: 3.6rem;
     width: 3.6rem;
     margin-left: -1.8rem;
   }
+  .section-page > h1{
+  font-size:52px !important;
+}
 
   .testimonials__slider {
     font-size: 2.7rem;
@@ -4132,21 +4136,41 @@ html.no-csstransitions .home-content__main {
 
 }
 
-@media only screen and (max-width:600px) {
+/* Resolucion para bajar tamaño texto testimonials, y solucionar corte de botones slide testimonials */
+@media only screen and (max-width:970px) {
+  .s-testimonials {
+    padding-top: 7.8rem;
+    padding-bottom: 15rem;
+  }
+.testimonials__slider{
+  font-size: 3rem !important;
+}
+  .testimonials__slider .slick-dots{
+    height: 32px;
+  }
+
+  .testimonials__icon {
+    height: 3.9rem;
+    width: 3.9rem;
+    margin-left: -1.95rem;
+  }
+}
+
+
+@media only screen and (max-width:768px) {
   .s-testimonials {
     padding-top: 7.8rem;
     padding-bottom: 15rem;
   }
 
+  .testimonials__slider {
+    font-size: 2.3rem !important;
+  }
   .testimonials__icon {
     height: 3.3rem;
     width: 3.3rem;
     margin-left: -1.65rem;
     /*top: 9rem;*/
-  }
-
-  .testimonials__slider {
-    font-size: 2.5rem;
   }
 
   .testimonials__author {
@@ -4156,21 +4180,42 @@ html.no-csstransitions .home-content__main {
   .testimonials__author span {
     font-size: 1.4rem;
   }
-
-}
-
-@media only screen and (max-width:400px) {
-  .testimonials__slider {
-    font-size: 2.1rem;
+  .section-page > h1{
+  font-size:46px !important;
   }
 
 }
 
-@media only screen and (max-width:350px) {
-  .testimonials__slider {
-    font-size: 1.9rem;
+
+/* Iphone 678+ / 328 */
+@media only screen and (max-width:414px) {
+  .section-page{
+    padding-left:8% !important;
+    padding-right: 8% !important;
+  }
+   .section-page > h1{
+    font-size:40px !important;
   }
 
+}
+
+
+/* iPhone 6,7,8 / 303 */
+@media only screen and (max-width:375px) {
+  .testimonials__slider {
+    font-size: 2.1rem !important;
+  }
+  .section-page > h1{
+    font-size:30px !important;
+  }
+
+}
+
+/* 320x568 / iPhone 4,5,5c / 165j */
+@media only screen and (max-width:320px) {
+  .testimonials__slider {
+    font-size: 1.9rem !important;
+  }
 }
 
 
@@ -4216,11 +4261,13 @@ html.no-csstransitions .home-content__main {
   background-color: #000;
 }
 
-.terminal__window--highlight {
-  color: #51e05d;
+.s-contact .subhead {
+  color: #2a1538;
 }
 
-.terminal__circle {
+.s-contact .section-header,
+.s-contact .contact-main {
+  z-index: 3;
   position: relative;
   display: inline-block;
   width: 15px;
@@ -4454,7 +4501,8 @@ html.no-csstransitions .home-content__main {
 footer {
   padding-top: 140px;
   background-color: #000000;
-  border-top: 1px solid #1a1a1a;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
   position: relative;
 
   padding-left: 165px;
