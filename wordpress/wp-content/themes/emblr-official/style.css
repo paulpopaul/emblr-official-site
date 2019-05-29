@@ -4399,8 +4399,7 @@ html.no-csstransitions .home-content__main {
 footer {
   padding-top: 140px;
   background-color: #000000;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  text-align: center;
+  border-top: 1px solid #1a1a1a;
   position: relative;
 
   padding-left: 165px;
