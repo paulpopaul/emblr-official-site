@@ -4064,6 +4064,24 @@ html.no-csstransitions .home-content__main {
   font-weight: bold;
   /* letter-spacing: 0; */
 }
+
+.clientes-logo {
+  width: 33.3%;
+  float: left;
+  text-align: center;
+}
+
+.clientes-logo img {
+  width: 100px;
+  height: 100px;
+}
+
+#testimonials-clientes-logo {
+  overflow: auto;
+  background: #000;
+  border-top: 1px solid #1a1a1a;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /* ------------------------------------------------------------------- 
