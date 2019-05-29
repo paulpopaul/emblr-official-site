@@ -4095,6 +4095,9 @@ html.no-csstransitions .home-content__main {
   .testimonials__slider {
     font-size: 3.3rem;
   }
+  .testimonials__slider .slick-dots{
+    height: 34px;
+  }
 
 }
 
@@ -4106,7 +4109,37 @@ html.no-csstransitions .home-content__main {
 
 }
 
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:1024px) {
+  .testimonials__icon {
+    height: 3.6rem;
+    width: 3.6rem;
+    margin-left: -1.8rem;
+  }
+  #titulo-testimonio{
+  font-size:57px !important;
+}
+  .testimonials__slider {
+    font-size: 2.7rem;
+  }
+
+}
+
+/* Resolucion para bajar tamaño texto testimonials, y solucionar corte de botones slide testimonials */
+@media only screen and (max-width:970px) {
+  .s-testimonials {
+    padding-top: 7.8rem;
+    padding-bottom: 15rem;
+  }
+.testimonials__slider{
+  font-size: 3rem;
+}
+  .testimonials__slider .slick-dots{
+    height: 32px;
+  }
+#titulo-testimonio{
+  font-size:52px !important;
+}
+
   .testimonials__icon {
     height: 3.9rem;
     width: 3.9rem;
@@ -4119,20 +4152,8 @@ html.no-csstransitions .home-content__main {
 
 }
 
-@media only screen and (max-width:800px) {
-  .testimonials__icon {
-    height: 3.6rem;
-    width: 3.6rem;
-    margin-left: -1.8rem;
-  }
 
-  .testimonials__slider {
-    font-size: 2.7rem;
-  }
-
-}
-
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:768px) {
   .s-testimonials {
     padding-top: 7.8rem;
     padding-bottom: 15rem;
@@ -4156,19 +4177,48 @@ html.no-csstransitions .home-content__main {
   .testimonials__author span {
     font-size: 1.4rem;
   }
-
-}
-
-@media only screen and (max-width:400px) {
-  .testimonials__slider {
-    font-size: 2.1rem;
+  #titulo-testimonio{
+  font-size:45px;
   }
 
 }
 
-@media only screen and (max-width:350px) {
+
+/* Iphone 678+ / 328 */
+@media only screen and (max-width:414px) {
+  .section-page{
+    padding-left:8% !important;
+    padding-right: 8% !important;
+  }
+   #titulo-testimonio{
+    font-size:40px;
+  }
+}
+
+
+/* iPhone 6,7,8 / 303 */
+@media only screen and (max-width:375px) {
+  .testimonials__slider {
+    font-size: 2.1rem;
+  }
+  .section-page{
+    padding-left:8% !important;
+    padding-right: 8% !important;
+  }
+   #titulo-testimonio{
+    font-size:40px;
+  }
+
+
+}
+
+/* 320x568 / iPhone 4,5,5c / 165j */
+@media only screen and (max-width:320px) {
   .testimonials__slider {
     font-size: 1.9rem;
+  }
+  #titulo-testimonio{
+    font-size:36px;
   }
 
 }
@@ -4510,7 +4560,8 @@ html.no-csstransitions .home-content__main {
 footer {
   padding-top: 140px;
   background-color: #000000;
-  border-top: 1px solid #1a1a1a;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
   position: relative;
 
   padding-left: 165px;
