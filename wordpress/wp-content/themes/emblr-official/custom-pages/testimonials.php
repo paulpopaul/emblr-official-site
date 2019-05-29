@@ -1,7 +1,7 @@
 <!-- testimonies
 ================================================== -->
 <section class="s-testimonials section-page">
-    <h1 id="titulo-testimonio"> Lo que dicen nuestros clientes </h1>
+    <h1> Lo que dicen nuestros clientes </h1>
     <div class="testimonials__icon" data-aos="fade-up"></div>
 
     <div class="row testimonials narrow">

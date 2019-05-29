@@ -1,49 +1,26 @@
 <!-- contact
 ================================================== -->
-<section id="contact" class="s-contact target-section">
+<section id="contact" class="s-contact target-section section-page">
+    <h1>Contáctanos</h1>
 
-        <div class="grid-overlay">
-            <div></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eaque iure harum exercitationem culpa modi alias ducimus, soluta maiores voluptatibus neque, explicabo aperiam cupiditate non laboriosam ipsam? Nostrum, architecto, eaque.</p>
+
+    <div class="terminal">
+        <div class="terminal__task-bar">
+          <span class="terminal__circle terminal__circle--red"></span>
+          <span class="terminal__circle terminal__circle--yellow"></span>
+          <span class="terminal__circle terminal__circle--green"></span>
         </div>
 
-    <div class="row section-header narrow" data-aos="fade-up">
-        <div class="col-full">
-            <h3 class="subhead">Keep In Touch</h3>
-            <h1 class="display-1">Feel free to contact us for any <br> project idea or collaboration</h1>
-        </div>
-    </div> <!-- end section-header -->
+        <div class="terminal__window">
+            <p class="terminal__prompt">$ <span class="terminal__prompt--typing"><span class="cover cover--gimme-dev"></span>gimme frontend dev</span></p>
 
-    <div class="row contact-main" data-aos="fade-up">
-        <div class="col-full">
-            <p class="contact-email">
-                <a href="mailto:#0">sayhello@sublime.com</a>
-            </p>
-            <p class="contact-address">
-            1600 Amphitheatre Parkway <br>
-            Mountain View, CA, 94043 US 
-            </p>
-            <p class="contact-numbers">
-            +1 (917) 123 456 &nbsp; +1 (917) 333 987
-            </p>
+            <p class="terminal__prompt terminal__prompt--checkout">checkout Tobias Weiß: <span class="terminal__window--highlight"><a href="https://github.com/vice2000" target="_blank">https://github.com/vice2000</a></span></p>
 
-            <ul class="contact-social">
-                <li>
-                    <a href="#0"><i class="fab fa-facebook"></i></a>
-                </li>
-                <li>
-                    <a href="#0"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li>
-                    <a href="#0"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li>
-                    <a href="#0"><i class="fab fa-behance"></i></a>
-                </li>
-                <li>
-                    <a href="#0"><i class="fab fa-dribbble"></i></a>
-                </li>
-            </ul>
+            <p class="terminal__prompt terminal__prompt--show-contact">$ <span class="terminal__prompt--typing"><span class="cover cover--show-contact"></span>show direct contact</span></p>
+
+            <p class="terminal__prompt terminal__prompt--mail">mail:
+            <span class="terminal__window--highlight"><a href="mailto:sayhi@tobias-weiss.info">sayhi@tobias-weiss.info</a></span></p>
         </div>
     </div>
-
 </section> <!-- end s-contact -->

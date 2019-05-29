@@ -132,7 +132,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-  margin-top: 6rem;
   margin-bottom: 1.8rem;
 }
 
@@ -1446,6 +1445,22 @@ body.menu-is-open {
 
 .target-section {
   transition: filter 0.2s ease-in-out;
+}
+
+.section-page {
+  padding-left: 12%;
+  padding-right: 12%;
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section-page > h1 {
+  text-align: center;
+  font-size: 48px;
+  color: #fff;
+  margin-top:0;
+  font-weight: 800;
 }
 
 .spin {
@@ -3881,18 +3896,7 @@ html.no-csstransitions .home-content__main {
  * # testimonials
  *
  * ------------------------------------------------------------------- */
-#titulo-testimonio {
-  text-align: center;
-  font-size: 48px;
-  color:#fff;
-  margin-top:0;
-  font-weight: 800;
-}
-
-
 .s-testimonials {
-  padding-top: 100px;
-  padding-bottom: 100px;
   text-align: center;
   position: relative;
   background: #000;
@@ -3912,11 +3916,6 @@ html.no-csstransitions .home-content__main {
   height: 100%;
   opacity: 0;
   background-color: #111111;
-}
-
-.section-page{
-  padding-left:12%;
-  padding-right: 12%;
 }
 
 .s-testimonials .draggable{
@@ -4180,95 +4179,207 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-contact {
-  padding-top: 16.2rem;
-  padding-bottom: 21rem;
-  background-color: #5e3080;
+  background-color: #232323;
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
   position: relative;
 }
 
-.s-contact a {
-  color: #FFFFFF;
+.terminal {
+  font-family: "Source Code Pro", "Monaco", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 1.125rem;
+  text-align: left;
+  line-height: 1.5rem;
+  position: relative;
+  margin: 40px auto;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
-.s-contact .grid-overlay {
-  border-right: 1px solid rgba(255, 255, 255, 0.12);
-  border-left: 1px solid rgba(255, 255, 255, 0.12);
-  z-index: 2;
+@media screen and (min-width: 30rem) {
+  .terminal {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
 }
 
-.s-contact .grid-overlay > div,
-.s-contact .grid-overlay::before,
-.s-contact .grid-overlay::after {
-  background-color: rgba(255, 255, 255, 0.12);
+@media screen and (min-width: 60.5rem) {
+  .terminal {
+    max-width: 60.5rem;
+  }
 }
 
-.s-contact .subhead {
-  color: #2a1538;
+.terminal__task-bar {
+  height: 2rem;
+  padding-left: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  background-color: #efefef;
 }
 
-.s-contact .section-header,
-.s-contact .contact-main {
-  z-index: 3;
+@media screen and (max-width: 30rem) {
+  .terminal__task-bar {
+    padding-top: 0.5rem;
+  }
+}
+
+.terminal__window {
+  height: 17.5rem;
+  padding: 1.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  background-color: #000;
+}
+
+.terminal__window--highlight {
+  color: #51e05d;
+}
+
+.terminal__circle {
+  position: relative;
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-right: -0.1875rem;
+  border-radius: 50%;
+}
+
+.terminal__circle--red {
+  background-color: #fb574e;
+}
+
+.terminal__circle--yellow {
+  background-color: #fbbd2e;
+}
+
+.terminal__circle--green {
+  background-color: #51e05d;
+}
+
+.terminal__prompt--checkout, .terminal__prompt--show-contact, .terminal__prompt--mail {
+  opacity: 0;
+}
+
+.terminal__prompt--checkout {
+  animation: show-checkout 16s infinite;
+}
+
+.terminal__prompt--show-contact {
+  animation: show-show-contact 16s infinite;
+}
+
+.terminal__prompt--mail {
+  animation: show-mail 16s infinite;
+}
+
+.terminal__prompt--typing {
   position: relative;
 }
 
-.contact-main {
-  font-size: 3.3rem;
-  line-height: 1.636;
-  margin-top: 9rem;
-}
-
-.contact-main [class*="contact-"] {
-  margin-bottom: 0;
-}
-
-.contact-main .contact-email {
-  margin-bottom: 3.6rem;
-}
-
-.contact-email a {
-  font-size: 9rem;
-  font-weight: 700;
-  line-height: 1.2;
-  color: #FFFFFF;
-  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
-}
-
-.contact-email a:hover,
-.contact-email a:focus {
-  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
-}
-
-/* ------------------------------------------------------------------- 
- * ## contact social
- * ------------------------------------------------------------------- */
-.contact-social {
-  list-style: none;
+.terminal__prompt--typing .cover {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
   display: inline-block;
-  margin: 4.2rem 0 0 0;
-  font-size: 4.2rem;
+  box-sizing: border-box;
+  height: 100%;
+  background: #000;
+  border-left: 1px solid #fff;
 }
 
-.contact-social li {
-  margin-right: 15px;
-  padding-left: 0;
-  display: inline-block;
+.terminal__prompt--typing .cover--gimme-dev {
+  animation: typing-gimme-dev 16s steps(19, end) infinite;
 }
 
-.contact-social li a {
-  color: white;
-  border: none !important;
+.terminal__prompt--typing .cover--show-contact {
+  animation: typing-show-contact 16s steps(19, end) infinite;
 }
 
-.contact-social li a:hover,
-.contact-social li a:focus {
-  color: #FFFFFF;
+@keyframes typing-gimme-dev {
+  0% {
+    width: 100%;
+    opacity: 1;
+  }
+  12% {
+    width: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  16% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-.contact-social li:last-child {
-  margin: 0;
+@keyframes typing-show-contact {
+  0%,
+  35% {
+    width: 100%;
+  }
+  47%,
+  100% {
+    width: 0;
+  }
+  48% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes show-checkout {
+  0%,
+  20% {
+    opacity: 0;
+  }
+  25%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show-mail {
+  0%,
+  55% {
+    opacity: 0;
+  }
+  60%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show-uploaded {
+  0%,
+  63% {
+    opacity: 0;
+  }
+  68%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show-show-contact {
+  0%,
+  28% {
+    opacity: 0;
+  }
+  32%,
+  100% {
+    opacity: 1;
+  }
 }
 
 /* ------------------------------------------------------------------- 
