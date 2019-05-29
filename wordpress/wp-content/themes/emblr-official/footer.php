@@ -1,4 +1,4 @@
-   <footer>
+    <footer>
         <div class="row">
             <div class="col-full ss-copyright">
                 <div class="fl-col-group textos" id="grupo-textos">
@@ -54,7 +54,7 @@
                     </div>
 
                     <!-- Inicio suscríbete -->
-                    <div class="fl-col  fl-col-small">
+                    <div class="fl-col fl-col-small">
                          <div class="suscribete">
                             <hr> <h1>Suscríbete</h1>
 
@@ -67,7 +67,8 @@
                         </div>
                     </div>
                     <!-- Final Suscríbete -->
-                </div> 
+                </div>
+            </div>
 
             <!-- Inicio Footer Final -->
             <div class="fl-col-group footer-bottom">
