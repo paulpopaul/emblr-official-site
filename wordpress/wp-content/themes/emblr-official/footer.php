@@ -5,13 +5,14 @@
 
                     <!-- Inicio Sobre Nosotros -->
                     <div class="fl-col  fl-col-small">
-                        <div class="footer-sobrenosotros">
+                        <div class="sobre-nosotros">
                             <h1><span>Sobre Nosotros</span></h1>
-                            <p align="left">
-                                Ensambler cree en tus sueños, y es por eso que queremos brindarte la mejor asesoría e infraestructura del mercado, aquellos que te permitan hacerlo realidad.
-                            </p>
                             <p>
-                                <span><a href="sitioleermás"> Leer más...</a></span>
+                                <strong>Ensambler</strong> cree en tus sueños, y es por eso que queremos brindarte la <strong>mejor asesoría e infraestructura del mercado</strong>, aquellos que te permitan hacerlos realidad.
+                            </p>
+
+                            <p>
+                                <span><a href="#"> Leer más ...</a></span>
                             </p>
                         </div>
                     </div>
@@ -19,25 +20,35 @@
 
                     <!-- Inicio Sitio -->
                     <div class="fl-col fl-col-small">
-                        <div class="vineta-sitio">
-                           <h1><span>Sitio</span></h1>
-                            <a href=""> Inicio </a></br>
-                            <a href=""> Sobre Nosotros</a></br>
-                            <a href=""> Servicios</a></br>
-                            <a href="">Portafolio</a></br>
-                            <a href="">Contacto</a></br>
+                        <div class="sitio">
+                           <h1>Sitio</h1>
+
+                            <a href="#">Inicio </a>
+                            <a href="#">Sobre Nosotros</a>
+                            <a href="#">Servicios</a>
+                            <a href="#">Portafolio</a>
+                            <a href="#">Contacto</a>
                         </div>
                     </div>
 
                     <!-- Inicio Contacto -->
                     <div class="fl-col fl-col-small">
-                        <div class="textoContacto">
-                            <hr>
-                            <h1><span ><span>Contacto</span></span></h1>
-                            <p align="left"> Telefono: +569 99887744 
-                                <br> Email: Info@ensambler.cl
-                                <br> Direccion: #1
-                                <br> Direccion: #2
+                        <div class="contacto">
+                            <hr> <h1>Contacto</h1>
+                            
+                            <p>
+                                <strong>Teléfono</strong> <span>·</span> <br class="br-hidden"> +56 9 9988 7744 <br>
+                                <strong>Email</strong> <span>·</span> <br class="br-hidden"> hola@ensambler.cl
+                            </p>
+
+                            <p>
+                                <strong>Dirección · Santiago</strong> <br>
+                                Av. Vicuña Mackenna #881, Santiago Centro
+                            </p>
+
+                            <p>
+                                <strong>Dirección · Valdivia</strong> <br>
+                                Valdivia
                             </p>
                         </div>
                     </div>
@@ -45,11 +56,12 @@
                     <!-- Inicio suscríbete -->
                     <div class="fl-col  fl-col-small">
                          <div class="suscribete">
-                            <hr>
-                            <h1><span>Suscríbete</span></h1>
-                            <p align="left"> Recibe noticias, novedades y más...</p>
+                            <hr> <h1>Suscríbete</h1>
+
+                            <p> Recibe noticias, novedades y más.</p>
+
                             <div class="input-group">
-                                <input id="entradaCorreo" placeholder="Ingresa tu email" type="text">
+                                <input id="suscripcion" placeholder="Ingresa tu email" type="text">
                                 <button>Enviar</button>
                             </div>
                         </div>
@@ -58,11 +70,12 @@
                 </div> 
 
             <!-- Inicio Footer Final -->
-            <div class="fl-col-group footergeneral">
+            <div class="fl-col-group footer-bottom">
                 <div class="fl-col-group">
                     <div class="fl-rich-text marca">
                         <p>
-                            <span>2019</span><span>ENSAMBLER</span><br>
+                            <span>2019</span><span>&nbsp;ENSAMBLER</span>
+                            <br>
                             <span>TODOS LOS DERECHOS RESERVADOS</span>
                         </p>
                     </div>

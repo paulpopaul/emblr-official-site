@@ -3881,9 +3881,9 @@ html.no-csstransitions .home-content__main {
  * # testimonials
  *
  * ------------------------------------------------------------------- */
-#titulo-testimonio{
+#titulo-testimonio {
   text-align: center;
-  font-size:3.2rem;
+  font-size: 48px;
   color:#fff;
   margin-top:0;
   font-weight: 800;
@@ -3923,9 +3923,10 @@ html.no-csstransitions .home-content__main {
   /*margin-left: 12%;
   margin-right: 12%;*/
 }
+
 .testimonials__icon {
   margin-top: 33px;
-    margin-bottom: 33px;
+  margin-bottom: 33px;
   height: 4.5rem;
   width: 4.5rem;
   background-color: transparent;
@@ -4397,40 +4398,44 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 footer {
   padding-top: 140px;
-  color: rgba(255, 255, 255, 0.6);
   background-color: #000000;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
   position: relative;
-  padding-left: 157px;
-  padding-right: 157px;
 
+  padding-left: 165px;
+  padding-right: 165px;
+
+  color: #666;
 }
 
-footer .fl-col-group{
+footer .fl-col-group {
   padding:0;
 }
 
-footer .row{
+footer .row {
   max-width: 1200px;
 }
 
-
-footer .fl-col{
-  padding:0;
-  /*margin-right: 10px;*/
+footer .fl-col {
+  padding: 0;
 }
 
-footer .col-full{
+footer .col-full {
   margin-bottom: 170px;
 }
 
-footer .col-full{
-  padding:0px;
+footer .col-full {
+  padding: 0px;
 }
 
 footer a {
   color: #FFFFFF;
+}
+
+footer a:link:hover,
+footer .social i:hover {
+  color: #fff !important;
 }
 
 footer .social{
@@ -4441,45 +4446,61 @@ footer .social i {
   color: #1FBDA2 !important;
   margin-right: 14px;
   font-size: 24px;
+  transition: all 0.3s ease-in-out;
+  webkit-transition: all 0.3s ease-in-out;
+
 }
 
-footer .marca{
+footer .marca span {
   font-size: 14px;
-  float:left;
-  text-align:left;
+  float: left;
+  text-align: left;
 }
-footer .marca span:first-child{
+
+footer .marca span {
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+footer .marca span:first-child {
   color: #FFFFFF;
-  margin-right: 0.2px;
-  font-weight: 800;
-  letter-spacing: 2px;
-}
-footer .marca span:nth-child(2){
-  color: #1FBDA2;;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
-footer .marca span:last-child{
-  font-size: 14px;
-  letter-spacing: 2px;
-  font-weight: 800;
 }
 
-footer .footergeneral{
+footer .marca span:nth-child(2) {
+  color: #1FBDA2;
+}
+
+footer .marca span:last-child {
+  
+}
+
+footer .footer-bottom {
   width: 75%;
 }
 
-footer .suscribete p{
-  font-size: 16px; 
-  margin-bottom: 1rem;
+footer .suscribete {
+  /**/
 }
 
-footer .fl-col-small{
+footer .fl-col-small {
   width: 25%;
+  /*font-size: 16px; */
+  padding-right: 40px;
   text-align: left;
-  font-size: 16px; 
-  padding-right:10px;
-  padding-left:5px;
+}
+
+/* sitio links */
+footer .fl-col:nth-child(2) {
+  text-align: center;
+  padding-right: 0;
+}
+
+footer .fl-col:first-child {
+  padding-right: 0;
+}
+
+footer .fl-col-small:last-child {
+  padding-right: 0;
 }
 
 hr {
@@ -4488,80 +4509,111 @@ hr {
   width: 8px;
   background-color: #1FBDA2;
   /* margin: 0.8rem 0rem 0rem; */
-  margin-top: 16px;
-  margin-right: 4px;
+  margin-top: 6px;
+  margin-right: 8px;
 }
 
-footer .fl-col-small span:first-child{
+footer .fl-col-small h1 {
   color: #ffffff;
   font-weight: 800;
-  font-size:28px;
+  font-size: 28px;
   letter-spacing: 0.1px;
 }
 
-footer .footer-sobrenosotros span:first-child{
+footer .sobre-nosotros span:first-child {
   font-weight: bold;
-  font-size:28px;
+  font-size: 28px;
   letter-spacing: 0.1px;
 } 
 
-footer .footer-sobrenosotros a{
+footer .sobre-nosotros a {
   font-weight: bold;
   font-size:16px;
   color:#1FBDA2 !important;
+}
+
+footer .contacto p {
+  margin-top: 20px;
+}
+
+footer .contacto .br-hidden {
+  display: none;
+}
+
+footer .fl-col h1 {
+  margin-top: 0px;
 } 
 
-footer .fl-col h1{
-  margin-top:0px;
+footer .fl-col span {
+  margin-bottom: 0px;
 } 
 
-footer .fl-col span{
-  margin-bottom:0px;
-} 
-
-#grupo-textos{
+#grupo-textos {
   margin-bottom: 170px;
 }
-.input-group button {
-  margin:0px;
-  margin-left: -1.7px;
-  line-height: 3.12rem;
-  height: 3rem;
-  width: 45%;
-  font-size: 1rem;
-  background-color: #1FBDA2; /* Green background */
-  border: 0; /* Green border */
-  color: white; /* White text */
-  padding: 0px 0px; /* Some padding */
+
+.input-group {
+  margin-top: 30px;
 }
 
-footer .vineta-sitio a{
-  color:#1FBDA2;
-  font-weight: bold;
+.input-group button {
+  margin: 0px;
+  line-height: 3.8rem;
+  height: 40px;
+  width: 90px;
+  font-size: 13px;
+  font-weight: 900 !important;
+  letter-spacing: 2px;
+  background-color: #1FBDA2;
+  border: 0;
+  color: white;
+  text-align: center;
+  
+  padding: 3px 0 3px 0 !important;
 }
-footer .vineta-sitio{
+
+.input-group button:hover {
+  background: #29CEAE !important;
+}
+
+footer .sitio a {
+  color: #1FBDA2;
+  font-weight: bold;
+  margin-top: 6px;
+  display: block;
+}
+
+footer .sitio {
   text-align: left; 
   line-height: 25px;
-  margin-left: 20px;
+  margin: 0 auto 0 auto !important;
+  display: inline-block;
 }
 
-#entradaCorreo{
+#suscripcion {
     margin:0px;
-    margin-right:-3px;
-    display:inline;
-    width: 55% !important;
-    height: 3rem;
-    border: 0.07rem solid #7f7f80;
+    margin-right: -4px;
+    display: inline;
+    width: calc(100% - 90px - 3px);
+    height: 40px;
+    border: 1px solid #1a1a1a;
+    border-right: none;
     padding: 1rem 1rem;
-    color: rgba(134, 134, 134, 0.7);
-    font-size: 1.1rem;
+    color: #fff;
+    font-size: 16px;
+
+    position: relative;
+    bottom: 1px;
+}
+
+#suscripcion::placeholder {
+  color: #666;
 }
 
 /* ------------------------------------------------------------------- 
  * ## copyright
  * ------------------------------------------------------------------- */
 .ss-copyright span {
-  font-size: 16px;
   display: inline-block;
 }
 
@@ -4624,7 +4676,59 @@ footer .vineta-sitio{
  * responsive:
  * footer
  * ------------------------------------------------------------------- */
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:1366px) {
+  footer .contacto p span {
+    display: none;
+  }
+
+  footer .contacto .br-hidden {
+    display: block;
+  }
+}
+
+@media only screen and (max-width:1200px) {
+  footer {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+}
+
+@media only screen and (max-width:1024px) {
+  footer {
+    padding: 140px 50px 170px 50px;
+  }
+
+  footer .fl-col {
+    float: none;
+    width: 100%;
+
+    margin-top: 70px;
+  }
+
+  footer .fl-col:first-child {
+    margin-top: 0;
+  }
+
+  footer .fl-col-small:nth-child(2) {
+    text-align: left;
+  }
+
+  #suscripcion {
+    width: calc(50% - 90px - 3px);
+  }
+}
+
+
+
+@media only screen and (max-width:640px) {
+  footer {
+    padding: 140px 0 170px 0;
+  }
+
+  #suscripcion {
+    width: calc(100% - 90px - 3px);
+  }
+
   .ss-copyright span {
     display: block;
   }

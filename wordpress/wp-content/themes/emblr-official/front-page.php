@@ -99,7 +99,7 @@
 
     <? require_once("custom-pages/testimonials.php") ?>
 
-        <? require_once("sub-sections/lo-que-dicen-nuestros-clientes.php") ?>
+    <!-- --> <? require_once("sub-sections/lo-que-dicen-nuestros-clientes.php") ?>
 
     <? #require_once("custom-pages/contacto.php") ?>
 
