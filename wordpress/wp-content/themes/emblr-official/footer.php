@@ -1,4 +1,4 @@
-    <footer>
+    <footer class="target-section">
         <div class="row">
             <div class="col-full ss-copyright">
                 <div class="fl-col-group textos" id="grupo-textos">

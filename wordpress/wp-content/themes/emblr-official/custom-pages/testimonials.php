@@ -1,6 +1,6 @@
 <!-- testimonies
 ================================================== -->
-<section class="s-testimonials section-page">
+<section class="s-testimonials target-section section-page">
     <h1> Lo que dicen nuestros clientes </h1>
     <div class="testimonials__icon" data-aos="fade-up"></div>
 
