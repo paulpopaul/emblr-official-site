@@ -7,13 +7,12 @@
                     <div class="fl-col  fl-col-small">
                         <div class="sobre-nosotros">
                             <h1><span>Sobre Nosotros</span></h1>
+
                             <p>
                                 <strong>Ensambler</strong> cree en tus sueños, y es por eso que queremos brindarte la <strong>mejor asesoría e infraestructura del mercado</strong>, aquellos que te permitan hacerlos realidad.
                             </p>
 
-                            <p>
-                                <span><a href="#"> Leer más ...</a></span>
-                            </p>
+                            <a class="read-more" href="#"> Leer más ...</a>
                         </div>
                     </div>
                     <!-- Final sobre nosotros -->
@@ -37,7 +36,7 @@
                             <hr> <h1>Contacto</h1>
                             
                             <p>
-                                <strong>Teléfono</strong> <span>·</span> <br class="br-hidden"> +56 9 9988 7744 <br>
+                                <strong>Teléfono</strong> <span>·</span> <br class="br-hidden"> 56 9 9988 7744 <br>
                                 <strong>Email</strong> <span>·</span> <br class="br-hidden"> hola@ensambler.cl
                             </p>
 

@@ -4405,12 +4405,15 @@ footer {
 
   padding-left: 165px;
   padding-right: 165px;
+}
 
+footer, #suscripcion {
+  font-size: 16px;
   color: #666;
 }
 
 footer .fl-col-group {
-  padding:0;
+  padding: 0;
 }
 
 footer .row {
@@ -4438,7 +4441,7 @@ footer .social i:hover {
   color: #fff !important;
 }
 
-footer .social{
+footer .social {
   padding: 0 0px;
 }
 
@@ -4522,18 +4525,21 @@ footer .fl-col-small h1 {
 
 footer .sobre-nosotros span:first-child {
   font-weight: bold;
-  font-size: 28px;
   letter-spacing: 0.1px;
 } 
 
 footer .sobre-nosotros a {
   font-weight: bold;
-  font-size:16px;
   color:#1FBDA2 !important;
 }
 
 footer .contacto p {
   margin-top: 20px;
+}
+
+footer .sobre-nosotros .read-more {
+  margin-top: 20px;
+  display: block;
 }
 
 footer .contacto .br-hidden {
@@ -4600,7 +4606,6 @@ footer .sitio {
     border-right: none;
     padding: 1rem 1rem;
     color: #fff;
-    font-size: 16px;
 
     position: relative;
     bottom: 1px;
@@ -4676,7 +4681,7 @@ footer .sitio {
  * responsive:
  * footer
  * ------------------------------------------------------------------- */
-@media only screen and (max-width:1366px) {
+@media only screen and (max-width:1280px) {
   footer .contacto p span {
     display: none;
   }
