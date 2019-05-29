@@ -31,7 +31,9 @@
  *
  * ------------------------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Nunito+Sans:300,400,400i,600,600i,700,700i");
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500');
+/* Font para Terminal */
+@import url("https://fonts.googleapis.com/css?family=Anonymous+Pro");
+/*@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500');*/
 @import url("micons/micons.css");
 
 

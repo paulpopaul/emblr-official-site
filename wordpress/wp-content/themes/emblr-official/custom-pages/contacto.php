@@ -12,15 +12,14 @@
           <span class="terminal__circle terminal__circle--green"></span>
         </div>
 
-        <div class="terminal__window">
-            <p class="terminal__prompt">$ <span class="terminal__prompt--typing"><span class="cover cover--gimme-dev"></span>gimme frontend dev</span></p>
+        <div class='terminal__window'>
+          <div id='prev'> <!-- output --> </div>
 
-            <p class="terminal__prompt terminal__prompt--checkout">checkout Tobias Weiß: <span class="terminal__window--highlight"><a href="https://github.com/vice2000" target="_blank">https://github.com/vice2000</a></span></p>
+          <div class='input'>
+            <span id="prompt-field">></span>
+            <input id="prompt" type="text" onkeypress="keyPressed()" autocomplete="off">
+          </div>
 
-            <p class="terminal__prompt terminal__prompt--show-contact">$ <span class="terminal__prompt--typing"><span class="cover cover--show-contact"></span>show direct contact</span></p>
-
-            <p class="terminal__prompt terminal__prompt--mail">mail:
-            <span class="terminal__window--highlight"><a href="mailto:sayhi@tobias-weiss.info">sayhi@tobias-weiss.info</a></span></p>
         </div>
     </div>
 </section> <!-- end s-contact -->

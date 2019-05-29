@@ -141,6 +141,7 @@
     <script src=" https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 	<script src="<?= get_template_directory_uri() ?>/js/particles.min.js"></script>
     <script src="<?= get_template_directory_uri() ?>/js/main.js"></script>
+    <script src="<?= get_template_directory_uri() ?>/js/terminal-functions.js"></script>
 
     <? wp_footer() ?>
 
