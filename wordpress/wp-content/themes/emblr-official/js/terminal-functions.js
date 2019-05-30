@@ -85,7 +85,7 @@ const parse = s => {
   // MANEJO DE ERRORES
   if (n == 0) { //err nombre
     if (!/^[A-Za-zÁáÉéÍíÓóÚúñ\s]+$/.test(s)) {
-      cout_f('> ' + s)
+      cout_f(s)
       cerr('error: ingresar sólo letras\n\n')
       $prompt.value = ""
       
@@ -98,7 +98,7 @@ const parse = s => {
     
   } else if (n == 1) { //err correo
     if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(s)) {
-      cout_f('> ' + s)
+      cout_f(s)
       cerr('error: correo inválido\n\n')
       $prompt.value = ""
       
@@ -109,7 +109,7 @@ const parse = s => {
     
   } else if (n == 2) { //err mensaje
     if (s.length < 15) {
-      cout_f('> ' + s)
+      cout_f(s)
       cerr('error: mínimo 15 caracteres\n\n')
       $prompt.value = ""
       
@@ -123,7 +123,7 @@ const parse = s => {
     $prompt.value = s.charAt(0).toLowerCase() + s.slice(1)
     
     if (s !== 'enviar') {
-      cout_f('> ' + s)
+      cout_f(s)
       cerr('error: escribe "enviar" y presiona enter\n\n')
       $prompt.value = ""
       
@@ -147,7 +147,7 @@ $prompt.addEventListener('keydown', e => {
     result = parse($prompt.value)
     
     if (!result) return
-    //
+ 	
     // outs & name:
     if (n == 1) name = $prompt.value.split(" ")[0] // obtiene sólo nombre
     if (n <= 2) cout_i($prompt.value)
@@ -172,7 +172,7 @@ $prompt.addEventListener('keydown', e => {
       for(var i = 0 ; i < outs.length ; i++) {
         let field = fields_txt[i].split(" ").pop()
         outs[i].innerHTML = (i > 0 ? "\n" : "") + "$ [" + field.charAt(0).toUpperCase() + field.slice(1) + "] ~"
-        outs[i].nextSibling.childNodes[1].style.border = "2px solid #333"
+        outs[i].nextSibling.childNodes[1].classList.add("input_enabled")
       }
       
       cok('\n\n$ ' + fields_txt[n] + ' [presiona enter]') // -> enviar
@@ -181,12 +181,12 @@ $prompt.addEventListener('keydown', e => {
       let outs_input = document.getElementsByClassName("out_i")
       for(var i = 0 ; i < outs_input.length ; i++) {
         outs_input[i].disabled = true
-        outs_input[i].style.border = "none"
+        outs_input[i].classList.add("input_disabled")
       }
       
       let outs_textarea = document.getElementsByClassName("out_a")[0]
       outs_textarea.disabled = true
-      outs_textarea.style.border = "none"
+      outs_textarea.classList.add("input_disabled")
       
       clean_failed()
       $prev.lastChild.remove()

@@ -4235,19 +4235,86 @@ html.no-csstransitions .home-content__main {
   position: relative;
 }
 
-.terminal {
-  font-family: "Source Code Pro", "Monaco", "Courier New", monospace;
-  font-weight: 400;
-  font-size: 1.125rem;
-  text-align: left;
-  line-height: 2.5rem;
-  position: relative;
-  margin: 40px auto;
-  width: 100% !important;
+.s-contact h2 {
+  font-size: 42px;
+  margin-top: 90px;
+}
+
+.s-contact h1 {
+  font-size: 3.6rem;
   color: #fff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
+  
+  margin-top: 110px;
+  margin-bottom: 40px;
+
+  z-index: 2;
+  position: relative;
+}
+
+.s-contact h1::after {
+  content: " _";
+  color: #666;
+}
+
+.s-contact p {
+  font-size: 22px;
+}
+
+.s-contact p span {
+  color: #1fbda2;
+}
+
+.s-contact img {
+  width: 110px;
+
+  margin-top: 90px;
+  margin-bottom: 70px;
+}
+
+/* ----------------Pulse */
+
+.pulse,
+.pulse:after {
+  display:inline-block;
+  padding:.5rem;
+  border-radius:50%;
+  animation:pulse 1.5s .85s infinite ease-out;
+  border:thick solid rgba(102,102,102,0);
+  transform:scale3d(.4,.4,0);
+  transition:opacity .75s;
+
+  z-index: 1;
+}
+
+.pulse {
+  position:absolute;
+  left:calc(50% + 32px);
+  top:calc(50% + 18px);
+  margin-top:-100px;
+  margin-left:-100px;
+}
+
+.pulse:after {
+  display:block;
+  content:"";
+  padding:5rem;
+}
+
+@keyframes pulse {
+  50% {
+    border-color:rgba(102,102,102,.3);
+    background:transparent;
+  }
+  to { border-color:transparent; transform:none; }
+}
+
+/* ----------------GRAPHICS: Terminal */
+
+.terminal {
+  text-align: left;
+  position: relative;
+  margin: 20px auto;
+  width: 100% !important;
 }
 
 .terminal__task-bar {
@@ -4259,6 +4326,14 @@ html.no-csstransitions .home-content__main {
 }
 
 .terminal__window {
+  font-family: Consolas;
+  font-weight: 400;
+  line-height: 2.5rem;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
   height: 620px;
   overflow: scroll;
   border-bottom-right-radius: 0.5rem;
@@ -4277,7 +4352,7 @@ html.no-csstransitions .home-content__main {
   height: 15px;
   margin-right: 6px;
   border-radius: 50%;
-  top: 25%;
+  top: 6px;
 }
 
 .terminal__circle--red {
@@ -4292,6 +4367,8 @@ html.no-csstransitions .home-content__main {
   background-color: #51e05d;
 }
 
+/* ----------------WINDOW: Terminal */
+
 .terminal__window {
   background: #000;
   padding: 50px;
@@ -4301,18 +4378,41 @@ html.no-csstransitions .home-content__main {
 .terminal__window input,
 .terminal__window textarea {
   font-size: 23px;
-  font-family: Anonymous Pro;
   font-weight: bold;
   color: #fff;
+}
+
+.terminal__window,
+.terminal__window input,
+.terminal__window textarea,
+.terminal__window .out_f,
+.terminal__window .out_f::before {
+  font-family: Anonymous Pro;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.terminal__window .input_enabled {
+  border: 2px solid #333 !important;
+}
+
+.terminal__window .input_disabled {
+  border: 2px solid transparent !important;
+  color: #666;
+  background: #000;
+}
+
+.terminal__window #prompt-field,
+.terminal__window .out_f::before {
+  font-size: 32px;
+  line-height: 45px;
 }
 
 .terminal__window #prompt-field {
+  color: #1fbda2;
   display: inline-block;
   float: left;
-  color: #1fbda2;
-  font-size: 32px;
-  line-height: 45px;
 }
 
 .terminal__window #prompt {
@@ -4335,32 +4435,69 @@ html.no-csstransitions .home-content__main {
   border: none;
 }
 
+.terminal__window .out_i {
+  border: 2px solid transparent;
+}
+
 .terminal__window .out_a {
   height: auto;
   resize: none;
 }
 
+.terminal__window .out_f {
+  position: relative;
+  margin-top: 5px;
+}
+
+.terminal__window .out_f::before {
+  content: ">";
+  margin-right: 32px;
+  
+  position: relative;
+  top: 1px;
+}
+
 .terminal__window pre {
   white-space: pre-wrap;
   word-wrap: break-word;
-  margin: 6px 0 6px 0;
   padding: 0;
   overflow: initial;
 }
 
+.terminal__window pre.ok {
+  margin: 0;
+}
+
 .terminal__window .input {
+  margin-top: 6px;
   display: grid;
   grid-template-columns: 1.2em auto;
 }
 
-.terminal__window input {
+.terminal__window input,
+.terminal__window textarea {
   padding: 7px 20px 7px 20px;
   height: auto;
 }
 
-.terminal__window input:focus, textarea:focus {
+.terminal__window input::selection,
+.terminal__window textarea::selection,
+.terminal__window pre::selection {
+  background: #999;
+}
+
+.terminal__window textarea {
+  min-height: 100px;
+}
+
+.terminal__window input:focus,
+.terminal__window textarea:focus {
   outline: none !important;
   border: 2px solid #1fbda2 !important;
+}
+
+.terminal__window #prompt:focus {
+  border-color: #29CEAE !important;
 }
 
 .terminal__window .err,

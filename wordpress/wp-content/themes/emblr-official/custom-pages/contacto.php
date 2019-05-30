@@ -1,9 +1,21 @@
 <!-- contact
 ================================================== -->
 <section id="contact" class="s-contact target-section section-page">
-    <h1>Contáctanos</h1>
+    <h2>
+        Podemos apoyarte, podemos asesorarte durante todo el transcurso de tu proyecto
+    </h2>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eaque iure harum exercitationem culpa modi alias ducimus, soluta maiores voluptatibus neque, explicabo aperiam cupiditate non laboriosam ipsam? Nostrum, architecto, eaque.</p>
+    <br>
+
+    <p>
+        <span>Sea lo que sea</span> lo que necesites, podemos proporcionarte aquel respaldo que estás buscando
+    </p>
+
+    <img src="<?= get_template_directory_uri() ?>/images/logo.svg" alt="">
+
+    <div class="pulse"></div>
+
+    <h1>Contáctate con nosotros</h1>
 
     <div class="terminal">
         <div class="terminal__task-bar">
