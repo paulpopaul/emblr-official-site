@@ -3966,6 +3966,7 @@ html.no-csstransitions .home-content__main {
 
 .testimonials__slider .slick-slide {
   outline: none;
+  text-align: center;
 }
 
 .testimonials__slider .slick-dots {
@@ -4200,7 +4201,9 @@ html.no-csstransitions .home-content__main {
   }
    .section-page > h1{
     font-size:40px !important;
+    text-align: center;
   }
+
 
 }
 
