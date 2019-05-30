@@ -1459,6 +1459,8 @@ body.menu-is-open {
 
 .section-page > h1 {
   margin-top: 0;
+  font-size: 48px;
+  font-weight: 800;
 }
 
 .spin {
@@ -1614,11 +1616,18 @@ body.menu-is-open {
 
 }
 
+
 @media only screen and (max-width:1100px) {
   .display-1 {
     font-size: 4.2rem;
   }
 
+}
+
+@media only screen and (max-width:1024px) {
+	.section-page > h1 {
+		font-size: 52px;
+  }
 }
 
 @media only screen and (max-width:1000px) {
@@ -1641,9 +1650,17 @@ body.menu-is-open {
   .section-header.has-bottom-sep::before {
     width: 300px;
   }
+  .section-page > h1 {
+  	font-size: 48px;
+
+  }
 
 }
-
+@media only screen and (max-width:768px) {
+	.section-page > h1 {
+		font-size: 46px;
+  }
+}
 @media only screen and (max-width:700px) {
   .display-1 {
     font-size: 3.2rem;
@@ -1674,6 +1691,13 @@ body.menu-is-open {
 
 }
 
+@media only screen and (max-width:414px) {
+	.section-page > h1 {
+		font-size: 32px;
+		font-weight: 600;
+  }
+}
+
 @media only screen and (max-width:400px) {
   .display-1 {
     font-size: 2.4rem;
@@ -1695,7 +1719,11 @@ body.menu-is-open {
 
 }
 
-
+@media only screen and (max-width:375px) {
+	.section-page > h1 {
+		font-size: 28px;
+  }
+}
 /* ===================================================================
  * # header styles
  *
@@ -3938,8 +3966,8 @@ html.no-csstransitions .home-content__main {
 .testimonials__icon {
   margin-top: 33px;
   margin-bottom: 33px;
-  height: 4.5rem;
-  width: 4.5rem;
+  height: 32px;
+  width: 44px;
   background-color: transparent;
   background-image: url(images/icons/icon-quote.svg);
   background-position: center center;
@@ -3952,15 +3980,15 @@ html.no-csstransitions .home-content__main {
 }
 
 .testimonials__slider {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.636;
-  color: #666666;
   position: relative;
 }
 
 .testimonials__slider p{
-  margin-bottom: 10px;
+  margin-bottom: 60px;
+    font-size: 18px;
+  font-weight: 400;
+  line-height: 1.636;
+  color: #666666;
 }
 
 
@@ -4118,6 +4146,7 @@ html.no-csstransitions .home-content__main {
 
 }
 
+
 @media only screen and (max-width:1000px) {
   .s-testimonials {
     /*padding-top: 15rem;*/
@@ -4128,18 +4157,16 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width:1024px) {
   .testimonials__icon {
-    height: 3.6rem;
-    width: 3.6rem;
+
     margin-left: -1.8rem;
   }
-  .section-page > h1{
-  font-size:52px !important;
 }
-
   .testimonials__slider {
     font-size: 2.7rem;
   }
-
+  .testimonials__slider p {
+	font-size: 18px;
+  }
 }
 
 /* Resolucion para bajar tamaño texto testimonials, y solucionar corte de botones slide testimonials */
@@ -4156,8 +4183,6 @@ html.no-csstransitions .home-content__main {
   }
 
   .testimonials__icon {
-    height: 3.9rem;
-    width: 3.9rem;
     margin-left: -1.95rem;
   }
 }
@@ -4173,21 +4198,8 @@ html.no-csstransitions .home-content__main {
     font-size: 2.3rem !important;
   }
   .testimonials__icon {
-    height: 3.3rem;
-    width: 3.3rem;
     margin-left: -1.65rem;
     /*top: 9rem;*/
-  }
-
-  .testimonials__author {
-    font-size: 1.4rem;
-  }
-
-  .testimonials__author span {
-    font-size: 1.4rem;
-  }
-  .section-page > h1{
-  font-size:46px !important;
   }
 
 }
@@ -4199,9 +4211,21 @@ html.no-csstransitions .home-content__main {
     padding-left:8% !important;
     padding-right: 8% !important;
   }
-   .section-page > h1{
-    font-size:40px !important;
-    text-align: center;
+
+  .testimonials__slider p {
+	font-size: 16px;
+  }
+
+    .testimonials__author {
+    font-size: 20px;
+  }
+
+  .testimonials__author span {
+    font-size: 14px;
+  }
+   .testimonials__icon {
+    height: 24px;
+    width: 32px;
   }
 
 
@@ -4213,10 +4237,6 @@ html.no-csstransitions .home-content__main {
   .testimonials__slider {
     font-size: 2.1rem !important;
   }
-  .section-page > h1{
-    font-size:30px !important;
-  }
-
 }
 
 /* 320x568 / iPhone 4,5,5c / 165j */
