@@ -4010,7 +4010,7 @@ html.no-csstransitions .home-content__main {
 .testimonials__slider .slick-dots {
  display: block;
   list-style: none;
-  height: 30px;
+  height: 35px;
   width: 100%;
   overflow: hidden;
   padding: 0;
