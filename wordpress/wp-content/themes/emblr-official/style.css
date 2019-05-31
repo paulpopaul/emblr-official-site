@@ -1625,8 +1625,12 @@ body.menu-is-open {
 }
 
 @media only screen and (max-width:1024px) {
+	.section-page {
+  padding-left:7%;
+  padding-right: 7%;
+}
 	.section-page > h1 {
-		font-size: 52px;
+		font-size: 48px;
   }
 }
 
@@ -1651,15 +1655,12 @@ body.menu-is-open {
     width: 300px;
   }
   .section-page > h1 {
-  	font-size: 48px;
+  	font-size: 42px;
 
   }
 
 }
 @media only screen and (max-width:768px) {
-	.section-page > h1 {
-		font-size: 46px;
-  }
 }
 @media only screen and (max-width:700px) {
   .display-1 {
@@ -1693,7 +1694,7 @@ body.menu-is-open {
 
 @media only screen and (max-width:414px) {
 	.section-page > h1 {
-		font-size: 32px;
+		font-size: 30px;
 		font-weight: 600;
   }
 }
@@ -1721,7 +1722,7 @@ body.menu-is-open {
 
 @media only screen and (max-width:375px) {
 	.section-page > h1 {
-		font-size: 28px;
+		font-size: 24px;
   }
 }
 /* ===================================================================
@@ -3953,6 +3954,15 @@ html.no-csstransitions .home-content__main {
   background-color: #111111;
 }
 
+.s-testimonials .row{
+	width: 100%;
+}
+.s-testimonials [class*="col-"]{
+	padding: 0 0;
+}
+
+
+
 .s-testimonials h1{
   margin-top: 0;
   margin-bottom: 0; 
@@ -4204,14 +4214,14 @@ html.no-csstransitions .home-content__main {
 
 }
 
-
+@media only screen and (max-width:600px) {
+	.s-testimonials .row{
+		padding-left:0; 
+		padding-right:0;
+  }
+}
 /* Iphone 678+ / 328 */
 @media only screen and (max-width:414px) {
-  .section-page{
-    padding-left:8% !important;
-    padding-right: 8% !important;
-  }
-
   .testimonials__slider p {
 	font-size: 16px;
   }
