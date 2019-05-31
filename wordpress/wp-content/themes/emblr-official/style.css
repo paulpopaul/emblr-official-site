@@ -4729,6 +4729,10 @@ footer .social i {
 
 }
 
+footer .social a:last-child i {
+  margin-right: 0;
+}
+
 footer .marca span {
   font-size: 14px;
   float: left;
@@ -4753,7 +4757,7 @@ footer .marca span:last-child {
 }
 
 footer .footer-bottom {
-  width: calc(100% - 195px);
+  width: calc(100% - 181px);
 }
 
 footer .suscribete {
@@ -4981,8 +4985,8 @@ footer .sitio {
 
 
   footer .footer-bottom {
-    width: calc(100% - 194px);
-}
+    width: 100%;
+  }
 
   footer .fl-col {
     float: none;
