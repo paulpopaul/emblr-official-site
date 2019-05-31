@@ -4756,12 +4756,12 @@ footer .marca span:last-child {
   
 }
 
-footer .footer-bottom {
-  width: calc(100% - 181px);
+footer .footer-bottom { /* derechos */
+  width: 75%;
 }
 
-footer .suscribete {
-  /**/
+footer .footer-bottom + div.fl-col-group { /* redes */
+  width: 25%;
 }
 
 footer .fl-col-small {
