@@ -55,14 +55,17 @@
     var ssMenuOnScrolldown = function() {
         
         var menuTrigger = $('.header-menu-toggle');
+        var searchField = $('.search-border');
 
         $WIN.on('scroll', function() {
 
             if ($WIN.scrollTop() > 150) {
                 menuTrigger.addClass('opaque');
+                searchField.addClass('opaque');
             }
             else {
                 menuTrigger.removeClass('opaque');
+                searchField.removeClass('opaque');
             }
 
         });
@@ -288,6 +291,19 @@
         });
     };
 
+    /* Focus in search field (home)
+    * ------------------------------------------------------ */
+
+    var focusInSearchField = function() {
+        $(".search-field").focus(function() {
+            $(".search-border").addClass('focus');
+        });
+
+        $(".search-field").focusout(function() {
+            $(".search-border").removeClass('focus');
+        });
+    };
+
 
    /* Initialize
     * ------------------------------------------------------ */
@@ -305,6 +321,7 @@
         //loadParticles();
         scrollWaypoint();
         logoEnableDisableParticles();
+        focusInSearchField();
 
     })();
 

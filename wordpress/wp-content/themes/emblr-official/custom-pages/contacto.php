@@ -13,8 +13,6 @@
 
     <img src="<?= get_template_directory_uri() ?>/images/logo.svg" alt="">
 
-    <div class="pulse"></div>
-
     <h1>Contáctate con nosotros</h1>
 
     <div class="terminal">
