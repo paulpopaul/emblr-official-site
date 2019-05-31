@@ -189,7 +189,7 @@
             slidesToScroll: 1,
             pauseOnFocus: false,
             autoplaySpeed: 1500,
-            variableWidth:false 
+            autoplay: true
         });
     }; 
 
