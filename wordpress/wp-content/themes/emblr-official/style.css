@@ -4692,7 +4692,7 @@ footer .fl-col-group {
 }
 
 footer .row {
-  max-width: 1200px;
+  max-width: 100%;
 }
 
 footer .fl-col {
@@ -4700,7 +4700,7 @@ footer .fl-col {
 }
 
 footer .footer-bottom {
-  margin-bottom: 170px;
+  margin-bottom: 110px;
 }
 
 footer .col-full {
@@ -4753,7 +4753,7 @@ footer .marca span:last-child {
 }
 
 footer .footer-bottom {
-  width: 75%;
+  width: calc(100% - 195px);
 }
 
 footer .suscribete {
@@ -4830,7 +4830,8 @@ footer .fl-col span {
 } 
 
 #grupo-textos {
-  margin-bottom: 170px;
+  margin-bottom: 110px;
+  width:100%;
 }
 
 .input-group {
@@ -4978,10 +4979,14 @@ footer .sitio {
     padding: 140px 50px 170px 50px;
   }
 
+
+  footer .footer-bottom {
+    width: calc(100% - 194px);
+}
+
   footer .fl-col {
     float: none;
     width: 100%;
-
     margin-top: 70px;
   }
 
@@ -4998,13 +5003,26 @@ footer .sitio {
   }
 }
 
+@media only screen and (max-width:600px) {
+.row{
+padding-left: 0;
+padding-right: 0; 
+}
+}
 
+@media only screen and (max-width:800px) {
+footer .row {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:768px) {
+footer {
+    padding: 140px 28px 170px 28px !important;
+  }
+}
 
 @media only screen and (max-width:640px) {
-  footer {
-    padding: 140px 0 170px 0;
-  }
-
   #suscripcion {
     width: calc(100% - 90px - 3px);
   }
