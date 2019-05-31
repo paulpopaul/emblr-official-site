@@ -266,6 +266,14 @@
             offset: '80%'
         });
 
+        $('footer').waypoint({
+            handler: function(direction) {
+                $('.page-dots, .page-counter').toggleClass('blurred-element');
+            },
+
+            offset: '75%'
+        });
+
     };
 
     /* Header logo particles enable/disable action

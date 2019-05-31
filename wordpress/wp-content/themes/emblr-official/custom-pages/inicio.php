@@ -49,7 +49,7 @@
                 <a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a>
             </li>
             <li>
-                <a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
+                <a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i><span>Twitter</span></a>
             </li>
             <li>
                 <a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>

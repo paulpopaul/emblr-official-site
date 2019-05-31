@@ -4712,6 +4712,7 @@ footer a {
 }
 
 footer a:link:hover,
+footer a:visited:hover,
 footer .social i:hover {
   color: #fff !important;
 }
