@@ -5,7 +5,7 @@
 	- Diego Ulloa Ormeño.
 	- Paul Joseph Pineda.
 	- Álvaro Francisco Arriagada.
-- **Stack:** Wordpress, MySQL, PHP, SASS, HTML5, JS.
+- **Stack:** Wordpress, MySQL, PHP, HTML5, JS.
 - **Servicios:** Wordpress, MySQL, phpMyAdmin.
 - **Año:** 2019.
 
