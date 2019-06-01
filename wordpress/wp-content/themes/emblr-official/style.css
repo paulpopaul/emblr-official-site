@@ -4284,6 +4284,47 @@ html.no-csstransitions .home-content__main {
   }
 }
 
+/* ===================================================================
+ * # apartado 1
+ *
+ * ------------------------------------------------------------------- */
+.apartado-1 {
+  text-align: center;
+}
+
+.apartado-1 .btn {
+  margin-top: 40px;
+}
+
+.apartado-1 h2 {
+  font-size: 42px;
+  margin-top: 0;
+}
+
+.apartado-1 h1 {
+  font-size: 3.6rem;
+  color: #fff;
+  
+  margin-top: 110px;
+  margin-bottom: 40px;
+
+  z-index: 2;
+  position: relative;
+}
+
+.apartado-1 h1::after {
+  content: " _";
+  color: #666;
+}
+
+.apartado-1 p {
+  font-size: 22px;
+}
+
+.apartado-1 p span {
+  color: #1fbda2;
+}
+
 
 /* ===================================================================
  * # contact
@@ -4296,39 +4337,10 @@ html.no-csstransitions .home-content__main {
   position: relative;
 }
 
-.s-contact h2 {
-  font-size: 42px;
-  margin-top: 90px;
-}
-
-.s-contact h1 {
-  font-size: 3.6rem;
-  color: #fff;
-  
-  margin-top: 110px;
-  margin-bottom: 40px;
-
-  z-index: 2;
-  position: relative;
-}
-
-.s-contact h1::after {
-  content: " _";
-  color: #666;
-}
-
-.s-contact p {
-  font-size: 22px;
-}
-
-.s-contact p span {
-  color: #1fbda2;
-}
-
 .s-contact img {
   width: 110px;
 
-  margin-top: 90px;
+  margin-top: 70px;
   margin-bottom: 70px;
 }
 
