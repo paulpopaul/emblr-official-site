@@ -936,7 +936,6 @@ select:-webkit-autofill:focus {
  *
  * ------------------------------------------------------------------- */
 .btn,
-button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
@@ -3948,6 +3947,141 @@ html.no-csstransitions .home-content__main {
 
 
 /* ===================================================================
+ * # noticias
+ *
+ * ------------------------------------------------------------------- */
+.noticias {
+  background: #000;
+  border-bottom: 1px solid #1a1a1a;
+  position: relative;
+}
+
+.slick-stories-container {
+  position: relative;
+}
+
+/* storie container */
+.storie-container {
+  text-align: center;
+}
+
+.noticias-stories {
+}
+
+.noticias .slick-stories-arrow {
+  color: #1fbda2;
+
+  position: absolute;
+  top: calc(50% - 100px + 35px);
+
+  z-index: 3;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.noticias .slick-stories-arrow:hover {
+  color: #fff;
+}
+
+.noticias .slick-stories-prev {
+  left: -48px;
+}
+
+.noticias .slick-stories-next {
+  right: -48px;
+}
+
+/* storie element classes */
+
+.storie-container {
+  text-align: center;
+}
+
+.storie-container h5 {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: bold;
+
+  margin: 34px 0 0 0;
+  cursor: pointer;
+}
+
+.storie-canvas {
+}
+
+.storie-canvas > .round {
+  margin: auto;
+  cursor: pointer;
+}
+
+.storie-container .round,
+.storie-container .round .round,
+.storie-container .round .round .picture {
+  /* border-radius: 50% has issues on some mobile browsers */
+  border-radius: 999px;
+  -webkit-border-radius: 999px; 
+  -moz-border-radius: 999px;
+}
+
+.storie-container .round {
+  /* general storie element size */
+  width: 250px;
+  height: 250px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+  
+  border: 6px solid transparent;
+  
+  /* external round */
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  background-image:
+    linear-gradient(90deg, #000, #000),
+    linear-gradient(90deg, #08aeea, #2af598);
+}
+
+.storie-container .round .round {
+  width: 96%;
+  height: 96%;
+  
+  box-sizing: border-box;
+  
+  /* internal round */
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  background-image:
+    linear-gradient(90deg, #000, #000),
+    linear-gradient(90deg, #08aeea, #2af598);
+}
+
+.storie-container .picture img {
+  width: 100%;
+  height: 100%;
+}
+
+.storie-container .round .round .picture {
+  width: 100%;
+  height: 100%;
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * noticias
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width: 1024px) {
+  .slick-stories-arrow {
+    display: none !important;
+  }
+}
+
+
+/* ===================================================================
  * # testimonials
  *
  * ------------------------------------------------------------------- */
@@ -4871,6 +5005,7 @@ footer .fl-col span {
 }
 
 .input-group button:hover {
+  color: #fff;
   background: #29CEAE !important;
   box-shadow: 0 2px 10px rgba(31, 189, 162, 0.3);
 }

@@ -61,7 +61,7 @@
 
                             <div class="input-group">
                                 <input id="suscripcion" placeholder="Ingresa tu email" type="text">
-                                <button>Enviar</button>
+                                <button class="btn">Enviar</button>
                             </div>
                         </div>
                     </div>

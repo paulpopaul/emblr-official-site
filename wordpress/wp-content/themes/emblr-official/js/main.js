@@ -279,6 +279,7 @@
 
     };
 
+
     /* Header logo particles enable/disable action
     * ------------------------------------------------------ */
 
@@ -290,6 +291,7 @@
                 ;//loadParticles();
         });
     };
+
 
     /* Focus in search field (home)
     * ------------------------------------------------------ */
@@ -303,6 +305,85 @@
             $(".search-border").removeClass('focus');
         });
     };
+
+
+    /* noticias
+    * ------------------------------------------------------ */
+    var storiesSlider = function() {
+        
+        $('.noticias-stories').slick({
+            arrows: true,
+            prevArrow: $('.slick-stories-prev'),
+            nextArrow: $('.slick-stories-next'),
+            dots: false,
+            infinite: false,
+            slidesToScroll: 1,
+            mobileFirst: true,
+            focusOnSelect: false,
+
+            responsive: [
+            {
+                breakpoint: 1920, // or more
+                settings: {
+                    slidesToShow: 5
+                }
+            },
+
+            {
+                breakpoint: 1440, // or more
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+
+            {
+                breakpoint: 1152, // or more
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+
+            {
+                breakpoint: 800, // or more
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+
+            /*{
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2
+              }
+            },
+
+            {
+                breakpoint: 414, // or more
+                settings: {
+                    slidesToShow: 5
+                }
+            },
+
+            {
+                breakpoint: 376, // or more
+                settings: {
+                    slidesToShow: 5
+                }
+            },
+
+            {
+                breakpoint: 320, // or more
+                settings: {
+                    slidesToShow: 5
+                }
+            }*/
+
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+        });
+    }; 
 
 
    /* Initialize
@@ -322,6 +403,7 @@
         scrollWaypoint();
         logoEnableDisableParticles();
         focusInSearchField();
+        storiesSlider();
 
     })();
 
