@@ -325,28 +325,28 @@
             {
                 breakpoint: 1920, // or more
                 settings: {
-                    slidesToShow: 5
+                    slidesToShow: 6
                 }
             },
 
             {
                 breakpoint: 1440, // or more
                 settings: {
-                    slidesToShow: 4
+                    slidesToShow: 5
                 }
             },
 
             {
                 breakpoint: 1152, // or more
                 settings: {
-                    slidesToShow: 3
+                    slidesToShow: 4
                 }
             },
 
             {
                 breakpoint: 800, // or more
                 settings: {
-                    slidesToShow: 2
+                    slidesToShow: 3
                 }
             },
 
