@@ -325,58 +325,73 @@
             {
                 breakpoint: 1920, // or more
                 settings: {
-                    slidesToShow: 6
+                    slidesToShow: 7
                 }
             },
 
             {
                 breakpoint: 1440, // or more
                 settings: {
-                    slidesToShow: 5
+                    slidesToShow: 6
                 }
             },
+
 
             {
                 breakpoint: 1152, // or more
                 settings: {
-                    slidesToShow: 4
+                    slidesToShow: 5
                 }
             },
 
             {
                 breakpoint: 800, // or more
                 settings: {
-                    slidesToShow: 3
+                    slidesToShow: 6
                 }
             },
 
-            /*{
-                breakpoint: 600,
+            {
+                breakpoint: 768, // or more
                 settings: {
-                    slidesToShow: 2
-              }
+                    slidesToShow: 6
+                }
             },
 
             {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 5
+              }
+            },
+
+            /*{
                 breakpoint: 414, // or more
                 settings: {
                     slidesToShow: 5
                 }
-            },
+            }*/,
 
             {
                 breakpoint: 376, // or more
                 settings: {
-                    slidesToShow: 5
+                    slidesToShow: 4
                 }
             },
 
             {
                 breakpoint: 320, // or more
                 settings: {
-                    slidesToShow: 5
+                    slidesToShow: 4
                 }
-            }*/
+            },
+
+            {
+                breakpoint: 240, // or more
+                settings: {
+                    slidesToShow: 4
+                }
+            },
 
             // You can unslick at a given breakpoint now by adding:
             // settings: "unslick"
