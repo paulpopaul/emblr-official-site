@@ -98,6 +98,7 @@
     <? #require_once("custom-pages/clients.php") ?>
 
     <!-- --> <? require_once("sub-sections/noticias.php") ?>
+    <!-- --> <? require_once("custom-pages/testimonials.php") ?>
     <!-- --> <? require_once("sub-sections/lo-que-dicen-nuestros-clientes.php") ?>
     <!-- --> <? require_once("sub-sections/apartado-1.php") ?>
 

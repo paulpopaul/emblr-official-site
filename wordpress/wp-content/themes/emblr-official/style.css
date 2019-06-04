@@ -3951,7 +3951,6 @@ html.no-csstransitions .home-content__main {
  * # noticias
  *
  * ------------------------------------------------------------------- */
-<<<<<<< HEAD
 .noticias {
   background: #000;
   border-bottom: 1px solid #1a1a1a;
@@ -3998,7 +3997,8 @@ html.no-csstransitions .home-content__main {
 
 .storie-container {
   text-align: center;
-=======
+}
+
 #titulo-testimonio {
   text-align: center;
   font-size: 48px;
@@ -4094,7 +4094,6 @@ html.no-csstransitions .home-content__main {
   text-align: center;
   top: 100%;
   left: 0;
->>>>>>> experimental
 }
 .col-full .testimonials__slide .foto-persona img {
   height:100px;
@@ -4104,8 +4103,6 @@ html.no-csstransitions .home-content__main {
   margin-bottom: 22px;
 }
 
-
-<<<<<<< HEAD
 .storie-container h5 {
   font-family: Montserrat;
   font-size: 16px;
@@ -4180,7 +4177,8 @@ html.no-csstransitions .home-content__main {
 .storie-container .round .round .picture {
   width: 100%;
   height: 100%;
-=======
+}
+
 .testimonials__slider .slick-dots li { 
   height: auto;
   top: 11px;
@@ -4289,51 +4287,44 @@ html.no-csstransitions .home-content__main {
   border-top: 1px solid #1a1a1a;
   padding-top: 20px;
   padding-bottom: 20px;
->>>>>>> experimental
 }
 
 /* ------------------------------------------------------------------- 
  * responsive:
  * noticias
  * ------------------------------------------------------------------- */
-<<<<<<< HEAD
-
-
-
 @media only screen and (max-width: 1200px) {
 .slick-stories-container {
     position: relative;
     margin-left: 1px;
     margin-right: 1px;
+  }
+}
 
-=======
 @media only screen and (max-width:1200px) {
   /*.testimonials__slider {
     font-size: 3rem !important;
   }*/
   .testimonials__slider .slick-dots{
     height: 34px;
->>>>>>> experimental
   }
 
   /*.section-page > h1{
   font-size:52px !important;
 }*/
-
 }
 
-
-<<<<<<< HEAD
 @media only screen and (max-width:1024px) {
 
   .slick-stories-arrow {
     display: none !important;
-=======
+  }
+}
+
 @media only screen and (max-width:1000px) {
   .s-testimonials {
     /*padding-top: 15rem;*/
     /*padding-bottom: 19.2rem;*/
->>>>>>> experimental
   }
 
   .section-page.noticias{
@@ -4343,7 +4334,6 @@ html.no-csstransitions .home-content__main {
     padding-bottom: 30px;
   }
 
-<<<<<<< HEAD
   .slick-stories-container {
     position: relative;
     margin-left: 1px;
@@ -4691,7 +4681,6 @@ html.no-csstransitions .home-content__main {
     /*padding-top: 15rem;*/
     /*padding-bottom: 19.2rem;*/
   }
-
 }
 
 @media only screen and (max-width:1024px) {
@@ -4699,21 +4688,12 @@ html.no-csstransitions .home-content__main {
 
     margin-left: -1.8rem;
   }
-=======
-@media only screen and (max-width:1024px) {
-  .testimonials__icon {
-
-    margin-left: -1.8rem;
-  }
->>>>>>> experimental
-}
   .testimonials__slider {
     font-size: 2.7rem;
   }
   .testimonials__slider p {
 	font-size: 18px;
   }
-<<<<<<< HEAD
 }
 
 /* Resolucion para bajar tamaño texto testimonials, y solucionar corte de botones slide testimonials */
@@ -4774,8 +4754,6 @@ html.no-csstransitions .home-content__main {
     height: 24px;
     width: 32px;
   }
-
-
 }
 
 
@@ -4793,238 +4771,6 @@ html.no-csstransitions .home-content__main {
   }
 }
 
-/* ===================================================================
- * # apartado 1
- *
- * ------------------------------------------------------------------- */
-.apartado-1 {
-  text-align: center;
-}
-
-.apartado-1 .btn {
-  margin-top: 40px;
-}
-
-.apartado-1 h2 {
-  font-size: 42px;
-  margin-top: 0;
-}
-
-.apartado-1 h1 {
-  font-size: 3.6rem;
-  color: #fff;
-  
-  margin-top: 110px;
-  margin-bottom: 40px;
-
-  z-index: 2;
-  position: relative;
-}
-
-.apartado-1 h1::after {
-  content: " _";
-  color: #666;
-}
-
-.apartado-1 p {
-  font-size: 22px;
-}
-
-.apartado-1 p span {
-  color: #1fbda2;
-}
-
-
-/* ===================================================================
- * # contact
- *
- * ------------------------------------------------------------------- */
-.s-contact {
-  background-color: #1a1a1a;
-  color: #666;
-  text-align: center;
-  position: relative;
-}
-
-.s-contact img {
-  width: 110px;
-
-  margin-top: 70px;
-  margin-bottom: 70px;
-}
-
-/* ----------------GRAPHICS: Terminal */
-
-.terminal {
-  text-align: left;
-  position: relative;
-  margin: 20px auto;
-  width: 100% !important;
-}
-
-.terminal__task-bar {
-  height: 40px;
-  padding-left: 17px;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-  background-color: #333;
-}
-
-.terminal__window {
-  font-family: Consolas;
-  font-weight: 400;
-  line-height: 2.5rem;
-  color: #fff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-
-  height: 620px;
-  overflow: scroll;
-  border-bottom-right-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
-  background-color: #000;
-}
-
-.terminal__window--highlight {
-  color: #51e05d;
-}
-
-.terminal__circle {
-  position: relative;
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin-right: 6px;
-  border-radius: 50%;
-  top: 6px;
-}
-
-.terminal__circle--red {
-  background-color: #fb574e;
-}
-
-.terminal__circle--yellow {
-  background-color: #fbbd2e;
-}
-
-.terminal__circle--green {
-  background-color: #51e05d;
-}
-
-/* ----------------WINDOW: Terminal */
-
-.terminal__window {
-  background: #000;
-  padding: 50px;
-}
-
-.terminal__window,
-.terminal__window input,
-.terminal__window textarea {
-  font-size: 23px;
-  font-weight: bold;
-  color: #fff;
-}
-
-.terminal__window,
-.terminal__window input,
-.terminal__window textarea,
-.terminal__window .out_f,
-.terminal__window .out_f::before {
-  font-family: Anonymous Pro;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-}
-
-.terminal__window .input_enabled {
-  border: 2px solid #333 !important;
-}
-
-.terminal__window .input_disabled {
-  border: 2px solid transparent !important;
-  color: #666;
-  background: #000;
-=======
-}
-
-/* Resolucion para bajar tamaño texto testimonials, y solucionar corte de botones slide testimonials */
-@media only screen and (max-width:970px) {
-  .s-testimonials {
-    padding-top: 7.8rem;
-    padding-bottom: 15rem;
-  }
-.testimonials__slider{
-  font-size: 3rem !important;
-}
-  .testimonials__slider .slick-dots{
-    height: 32px;
-  }
-
-  .testimonials__icon {
-    margin-left: -1.95rem;
-  }
-}
-
-
-@media only screen and (max-width:768px) {
-  .s-testimonials {
-    padding-top: 7.8rem;
-    padding-bottom: 15rem;
-  }
-
-  .testimonials__slider {
-    font-size: 2.3rem !important;
-  }
-  .testimonials__icon {
-    margin-left: -1.65rem;
-    /*top: 9rem;*/
-  }
-
-}
-
-@media only screen and (max-width:600px) {
-	.s-testimonials .row{
-		padding-left:0; 
-		padding-right:0;
-  }
-}
-/* Iphone 678+ / 328 */
-@media only screen and (max-width:414px) {
-  .testimonials__slider p {
-	font-size: 16px;
-  }
-
-    .testimonials__author {
-    font-size: 20px;
-  }
-
-  .testimonials__author span {
-    font-size: 14px;
-  }
-   .testimonials__icon {
-    height: 24px;
-    width: 32px;
-  }
-
-
-}
-
-
-/* iPhone 6,7,8 / 303 */
-@media only screen and (max-width:375px) {
-  .testimonials__slider {
-    font-size: 2.1rem !important;
-  }
-}
-
-/* 320x568 / iPhone 4,5,5c / 165j */
-@media only screen and (max-width:320px) {
-  .testimonials__slider {
-    font-size: 1.9rem !important;
-  }
-}
 
 /* ===================================================================
  * # apartado 1
@@ -5159,113 +4905,9 @@ html.no-csstransitions .home-content__main {
     font-size: 0.8rem;
     line-height: 3.3rem !important;
   }
->>>>>>> experimental
 }
 
-.terminal__window #prompt-field,
-.terminal__window .out_f::before {
-  font-size: 32px;
-  line-height: 45px;
-}
 
-<<<<<<< HEAD
-.terminal__window #prompt-field {
-  color: #1fbda2;
-  display: inline-block;
-  float: left;
-}
-
-.terminal__window #prompt {
-  background: #000;
-  border: 2px solid #1fbda2;
-  color: rgba(255, 255, 255, 0.75);
-  font-weight: bold;
-  float: right;
-}
-
-.terminal__window .err {
-  color: #c3707d;
-}
-
-.terminal__window .ok {
-  color: #1fbda2;
-}
-
-.terminal__window .out_i, .out_a {
-  border: none;
-}
-
-.terminal__window .out_i {
-  border: 2px solid transparent;
-}
-
-.terminal__window .out_a {
-  height: auto;
-  resize: none;
-}
-
-.terminal__window .out_f {
-  position: relative;
-  margin-top: 5px;
-}
-
-.terminal__window .out_f::before {
-  content: ">";
-  margin-right: 32px;
-  
-  position: relative;
-  top: 1px;
-}
-
-.terminal__window pre {
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  padding: 0;
-  overflow: initial;
-}
-
-.terminal__window pre.ok {
-  margin: 0;
-}
-
-.terminal__window .input {
-  margin-top: 6px;
-  display: grid;
-  grid-template-columns: 1.2em auto;
-}
-
-.terminal__window input,
-.terminal__window textarea {
-  padding: 7px 20px 7px 20px;
-  height: auto;
-}
-
-.terminal__window input::selection,
-.terminal__window textarea::selection,
-.terminal__window pre::selection {
-  background: #999;
-}
-
-.terminal__window textarea {
-  min-height: 100px;
-}
-
-.terminal__window input:focus,
-.terminal__window textarea:focus {
-  outline: none !important;
-  border: 2px solid #1fbda2 !important;
-}
-
-.terminal__window #prompt:focus {
-  border-color: #29CEAE !important;
-}
-
-.terminal__window .err,
-.terminal__window .ok,
-.terminal__window .out,
-.terminal__window .out_f {
-  background: #000;
-=======
 /* ===================================================================
  * # contact
  *
@@ -5442,7 +5084,45 @@ html.no-csstransitions .home-content__main {
 
 .terminal__window pre.ok {
   margin: 0;
->>>>>>> experimental
+}
+
+.terminal__window .input {
+  margin-top: 6px;
+  display: grid;
+  grid-template-columns: 1.2em auto;
+}
+
+.terminal__window input,
+.terminal__window textarea {
+  padding: 7px 20px 7px 20px;
+  height: auto;
+}
+
+.terminal__window input::selection,
+.terminal__window textarea::selection,
+.terminal__window pre::selection {
+  background: #999;
+}
+
+.terminal__window textarea {
+  min-height: 100px;
+}
+
+.terminal__window input:focus,
+.terminal__window textarea:focus {
+  outline: none !important;
+  border: 2px solid #1fbda2 !important;
+}
+
+.terminal__window #prompt:focus {
+  border-color: #29CEAE !important;
+}
+
+.terminal__window .err,
+.terminal__window .ok,
+.terminal__window .out,
+.terminal__window .out_f {
+  background: #000;
 }
 
 .terminal__window .input {
@@ -5812,10 +5492,7 @@ footer .fl-col span {
 }
 
 .input-group button:hover {
-<<<<<<< HEAD
   color: #fff;
-=======
->>>>>>> experimental
   background: #29CEAE !important;
   box-shadow: 0 2px 10px rgba(31, 189, 162, 0.3);
 }
@@ -5836,7 +5513,7 @@ footer .sitio {
 
 #suscripcion {
     margin:0px;
-    margin-right: -4px;
+    margin-right: -4px;g
     display: inline;
     width: calc(100% - 90px - 3px);
     height: 40px;
