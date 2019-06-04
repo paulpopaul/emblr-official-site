@@ -1,5 +1,5 @@
     <footer class="target-section">
-        <div class="row">
+        <div class="row" data-aos="fade-up">
             <div class="col-full ss-copyright">
                 <div class="fl-col-group textos" id="grupo-textos">
 
@@ -61,7 +61,7 @@
 
                             <div class="input-group">
                                 <input id="suscripcion" placeholder="Ingresa tu email" type="text">
-                                <button class="btn">Enviar</button>
+                                <button>Enviar</button>
                             </div>
                         </div>
                     </div>
@@ -140,6 +140,9 @@
     <script src="<?= get_template_directory_uri() ?>/js/plugins.js"></script>
     <script src=" https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 	<script src="<?= get_template_directory_uri() ?>/js/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.3/dist/typeit.min.js"></script>
+    <script src="<?= get_template_directory_uri() ?>/js/shuffle-text.min.js"></script>
+    <script src="<?= get_template_directory_uri() ?>/js/terminal-functions.js"></script>
     <script src="<?= get_template_directory_uri() ?>/js/main.js"></script>
     <script src="<?= get_template_directory_uri() ?>/js/terminal-functions.js"></script>
 

@@ -187,8 +187,8 @@
             infinite: true, 
             slidesToShow: 1,
             slidesToScroll: 1,
-            pauseOnFocus: false,
-            autoplaySpeed: 1500,
+            pauseOnFocus: true,
+            autoplaySpeed: 3500,
             autoplay: true
         });
     }; 
@@ -237,7 +237,7 @@
     var ssAOS = function() {
         
         AOS.init( {
-            offset: 200,
+            offset: 150,
             duration: 600,
             easing: 'ease-in-sine',
             delay: 300,
@@ -290,6 +290,62 @@
             else
                 ;//loadParticles();
         });
+    };
+
+
+    /* Focus in search field (home)
+    * ------------------------------------------------------ */
+
+    var focusInSearchField = function() {
+        $(".search-field").focus(function() {
+            $(".search-border").addClass('focus');
+        });
+
+        $(".search-field").focusout(function() {
+            $(".search-border").removeClass('focus');
+        });
+    };
+
+
+    /* Typeit.js
+    * ------------------------------------------------------ */
+
+    var typeitInit = function() {
+        var string = $('#apartado1-text').text();
+
+        $('#apartado1-text').text('');
+
+        new TypeIt('span#apartado1-text', {
+          strings: string,
+          speed: 60,
+          loop: true,
+          //startDelay: 250,
+          //loopDelay: 750,
+          waitUntilVisible: true,
+          deleteSpeed: 15,
+          cursorChar: '|',
+          beforeString: (s, q, instance) => {
+            $(window.text).animate({ opacity: 0 }, 1000);
+          },
+          afterString: (s, q, instance) => {
+             $(window.text).css({ opacity: 1 });
+             window.shuffle_text.start();
+          }
+        }).pause(6000).go();
+    };
+
+
+    /* Shuffle text
+    * ------------------------------------------------------ */
+
+    var shuffleText = function() {
+        window.text = document.getElementById("apartado1-shuffle-text");
+
+        window.shuffle_text = new ShuffleText(text);
+        window.shuffle_text.duration = 2000;
+        window.shuffle_text.emptyCharacter = '&nbsp;';
+        window.shuffle_text.sourceRandomCharacter = '01';
+        window.shuffle_text._requestAnimationFrameId = 2000;
     };
 
 
@@ -419,6 +475,8 @@
         logoEnableDisableParticles();
         focusInSearchField();
         storiesSlider();
+        shuffleText();
+        typeitInit();
 
     })();
 

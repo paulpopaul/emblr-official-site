@@ -1,11 +1,11 @@
 <!-- contact
 ================================================== -->
 <section id="contact" class="s-contact target-section section-page">
-    <h1>Contáctate con nosotros</h1>
+    <h1 data-aos="fade-up">Contáctate con nosotros</h1>
 
-    <img src="<?= get_template_directory_uri() ?>/images/logo.svg" alt="">
+    <img src="<?= get_template_directory_uri() ?>/images/logo.svg" alt="" data-aos="fade-up">
 
-    <div class="terminal">
+    <div class="terminal" data-aos="fade-up">
         <div class="terminal__task-bar">
           <span class="terminal__circle terminal__circle--red"></span>
           <span class="terminal__circle terminal__circle--yellow"></span>

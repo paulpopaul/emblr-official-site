@@ -68,8 +68,8 @@ init()
 // primer mensaje: nombre
 cout('$ Escribe tu ' + fields_txt[n] + ' [presiona enter]')
 
-$prompt.focus()
-$prompt.select()
+// $prompt.focus()
+// $prompt.select()
 
 const clean_failed = () => {
   let outs_err = document.getElementsByClassName("err")

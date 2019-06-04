@@ -28,10 +28,10 @@
             </div> -->
 
             <div class="home-content__button">
-                <a href="#about" class="smoothscroll btn btn--primary btn--large">
+                <a href="#sobre-nosotros" class="smoothscroll btn btn--primary btn--large">
                     sobre nosotros
                 </a>
-                <a href="#contact" class="smoothscroll btn btn--large">
+                <a href="#servicios" class="smoothscroll btn btn--large">
                     nuestros servicios
                 </a>
             </div>
@@ -39,7 +39,7 @@
         </div> <!-- end home-content__main -->
 
         <div class="home-content__scroll">
-            <a href="#about" class="scroll-link smoothscroll">
+            <a href="#sobre-nosotros" class="scroll-link smoothscroll">
                 Scroll
             </a>
         </div>
