@@ -4933,6 +4933,8 @@ html.no-csstransitions .home-content__main {
   position: relative;
   margin: 20px auto;
   width: 100% !important;
+  box-shadow: 3px -1px 23px -6px rgba(0,0,0,.5);
+  /*box-shadow: 0px 10px 25px rgba(0,0,0,.5);*/
 }
 
 .terminal__task-bar {
@@ -4985,6 +4987,25 @@ html.no-csstransitions .home-content__main {
   background-color: #51e05d;
 }
 
+.terminal__circle--red,
+.terminal__circle--yellow,
+.terminal__circle--green {
+  transition: all 0.1s ease-in-out
+}
+
+/* hover */
+.terminal__circle--red:hover {
+  background-color: #d34242;
+}
+
+.terminal__circle--yellow:hover {
+  background-color: #dd9d2c;
+}
+
+.terminal__circle--green:hover {
+  background-color: #3ec644;
+}
+
 /* ----------------WINDOW: Terminal */
 
 .terminal__window {
@@ -5012,7 +5033,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .terminal__window .input_enabled {
-  border: 2px solid #333 !important;
+  border: 2px solid #1a1a1a !important;
 }
 
 .terminal__window .input_disabled {
@@ -5053,6 +5074,11 @@ html.no-csstransitions .home-content__main {
   border: none;
 }
 
+.terminal__window .out_i,
+.terminal__window .out_a {
+  color: #666;
+}
+
 .terminal__window .out_i {
   border: 2px solid transparent;
 }
@@ -5080,6 +5106,10 @@ html.no-csstransitions .home-content__main {
   word-wrap: break-word;
   padding: 0;
   overflow: initial;
+}
+
+.terminal__window pre.out .keyword_text {
+  color: #1fbda2;
 }
 
 .terminal__window pre.ok {
@@ -5112,6 +5142,7 @@ html.no-csstransitions .home-content__main {
 .terminal__window textarea:focus {
   outline: none !important;
   border: 2px solid #1fbda2 !important;
+  color: #fff;
 }
 
 .terminal__window #prompt:focus {
@@ -5157,12 +5188,54 @@ html.no-csstransitions .home-content__main {
   border-color: #29CEAE !important;
 }
 
+.terminal__window #prompt::placeholder {
+  color: #1a1a1a;
+}
+
 .terminal__window .err,
 .terminal__window .ok,
 .terminal__window .out,
 .terminal__window .out_f {
   background: #000;
 }
+
+.terminal__window .progress-bar {
+  display: block;
+  height: 30px;
+  margin-top: 30px;
+  background-color: #1fbda2;
+
+  transition: width 2s ease;
+}
+
+.terminal__window .progress-bar-fill {
+  animation: fill 1.5s 1 linear;
+}
+
+
+/* ANIMATION */
+@keyframes fill {
+  0%{
+    width: 0%;
+  }
+
+  25%{
+    width: 30%;
+  }
+
+  50%{
+    width: 50%;
+  }
+
+  75%{
+    width: 70%;
+  }
+
+  100%{
+    width: 100%;
+  }
+}
+
 
 /* ------------------------------------------------------------------- 
  * responsive:

@@ -8,15 +8,37 @@ const fields_txt = [
   'nombre',
   'correo',
   'déjanos tu consulta',
-  'Escribe "enviar" para confirmar tu mensaje'
+  'Escribe #enviar para confirmar tu mensaje'
 ]
 
 const render = s => {
   s.forEach(s => {
     let out = document.createElement('pre')
+
+    if (s.r.indexOf("#") != -1) {
+      let keyword_text = s.r.match(/#[^\s]+/)[0]
+      s.r = s.r.split(keyword_text)
+
+      let pre_keyword = document.createElement('span') // object
+      pre_keyword.innerText = s.r[0]
+
+      let keyword = document.createElement('span') //object
+      keyword.className = 'keyword_text'
+      keyword.innerText = keyword_text.replace("#", "")
+
+      let post_keyword = document.createElement('span') // object
+      post_keyword.innerText = s.r[1]
+
+      // append
+      out.appendChild(pre_keyword)
+      out.appendChild(keyword)
+      out.appendChild(post_keyword)
+
+    } else {
+      out.innerText = s.r
+    }
+
     out.className += s.c || ''
-    out.innerText = s.r
-    
     $prev.appendChild(out)
   })
   
@@ -58,6 +80,17 @@ const cok = t => render([{r: t, c: 'ok'}])
 const cout_i = t => render_editable([{r: t, c: 'out_i', t: 'i'}])
 const cout_a = t => render_editable([{r: t, c: 'out_a', t: 'a'}])
 
+const removeElement = (array, element) => {
+  const index = array.indexOf(element)
+  const newArray = [...array] // destructuring assignment
+
+  if (index >= -1) {
+    newArray.splice(index, 1)
+  }
+
+  return newArray
+}
+
 var init = () => {
   n = 0
   cok('domain: ensambler.cl@127.0.0.1 ~\nReady .\n\n\n')
@@ -66,7 +99,7 @@ var init = () => {
 init()
 
 // primer mensaje: nombre
-cout('$ Escribe tu ' + fields_txt[n] + ' [presiona enter]')
+cout('$ #(1/3) Escribe tu ' + fields_txt[n] + ' [presiona enter]')
 
 // $prompt.focus()
 // $prompt.select()
@@ -159,10 +192,10 @@ $prompt.addEventListener('keydown', e => {
     $prompt.value = ""
     
     if (n < 2) {
-      cout('\n$ ' + name +  ', escribe tu ' + fields_txt[n] + ' [presiona enter]') // correo
+      cout('\n$ #(' + (n + 1) + '/3) ' + name +  ', escribe tu ' + fields_txt[n] + ' [presiona enter]') // correo
       
     } else if (n == 2) {
-      cout('\n$ ' + name +  ', ' + fields_txt[n] + ' [presiona enter]') // mensaje
+      cout('\n$ #(' + (n + 1) + '/3) ' + name +  ', ' + fields_txt[n] + ' [presiona enter]') // mensaje
       
     } else if (n == 3) {
       let outs = document.getElementsByClassName("out")
@@ -174,8 +207,9 @@ $prompt.addEventListener('keydown', e => {
         outs[i].innerHTML = (i > 0 ? "\n" : "") + "$ [" + field.charAt(0).toUpperCase() + field.slice(1) + "] ~"
         outs[i].nextSibling.childNodes[1].classList.add("input_enabled")
       }
-      
-      cok('\n\n$ ' + fields_txt[n] + ' [presiona enter]') // -> enviar
+
+      $prompt.placeholder = "enviar"
+      cout('\n\n$ ' + fields_txt[n] + ' [presiona enter]') // -> enviar
       
     } else if (n == 4) {
       let outs_input = document.getElementsByClassName("out_i")
@@ -193,9 +227,20 @@ $prompt.addEventListener('keydown', e => {
       
       $prompt_field.style.display = "none"
       $prompt.style.display = "none"
-        
-      cok('\n\n> Mensaje enviado.\nTe responderemos a la brevedad. ~\n\n\n')
-      cok('Done .')
+
+      var progress_bar = document.createElement("div")
+      // var progress_bar = document.querySelector(".progress-bar")
+      progress_bar.className = "progress-bar"
+
+      $prev.appendChild(progress_bar)
+      progress_bar.className += " progress-bar-fill"
+      
+      setTimeout(() => {
+        // progress_bar.style.display = "none"
+
+        cok('\n\n> Mensaje enviado.\nTe responderemos a la brevedad. ~\n\n\n')
+        cok('Done .')
+      }, 1500)
     }
     
   } else if (e.key === 'ArrowUp') {

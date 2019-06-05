@@ -13,7 +13,9 @@
         </div>
 
         <div class='terminal__window'>
-          <div id='prev'> <!-- output --> </div>
+          <div id='prev'>
+            
+          </div>
 
           <div class='input'>
             <span id="prompt-field">></span>
