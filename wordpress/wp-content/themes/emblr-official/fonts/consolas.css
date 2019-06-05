@@ -1,15 +1,21 @@
 @font-face {
     font-family: 'Consolas';
-    src: url('consolas-bold.woff2') format('woff2'),
-        url('consolas-bold.woff') format('woff');
+    src: url('fonts/consolas-bold.eot');
+    src: url('fonts/consolas-bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/consolas-bold.woff2') format('woff2'),
+        url('fonts/consolas-bold.woff') format('woff'),
+        url('fonts/consolas-bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Consolas';
-    src: url('consolas.woff2') format('woff2'),
-        url('consolas.woff') format('woff');
+    src: url('fonts/consolas.eot');
+    src: url('fonts/consolas.eot?#iefix') format('embedded-opentype'),
+        url('fonts/consolas.woff2') format('woff2'),
+        url('fonts/consolas.woff') format('woff'),
+        url('ffonts/onts/consolas.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
