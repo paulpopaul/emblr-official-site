@@ -4946,8 +4946,6 @@ html.no-csstransitions .home-content__main {
 }
 
 .terminal__window {
-  font-family: Consolas;
-  font-weight: 400;
   line-height: 2.5rem;
   color: #fff;
   -webkit-font-smoothing: antialiased;
@@ -5019,6 +5017,12 @@ html.no-csstransitions .home-content__main {
   font-size: 23px;
   font-weight: bold;
   color: #fff;
+}
+
+.terminal__window pre.out,
+.terminal__window pre.ok {
+  font-family: 'Consolas';
+  font-weight: bold;
 }
 
 .terminal__window,
