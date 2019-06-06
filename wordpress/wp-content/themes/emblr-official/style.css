@@ -1783,7 +1783,7 @@ body.menu-is-open {
 .search {
   position: absolute;
   /*left: 50%; */
-  top: 50%;
+  top: 47%;
   margin: -3rem 0 0 -15rem;
   width: 32rem;
   height: 6rem;
@@ -1814,14 +1814,16 @@ body.menu-is-open {
   height: 30%;
   border: 2px solid white;
   border-radius: 6rem;
-  transition: all 0.4s 0.4s;
+  transition: all 0.4s 0.4s, background-color 0.5s;
 }
+
+
 
 .search .search-border.opaque {
   background-color: #000 !important;
 }
 
-.search .search-border:after {
+.search .search-border:after { /* palo lupa */
   content: "";
   position: absolute;
   right: -2rem;
@@ -1837,7 +1839,7 @@ body.menu-is-open {
 
 .search .search-field {
   position: relative;
-  top: 25%;
+  top: 27%;
   left: -10% !important;
   z-index: -1;
   padding: 0 0px 0 10px !important;
@@ -1873,8 +1875,8 @@ body.menu-is-open {
 .search .search-active {
   position: absolute;
   z-index: 3;
-  top: 1.5rem;
-  right: 14rem;
+  top: 2.0rem;
+  right: 14.1rem;
   width: 2rem;
   height: 2rem;
   cursor: pointer;
@@ -1893,7 +1895,7 @@ body.menu-is-open {
   content: "";
   position: absolute;
   left: 0.2rem;
-  top: 1.4rem;
+  top: 1.5rem;
   width: 70%;
   height: 0.2rem;
   background: #1FBDA2;
@@ -1918,7 +1920,7 @@ body.menu-is-open {
   width: 75%;
   height: 60%;
   background: #232323;
-  top: 50%;
+  top: 52%;
   left: 48%;
   /*border-radius: 0px;*/
   transition: all 0.2s 0.2s;
@@ -2287,6 +2289,22 @@ ul.page-dots li:not(.active):hover button::after {
 /* ------------------------------------------------------------------- 
  * ## mobile menu toggle 
  * ------------------------------------------------------------------- */
+.opaque-controls {
+  width: 166px;
+  height: 45px;
+  
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+
+  position: fixed;
+  top: 30px;
+  right: 8rem;
+}
+
+.opaque-controls.opaque {
+  background-color: #000000;
+}
+
 .header-menu-toggle {
   width: 48px;
   height: 45px;
@@ -2302,10 +2320,6 @@ ul.page-dots li:not(.active):hover button::after {
   position: fixed;
   right: 8rem;
   top: 30px;
-}
-
-.header-menu-toggle.opaque {
-  background-color: #000000;
 }
 
 .header-menu-icon {
@@ -2373,7 +2387,7 @@ ul.page-dots li:not(.active):hover button::after {
     right: 145px;
   }
 
-  .header-menu-toggle {
+  .header-menu-toggle, .opaque-controls {
     right: 60px;
   }
 
@@ -2391,6 +2405,10 @@ ul.page-dots li:not(.active):hover button::after {
   .header-nav {
     width: 80%;
     /*padding: 3.6rem 3rem 3.6rem 5rem;*/
+  }
+
+  .opaque-controls {
+    width: 48px;
   }
 
   .icon-search {
@@ -2430,10 +2448,9 @@ ul.page-dots li:not(.active):hover button::after {
     left: 40px;
   }
 
-  .header-menu-toggle {
+  .header-menu-toggle, .opaque-controls {
     right: 40px;
   }
-
 }
 
 @media only screen and (max-width:600px) {
@@ -2447,7 +2464,7 @@ ul.page-dots li:not(.active):hover button::after {
     /*padding: 3.6rem 3rem 3.6rem 4rem;*/
   }
 
-  .header-menu-toggle {
+  .header-menu-toggle, .opaque-controls {
     top: 27px;
     right: 25px;
   }
@@ -2477,7 +2494,7 @@ ul.page-dots li:not(.active):hover button::after {
     font-size: 2.2rem;
   }
 
-  .header-menu-toggle {
+  .header-menu-toggle, .opaque-controls {
     top: 21px;
     right: 20px;
   }

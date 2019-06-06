@@ -54,7 +54,7 @@
     * ------------------------------------------------------ */
     var ssMenuOnScrolldown = function() {
         
-        var menuTrigger = $('.header-menu-toggle');
+        var menuTrigger = $('.opaque-controls');
         var searchField = $('.search-border');
 
         $WIN.on('scroll', function() {

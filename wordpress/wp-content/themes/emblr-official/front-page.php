@@ -68,6 +68,9 @@
 
         </nav> <!-- end header-nav -->
 
+
+        <div class="opaque-controls"></div>
+
         <a class="icon-search">
             <div class="search">
                 <input id="search" type="checkbox" /><label class="search-init" for="search"></label>
