@@ -2691,12 +2691,16 @@ ul.page-dots li:not(.active):hover button::after {
 }
 
 /* ------------------------------------------------------------------- 
- * ## home scroll
+ * ## home scroll / footer scroll
  * ------------------------------------------------------------------- */
 .home-content__scroll {
+  bottom: 5.4rem;
+}
+
+.home-content__scroll,
+.footer__scroll {
   position: absolute;
   right: 9.5rem;
-  bottom: 5.4rem;
   -webkit-transform: rotate(-90deg) translate3d(100%, 50%, 0);
   -ms-transform: rotate(-90deg) translate3d(100%, 50%, 0);
   transform: rotate(-90deg) translate3d(100%, 50%, 0);
@@ -2705,7 +2709,8 @@ ul.page-dots li:not(.active):hover button::after {
   transform-origin: right bottom;
 }
 
-.home-content__scroll .scroll-link {
+.home-content__scroll .scroll-link,
+.footer__scroll .scroll-link {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
@@ -2718,20 +2723,11 @@ ul.page-dots li:not(.active):hover button::after {
 }
 
 .home-content__scroll .scroll-link:hover,
-.home-content__scroll .scroll-link:focus {
-  color: #1FBDA2;
+.home-content__scroll .scroll-link:focus,
+.footer__scroll .scroll-link:hover,
+.footer__scroll .scroll-link:focus {
+  color: #1FBDA2 !important;
 }
-
-/* .home-content__scroll::after {
-  content: "";
-  display: block;
-  background-color: rgba(255, 255, 255, 0.08);
-  width: 150px;
-  height: 1px;
-  position: absolute;
-  right: 0;
-  top: 50%;
-} */
 
 /* ------------------------------------------------------------------- 
  * ## home social
@@ -5640,6 +5636,21 @@ footer .sitio {
   transition: all 0.3s ease-in-out;
 }
 
+.footer__scroll {
+  bottom: calc(110px + 34px);
+}
+
+.footer__scroll::after { /* línea vertical footer */
+  content: "";
+  display: block;
+  background-color: #333;
+  width: 150px;
+  height: 1px;
+  position: absolute;
+  left: 100px;
+  top: 50%;
+} 
+
 /* ------------------------------------------------------------------- 
  * ## copyright
  * ------------------------------------------------------------------- */
@@ -5721,6 +5732,10 @@ footer .sitio {
     padding-left: 130px;
     padding-right: 130px;
   }
+
+  .footer__scroll {
+    right: 7rem;
+  }
 }
 
 @media only screen and (max-width:1024px) {
@@ -5753,6 +5768,10 @@ footer .sitio {
 
   #suscripcion {
     width: calc(50% - 90px - 3px);
+  }
+
+  .footer__scroll {
+    display: none;
   }
 }
 
