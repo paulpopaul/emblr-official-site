@@ -1918,7 +1918,7 @@ body.menu-is-open {
 /* Transición cuando se pincha en la lupa */ 
 .search #search:checked ~ .search-border {
   width: 75%;
-  height: 60%;
+  height: 69%;
   background: #232323;
   top: 52%;
   left: 48%;
@@ -1965,7 +1965,7 @@ body.menu-is-open {
   width: 24px;
   height: 24px;
   padding-right: 90px;
-  border-right: 1px solid #666;
+  border-right: 1.5px solid #fff;
   display: flex;
 
   position: fixed;
@@ -2290,7 +2290,7 @@ ul.page-dots li:not(.active):hover button::after {
  * ## mobile menu toggle 
  * ------------------------------------------------------------------- */
 .opaque-controls {
-  width: 166px;
+  width: 200px;
   height: 45px;
   
   -webkit-transition: all 0.5s ease-in-out;
@@ -2298,11 +2298,13 @@ ul.page-dots li:not(.active):hover button::after {
 
   position: fixed;
   top: 30px;
-  right: 8rem;
+  right: 6.5rem;
 }
 
 .opaque-controls.opaque {
   background-color: #000000;
+  border-radius: 50px;
+  border:2px solid #1a1a1a;
 }
 
 .header-menu-toggle {
