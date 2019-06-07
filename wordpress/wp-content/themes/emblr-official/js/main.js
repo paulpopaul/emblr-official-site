@@ -56,16 +56,24 @@
         
         var menuTrigger = $('.opaque-controls');
         var searchField = $('.search-border');
+        var $icon_search = $('.icon-search');
 
         $WIN.on('scroll', function() {
 
             if ($WIN.scrollTop() > 150) {
                 menuTrigger.addClass('opaque');
                 searchField.addClass('opaque');
+
+                if( $icon_search.find('#search').is(':checked') && !$icon_search.hasClass('on-opaque-movement') ) {
+                    $icon_search.addClass('on-opaque-movement');
+                }
             }
             else {
                 menuTrigger.removeClass('opaque');
                 searchField.removeClass('opaque');
+
+                if( $icon_search.hasClass('on-opaque-movement') )
+                    $icon_search.removeClass('on-opaque-movement');
             }
 
         });
