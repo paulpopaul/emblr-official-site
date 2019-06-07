@@ -19,7 +19,7 @@
 
           <div class='input'>
             <span id="prompt-field">></span>
-            <input id="prompt" type="text" onkeypress="keyPressed()" autocomplete="off">
+            <input id="prompt" type="text" autocomplete="off">
           </div>
 
         </div>
