@@ -407,7 +407,7 @@
             },
 
             {
-                breakpoint: 1600, // or more
+                breakpoint: 1605, // or more
                 settings: {
                     slidesToShow: 6
                 }
@@ -415,7 +415,7 @@
 
 
             {
-                breakpoint: 1345, // or more
+                breakpoint: 1400, // or more
                 settings: {
                     slidesToShow: 5
                 }

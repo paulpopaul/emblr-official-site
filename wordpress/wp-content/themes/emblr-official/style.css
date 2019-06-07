@@ -4416,8 +4416,8 @@ html.no-csstransitions .home-content__main {
     font-weight: 600;
     margin: 0 0 0 0;
     cursor: pointer;
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 8px;
+    margin-right: 8px;
     padding-top: 6px;
   }
 }
