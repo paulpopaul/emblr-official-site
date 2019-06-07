@@ -4057,6 +4057,7 @@ html.no-csstransitions .home-content__main {
 
 .storie-container {
   text-align: center;
+  outline-width: 0px;
 }
 
 #titulo-testimonio {
