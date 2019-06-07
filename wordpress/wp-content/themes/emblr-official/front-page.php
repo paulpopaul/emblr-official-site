@@ -64,7 +64,7 @@
                     </ul>
 
                 </div> <!-- end header-nav__content -->
-            <div>
+            </div>
 
         </nav> <!-- end header-nav -->
 
