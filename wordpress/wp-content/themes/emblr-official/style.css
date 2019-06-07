@@ -2291,6 +2291,7 @@ ul.page-dots li:not(.active):hover button::after {
  * ------------------------------------------------------------------- */
 .opaque-controls {
 	border-radius: 50px;
+  border: 2px solid transparent;
 	width: 200px;
 	height: 45px;
 
