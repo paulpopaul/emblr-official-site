@@ -363,6 +363,27 @@
     };
 
 
+    /* Focus in search field (home)
+    * ------------------------------------------------------ */
+    var seachOpaqueDisplacement = function() {
+        $('.search-init').click(function() {
+            if( $('.icon-search').find('.search-border').hasClass('opaque') )
+                $('.icon-search').addClass('on-opaque-movement');
+
+            setTimeout(function() { //work-around
+                $('#search-field').focus();
+            }, 400);
+        });
+
+        $('.icon-search').find('.search-active').click(function() {
+            if( $('.icon-search').hasClass('on-opaque-movement') )
+                setTimeout(function() { //work-around
+                    $('.icon-search').removeClass('on-opaque-movement');
+                }, 10);
+        });
+    }
+
+
     /* noticias
     * ------------------------------------------------------ */
     var storiesSlider = function() {
@@ -477,6 +498,7 @@
         storiesSlider();
         shuffleText();
         typeitInit();
+        seachOpaqueDisplacement();
 
     })();
 

@@ -1821,6 +1821,12 @@ body.menu-is-open {
 
 .search .search-border.opaque {
   background-color: #000 !important;
+  border-color: #fff;
+}
+
+.icon-search.on-opaque-movement {
+  border-right: none;
+  right: 112px;
 }
 
 .search .search-border:after { /* palo lupa */
@@ -1863,6 +1869,10 @@ body.menu-is-open {
 }
 
 .search .search-field:focus {
+  transition: all 0.3s ease-in-out;
+}
+
+.search .search-field::placeholder {
   transition: all 0.3s ease-in-out;
 }
 
@@ -1916,14 +1926,19 @@ body.menu-is-open {
 }
 
 /* Transición cuando se pincha en la lupa */ 
+
 .search #search:checked ~ .search-border {
   width: 75%;
-  height: 69%;
+  height: 45.5px;
   background: #232323;
-  top: 52%;
+  top: 31.5px;
   left: 48%;
-  /*border-radius: 0px;*/
+
   transition: all 0.2s 0.2s;
+}
+
+.search #search:checked ~ .search-border.opaque {
+  /*border-color: #1a1a1a;*/
 }
 
 /* Transición palito de la lupa */
