@@ -3240,6 +3240,7 @@ html.no-csstransitions .home-content__main {
   .home-content h3 {
     font-size: 2.4rem;
   }
+}
 
 @media only screen and (max-width:700px) {
   .home-content h1 {
