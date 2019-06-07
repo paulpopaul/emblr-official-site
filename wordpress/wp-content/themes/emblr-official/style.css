@@ -4778,7 +4778,7 @@ html.no-csstransitions .home-content__main {
   font-size: 3rem !important;
 }
   .testimonials__slider .slick-dots{
-    height: 32px;
+    height: 36px;
   }
 
   .testimonials__icon {
@@ -4958,7 +4958,7 @@ html.no-csstransitions .home-content__main {
 
   .section-page.apartado-1 > h6 {
     font-size: 15px;
-    height: 63px;
+    height: 60px;
     overflow: hidden;
   }
 }
