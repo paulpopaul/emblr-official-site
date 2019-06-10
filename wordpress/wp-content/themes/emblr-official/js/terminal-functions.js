@@ -96,7 +96,7 @@
 
   var init = () => {
     n = 0
-    cok('domain: ensambler.cl@127.0.0.1 ~\nReady .\n\n\n')
+    cok('domain: ensambler.cl@127.0.0.1 ~\nReady .')
   }
 
   init()

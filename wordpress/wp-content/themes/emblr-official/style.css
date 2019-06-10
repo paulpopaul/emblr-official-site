@@ -5005,7 +5005,7 @@ html.no-csstransitions .home-content__main {
   text-align: left;
   position: relative;
   margin: 20px auto;
-  width: 100% !important;
+  width: 1000px !important;
   box-shadow: 3px -1px 23px -6px rgba(0,0,0,.5);
   /*box-shadow: 0px 10px 25px rgba(0,0,0,.5);*/
 }
@@ -5025,7 +5025,7 @@ html.no-csstransitions .home-content__main {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 
-  height: 620px;
+  height: 520px;
   overflow: scroll;
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
@@ -5081,13 +5081,13 @@ html.no-csstransitions .home-content__main {
 
 .terminal__window {
   background: #000;
-  padding: 50px;
+  padding: 33px 24px;
 }
 
 .terminal__window,
 .terminal__window input,
 .terminal__window textarea {
-  font-size: 23px;
+  font-size: 20px;
   font-weight: bold;
   color: #fff;
 }
@@ -5145,6 +5145,10 @@ html.no-csstransitions .home-content__main {
 
 .terminal__window .ok {
   color: #1fbda2;
+}
+
+.terminal__window pre.ok:first-child {
+  margin-bottom: 33px;
 }
 
 .terminal__window .out_i, .out_a {
