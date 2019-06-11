@@ -1,9 +1,14 @@
 <!-- contact
 ================================================== -->
 <section id="contact" class="s-contact target-section section-page">
-    <h1 data-aos="fade-up">Contáctanos</h1>
+  <div class="contact-bg">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 900 720" enable-background="new 0 0 900 720" xml:space="preserve" id="worldmap"></svg>
+  </div>
+  
+  <div class="contact-content">
+    <h1 data-aos="fade-up">@Contáctanos</h1>
 
-    <p>Hagamos realidad el proyecto que tienes en mente</p>
+    <p data-aos="fade-up">Hagamos realidad el proyecto que tienes en mente</p>
 
     <!-- <img src="<?= get_template_directory_uri() ?>/images/logo.svg" alt="" data-aos="fade-up"> -->
 
@@ -26,4 +31,5 @@
 
         </div>
     </div>
+  </div>
 </section> <!-- end s-contact -->

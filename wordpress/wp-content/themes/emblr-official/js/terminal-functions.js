@@ -6,6 +6,7 @@
   let $prompt = document.getElementById('prompt')
   let $prev = document.getElementById('prev')
   let $prompt_field = document.getElementById('prompt-field')
+  let $terminal_window = document.querySelector('.terminal__window')
 
   const fields_txt = [
     'nombre',
@@ -46,7 +47,7 @@
     })
     
     // scroll to last output
-    $prev.scrollTop = $prev.scrollHeight
+    $terminal_window.scrollTop = $terminal_window.scrollHeight
   }
 
   const render_editable = s => {
@@ -73,7 +74,7 @@
     })
     
     // scroll to last output
-    $prev.scrollTop = $prev.scrollHeight
+    $terminal_window.scrollTop = $terminal_window.scrollHeight
   }
 
   const cout = t => render([{r: t, c: 'out'}])

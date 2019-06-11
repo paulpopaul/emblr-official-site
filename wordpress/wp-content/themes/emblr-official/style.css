@@ -1464,7 +1464,7 @@ body.menu-is-open {
   padding-bottom: 100px;
 }
 
-.section-page > h1 {
+.section-page h1 {
   margin-top: 0;
   font-size: 48px;
   font-weight: 800;
@@ -2406,8 +2406,16 @@ ul.page-dots li:not(.active):hover button::after {
     right: 145px;
   }
 
-  .header-menu-toggle, .opaque-controls {
+  .header-menu-toggle {
     right: 60px;
+  }
+
+  .opaque-controls {
+    right: 46px;
+  }
+
+  .icon-search.on-opaque-movement {
+    right: 84px;
   }
 
   .page-counter {
@@ -2428,6 +2436,9 @@ ul.page-dots li:not(.active):hover button::after {
 
   .opaque-controls {
     width: 48px;
+    border-radius: 0;
+    border: none !important;
+    right: 60px;
   }
 
   .icon-search {
@@ -4986,10 +4997,32 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-contact {
-  background-color: #1a1a1a;
+background-image: linear-gradient(to top, #0c0c0c 0%, black 100%);
   color: #666;
+
   text-align: center;
   position: relative;
+
+  overflow: hidden;
+}
+
+.contact-content * {
+  position: relative;
+}
+
+.contact-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  padding-top: 200px;
+  padding-left: 16.4%;
+  transform: scale(1.5);
+
+  opacity: 2;
 }
 
 .s-contact img {
@@ -4999,6 +5032,25 @@ html.no-csstransitions .home-content__main {
   margin-bottom: 70px;
 }
 
+@keyframes blink {
+  0% {
+    stroke: rgba(51, 204, 153, 1);
+    stroke-width: 1;
+  }
+  100% {
+    stroke: rgba(51, 204, 153, 0.1);
+    stroke-width: 15;
+  }
+}
+
+circle[fill="#FBD9E"] { /* color marcador debe coincidir */
+  padding: 20px;
+  position: relative;
+  -webkit-animation: blink 1.5s infinite ease-out;
+  -moz-animation: blink 1.5s infinite ease-out;
+  animation: blink 1.5s infinite ease-out;
+}
+
 /* ----------------GRAPHICS: Terminal */
 
 .terminal {
@@ -5006,7 +5058,6 @@ html.no-csstransitions .home-content__main {
   position: relative;
   margin: 20px auto;
   width: 1000px !important;
-  box-shadow: 3px -1px 23px -6px rgba(0,0,0,.5);
   /*box-shadow: 0px 10px 25px rgba(0,0,0,.5);*/
 }
 
@@ -5015,7 +5066,7 @@ html.no-csstransitions .home-content__main {
   padding-left: 17px;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
-  background-color: #333;
+  background-color: #121212;
 }
 
 .terminal__window {
@@ -5452,7 +5503,6 @@ html.no-csstransitions .home-content__main {
 footer {
   padding-top: 140px;
   background-color: #000000;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
   position: relative;
 
