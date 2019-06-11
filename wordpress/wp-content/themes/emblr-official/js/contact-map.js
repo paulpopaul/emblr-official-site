@@ -12,7 +12,7 @@
       newCircle.setAttribute('r', '1');
       if(i === 994 || i === 1443 || i === 1604 || i === 5018) {
         var areaTitle;
-      	newCircle.setAttribute('fill', 'red'); // color marcadores
+      	newCircle.setAttribute('fill', '#FBD9E'); // color marcadores
         switch(i) {
           case 994:
             areaTitle = 'Markham, Ontario';
@@ -30,7 +30,7 @@
         newCircle.setAttribute('title', ''+areaTitle+'');
         $('#worldmap').append(newCircle);
       } else {
-      	newCircle.setAttribute('fill', '#1fbda2'); // color puntitos general
+      	newCircle.setAttribute('fill', '#1c1c1c'); // color puntitos general
         $('#worldmap').prepend(newCircle);
       }
        

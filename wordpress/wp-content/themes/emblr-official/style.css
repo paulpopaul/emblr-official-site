@@ -4986,37 +4986,18 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 
- @-webkit-keyframes blink {
-  0% {
-    stroke: rgba(193, 215, 46, 0.8);
-    stroke-width: 1;
-  }
-  100% {
-    stroke: rgba(193, 215, 46, 0.1);
-    stroke-width: 15;
-  }
-}
-@-moz-keyframes blink {
-  0% {
-    stroke: rgba(193, 215, 46, 0.8);
-    stroke-width: 1;
-  }
-  100% {
-    stroke: rgba(193, 215, 46, 0.1);
-    stroke-width: 15;
-  }
-}
+
 @keyframes blink {
   0% {
-    stroke: rgba(193, 215, 46, 0.8);
+    stroke: rgba(51, 204, 153, 1);
     stroke-width: 1;
   }
   100% {
-    stroke: rgba(193, 215, 46, 0.1);
+    stroke: rgba(51, 204, 153, 0.1);
     stroke-width: 15;
   }
 }
-circle[fill="#333"] { /* color marcador debe coincidir */
+circle[fill="#FBD9E"] { /* color marcador debe coincidir */
   padding: 20px;
   position: relative;
   -webkit-animation: blink 1.5s infinite ease-out;
@@ -5026,7 +5007,7 @@ circle[fill="#333"] { /* color marcador debe coincidir */
 
 
 .s-contact {
-  background-color: #1a1a1a;
+background-image: linear-gradient(to top, #0c0c0c 0%, black 100%);
   color: #666;
 
   text-align: center;
@@ -5052,7 +5033,7 @@ circle[fill="#333"] { /* color marcador debe coincidir */
   padding-left: 16.4%;
   transform: scale(1.5);
 
-  opacity: .3;
+  opacity: 2;
 }
 
 .s-contact img {
@@ -5069,7 +5050,6 @@ circle[fill="#333"] { /* color marcador debe coincidir */
   position: relative;
   margin: 20px auto;
   width: 1000px !important;
-  box-shadow: 3px -1px 23px -6px rgba(0,0,0,.5);
   /*box-shadow: 0px 10px 25px rgba(0,0,0,.5);*/
 }
 
@@ -5078,7 +5058,7 @@ circle[fill="#333"] { /* color marcador debe coincidir */
   padding-left: 17px;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
-  background-color: #333;
+  background-color: #121212;
 }
 
 .terminal__window {
