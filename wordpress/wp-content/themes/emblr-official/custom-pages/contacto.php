@@ -6,9 +6,9 @@
   </div>
   
   <div class="contact-content">
-    <h1 data-aos="fade-up">Contáctanos</h1>
+    <h1 data-aos="fade-up">@Contáctanos</h1>
 
-    <p>Hagamos realidad el proyecto que tienes en mente</p>
+    <p data-aos="fade-up">Hagamos realidad el proyecto que tienes en mente</p>
 
     <!-- <img src="<?= get_template_directory_uri() ?>/images/logo.svg" alt="" data-aos="fade-up"> -->
 
