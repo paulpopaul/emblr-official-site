@@ -4985,27 +4985,6 @@ html.no-csstransitions .home-content__main {
  * # contact
  *
  * ------------------------------------------------------------------- */
-
-
-@keyframes blink {
-  0% {
-    stroke: rgba(51, 204, 153, 1);
-    stroke-width: 1;
-  }
-  100% {
-    stroke: rgba(51, 204, 153, 0.1);
-    stroke-width: 15;
-  }
-}
-circle[fill="#FBD9E"] { /* color marcador debe coincidir */
-  padding: 20px;
-  position: relative;
-  -webkit-animation: blink 1.5s infinite ease-out;
-  -moz-animation: blink 1.5s infinite ease-out;
-  animation: blink 1.5s infinite ease-out;
-}
-
-
 .s-contact {
 background-image: linear-gradient(to top, #0c0c0c 0%, black 100%);
   color: #666;
@@ -5040,6 +5019,25 @@ background-image: linear-gradient(to top, #0c0c0c 0%, black 100%);
 
   margin-top: 70px;
   margin-bottom: 70px;
+}
+
+@keyframes blink {
+  0% {
+    stroke: rgba(51, 204, 153, 1);
+    stroke-width: 1;
+  }
+  100% {
+    stroke: rgba(51, 204, 153, 0.1);
+    stroke-width: 15;
+  }
+}
+
+circle[fill="#FBD9E"] { /* color marcador debe coincidir */
+  padding: 20px;
+  position: relative;
+  -webkit-animation: blink 1.5s infinite ease-out;
+  -moz-animation: blink 1.5s infinite ease-out;
+  animation: blink 1.5s infinite ease-out;
 }
 
 /* ----------------GRAPHICS: Terminal */
