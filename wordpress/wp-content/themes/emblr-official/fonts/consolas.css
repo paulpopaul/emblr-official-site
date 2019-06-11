@@ -1,21 +1,21 @@
 @font-face {
     font-family: 'Consolas';
-    src: url('/wp-content/themes/emblr-official/fonts/consolas-bold.eot');
-    src: url('/wp-content/themes/emblr-official/fonts/consolas-bold.eot?#iefix') format('embedded-opentype'),
-        url('/wp-content/themes/emblr-official/fonts/consolas-bold.woff2') format('woff2'),
-        url('/wp-content/themes/emblr-official/fonts/consolas-bold.woff') format('woff'),
-        url('/wp-content/themes/emblr-official/fonts/consolas-bold.ttf') format('truetype');
+    src: url('consolas-bold.eot');
+    src: url('consolas-bold.eot?#iefix') format('embedded-opentype'),
+        url('consolas-bold.woff2') format('woff2'),
+        url('consolas-bold.woff') format('woff'),
+        url('consolas-bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Consolas';
-    src: url('/wp-content/themes/emblr-official/fonts/consolas.eot');
-    src: url('/wp-content/themes/emblr-official/fonts/consolas.eot?#iefix') format('embedded-opentype'),
-        url('/wp-content/themes/emblr-official/fonts/consolas.woff2') format('woff2'),
-        url('/wp-content/themes/emblr-official/fonts/consolas.woff') format('woff'),
-        url('/wp-content/themes/emblr-official/fonts/consolas.ttf') format('truetype');
+    src: url('consolas.eot');
+    src: url('consolas.eot?#iefix') format('embedded-opentype'),
+        url('consolas.woff2') format('woff2'),
+        url('consolas.woff') format('woff'),
+        url('consolas.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

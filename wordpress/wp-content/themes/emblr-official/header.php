@@ -18,6 +18,7 @@
     ================================================== -->
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/base.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/vendor.css">
+    <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/fonts/consolas.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="<? bloginfo('stylesheet_url') ?>">
 
