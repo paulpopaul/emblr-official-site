@@ -150,6 +150,7 @@
     <script src="<?= get_template_directory_uri() ?>/js/shuffle-text.min.js"></script>
     <script src="<?= get_template_directory_uri() ?>/js/main.js"></script>
     <script src="<?= get_template_directory_uri() ?>/js/terminal-functions.js"></script>
+    <script src="<?= get_template_directory_uri() ?>/js/contact-map.js"></script>
 
     <? wp_footer() ?>
 

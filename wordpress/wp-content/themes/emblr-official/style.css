@@ -4985,11 +4985,74 @@ html.no-csstransitions .home-content__main {
  * # contact
  *
  * ------------------------------------------------------------------- */
+
+ @-webkit-keyframes blink {
+  0% {
+    stroke: rgba(193, 215, 46, 0.8);
+    stroke-width: 1;
+  }
+  100% {
+    stroke: rgba(193, 215, 46, 0.1);
+    stroke-width: 15;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    stroke: rgba(193, 215, 46, 0.8);
+    stroke-width: 1;
+  }
+  100% {
+    stroke: rgba(193, 215, 46, 0.1);
+    stroke-width: 15;
+  }
+}
+@keyframes blink {
+  0% {
+    stroke: rgba(193, 215, 46, 0.8);
+    stroke-width: 1;
+  }
+  100% {
+    stroke: rgba(193, 215, 46, 0.1);
+    stroke-width: 15;
+  }
+}
+circle[fill="#333"] { /* color marcador debe coincidir */
+  padding: 20px;
+  position: relative;
+  -webkit-animation: blink 1.5s infinite ease-out;
+  -moz-animation: blink 1.5s infinite ease-out;
+  animation: blink 1.5s infinite ease-out;
+}
+
+
 .s-contact {
   background-color: #1a1a1a;
   color: #666;
+
   text-align: center;
   position: relative;
+
+  overflow: hidden;
+}
+
+.contact-content * {
+  position: relative;
+}
+
+.contact-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid red;
+  padding-top: 200px;
+  padding-left: 16.4%;
+  transform: scale(1.5);
+
+  opacity: .3;
 }
 
 .s-contact img {
