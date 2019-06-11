@@ -2406,8 +2406,16 @@ ul.page-dots li:not(.active):hover button::after {
     right: 145px;
   }
 
-  .header-menu-toggle, .opaque-controls {
+  .header-menu-toggle {
     right: 60px;
+  }
+
+  .opaque-controls {
+    right: 46px;
+  }
+
+  .icon-search.on-opaque-movement {
+    right: 84px;
   }
 
   .page-counter {
@@ -2428,6 +2436,9 @@ ul.page-dots li:not(.active):hover button::after {
 
   .opaque-controls {
     width: 48px;
+    border-radius: 0;
+    border: none !important;
+    right: 60px;
   }
 
   .icon-search {
