@@ -2998,12 +2998,6 @@ html.no-csstransitions .home-content__main {
   }
 }
 
-/* iPhone 4,5,5c */
-@media only screen and (max-width:320px) {
-  .home-content__logo {
-    width: 165px;
-  }
-}
 /* end home content logo responsive
 * ------------------------------------------------------------------- */
 
