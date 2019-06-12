@@ -1445,12 +1445,12 @@ body.menu-is-open {
   -o-transition: opacity 0.1s ease-in-out;
 }
 
-.blurred-back {
+/*.blurred-back {
   filter: blur(9.7px);
   -webkit-filter: blur(9.7px);
   transition: all 0.2s ease-in-out;
   opacity: .63;
-}
+}*/
 
 .target-section {
   transition: filter 0.2s ease-in-out;
@@ -2027,7 +2027,8 @@ body.menu-is-open {
 
 .header-nav__content-container {
     padding: 3.6rem 3rem 3.6rem 30%;
-    overflow: auto;
+    overflow-x: hidden !important;
+    overflow-y: auto;
     height: 100%;
 }
 
