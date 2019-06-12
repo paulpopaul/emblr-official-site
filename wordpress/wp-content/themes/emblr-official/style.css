@@ -1445,13 +1445,13 @@ body.menu-is-open {
   -o-transition: opacity 0.1s ease-in-out;
 }
 
-.blurred-back {
+/*.blurred-back {
   filter: blur(9.7px);
   -webkit-filter: blur(9.7px);
   transition: all 0.2s ease-in-out;
   opacity: .63;
 }
-
+*/
 .target-section {
   transition: filter 0.2s ease-in-out;
 }
@@ -3319,6 +3319,15 @@ html.no-csstransitions .home-content__main {
   .home-content h3 {
     font-size: 1.8rem;
   }
+    .home-content__button {
+    margin-top: 3.6rem;
+  }
+
+  .home-content__button .btn {
+    height: 5.5rem !important;
+    max-width: 24rem;
+    font-size: 10px;
+  }
 
 }
 
@@ -3355,7 +3364,7 @@ html.no-csstransitions .home-content__main {
 
   .home-content__button .btn {
     height: 5.5rem !important;
-    max-width: 28rem;
+    max-width: 24rem;
     font-size: 10px;
   }
 
