@@ -4980,8 +4980,13 @@ html.no-csstransitions .home-content__main {
 
   .section-page.apartado-1 > h6 {
     font-size: 15px;
-    height: 60px;
     overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 561px) {
+  .section-page.apartado-1 > h6 {
+    height: 60px;
   }
 }
 
