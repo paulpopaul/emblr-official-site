@@ -4401,6 +4401,13 @@ html.no-csstransitions .home-content__main {
   /*.section-page > h1{
   font-size:52px !important;
 }*/
+  .noticias .slick-stories-next {
+    right: -25px;
+  }
+
+  .noticias .slick-stories-prev {
+    left: -25px;
+  }
 }
 
 @media only screen and (max-width:1024px) {
