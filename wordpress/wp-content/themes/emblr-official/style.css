@@ -1896,11 +1896,12 @@ body.menu-is-open {
 /* Icono de cerrar X */
 .search .close-search {
   position: absolute;
-  z-index: 3;
-  top: 1.5rem;
+  /*z-index: 3;*/
+  top: 1.2rem;
   right: 12.9rem;
   width: 2rem;
   height: 0rem;
+  cursos:pointer;
 }
 .search .close-search:before, .search .close-search:after {
   content: "";
