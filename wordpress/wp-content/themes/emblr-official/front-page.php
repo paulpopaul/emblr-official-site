@@ -94,7 +94,7 @@
 
     <? #require_once("custom-pages/sobre-nosotros.php") ?>
 
-    <? #require_once("custom-pages/servicios.php") ?>
+    <? require_once("custom-pages/servicios.php") ?>
 
     <? #require_once("custom-pages/portafolio.php") ?>
 

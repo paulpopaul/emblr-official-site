@@ -3509,51 +3509,135 @@ html.no-csstransitions .home-content__main {
  * # services
  *
  * ------------------------------------------------------------------- */
+
 .s-services {
-  padding-top: 18rem;
-  padding-bottom: 18rem;
-  position: relative;
-}
+    background:#000;
+  }
 
-/* ------------------------------------------------------------------- 
- * ## services list
- * ------------------------------------------------------------------- */
-.services {
-  margin-top: 9rem;
-}
+.s-services h1 {
+    margin-bottom: 0px;
+  }
 
-.item-service {
-  margin-bottom: .9rem;
-}
+.s-services p {
+    margin-bottom: 0px;
+    color: #1FBDA2;
+    font-family: "Montserrat", sans-serif;
+  }
+.s-services .texto-servicio { 
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    height: 100%;
+  }
 
-.item-service h3 {
-  margin-top: 0;
-}
 
-.item-service:nth-child(2n+1) {
-  padding-right: 50px;
-}
 
-.item-service:nth-child(2n+2) {
-  padding-left: 50px;
-}
+/* ----------------SERVICIO IZQUIERDA----------------- */
 
-.item-service__text {
-  margin-left: 7.2rem;
-}
+.s-services .servicio-izquierda {
+    width:335px;
+    height:335px;
+    background-color:#fff;
+    float:left;
+    margin-right: 47px;
+    margin-bottom: 40px;
+    background-image: url(images/servicios/servicio-izquierda.svg);
+    background-repeat: no-repeat;
+    background-position: -2px -20px;
+    background-size: 338px;
+  }
 
-.item-service__icon {
-  float: left;
-  color: #793ea5;
-  font-size: 4.5rem;
-  margin-top: -1.8rem;
-}
+.s-services .servicio-izquierda .texto-servicio i {
+    color:#fff;
+  }
 
+
+
+/* ----------------SERVICIO MEDIO----------------- */
+
+.s-services .servicio-medio {
+    width:335px;
+    height: 335px;
+    background-color:#1FBDA2;
+    float:left;
+    margin-right: 47px;
+    margin-bottom: 40px;
+    background-image: url(images/servicios/servicio-medio.svg);
+    background-repeat: no-repeat;
+    background-position: -2px -20px;
+    background-size: 338px;
+  }
+
+.s-services .servicio-medio .texto-servicio strong {
+    color:#121212;
+  }
+
+.s-services .servicio-medio .texto-servicio span {
+    color:#121212;
+  }
+
+.s-services .servicio-medio .texto-servicio hr {
+    height: 2px;
+    width: 10%;
+    background-color: #1FBDA2;
+  }
+
+.s-services .servicio-medio .texto-servicio i {
+    color:#1FBDA2;
+  }
+
+
+
+
+/* ----------------SERVICIO DERECHA----------------- */
+
+.s-services .servicio-derecha {
+    width:335px;
+    height: 335px;
+    background-color:#1FBDA2;
+    float:left;
+    margin-bottom: 40px;
+    background-image: url(images/servicios/servicio-derecha.svg);
+    background-repeat: no-repeat;
+    background-position: -2px -20px;
+    background-size: 338px;
+  }
+
+.s-services .row {
+    margin:0px;
+    margin-top:20px;
+  }
+
+.s-services .texto-servicio h1 {
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+
+.s-services .texto-servicio i {
+    font-size: 26px;
+    margin-bottom:30px;
+  }
+
+.s-services .texto-servicio strong {
+    color:#fff;
+    font-weight: normal;
+    float:left;
+  }
+
+.s-services .texto-servicio hr {
+    height: 2px;
+    width: 10%;
+    background-color: #fff;
+  }
+.s-services .servicio-derecha .texto-servicio i {
+    color:#fff;
+  }
 /* ------------------------------------------------------------------- 
  * responsive:
  * services
  * ------------------------------------------------------------------- */
-@media only screen and (max-width:1200px) {
+/*@media only screen and (max-width:1200px) {
   .services {
     max-width: 1000px;
   }
@@ -3634,6 +3718,7 @@ html.no-csstransitions .home-content__main {
 
 }
 
+*/
 
 /* ===================================================================
  * # works
