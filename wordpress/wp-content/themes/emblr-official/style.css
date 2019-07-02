@@ -3536,12 +3536,13 @@ html.no-csstransitions .home-content__main {
 /* ----------------SERVICIO IZQUIERDA----------------- */
 
 .s-services .servicio-izquierda {
-    width:335px;
+    width:30%;
+    margin-right: 5%;
     height:335px;
     background-color:#fff;
     float:left;
-    margin-right: 47px;
     margin-bottom: 40px;
+    overflow: hidden;
     background-image: url(images/servicios/servicio-izquierda.svg);
     background-repeat: no-repeat;
     background-position: -2px -20px;
@@ -3557,12 +3558,15 @@ html.no-csstransitions .home-content__main {
 /* ----------------SERVICIO MEDIO----------------- */
 
 .s-services .servicio-medio {
-    width:335px;
+    width:30%;
+    margin-right: 5%;
     height: 335px;
     background-color:#1FBDA2;
     float:left;
-    margin-right: 47px;
     margin-bottom: 40px;
+    overflow: hidden;
+    /*margin-right: 47px;
+    margin-bottom: 40px;*/
     background-image: url(images/servicios/servicio-medio.svg);
     background-repeat: no-repeat;
     background-position: -2px -20px;
@@ -3593,11 +3597,12 @@ html.no-csstransitions .home-content__main {
 /* ----------------SERVICIO DERECHA----------------- */
 
 .s-services .servicio-derecha {
-    width:335px;
+    width:30%;
     height: 335px;
     background-color:#1FBDA2;
     float:left;
     margin-bottom: 40px;
+    overflow: hidden;
     background-image: url(images/servicios/servicio-derecha.svg);
     background-repeat: no-repeat;
     background-position: -2px -20px;
@@ -3616,13 +3621,15 @@ html.no-csstransitions .home-content__main {
 
 .s-services .texto-servicio i {
     font-size: 26px;
-    margin-bottom:30px;
+    margin-bottom:20px;
   }
 
 .s-services .texto-servicio strong {
-    color:#fff;
+    color: #fff;
     font-weight: normal;
-    float:left;
+    float: left;
+    overflow: hidden;
+    max-height: 125px;
   }
 
 .s-services .texto-servicio hr {
