@@ -149,6 +149,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.3/dist/typeit.min.js"></script>
     <script src="<?= get_template_directory_uri() ?>/js/shuffle-text.min.js"></script>
     <script src="<?= get_template_directory_uri() ?>/js/main.js"></script>
+    <script src="<?= get_template_directory_uri() ?>/js/services-functions.js"></script>
     <script src="<?= get_template_directory_uri() ?>/js/terminal-functions.js"></script>
     <script src="<?= get_template_directory_uri() ?>/js/contact-map.js"></script>
 

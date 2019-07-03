@@ -3549,6 +3549,75 @@ html.no-csstransitions .home-content__main {
     background-size: 338px;
   }
 
+.s-services .servicio-minimizadof1 {
+    width:30%;
+    margin-right: 5%;
+    height:80px;
+    background-color:#fff;
+    float:left;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+.s-services .servicio-minimizadof13{
+    width:30%;
+    height:80px;
+    background-color:#fff;
+    float:left;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  .s-services .servicio-minimizadof1 h1 {
+    padding-top:20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+  }
+
+  .s-services .servicio-minimizadof13 h1 {
+    padding-top:20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+  }
+
+.s-services .servicio-minimizadof2 {
+    width:30%;
+    margin-right: 5%;
+    height:80px;
+    background-color:#fff;
+    float:left;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+.s-services .servicio-minimizadof23{
+    width:30%;
+    height:80px;
+    background-color:#fff;
+    float:left;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  .s-services .servicio-minimizadof2 h1 {
+        padding-top:20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+  }
+
+  .s-services .servicio-minimizadof23 h1 {
+        padding-top:20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+  }
+
+
 .s-services .servicio-izquierda .texto-servicio i {
     color:#fff;
   }
