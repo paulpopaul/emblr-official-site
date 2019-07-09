@@ -3517,7 +3517,6 @@ html.no-csstransitions .home-content__main {
 .s-services h1 {
     margin-bottom: 0px;
   }
-
 .s-services p {
     margin-bottom: 0px;
     color: #1FBDA2;
@@ -3533,9 +3532,9 @@ html.no-csstransitions .home-content__main {
 
 
 
-/* ----------------SERVICIO IZQUIERDA----------------- */
+/* ---------------- COLUMNA 1----------------- */
 
-.s-services .servicio-izquierda {
+.s-services .servicio-col-1 {
     width:30%;
     margin-right: 5%;
     height:335px;
@@ -3549,84 +3548,14 @@ html.no-csstransitions .home-content__main {
     background-size: 338px;
   }
 
-.s-services .servicio-minimizadof1 {
-    width:30%;
-    margin-right: 5%;
-    height:80px;
-    background-color:#fff;
-    float:left;
-    overflow: hidden;
-    margin-bottom: 20px;
-  }
-.s-services .servicio-minimizadof13{
-    width:30%;
-    height:80px;
-    background-color:#fff;
-    float:left;
-    overflow: hidden;
-    margin-bottom: 20px;
-  }
-
-  .s-services .servicio-minimizadof1 h1 {
-    padding-top:20px;
-    padding-bottom: 20px;
-    font-size: 18px;
-    color: black;
-    text-align: center;
-  }
-
-  .s-services .servicio-minimizadof13 h1 {
-    padding-top:20px;
-    padding-bottom: 20px;
-    font-size: 18px;
-    color: black;
-    text-align: center;
-  }
-
-.s-services .servicio-minimizadof2 {
-    width:30%;
-    margin-right: 5%;
-    height:80px;
-    background-color:#fff;
-    float:left;
-    overflow: hidden;
-    margin-bottom: 20px;
-  }
-.s-services .servicio-minimizadof23{
-    width:30%;
-    height:80px;
-    background-color:#fff;
-    float:left;
-    overflow: hidden;
-    margin-bottom: 20px;
-  }
-
-  .s-services .servicio-minimizadof2 h1 {
-        padding-top:20px;
-    padding-bottom: 20px;
-    font-size: 18px;
-    color: black;
-    text-align: center;
-  }
-
-  .s-services .servicio-minimizadof23 h1 {
-        padding-top:20px;
-    padding-bottom: 20px;
-    font-size: 18px;
-    color: black;
-    text-align: center;
-  }
-
-
-.s-services .servicio-izquierda .texto-servicio i {
+.s-services .servicio-col-1 i {
     color:#fff;
   }
 
 
+/* ---------------- COLUMNA 2----------------- */
 
-/* ----------------SERVICIO MEDIO----------------- */
-
-.s-services .servicio-medio {
+.s-services .servicio-col-2 {
     width:30%;
     margin-right: 5%;
     height: 335px;
@@ -3634,38 +3563,33 @@ html.no-csstransitions .home-content__main {
     float:left;
     margin-bottom: 40px;
     overflow: hidden;
-    /*margin-right: 47px;
-    margin-bottom: 40px;*/
     background-image: url(images/servicios/servicio-medio.svg);
     background-repeat: no-repeat;
     background-position: -2px -20px;
     background-size: 338px;
   }
 
-.s-services .servicio-medio .texto-servicio strong {
+.s-services .servicio-col-2 .texto-servicio strong {
     color:#121212;
   }
 
-.s-services .servicio-medio .texto-servicio span {
+.s-services .servicio-col-2 .texto-servicio span {
     color:#121212;
   }
 
-.s-services .servicio-medio .texto-servicio hr {
+.s-services .servicio-col-2 .texto-servicio hr {
     height: 2px;
     width: 10%;
     background-color: #1FBDA2;
   }
 
-.s-services .servicio-medio .texto-servicio i {
+.s-services .servicio-col-2 .texto-servicio i {
     color:#1FBDA2;
   }
 
+/* ---------------- COLUMNA 3----------------- */
 
-
-
-/* ----------------SERVICIO DERECHA----------------- */
-
-.s-services .servicio-derecha {
+.s-services .servicio-col-3 {
     width:30%;
     height: 335px;
     background-color:#1FBDA2;
@@ -3706,9 +3630,46 @@ html.no-csstransitions .home-content__main {
     width: 10%;
     background-color: #fff;
   }
-.s-services .servicio-derecha .texto-servicio i {
+.s-services .servicio-col-3 .texto-servicio i {
     color:#fff;
   }
+
+/* ----- RECTANGULOS ------*/
+.s-services .servicio-minimizado {
+    width:30%;
+    margin-right: 5%;
+    height:80px;
+    background-color:#fff;
+    float:left;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding-left:10px;
+  }
+
+.s-services .servicio-minimizado h1 {
+    font-size: 18px;
+    color: #000;
+    text-align: left;
+  }
+
+.s-services .servicio-minimizado:last-child {
+    margin-right: 0;
+  }
+
+.s-services .servicio-minimizado i {
+    color:#000;
+    float:right;
+  }
+
+.s-services .servicio-minimizado .titulo {
+  float:left;
+  width:90%;
+  }
+
+
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * services
