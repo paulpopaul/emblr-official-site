@@ -3504,7 +3504,6 @@ html.no-csstransitions .home-content__main {
 
 }
 
-
 /* ===================================================================
  * # services
  *
@@ -3512,6 +3511,10 @@ html.no-csstransitions .home-content__main {
 
 .s-services {
     background:#000;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
   }
 
 .s-services h1 {

@@ -140,6 +140,8 @@
 
     </div> <!-- end photoSwipe background -->
 
+    <? require_once("custom-pages/servicios.php") ?>
+
     <!-- Java Script
     ================================================== -->
     <script src="<?= get_template_directory_uri() ?>/js/jquery-3.2.1.min.js"></script>

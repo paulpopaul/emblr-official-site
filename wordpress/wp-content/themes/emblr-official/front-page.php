@@ -32,7 +32,8 @@
                 <h3>Navegar a</h3>
 
                 <div class="header-nav__content">
-                    
+        
+    
                     <ul class="header-nav__list">
                         <li><a class="smoothscroll"  href="#home">Inicio</a></li>
                         <li><a class="smoothscroll"  href="#about">Sobre Nosotros</a></li>
@@ -94,7 +95,7 @@
 
     <? #require_once("custom-pages/sobre-nosotros.php") ?>
 
-    <? require_once("custom-pages/servicios.php") ?>
+    <? #require_once("custom-pages/servicios.php") ?>
 
     <? #require_once("custom-pages/portafolio.php") ?>
 
@@ -106,6 +107,8 @@
     <!-- --> <? require_once("sub-sections/apartado-1.php") ?>
 
     <? require_once("custom-pages/contacto.php") ?>
+
+
 
 
     <!-- footer

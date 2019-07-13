@@ -39,7 +39,7 @@
             // will first fade out the loading animation 
             $("#loader").fadeOut("slow", function() {
                 // will fade out the whole DIV that covers the website.
-                $("#preloader").delay(200).fadeOut("slow");
+                $("#preloader").delay(300).fadeOut("slow");
             }); 
             
             // for hero content animations 
@@ -130,7 +130,6 @@
             });
         });
     };
-
 
 
    /* photoswipe
@@ -235,7 +234,7 @@
     var ssAlertBoxes = function() {
 
         $('.alert-box').on('click', '.alert-box__close', function() {
-            $(this).parent().fadeOut(300);
+            $(this).parent().fadeOut(500);
         }); 
 
     };
@@ -247,9 +246,9 @@
         
         AOS.init( {
             offset: 150,
-            duration: 500,
+            duration: 600,
             easing: 'ease-in-sine',
-            delay: 200,
+            delay: 300,
             once: true,
             disable: 'mobile'
         });
