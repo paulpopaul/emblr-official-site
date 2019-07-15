@@ -1,6 +1,40 @@
 <? get_header() ?>
 
 
+<?php
+
+    /*
+    * Título menú
+    */
+    $titulo_menu = get_field('titulo_menu', 'options');
+
+
+    /*
+    * Texto menú
+    */
+    $texto_menu = get_field('texto_menu', 'options');
+
+
+    /*
+    * Redes menú
+    */
+    $redes_menu = get_field('redes_menu', 'options');
+
+
+    /*
+    * Mini logo esquinero
+    */
+    $logo_esquina = get_field('logo_esquina', 'options');
+
+
+    /*
+    * Búsqueda
+    */
+    $busqueda = get_field('busqueda', 'options');
+
+?>
+
+
 <body id="top">
     
     <!-- preloader
@@ -16,12 +50,15 @@
     <!-- header
     ================================================== -->
     <header class="s-header">
-
+        
+        <? if ( $logo_esquina ): ?>
         <div class="header-logo">
             <a class="site-logo" href="#">
                 <img src="<?= get_template_directory_uri() ?>/images/logo.svg" alt="Homepage">
             </a>
         </div> <!-- end header-logo -->
+        <? endif ?>
+
 
         <nav class="header-nav">
             <div class="header-nav__bg"> <!-- blur background efx --> </div>
@@ -29,7 +66,7 @@
             <div class="header-nav__content-container">
                 <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
 
-                <h3>Navegar a</h3>
+                <h3> <?= $titulo_menu ?> </h3>
 
                 <div class="header-nav__content">
                     
@@ -40,35 +77,43 @@
                         <li><a class="smoothscroll"  href="#works">Portafolio</a></li>
                         <li><a class="smoothscroll"  href="#contact">Contacto</a></li>
                     </ul>
-        
-                    <p><a href='#0'>Ensambler</a> cree en tus sueños, y es por eso que queremos brindarte la <b>mejor asesoría e infraestructura del mercado</b>, aquellos que te permitan hacerlos realidad.</p>
+    
 
-                    
-        
+                    <? if ( $texto_menu ): ?>
+                        <p> <? echo $texto_menu ?> </p>
+                    <? endif ?>
+
+
+                    <? if ( $redes_menu ): ?>
                     <ul class="header-nav__social">
+                        <? global $social_links; ?>
+
+                        <? foreach ( $social_links as $social_name => $social ): ?>
+                        <? if ( $social ):
+                            switch ( $social_name ):
+                                case "facebook": $social_name .= "-f"; break;
+                                case "linkedin": $social_name .= "-in"; break;
+                            endswitch
+                        ?>
+
                         <li>
-                            <a href="#0"><i class="fab fa-facebook"></i></a>
+                            <a href="<?= $social['url'] ?>" target="<?= $social['target'] ?>">
+                                <i class="fab fa-<?= $social_name ?>"></i>
+                            </a>
                         </li>
-                        <li>
-                            <a href="#0"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="#0"><i class="fab fa-instagram"></i></a>
-                        </li>
-                        <li>
-                            <a href="#0"><i class="fab fa-behance"></i></a>
-                        </li>
-                        <li>
-                            <a href="#0"><i class="fab fa-dribbble"></i></a>
-                        </li>
+                        
+                        <? endif ?>
+                        <? endforeach ?>
                     </ul>
+                    <? endif ?>
 
                 </div> <!-- end header-nav__content -->
             </div>
 
         </nav> <!-- end header-nav -->
 
-
+        
+        <? if ( $busqueda ): ?>
         <div class="opaque-controls"></div>
 
         <a class="icon-search">
@@ -80,6 +125,8 @@
             <div class="close-search"></div> 
             </div>
         </a> 
+        <? endif ?>
+
 
         <a class="header-menu-toggle" href="#0">
             <span class="header-menu-icon"></span>

@@ -259,8 +259,9 @@
     * ------------------------------------------------------ */
     var loadParticles = function() {
 
-        /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-        particlesJS.load('particles', 'wp-content/themes/emblr-official/js/particles.json');
+        if ( $('#particles').length )
+            /* particlesJS.load( @dom-id, @path-json, @callback (optional) ) */
+            particlesJS.load('particles', 'wp-content/themes/emblr-official/js/particles.json');
 
     };
 
@@ -506,7 +507,7 @@
         ssSmoothScroll();
         ssAlertBoxes();
         ssAOS();
-        //loadParticles();
+        loadParticles();
         scrollWaypoint();
         logoEnableDisableParticles();
         focusInSearchField();

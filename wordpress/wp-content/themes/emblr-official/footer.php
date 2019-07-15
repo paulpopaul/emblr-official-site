@@ -1,3 +1,43 @@
+    <?php
+
+        /*
+        * Registro marca
+        */
+        $registro_marca = get_field('registro_marca', 'options');
+
+
+        /*
+        * Redes sociales footer
+        */
+        $redes_footer = get_field('redes_footer', 'options');
+
+
+        /*
+        * Teléfonos
+        */
+        $telefonos = get_field('telefonos', 'options');
+
+
+        /*
+        * Email principal visible
+        */
+        $email_principal = get_field('email_principal', 'options');
+
+
+        /*
+        * Sucursal #1
+        */
+        $sucursal_1 = get_field('sucursal_1', 'options');
+
+
+        /*
+        * Sucursal #2
+        */
+        $sucursal_2 = get_field('sucursal_2', 'options');
+
+    ?>
+
+
     <footer class="target-section">
         <div class="row" data-aos="fade-up">
             <div class="col-full ss-copyright">
@@ -36,19 +76,27 @@
                             <hr> <h1>Contacto</h1>
                             
                             <p>
-                                <strong>Teléfono</strong> <span>·</span> <br class="br-hidden"> 56 9 9988 7744 <br>
-                                <strong>Email</strong> <span>·</span> <br class="br-hidden"> hola@ensambler.cl
+                                <strong>Teléfono</strong> <span>·</span> <br class="br-hidden"> <?= $telefonos['1'] ?> <br>
+                                
+                                <? if ( $telefonos['2'] ): ?>
+                                <strong>Teléfono #2</strong> <span>·</span> <br class="br-hidden"> <?= $telefonos['2'] ?> <br>
+                                <? endif ?>
+
+                                <strong>Email</strong> <span>·</span> <br class="br-hidden"> <?= $email_principal ?>
                             </p>
 
                             <p>
-                                <strong>Dirección · Santiago</strong> <br>
-                                Av. Vicuña Mackenna #881, Santiago Centro
+                                <strong>Dirección · <?= $sucursal_1['ciudad'] ?></strong> <br>
+                                <?= $sucursal_1['direccion'] ?>
                             </p>
 
+                            <? if( $sucursal_2['ciudad'] ): ?>
                             <p>
-                                <strong>Dirección · Valdivia</strong> <br>
-                                Valdivia
+                                <strong>Dirección · <?= $sucursal_2['ciudad'] ?></strong> <br>
+                                <?= $sucursal_2['direccion'] ?>
                             </p>
+                            <? endif ?>
+                            
                         </div>
                     </div>
 
@@ -74,30 +122,49 @@
                 <div class="fl-col-group">
                     <div class="fl-rich-text marca">
                         <p>
-                            <span>2019</span><span>&nbsp;ENSAMBLER</span>
+                            <span><?= $registro_marca['ano'] ?></span><span>&nbsp;ENSAMBLER</span>
                             <br>
-                            <span>TODOS LOS DERECHOS RESERVADOS</span>
+                            <span><?= $registro_marca['derechos'] ?></span>
                         </p>
                     </div>
                 </div>
             </div>
 
+            <? if ( $redes_footer ): ?>
             <div class="fl-col-group"> 
                 <div class="fl-col-group social">
-                    <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fab fa-behance" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
+                    <? global $social_links; ?>
+
+                    <? foreach ( $social_links as $social_name => $social ): ?>
+                    <? if ( $social ):
+                        switch ( $social_name ):
+                            case "facebook": $social_name .= "-f"; break;
+                            case "linkedin": $social_name .= "-in"; break;
+                        endswitch
+                    ?>
+
+                    <a href="<?= $social['url'] ?>" target="<?= $social['target'] ?>">
+                        <i class="fab fa-<?= $social_name ?>" aria-hidden="true"></i>
+                    </a>
+                    
+                    <? endif ?>
+                    <? endforeach ?>
                 </div>
             </div>
+            <? endif ?>
         </div>
 
+
+        <? global $navegacion_scroll ?>
+        
+        <? if ( $navegacion_scroll ): ?>
         <div class="footer__scroll">
             <a href="#home" class="scroll-link smoothscroll">
                 Volver
             </a>
         </div>
+        <? endif ?>
+
     </footer>
 
 

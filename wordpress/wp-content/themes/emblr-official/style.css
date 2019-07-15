@@ -2546,7 +2546,6 @@ ul.page-dots li:not(.active):hover button::after {
   width: 100%;
   height: 100vh;
   min-height: 700px;
-  background-color: #232323;
   position: relative;
   display: table;
 }
@@ -5700,7 +5699,7 @@ footer .marca span:nth-child(2) {
 }
 
 footer .marca span:last-child {
-  
+  text-transform: uppercase;
 }
 
 footer .footer-bottom { /* derechos */

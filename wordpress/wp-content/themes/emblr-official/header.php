@@ -1,3 +1,23 @@
+<?php
+
+    global $social_links;
+
+
+    /*
+    * Redes sociales
+    */
+    $social_links = array(
+        'facebook' => get_field('facebook', 'options'),
+        'twitter' => get_field('twitter', 'options'),
+        'instagram' => get_field('instagram', 'options'),
+        'linkedin' => get_field('linkedin', 'options'),
+        'behance' => get_field('behance', 'options'),
+        'dribbble' => get_field('dribbble', 'options')
+    );
+
+?>
+
+
 <!DOCTYPE html>
 
 <html class="no-js" <? language_attributes() ?>>
@@ -31,5 +51,5 @@
     <link rel="icon" href="<?= get_template_directory_uri() ?>/favicon.ico" type="image/x-icon">
 
     <? wp_head() ?>
-
+    
 </head>
