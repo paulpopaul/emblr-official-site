@@ -1,9 +1,24 @@
 <?php
 
+/*
+*	functions.php
+*
+*	tema: ensambler official
+*	desarrollado por @Ensambler
+*	www.ensambler.cl
+*/
+	
+
+	/*
+	*	Se registra menú principal
+	*/
 	if ( function_exists("register_nav_menu") )
 		register_nav_menu( "menu-principal", "Menú principal" );
 
 
+	/*
+	*	Se registra sistema de administración del tema
+	*/
 	if ( function_exists("acf_add_options_page") ) {
 
 		acf_add_options_page(array(
