@@ -9,7 +9,7 @@
 
  Description:   { Ingeniería de Software para Soluciones Empresariales Integradas. }
  Version:       1
- 
+
  Tags:          ensambler emblr official template theme wordpress
  
  */
@@ -5639,16 +5639,25 @@ footer {
   padding-right: 165px;
 }
 
-footer, #suscripcion {
+footer #footer-widgets a:link {
+  color: #1FBDA2;
+  font-weight: bold;
+}
+
+footer #footer-widgets a:link:hover {
+  color: #fff;
+}
+
+footer, #suscribe {
   font-size: 16px;
   color: #666;
 }
 
-footer #suscripcion {
+footer #suscribe {
 
 }
 
-footer #suscripcion:focus {
+footer #suscribe:focus {
 
 }
 
@@ -5737,8 +5746,8 @@ footer .fl-col-small {
   text-align: left;
 }
 
-/* sitio links */
-footer .fl-col:nth-child(2) {
+/* footer navigation links */
+footer .widget_landing_navigation.fl-col:not(:first-of-type) {
   text-align: center;
   padding-right: 0;
 }
@@ -5751,7 +5760,9 @@ footer .fl-col-small:last-child {
   padding-right: 0;
 }
 
-hr {
+footer .widget_contact_info h1::before,
+footer .widget_suscribe_news h1::before {
+  content: "";
   float: left;
   height: 22px;
   width: 8px;
@@ -5778,16 +5789,16 @@ footer .sobre-nosotros a {
   color:#1FBDA2 !important;
 }
 
-footer .contacto p {
+footer .widget_contact_info p {
   margin-top: 20px;
 }
 
-footer .sobre-nosotros .read-more {
+footer .read-more {
   margin-top: 20px;
-  display: block;
+  display: inline-block;
 }
 
-footer .contacto .br-hidden {
+footer .widget_contact_info .br-hidden {
   display: none;
 }
 
@@ -5799,9 +5810,9 @@ footer .fl-col span {
   margin-bottom: 0px;
 } 
 
-#grupo-textos {
+#footer-widgets {
   margin-bottom: 110px;
-  width:100%;
+  width: 100%;
 }
 
 .input-group {
@@ -5830,12 +5841,12 @@ footer .fl-col span {
   box-shadow: 0 2px 10px rgba(31, 189, 162, 0.3);
 }
 
-footer .sitio ul {
+footer .widget_landing_navigation ul {
   list-style: none;
   margin-left: 0;
 }
 
-footer .sitio a {
+footer .widget_landing_navigation a {
   color: #1FBDA2;
   font-weight: bold;
   margin-top: 6px;
@@ -5843,14 +5854,14 @@ footer .sitio a {
   text-transform: capitalize;
 }
 
-footer .sitio {
+footer .widget_landing_navigation.fl-col:not(:first-of-type) > div {
   text-align: left; 
   line-height: 25px;
   margin: 0 auto 0 auto !important;
   display: inline-block;
 }
 
-#suscripcion {
+#suscribe {
     margin:0px;
     margin-right: -4px;
     display: inline;
@@ -5867,7 +5878,7 @@ footer .sitio {
     transition: all 0.15s ease-in-out;
 }
 
-#suscripcion:focus {
+#suscribe:focus {
   border: 1px solid rgba(31, 189, 162, 0.8);
   border-right: none;
 
@@ -5875,12 +5886,12 @@ footer .sitio {
   transition: all 0.3s ease-in-out;
 }
 
-#suscripcion::placeholder {
+#suscribe::placeholder {
   color: #666;
   transition: all 0.15s ease-in-out;
 }
 
-#suscripcion:focus::placeholder {
+#suscribe:focus::placeholder {
   color: #fff;
   transition: all 0.3s ease-in-out;
 }
@@ -5967,11 +5978,11 @@ footer .sitio {
  * footer
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:1280px) {
-  footer .contacto p span {
+  footer .widget_contact_info p span {
     display: none;
   }
 
-  footer .contacto .br-hidden {
+  footer .widget_contact_info .br-hidden {
     display: block;
   }
 }
@@ -6015,7 +6026,7 @@ footer .sitio {
     text-align: left;
   }
 
-  #suscripcion {
+  #suscribe {
     width: calc(50% - 90px - 3px);
   }
 
@@ -6044,7 +6055,7 @@ footer {
 }
 
 @media only screen and (max-width:640px) {
-  #suscripcion {
+  #suscribe {
     width: calc(100% - 90px - 3px);
   }
 

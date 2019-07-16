@@ -8,12 +8,12 @@
     *   Redes sociales
     */
     $social_links = array(
-        'facebook' => get_field('facebook', 'options'),
-        'twitter' => get_field('twitter', 'options'),
-        'instagram' => get_field('instagram', 'options'),
-        'linkedin' => get_field('linkedin', 'options'),
-        'behance' => get_field('behance', 'options'),
-        'dribbble' => get_field('dribbble', 'options')
+        'facebook'  => get_field( 'facebook', 'options' ),
+        'twitter'   => get_field( 'twitter', 'options' ),
+        'instagram' => get_field( 'instagram', 'options' ),
+        'linkedin'  => get_field( 'linkedin', 'options' ),
+        'behance'   => get_field( 'behance', 'options' ),
+        'dribbble'  => get_field( 'dribbble', 'options' )
     );
 
 ?>
