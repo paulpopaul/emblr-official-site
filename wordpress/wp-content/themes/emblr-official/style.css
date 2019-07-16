@@ -3543,8 +3543,26 @@ html.no-csstransitions .home-content__main {
   width: 33.3%;
   float:left;
   padding-bottom: 15px;
+  cursor: pointer;
 }
 
+
+.s-services .row-services.hidden {
+  height: 100px;
+}
+
+.s-services .row-services.hidden .box-container {
+  background-color:white;
+  background-image: none !important;
+}
+
+.s-services .row-services.hidden .box-content > *:not(h1) {
+  display:none;
+}
+
+.s-services .row-services.hidden .box-container h1 span::before {
+  content: ">";
+}
 
 /* ----------------SERVICIO IZQUIERDA----------------- */
 .s-services .row-services .box-container{
@@ -3553,6 +3571,7 @@ html.no-csstransitions .home-content__main {
     background-position: center center;
     background-size: cover;
     height: 100%;
+
   }
 
 .s-services .box-container .box-content i {

@@ -493,6 +493,14 @@
         });
     }; 
 
+    /* Services
+    * ------------------------------------------------------ */
+    var viewServices = function() {
+        $('.s-services .box').click(function() {
+            
+        });
+
+    };
 
    /* Initialize
     * ------------------------------------------------------ */
@@ -515,6 +523,7 @@
         shuffleText();
         typeitInit();
         seachOpaqueDisplacement();
+        viewServices();
 
     })();
 

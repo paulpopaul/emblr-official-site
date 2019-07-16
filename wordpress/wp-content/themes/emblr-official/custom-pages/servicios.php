@@ -4,7 +4,7 @@
     <h1 data-aos="fade-up"> Servicios </h1>
     <p class="aos-init aos-animate" data-aos="fade-up" > Trabajamos contigo, no para ti</p>
 
-    <div class="row-services" data-aos="fade-up">
+    <div class="row-services hidden" data-aos="fade-up">
             <div class="box">
                 <div class="box-container">
                     <div class="box-content">
@@ -38,7 +38,7 @@
      
     </div>
 
-    <div class="row-services" data-aos="fade-up">
+    <div class="row-services hidden" data-aos="fade-up">
             <div class="box">
                 <div class="box-container">
                     <div class="box-content">
