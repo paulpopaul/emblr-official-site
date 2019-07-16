@@ -60,13 +60,10 @@
                     <!-- Inicio Sitio -->
                     <div class="fl-col fl-col-small">
                         <div class="sitio">
-                           <h1>Sitio</h1>
+                            <h1>Sitio</h1>
+                            
+                            <? custom_wp_nav_menu( ) ?>
 
-                            <a href="#">Inicio </a>
-                            <a href="#">Sobre Nosotros</a>
-                            <a href="#">Servicios</a>
-                            <a href="#">Portafolio</a>
-                            <a href="#">Contacto</a>
                         </div>
                     </div>
 
@@ -96,7 +93,7 @@
                                 <?= $sucursal_2['direccion'] ?>
                             </p>
                             <? endif ?>
-                            
+
                         </div>
                     </div>
 

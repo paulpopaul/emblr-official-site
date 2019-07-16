@@ -70,14 +70,8 @@
 
                 <div class="header-nav__content">
                     
-                    <ul class="header-nav__list">
-                        <li><a class="smoothscroll"  href="#home">Inicio</a></li>
-                        <li><a class="smoothscroll"  href="#about">Sobre Nosotros</a></li>
-                        <li><a class="smoothscroll"  href="#services">Servicios</a></li>
-                        <li><a class="smoothscroll"  href="#works">Portafolio</a></li>
-                        <li><a class="smoothscroll"  href="#contact">Contacto</a></li>
-                    </ul>
-    
+                    <? custom_wp_nav_menu( "header-nav__list" ) ?>
+
 
                     <? if ( $texto_menu ): ?>
                         <p> <? echo $texto_menu ?> </p>

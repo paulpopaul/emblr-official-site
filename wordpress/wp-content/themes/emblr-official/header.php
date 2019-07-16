@@ -1,10 +1,11 @@
 <?php
 
     global $social_links;
+    global $main_nav_menu;
 
 
     /*
-    * Redes sociales
+    *   Redes sociales
     */
     $social_links = array(
         'facebook' => get_field('facebook', 'options'),
