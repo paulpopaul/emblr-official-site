@@ -3522,108 +3522,104 @@ html.no-csstransitions .home-content__main {
     color: #1FBDA2;
     font-family: "Montserrat", sans-serif;
   }
-.s-services .texto-servicio { 
+.s-services .box-content { 
     padding-right: 30px;
     padding-left: 30px;
     padding-bottom: 30px;
     padding-top: 30px;
-    height: 100%;
+    min-height: 335px;
+    overflow:auto;
   }
 
+.s-services .row-services {
+    overflow: auto;
+    width:100%;
+    height: auto;
+    display:flex;
+    margin-top: 40px;
+  }
+
+.s-services .box{
+  width: 33.3%;
+  float:left;
+  padding-bottom: 15px;
+}
 
 
 /* ----------------SERVICIO IZQUIERDA----------------- */
-
-.s-services .servicio-izquierda {
-    width:30%;
-    margin-right: 5%;
-    height:335px;
-    background-color:#fff;
-    float:left;
-    margin-bottom: 40px;
-    overflow: hidden;
-    background-image: url(images/servicios/servicio-izquierda.svg);
+.s-services .row-services .box-container{
+    overflow: auto;
     background-repeat: no-repeat;
-    background-position: -2px -20px;
-    background-size: 338px;
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
   }
 
-.s-services .servicio-izquierda .texto-servicio i {
+.s-services .box-container .box-content i {
     color:#fff;
   }
 
+.s-services .row-services .box:first-child  {
+    background: #fff;
+    margin-right: 30px;
+    }
+.s-services .row-services .box:nth-child(2) {
+    background: #1FBDA2;
+    margin-right: 30px;
+    }
+.s-services .row-services .box:last-child {
+    background: #1FBDA2;
+    margin-right: 30px;
+    }
 
 
-/* ----------------SERVICIO MEDIO----------------- */
 
-.s-services .servicio-medio {
-    width:30%;
-    margin-right: 5%;
-    height: 335px;
-    background-color:#1FBDA2;
-    float:left;
-    margin-bottom: 40px;
-    overflow: hidden;
-    /*margin-right: 47px;
-    margin-bottom: 40px;*/
+.s-services .row-services .box:first-child .box-container {
+    background-image: url(images/servicios/servicio-izquierda.svg);
+
+    }
+.s-services .row-services .box:nth-child(2) .box-container {
     background-image: url(images/servicios/servicio-medio.svg);
-    background-repeat: no-repeat;
-    background-position: -2px -20px;
-    background-size: 338px;
   }
 
-.s-services .servicio-medio .texto-servicio strong {
+.s-services .row-services .box:last-child .box-container {
+    background-image: url(images/servicios/servicio-derecha.svg);
+
+  }
+
+.s-services .row-services .box:nth-child(2) .box-content strong {
     color:#121212;
   }
 
-.s-services .servicio-medio .texto-servicio span {
+.s-services .row-services .box:nth-child(2) .box-content span {
     color:#121212;
   }
 
-.s-services .servicio-medio .texto-servicio hr {
+.s-services .row-services .box:nth-child(2) .box-content hr {
     height: 2px;
     width: 10%;
     background-color: #1FBDA2;
   }
 
-.s-services .servicio-medio .texto-servicio i {
+.s-services .row-services .box:nth-child(2) .box-content i {
     color:#1FBDA2;
   }
 
-
-
-
 /* ----------------SERVICIO DERECHA----------------- */
 
-.s-services .servicio-derecha {
-    width:30%;
-    height: 335px;
-    background-color:#1FBDA2;
-    float:left;
-    margin-bottom: 40px;
-    overflow: hidden;
-    background-image: url(images/servicios/servicio-derecha.svg);
-    background-repeat: no-repeat;
-    background-position: -2px -20px;
-    background-size: 338px;
-  }
 
-.s-services .row {
-    margin:0px;
-    margin-top:20px;
-  }
 
-.s-services .texto-servicio h1 {
+.s-services .box-content h1 {
     font-size: 23px;
     margin-bottom: 10px;
   }
 
-.s-services .texto-servicio i {
+.s-services .box-content i {
     font-size: 26px;
     margin-bottom:20px;
   }
 
-.s-services .texto-servicio strong {
+.s-services .box-content strong {
     color: #fff;
     font-weight: normal;
     float: left;
@@ -3631,12 +3627,12 @@ html.no-csstransitions .home-content__main {
     max-height: 125px;
   }
 
-.s-services .texto-servicio hr {
+.s-services .box-content hr {
     height: 2px;
     width: 10%;
     background-color: #fff;
   }
-.s-services .servicio-derecha .texto-servicio i {
+.s-services .box:last-child .box-content i {
     color:#fff;
   }
 /* ------------------------------------------------------------------- 
