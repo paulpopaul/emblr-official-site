@@ -2094,7 +2094,7 @@ body.menu-is-open {
   max-width: 300px;
 }
 
-.header-nav__list {
+.header-nav__list ul {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 2.8rem;
@@ -2105,7 +2105,7 @@ body.menu-is-open {
   counter-reset: ctr;
 }
 
-.header-nav__list li {
+.header-nav__list ul li {
   padding: .9rem 0;
 }
 
@@ -2113,6 +2113,7 @@ body.menu-is-open {
   display: block;
   color: #FFFFFF;
   position: relative;
+  text-transform: capitalize;
 }
 
 .header-nav__list a:hover {
@@ -2465,11 +2466,11 @@ ul.page-dots li:not(.active):hover button::after {
     max-width: 280px;
   }
 
-  .header-nav__list {
+  .header-nav__list ul {
     font-size: 2.5rem;
   }
 
-  .header-nav__list li {
+  .header-nav__list ul li {
     padding: .6rem 0;
   }
 
@@ -2522,7 +2523,7 @@ ul.page-dots li:not(.active):hover button::after {
     margin-bottom: 6rem;
   }
 
-  .header-nav__list {
+  .header-nav__list ul {
     font-size: 2.2rem;
   }
 
@@ -5825,11 +5826,17 @@ footer .fl-col span {
   box-shadow: 0 2px 10px rgba(31, 189, 162, 0.3);
 }
 
+footer .sitio ul {
+  list-style: none;
+  margin-left: 0;
+}
+
 footer .sitio a {
   color: #1FBDA2;
   font-weight: bold;
   margin-top: 6px;
   display: block;
+  text-transform: capitalize;
 }
 
 footer .sitio {
