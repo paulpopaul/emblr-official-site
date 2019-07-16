@@ -1,11 +1,20 @@
 <?php
 
-/*
-*	functions.php
+/**
 *
-*	tema: ensambler official
-*	desarrollado por @Ensambler
-*	www.ensambler.cl
+*	Ensambler Official: functions and definitions
+*
+*	@version 	emblr-official-1
+*
+*	@author 	Ensambler <emblr@ensambler.cl>
+*	@copyright	Derechos reservados 2019, Ensambler
+*
+*	@link 		http://www.ensambler.cl/
+*
+*	@package	WordPress
+*	@subpackage emblr-official
+*	@since 		5.2.2
+*
 */
 	
 
@@ -55,8 +64,12 @@
 	}
 
 
-	/*
-    *   Imprime menú principal en cualquier locación
+	/**
+	*
+    *   Imprime menú principal (1 nivel) en cualquier locación
+    *
+    *	@param String $classname "nombre de clase para elemento de navegación <nav>"
+    *
     */
     function custom_wp_nav_menu ( $classname = "" ) {
     	## obtiene menús en idioma adecuado miltilenguaje
@@ -74,7 +87,7 @@
 		    <ul>
 			<? foreach ( $main_nav_menu_items as $menu_item ):
 				if ( $menu_item->post_status == "publish" ):
-					if ( $menu_item->type == "post_type" ) :
+					if ( $menu_item->type == "post_type" ):
 						$menu_item_link = str_replace( get_site_url() . "/", "#", $menu_item->url );
 					else:
 						$menu_item_link = $menu_item->url;
