@@ -70,13 +70,16 @@
 
                 <div class="header-nav__content">
                     
-                    <? custom_wp_nav_menu( "header-nav__list" ) ?>
+                    <?
+                        if ( function_exists('custom_wp_nav_menu') )
+                            custom_wp_nav_menu( 'header-nav__list' );
+                    ?>
 
 
                     <? if ( $widgets_menu ): ?>
                     <div id="menu-widgets">
 
-                        <? dynamic_sidebar( "main-menu" ) ?>
+                        <? dynamic_sidebar( 'main-menu' ) ?>
 
                     </div>
                     <? endif ?>

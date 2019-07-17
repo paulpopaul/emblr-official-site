@@ -21,11 +21,11 @@
 		// Construct
 		public function contact_info_widget( ) {
 			$options = array(
-				'classname'		=> "widget_contact_info",
-				'description'	=> "Añade información de contacto asociada a la página."
+				'classname'		=> 'widget_contact_info',
+				'description'	=> __( 'Añade información de contacto asociada a la página.', 'emblr' )
 			);
 
-			$this->WP_Widget( "contact_info_widget", "Información de contacto (emblr)", $options );
+			$this->WP_Widget( 'contact_info_widget', __('Información de contacto (emblr)', 'emblr'), $options );
 		}
 
 		// Front-end build
@@ -86,15 +86,15 @@
 			?>
 
 				<p>
-					<label for="<?= $this->get_field_id( "title" ) ?>">
-						<? _e( "Título:", "emblr-official" ) ?>
+					<label for="<?= $this->get_field_id( 'title' ) ?>">
+						<? _e( 'Título:', 'emblr' ) ?>
 					</label>
 
 					<input
 						type="text"
 						class="widefat"
-						id="<?= $this->get_field_id( "title" ) ?>"
-						name="<?= $this->get_field_name( "title" ) ?>"
+						id="<?= $this->get_field_id( 'title' ) ?>"
+						name="<?= $this->get_field_name( 'title' ) ?>"
 						value="<?= esc_attr( $instance['title'] ) ?>"
 					/>
 				</p>

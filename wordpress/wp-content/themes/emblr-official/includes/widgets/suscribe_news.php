@@ -12,7 +12,7 @@
 *	@link 	http://www.ensambler.cl/
 *
 *	@package	WordPress
-*	@subpackage emblr-official
+*	@subpackage emblr
 *
 */
 
@@ -22,11 +22,11 @@
 		// Construct
 		public function suscribe_news_widget( ) {
 			$options = array(
-				'classname'		=> "widget_suscribe_news",
-				'description'	=> "Añade un campo de suscripción de noticias."
+				'classname'		=> 'widget_suscribe_news',
+				'description'	=> __( 'Añade un campo de suscripción de noticias.', 'emblr' )
 			);
 
-			$this->WP_Widget( "suscribe_news_widget", "Suscripción de noticias (emblr)", $options );
+			$this->WP_Widget( 'suscribe_news_widget', __( 'Suscripción de noticias (emblr)', 'emblr'), $options );
 		}
 
 
@@ -69,60 +69,60 @@
 			?>
 
 				<p> <!-- title -->
-					<label for="<?= $this->get_field_id( "title" ) ?>">
-						<? _e( "Título:", "emblr-official" ) ?>
+					<label for="<?= $this->get_field_id( 'title' ) ?>">
+						<? _e( 'Título:', 'emblr' ) ?>
 					</label>
 
 					<input
 						type="text"
 						class="widefat"
-						id="<?= $this->get_field_id( "title" ) ?>"
-						name="<?= $this->get_field_name( "title" ) ?>"
+						id="<?= $this->get_field_id( 'title' ) ?>"
+						name="<?= $this->get_field_name( 'title' ) ?>"
 						value="<?= esc_attr( $instance['title'] ) ?>"
 					/>
 				</p>  <!-- title -->
 
 
 				<p>  <!-- description -->
-					<label for="<?= $this->get_field_id( "description" ) ?>">
-						<? _e( "Descripción:", "emblr-official" ) ?>
+					<label for="<?= $this->get_field_id( 'description' ) ?>">
+						<? _e( 'Descripción:', 'emblr' ) ?>
 					</label>
 
 					<input
 						type="text"
 						class="widefat"
-						id="<?= $this->get_field_id( "description" ) ?>"
-						name="<?= $this->get_field_name( "description" ) ?>"
+						id="<?= $this->get_field_id( 'description' ) ?>"
+						name="<?= $this->get_field_name( 'description' ) ?>"
 						value="<?= esc_attr( $instance['description'] ) ?>"
 					/>
 				</p> <!-- description -->
 
 
 				<p> <!-- placeholder -->
-					<label for="<?= $this->get_field_id( "placeholder" ) ?>">
-						<? _e( "Placeholder:", "emblr-official" ) ?>
+					<label for="<?= $this->get_field_id( 'placeholder' ) ?>">
+						<? _e( 'Placeholder:', 'emblr' ) ?>
 					</label>
 
 					<input
 						type="text"
 						class="widefat"
-						id="<?= $this->get_field_id( "placeholder" ) ?>"
-						name="<?= $this->get_field_name( "placeholder" ) ?>"
+						id="<?= $this->get_field_id( 'placeholder' ) ?>"
+						name="<?= $this->get_field_name( 'placeholder' ) ?>"
 						value="<?= esc_attr( $instance['placeholder'] ) ?>"
 					/>
 				</p> <!-- placeholder -->
 
 
 				<p> <!-- send -->
-					<label for="<?= $this->get_field_id( "send" ) ?>">
-						<? _e( "Botón enviar:", "emblr-official" ) ?>
+					<label for="<?= $this->get_field_id( 'send' ) ?>">
+						<? _e( 'Botón enviar:', 'emblr' ) ?>
 					</label>
 
 					<input
 						type="text"
 						class="widefat"
-						id="<?= $this->get_field_id( "send" ) ?>"
-						name="<?= $this->get_field_name( "send" ) ?>"
+						id="<?= $this->get_field_id( 'send' ) ?>"
+						name="<?= $this->get_field_name( 'send' ) ?>"
 						value="<?= esc_attr( $instance['send'] ) ?>"
 					/>
 				</p> <!-- send -->

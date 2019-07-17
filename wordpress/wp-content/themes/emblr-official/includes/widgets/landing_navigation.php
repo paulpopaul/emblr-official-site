@@ -22,11 +22,11 @@
 		// Construct
 		public function landing_navigation_widget( ) {
 			$options = array(
-				'classname'		=> "widget_landing_navigation",
-				'description'	=> "Añade navegación de sitio con enlaces #slug tipo landing page."
+				'classname'		=> 'widget_landing_navigation',
+				'description'	=> __( 'Añade navegación de sitio con enlaces #slug tipo landing page.', 'emblr' )
 			);
 
-			$this->WP_Widget( "landing_navigation_widget", "Navegación del sitio landing-page (emblr)", $options );
+			$this->WP_Widget( 'landing_navigation_widget', __('Navegación del sitio landing-page (emblr)', 'emblr'), $options );
 		}
 
 
@@ -38,8 +38,14 @@
 		?>
 			
 			<div>
-                <? echo $before_title . $instance['title'] . $after_title ?>
-                <? custom_wp_nav_menu( ) ?>
+            <?
+
+            	echo $before_title . $instance['title'] . $after_title;
+
+            	if ( function_exists('custom_wp_nav_menu') )
+            		custom_wp_nav_menu( );
+            	
+            ?>
             </div>
 
 		<?
@@ -61,15 +67,15 @@
 			?>
 
 				<p>
-					<label for="<?= $this->get_field_id( "title" ) ?>">
-						<? _e( "Título:", "emblr-official" ) ?>
+					<label for="<?= $this->get_field_id( 'title' ) ?>">
+						<? _e( 'Título:', 'emblr' ) ?>
 					</label>
 
 					<input
 						type="text"
 						class="widefat"
-						id="<?= $this->get_field_id( "title" ) ?>"
-						name="<?= $this->get_field_name( "title" ) ?>"
+						id="<?= $this->get_field_id( 'title' ) ?>"
+						name="<?= $this->get_field_name( 'title' ) ?>"
 						value="<?= esc_attr( $instance['title'] ) ?>"
 					/>
 				</p>
