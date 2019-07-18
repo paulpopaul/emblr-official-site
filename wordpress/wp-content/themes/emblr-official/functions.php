@@ -13,7 +13,7 @@
 *	@link 		http://www.ensambler.cl/
 *
 *	@package	WordPress
-*	@subpackage emblr
+*	@subpackage	emblr
 *	@since 		5.2.2
 *
 */
@@ -25,7 +25,7 @@
 	*	Se registra menú principal
 	*
 	*/
-	function register_main_menu() {
+	function register_main_menu( ) {
 
 		if ( function_exists('register_nav_menu') )
 			register_nav_menu( 'menu-principal', __('Menú principal', 'emblr') );
@@ -41,7 +41,7 @@
 	*	Habilita sistema de administración del tema
 	*
 	*/
-	function enable_theme_admin_options() {
+	function enable_theme_admin_options( ) {
 
 		if ( function_exists('acf_add_options_page') ) {
 
@@ -97,7 +97,8 @@
 	*	Registra "Testimonio" Custom Post Type
 	*
 	*/
-	function register_testimonio_custom_post_type() {
+	function register_testimonio_custom_post_type( ) {
+
 		## Mensajes Custom Post Type en Admin
 		$labels = array(
 
@@ -118,10 +119,10 @@
 		## Argumentos para registrar Custom Post Type
 		$args = array(
 
-			'labels' 				=> $labels,
+			'labels'				=> $labels,
 			'description'			=> __( 'Añade referencias de personas al sitio web', 'emblr' ),
 			'capability_type'		=> 'post',
-			'public' 				=> true,
+			'public'				=> true,
 			'menu_icon'				=> 'dashicons-format-quote',
 			'menu_position'			=> 20,
 			'exclude_from_search'	=> true,
@@ -141,10 +142,128 @@
 
 	/**
 	*
+	*	Agrega Custom Fields como columnas en el listado de posts "testimonio" existentes
+	*
+	*/
+	function add_testimonio_acf_columns( $columns ) {
+
+		## Juntamos columnas existentes con las indicadas
+		$fields = array(
+
+			'cb'			=> $columns['cb'],
+			'title'			=> '#',
+			'perfil'		=> __( 'Cliente', 'emblr' ),
+			'nombre'		=> __( 'Nombre', 'emblr' ),
+			'ocupacion'		=> __( 'Ocupación', 'emblr' ),
+			'recomendacion' => __( 'Recomendación', 'emblr' ),
+			'date'			=> $columns['date']
+
+		);
+
+		return $fields;
+
+	}
+
+	add_filter( 'manage_testimonio_posts_columns', 'add_testimonio_acf_columns' );
+
+
+
+	/*
+	*
+	*	Agrega los valores correspondientes en cada Custom Field 
+	*
+	*/
+	function add_testimonio_acf_column_values( $column, $post_id ) {
+
+		switch ( $column ) {
+
+			case 'nombre':
+
+				echo get_field( 'nombre', $post->id );
+				break
+
+			;
+
+
+			case 'ocupacion':
+
+				echo get_field( 'ocupacion', $post->id );
+				break
+
+			;
+
+
+			case 'perfil':
+
+				$profile = get_field( 'perfil', $post->id );
+
+				if ( ! empty( $profile ) ) {
+
+					$thumb_url = $profile['sizes']['thumbnail'];
+					echo "<img src=\"$thumb_url\">";
+				}
+
+				break
+
+			;
+
+
+			case 'recomendacion':
+
+				echo get_field( 'recomendacion', $post_id );
+				break;
+
+			;
+
+		}
+
+	}
+
+	add_action( 'manage_testimonio_posts_custom_column', 'add_testimonio_acf_column_values', 10, 2 );
+
+
+
+	/**
+	*
+	*	Genera títulos autoincrement para nuevos custom post types "testimonio"
+	*
+	*/
+	function autoincrement_testimonio_post_title( $post ) {
+
+		$posts_status = [ 'publish', 'future', 'draft', 'pending', 'private', 'trash' ];
+
+		if( $post['post_type'] == 'testimonio' ) {
+
+			## Actualizamos título sólo si post no existe actualmente en algún estado
+			if ( ! in_array( $post['post_status'], $posts_status ) ) {
+
+			    ## Contamos la cantidad de posts tipo "testimonio"
+			    $posts_count = wp_count_posts( 'testimonio' );
+			    ## Obtenemos sólo la cantidad de publicados
+			    $published_posts_count = $posts_count->publish;
+			    ## Obtenemos el índice numérico para el nuevo título de post
+			    $new_post_position = $published_posts_count + 1;
+			    ## Asignamos el título al nuevo post de forma automática
+				$post['post_title'] = "Testimonio #$new_post_position";
+
+			}
+
+		}
+
+		return $post;
+
+	}
+
+	add_filter( 'wp_insert_post_data' , 'autoincrement_testimonio_post_title' , '99', 2 );
+
+
+
+	/**
+	*
     *   Registra area del menú principal como un área de widgets
 	*
     */
-	function register_menu_widget_area() {
+	function register_menu_widget_area( ) {
 		/**
 		*
 		 *	Crea un widget area
@@ -178,7 +297,7 @@
     *   Registra footer como un área de widgets
 	*
     */
-	function register_footer_widget_area() {
+	function register_footer_widget_area( ) {
 		/**
 		*
 		 *	Crea un widget area
@@ -213,10 +332,12 @@
 	*
 	*/
 	function create_landing_navigation_widget( ) {
+
 		## Se carga archivo del widget
 		include_once( get_template_directory() . '/includes/widgets/landing_navigation.php' );
 		## Se registra widget
 		register_widget( 'landing_navigation_widget' );
+
 	}
 
 	add_action( 'widgets_init', 'create_landing_navigation_widget' );
@@ -229,10 +350,12 @@
 	*
 	*/
 	function create_contact_info_widget( ) {
+
 		## Se carga archivo del widget
 		include_once( get_template_directory() . '/includes/widgets/contact_info.php' );
 		## Se registra widget
 		register_widget( 'contact_info_widget' );
+
 	}
 
 	add_action( 'widgets_init', 'create_contact_info_widget' );
@@ -245,10 +368,12 @@
 	*
 	*/
 	function create_suscribe_news_widget( ) {
+
 		## Se carga archivo del widget
 		include_once( get_template_directory() . '/includes/widgets/suscribe_news.php' );
 		## Se registra widget
 		register_widget( 'suscribe_news_widget' );
+
 	}
 
 	add_action( 'widgets_init', 'create_suscribe_news_widget' );
@@ -263,6 +388,7 @@
     *
     */
     function custom_wp_nav_menu ( $classname = '' ) {
+
     	## obtiene menús en idioma adecuado miltilenguaje
 	    $theme_menus = get_nav_menu_locations( );
 	    ## obtenemos menú principal
