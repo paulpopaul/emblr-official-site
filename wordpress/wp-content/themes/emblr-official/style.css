@@ -3551,23 +3551,81 @@ html.no-csstransitions .home-content__main {
   cursor: pointer;
 }
 
+.s-services .box h1,
+.s-services .row-services.hidden .box h1{
+    transition: all 2s;
+  -moz-transition: all 2s;
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  }
 
-.s-services .row-services.hidden {
-  height: 100px;
+
+/* ------- Servicio Hidden -------- */
+
+.s-services .row-services.hidden .box {
+  padding: 0px;
+  background-color: #fff;
 }
 
-.s-services .row-services.hidden .box-container {
-  background-color:white;
-  background-image: none !important;
+.s-services .row-services.hidden .box-content {
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  min-height: 80px !important;
+  }
+
+
+.s-services .row-services.hidden {
+  height: 80px;
+}
+
+
+.s-services .row-services.hidden h1 span {
+  color: #121212;
+  font-size: 16px;
+}
+
+/* BOX-CONTENT HIDDEN */
+
+.s-services .row-services.hidden .box-content h1 {
+  padding-left: 10px;
+  margin-bottom: 0px !important;
+  font-size: 18px;
 }
 
 .s-services .row-services.hidden .box-content > *:not(h1) {
   display:none;
 }
 
-.s-services .row-services.hidden .box-container h1 span::before {
-  content: ">";
+
+/* BOX-CONTAINER HIDDEN */
+
+.s-services .row-services.hidden .box-container {
+  background-color:white;
+  background-image: none !important;
+  height: 80px;
 }
+
+
+
+.s-services .row-services.hidden .box-container h1 span::after {
+  content: '';
+  background-image: url(images/icons/arrow-down.svg);
+  height: 25px;
+  width: 25px;
+  margin-right: 20px;
+  float:right;
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-size: 18px;
+}
+
+
 
 /* ----------------SERVICIO IZQUIERDA----------------- */
 .s-services .row-services .box-container{
@@ -3576,7 +3634,6 @@ html.no-csstransitions .home-content__main {
     background-position: center center;
     background-size: cover;
     height: 100%;
-
   }
 
 .s-services .box-container .box-content i {
