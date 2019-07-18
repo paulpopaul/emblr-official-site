@@ -1,39 +1,15 @@
     <?php
 
         /*
-        * Registro marca
+        *   Registro marca
         */
-        $registro_marca = get_field('registro_marca', 'options');
+        $registro_marca = get_field( 'registro_marca', 'options' );
 
 
         /*
-        * Redes sociales footer
+        *   Redes sociales footer
         */
-        $redes_footer = get_field('redes_footer', 'options');
-
-
-        /*
-        * Teléfonos
-        */
-        $telefonos = get_field('telefonos', 'options');
-
-
-        /*
-        * Email principal visible
-        */
-        $email_principal = get_field('email_principal', 'options');
-
-
-        /*
-        * Sucursal #1
-        */
-        $sucursal_1 = get_field('sucursal_1', 'options');
-
-
-        /*
-        * Sucursal #2
-        */
-        $sucursal_2 = get_field('sucursal_2', 'options');
+        $redes_footer = get_field( 'redes_footer', 'options' );
 
     ?>
 
@@ -41,76 +17,10 @@
     <footer class="target-section">
         <div class="row" data-aos="fade-up">
             <div class="col-full ss-copyright">
-                <div class="fl-col-group textos" id="grupo-textos">
+                <div class="fl-col-group" id="footer-widgets">
 
-                    <!-- Inicio Sobre Nosotros -->
-                    <div class="fl-col  fl-col-small">
-                        <div class="sobre-nosotros">
-                            <h1><span>Sobre Nosotros</span></h1>
+                    <? dynamic_sidebar( "footer" ) ?>
 
-                            <p>
-                                <strong>Ensambler</strong> cree en tus sueños, y es por eso que queremos brindarte la <strong>mejor asesoría e infraestructura del mercado</strong>, aquellos que te permitan hacerlos realidad.
-                            </p>
-
-                            <a class="read-more" href="#"> Leer más ...</a>
-                        </div>
-                    </div>
-                    <!-- Final sobre nosotros -->
-
-                    <!-- Inicio Sitio -->
-                    <div class="fl-col fl-col-small">
-                        <div class="sitio">
-                            <h1>Sitio</h1>
-                            
-                            <? custom_wp_nav_menu( ) ?>
-
-                        </div>
-                    </div>
-
-                    <!-- Inicio Contacto -->
-                    <div class="fl-col fl-col-small">
-                        <div class="contacto">
-                            <hr> <h1>Contacto</h1>
-                            
-                            <p>
-                                <strong>Teléfono</strong> <span>·</span> <br class="br-hidden"> <?= $telefonos['1'] ?> <br>
-                                
-                                <? if ( $telefonos['2'] ): ?>
-                                <strong>Teléfono #2</strong> <span>·</span> <br class="br-hidden"> <?= $telefonos['2'] ?> <br>
-                                <? endif ?>
-
-                                <strong>Email</strong> <span>·</span> <br class="br-hidden"> <?= $email_principal ?>
-                            </p>
-
-                            <p>
-                                <strong>Dirección · <?= $sucursal_1['ciudad'] ?></strong> <br>
-                                <?= $sucursal_1['direccion'] ?>
-                            </p>
-
-                            <? if( $sucursal_2['ciudad'] ): ?>
-                            <p>
-                                <strong>Dirección · <?= $sucursal_2['ciudad'] ?></strong> <br>
-                                <?= $sucursal_2['direccion'] ?>
-                            </p>
-                            <? endif ?>
-
-                        </div>
-                    </div>
-
-                    <!-- Inicio suscríbete -->
-                    <div class="fl-col fl-col-small">
-                         <div class="suscribete">
-                            <hr> <h1>Suscríbete</h1>
-
-                            <p> Recibe noticias, novedades y más.</p>
-
-                            <div class="input-group">
-                                <input id="suscripcion" placeholder="Ingresa tu email" type="text">
-                                <button class="btn">Enviar</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Final Suscríbete -->
                 </div>
             </div>
 

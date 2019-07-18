@@ -1,48 +1,48 @@
 <?php
 
     /*
-    * Fondo
+    *   Fondo
     */
-    $fondo = get_field('color_fondo', 'options');
+    $fondo = get_field( 'color_fondo', 'options' );
 
 
     /*
-    * Slogan principal
+    *   Slogan principal
     */
-    $slogan = get_field('slogan', 'options');
+    $slogan = get_field( 'slogan', 'options' );
 
 
     /*
-    * Particulas opción
+    *   Particulas opción
     */
-    $particles = get_field('particulas', 'options');
+    $particles = get_field( 'particulas', 'options' );
 
 
     /*
-    * Botones bajo logo
+    *   Botones bajo logo
     */
-    $botones = get_field('botones', 'options');
+    $botones = get_field( 'botones', 'options' );
 
-    $boton_1 = $botones['boton_1'];
-    $boton_2 = $botones['boton_2'];
+    $boton_1 = $botones[ 'boton_1' ];
+    $boton_2 = $botones[ 'boton_2' ];
 
 
     /*
-    * Navegación lateral
+    *   Navegación lateral
     */
-    $navegacion_lateral = get_field('navegacion_lateral', 'options');
+    $navegacion_lateral = get_field( 'navegacion_lateral', 'options' );
 
 
     /*
-    * Navegación scroll
+    *   Navegación scroll
     */
-    $navegacion_scroll = get_field('navegacion_scroll', 'options');
+    $navegacion_scroll = get_field( 'navegacion_scroll', 'options' );
 
 
     /*
-    * Redes sociales inicio
+    *   Redes sociales inicio
     */
-    $redes_inicio_activo = get_field('redes_inicio', 'options');
+    $redes_inicio_activo = get_field( 'redes_inicio', 'options' );
 
 ?>
 

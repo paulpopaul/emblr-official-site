@@ -4,33 +4,33 @@
 <?php
 
     /*
-    * Título menú
+    *   Título menú
     */
-    $titulo_menu = get_field('titulo_menu', 'options');
+    $titulo_menu = get_field( 'titulo_menu', 'options' );
 
 
     /*
-    * Texto menú
+    *   Widgets menú
     */
-    $texto_menu = get_field('texto_menu', 'options');
+    $widgets_menu = get_field( 'widgets_menu', 'options' );
 
 
     /*
-    * Redes menú
+    *   Redes menú
     */
-    $redes_menu = get_field('redes_menu', 'options');
+    $redes_menu = get_field( 'redes_menu', 'options' );
 
 
     /*
-    * Mini logo esquinero
+    *   Mini logo esquinero
     */
-    $logo_esquina = get_field('logo_esquina', 'options');
+    $logo_esquina = get_field( 'logo_esquina', 'options' );
 
 
     /*
-    * Búsqueda
+    *   Búsqueda
     */
-    $busqueda = get_field('busqueda', 'options');
+    $busqueda = get_field( 'busqueda', 'options' );
 
 ?>
 
@@ -70,11 +70,18 @@
 
                 <div class="header-nav__content">
                     
-                    <? custom_wp_nav_menu( "header-nav__list" ) ?>
+                    <?
+                        if ( function_exists('custom_wp_nav_menu') )
+                            custom_wp_nav_menu( 'header-nav__list' );
+                    ?>
 
 
-                    <? if ( $texto_menu ): ?>
-                        <p> <? echo $texto_menu ?> </p>
+                    <? if ( $widgets_menu ): ?>
+                    <div id="menu-widgets">
+
+                        <? dynamic_sidebar( 'main-menu' ) ?>
+
+                    </div>
                     <? endif ?>
 
 
