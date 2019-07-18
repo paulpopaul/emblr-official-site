@@ -493,14 +493,16 @@
         });
     }; 
 
+
     /* Services
     * ------------------------------------------------------ */
     var viewServices = function() {
         $('.s-services .box').click(function() {
-            
+            $(".row-services").not(".hidden").addClass("hidden");
+            $(this).parent().removeClass("hidden");
         });
-
     };
+
 
    /* Initialize
     * ------------------------------------------------------ */
