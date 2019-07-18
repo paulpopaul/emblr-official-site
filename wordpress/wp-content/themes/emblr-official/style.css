@@ -3545,18 +3545,16 @@ html.no-csstransitions .home-content__main {
   }
 
 .s-services .box{
-  width: 33.3%;
+  width: 30%;
   float:left;
   padding-bottom: 15px;
   cursor: pointer;
 }
 
-.s-services .box h1,
-.s-services .row-services.hidden .box h1{
-    transition: all 2s;
-  -moz-transition: all 2s;
-  -webkit-transition: all 2s;
-  -o-transition: all 2s;
+.s-services .row-services .box-container * {
+/*  transition: all .5s ease-in-out;*/
+  transition: all 0.3s cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  overflow: hidden;
   }
 
 
@@ -3581,7 +3579,8 @@ html.no-csstransitions .home-content__main {
 
 
 .s-services .row-services.hidden {
-  height: 80px;
+  max-height: 80px;
+  overflow: hidden;
 }
 
 
@@ -3629,7 +3628,7 @@ html.no-csstransitions .home-content__main {
 
 /* ----------------SERVICIO IZQUIERDA----------------- */
 .s-services .row-services .box-container{
-    overflow: auto;
+/*    overflow: auto;*/
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -3650,7 +3649,6 @@ html.no-csstransitions .home-content__main {
     }
 .s-services .row-services .box:last-child {
     background: #1FBDA2;
-    margin-right: 30px;
     }
 
 
