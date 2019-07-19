@@ -1,4 +1,22 @@
-<!-- testimonies
+<?php
+
+    /*
+    *
+    *   Colección de posts tipo "testimonio"
+    *
+    */
+    $testimonios = get_posts( array(
+
+        'numberposts'   => -1,
+        'post_type'     => 'testimonio'
+
+    ));
+
+?>
+
+
+
+<!-- testimonials
 ================================================== -->
 <section class="s-testimonials target-section section-page">
     <h1 data-aos="fade-up"> Lo que dicen nuestros clientes </h1>
@@ -8,43 +26,43 @@
 
         <div class="col-full testimonials__slider" data-aos="fade-up">
 
+        <?
+
+            if ( $testimonios ) :
+                
+                foreach ( $testimonios as $testimonio ) :
+
+                    $profile = get_field( 'perfil', $testimonio->ID );
+                    $nombre = get_field( 'nombre', $testimonio->ID );
+                    $ocupacion = get_field( 'ocupacion', $testimonio->ID );
+                    $recomendacion = get_field( 'recomendacion', $testimonio->ID );
+
+        ?>
+        
             <div class="testimonials__slide">
+
                 <div class="foto-persona"> 
-
-                    <a ><img src="<?php echo get_template_directory_uri();?>/images/clientes/cliente1.jpg"/></a>
+                    <a> <img src="<?= $profile['sizes']['thumbnail'] ?>"/> </a>
                 </div>
-                <p>"Qui ipsam temporibus quisquam vel. Maiores eos cumque distinctio nam accusantium ipsum. 
-                Laudantium quia consequatur molestias delectus culpa facere hic dolores aperiam. Accusantium quos qui praesentium corposri."</p>
+
+                <p>
+                    "<?= $recomendacion ?>"
+                </p>
+
                 <div class="testimonials__author">
-                    Claudia Alvarado
-                    <span>Directora de Microsoft</span>
-                </div>
-            </div> <!-- end testimonials__slide -->
+                    <?= $nombre ?>
+                    <span> <?= $ocupacion ?> </span>
+                </div> <!-- testimonials__author -->
 
-            <div class="testimonials__slide">
-                <div class="foto-persona"> 
-                    <a ><img src="<?php echo get_template_directory_uri();?>/images/clientes/cliente2.jpg"/></a>
-                </div>
-                <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
-                Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.</p>
-                <div class="testimonials__author">
-                    Sundar Pichai
-                    <span>CEO, Google</span>
-                </div>
-            </div> <!-- end testimonials__slide -->
+            </div> <!-- testimonials__slide -->
 
-            <div class="testimonials__slide">
-                <div class="foto-persona"> 
+        <?
 
-                    <a ><img src="<?php echo get_template_directory_uri();?>/images/clientes/cliente1.jpg"/></a>
-                </div>
-                <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
-                Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.</p>
-                <div class="testimonials__author">
-                    Satya Nadella
-                    <span>Directora de Microsoft</span>
-                </div>
-            </div> <!-- end testimonials__slide -->
+                endforeach ;
+            endif ;
+
+        ?>
+
         </div> <!-- end testimonials__slider -->
 
     </div> <!-- end testimonials -->
