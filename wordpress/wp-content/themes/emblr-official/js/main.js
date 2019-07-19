@@ -498,8 +498,8 @@
     * ------------------------------------------------------ */
     var viewServices = function() {
         $('.s-services .box').click(function() {
-            $(".row-services").not(".hidden").addClass("hidden");
-            $(this).parent().removeClass("hidden");
+            $(".row-services").not(".hidden").removeClass("abierto").addClass("hidden");
+            $(this).parent().removeClass("hidden").addClass('abierto');
         });
     };
 
