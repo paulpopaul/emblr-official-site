@@ -29,7 +29,7 @@
         <?
 
             if ( $testimonios ) :
-                
+
                 foreach ( $testimonios as $testimonio ) :
 
                     $profile = get_field( 'perfil', $testimonio->ID );
@@ -42,7 +42,7 @@
             <div class="testimonials__slide">
 
                 <div class="foto-persona"> 
-                    <a> <img src="<?= $profile['sizes']['thumbnail'] ?>"/> </a>
+                    <img src="<?= $profile['sizes']['thumbnail'] ?>" />
                 </div>
 
                 <p>

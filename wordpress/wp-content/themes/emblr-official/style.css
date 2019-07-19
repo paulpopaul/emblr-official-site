@@ -6080,8 +6080,8 @@ footer .widget_landing_navigation.fl-col:not(:first-of-type) > div {
     margin-top: 0;
   }
 
-  footer .fl-col-small:nth-child(2) {
-    text-align: left;
+  footer .widget_landing_navigation {
+    text-align: left !important;
   }
 
   #suscribe {
