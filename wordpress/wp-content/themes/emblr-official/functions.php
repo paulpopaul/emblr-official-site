@@ -232,36 +232,57 @@
     */
     function custom_wp_nav_menu ( $classname = '' ) {
 
-    	## obtiene menús en idioma adecuado miltilenguaje
-	    $theme_menus = get_nav_menu_locations( );
-	    ## obtenemos menú principal
-	    $main_nav_menu = $theme_menus[ 'menu-principal' ];
-	    ## elementos del menú principal (array)
-	    $main_nav_menu_items = wp_get_nav_menu_items( $main_nav_menu );
-
+    	global $main_nav_menu_items;
 
 	    ## imprime menú en una lista simple <ul> con class pasada por parámetro
-	    if ( !empty( $main_nav_menu_items ) ): ?>
+	    if ( !empty( $main_nav_menu_items ) ) : ?>
 
-	    <nav<? if ( $classname ): ?> class="<?= $classname ?>"<? endif ?>>
+	    <nav<? if ( $classname ) : ?> class="<?= $classname ?>"<? endif ?>>
+
 		    <ul>
-			<? foreach ( $main_nav_menu_items as $menu_item ):
-				if ( $menu_item->post_status == 'publish' ):
-					if ( $menu_item->type == 'post_type' ):
-						$menu_item_link = str_replace( get_site_url() . '/', '#', $menu_item->url );
-					else:
-						$menu_item_link = $menu_item->url;
+			<? foreach ( $main_nav_menu_items as $menu_item ) :
+				## Sólo se cargan páginas de primer nivel del menú
+				if ( $menu_item->menu_item_parent == '0' ) :
+					## Si página está en estado publicado
+					if ( $menu_item->post_status == 'publish' ) :
+						## Si es de tipo post
+						if ( $menu_item->type == 'post_type' ) :
+							## Modificamos enlace para dejarlo de tipo slug -> http://www.ensambler.cl/#menu-item/
+							$menu_item_link = str_replace( get_site_url() . '/', '#', $menu_item->url );
+
+						else:
+							$menu_item_link = $menu_item->url;
+
+						endif;
+
 					endif;
-				endif
 			?>
-				<li><a href="<?= $menu_item_link ?>"><?= $menu_item->title ?></a></li>
-			<? endforeach ?>
+
+				<li> <a href="<?= $menu_item_link ?>"><?= $menu_item->title ?></a> </li>
+
+			<?	endif;
+
+			endforeach ?>
 			</ul>
+
 		</nav>
 
 		<? endif;
 
 	}
+
+
+
+	/**
+	*
+	*	Se obtiene menú principal (multilenguaje) en una variable global
+	*
+	*/
+    $theme_menus = get_nav_menu_locations( );
+    $main_nav_menu = $theme_menus[ 'menu-principal' ];
+    ## elementos del menú principal (array)
+    $main_nav_menu_items = wp_get_nav_menu_items( $main_nav_menu );
+
 
 
 ?>

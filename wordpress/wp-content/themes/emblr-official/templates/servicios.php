@@ -1,10 +1,49 @@
+<?php
+
+
+/**
+*
+*   Template Name: Servicios
+*
+*   @version    emblr-official-1
+*
+*   @author     Ensambler <emblr@ensambler.cl>
+*   @copyright  Derechos reservados 2019, Ensambler
+*
+*   @link       http://www.ensambler.cl/
+*
+*   @package    WordPress
+*   @subpackage emblr
+*   @since      5.2.2
+*
+*/
+
+
+
+    /*
+    *
+    *   Objetos página, ID página
+    *
+    */
+    global
+
+        $page,
+        $page_id
+
+    ;
+
+
+?>
+
+
 <!-- services
 ================================================== -->
 <section class="s-services target-section section-page">
-    <h1 data-aos="fade-up"> Servicios </h1>
+    <h1 data-aos="fade-up"> <?= $page->post_title ?> </h1>
     <p class="aos-init aos-animate" data-aos="fade-up" > Trabajamos contigo, no para ti</p>
 
     <div class="row-services" data-aos="fade-up">
+
             <div class="box">
                 <div class="box-container">
                     <div class="box-content">
@@ -15,6 +54,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="box">
                 <div class="box-container">
                     <div class="box-content">
@@ -25,6 +65,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="box">
                 <div class="box-container">
                     <div class="box-content">
@@ -38,7 +79,9 @@
      
     </div>
 
+
     <div class="row-services hidden" data-aos="fade-up">
+
             <div class="box">
                 <div class="box-container">
                     <div class="box-content">
@@ -49,6 +92,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="box">
                 <div class="box-container">
                     <div class="box-content">
@@ -59,6 +103,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="box">
                 <div class="box-container">
                     <div class="box-content">
@@ -72,7 +117,9 @@
      
     </div>
     
-  <div class="row-services hidden" data-aos="fade-up">
+
+    <div class="row-services hidden" data-aos="fade-up">
+
         <div class="box">
             <div class="box-container">
                 <div class="box-content">
@@ -83,6 +130,7 @@
                 </div>
             </div>
         </div>
+
         <div class="box">
             <div class="box-container">
                 <div class="box-content">
@@ -93,6 +141,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="box">
             <div class="box-container">
                 <div class="box-content">

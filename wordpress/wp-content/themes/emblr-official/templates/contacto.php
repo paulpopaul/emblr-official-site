@@ -1,3 +1,41 @@
+<?php
+
+
+/**
+*
+*   Template Name: Contacto
+*
+*   @version    emblr-official-1
+*
+*   @author     Ensambler <emblr@ensambler.cl>
+*   @copyright  Derechos reservados 2019, Ensambler
+*
+*   @link       http://www.ensambler.cl/
+*
+*   @package    WordPress
+*   @subpackage emblr
+*   @since      5.2.2
+*
+*/
+
+
+
+    /*
+    *
+    *   Objetos página, ID página
+    *
+    */
+    global
+
+        $page,
+        $page_id
+
+    ;
+
+
+?>
+
+
 <!-- contact
 ================================================== -->
 <section id="contact" class="s-contact target-section section-page">
@@ -6,7 +44,7 @@
   </div>
   
   <div class="contact-content">
-    <h1 data-aos="fade-up">@Contáctanos</h1>
+    <h1 data-aos="fade-up"> <?= $page->post_title ?> </h1>
 
     <p data-aos="fade-up">Hagamos realidad el proyecto que tienes en mente</p>
 

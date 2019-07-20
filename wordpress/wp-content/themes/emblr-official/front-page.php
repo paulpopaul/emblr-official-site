@@ -1,4 +1,4 @@
-<? get_header() ?>
+<?  get_header()  ?>
 
 
 <?php
@@ -37,7 +37,7 @@
 
 <body id="top">
     
-    <!-- preloader
+    <!-- ( preloader )
     ================================================== -->
     <div id="preloader">
         <div id="loader" class="dots-jump">
@@ -47,17 +47,21 @@
         </div>
     </div>
 
-    <!-- header
+
+
+    <!-- Header
     ================================================== -->
     <header class="s-header">
         
-        <? if ( $logo_esquina ): ?>
+        <?  if ( $logo_esquina ) :  ?>
+
         <div class="header-logo">
             <a class="site-logo" href="#">
                 <img src="<?= get_template_directory_uri() ?>/images/logo.svg" alt="Homepage">
             </a>
         </div> <!-- end header-logo -->
-        <? endif ?>
+
+        <?  endif  ?>
 
 
         <nav class="header-nav">
@@ -71,30 +75,39 @@
                 <div class="header-nav__content">
                     
                     <?
-                        if ( function_exists('custom_wp_nav_menu') )
+
+                        if ( function_exists( 'custom_wp_nav_menu' ) )
                             custom_wp_nav_menu( 'header-nav__list' );
+
                     ?>
 
 
-                    <? if ( $widgets_menu ): ?>
+                    <?  if ( $widgets_menu ) :  ?>
+
                     <div id="menu-widgets">
 
-                        <? dynamic_sidebar( 'main-menu' ) ?>
+                        <?  dynamic_sidebar( 'main-menu' )  ?>
 
                     </div>
-                    <? endif ?>
+
+                    <?  endif  ?>
 
 
-                    <? if ( $redes_menu ): ?>
+
+                    <?  if ( $redes_menu ):  ?>
+
                     <ul class="header-nav__social">
-                        <? global $social_links; ?>
 
-                        <? foreach ( $social_links as $social_name => $social ): ?>
-                        <? if ( $social ):
-                            switch ( $social_name ):
-                                case "facebook": $social_name .= "-f"; break;
-                                case "linkedin": $social_name .= "-in"; break;
-                            endswitch
+                        <?  global $social_links  ?>
+
+                        <?  foreach ( $social_links as $social_name => $social ) :  ?>
+
+                        <?  if ( $social ) :
+
+                                switch ( $social_name ) :
+                                    case "facebook": $social_name .= "-f";      break;
+                                    case "linkedin": $social_name .= "-in";     break;
+                                endswitch
                         ?>
 
                         <li>
@@ -103,10 +116,12 @@
                             </a>
                         </li>
                         
-                        <? endif ?>
-                        <? endforeach ?>
+                        <?  endif  ?>
+                        <?  endforeach  ?>
+
                     </ul>
-                    <? endif ?>
+
+                    <?  endif  ?>
 
                 </div> <!-- end header-nav__content -->
             </div>
@@ -114,7 +129,8 @@
         </nav> <!-- end header-nav -->
 
         
-        <? if ( $busqueda ): ?>
+        <?  if ( $busqueda ) :  ?>
+
         <div class="opaque-controls"></div>
 
         <a class="icon-search">
@@ -126,7 +142,8 @@
             <div class="close-search"></div> 
             </div>
         </a> 
-        <? endif ?>
+
+        <?  endif  ?>
 
 
         <a class="header-menu-toggle" href="#0">
@@ -136,27 +153,55 @@
     </header> <!-- end s-header -->
 
 
-     <!-- pages
+
+     <!-- Páginas
     ================================================== -->
-    <? require_once("custom-pages/inicio.php") ?>
+    <?
 
-    <? #require_once("custom-pages/sobre-nosotros.php") ?>
-
-    <? require_once("custom-pages/servicios.php") ?>
-
-    <? #require_once("custom-pages/portafolio.php") ?>
-
-    <? #require_once("custom-pages/clients.php") ?>
-
-    <!-- --> <? require_once("sub-sections/noticias.php") ?>
-    <!-- --> <? require_once("custom-pages/testimonials.php") ?>
-    <!-- --> <? require_once("sub-sections/lo-que-dicen-nuestros-clientes.php") ?>
-    <!-- --> <? require_once("sub-sections/apartado-1.php") ?>
-
-    <? require_once("custom-pages/contacto.php") ?>
+        /**
+        *
+        *   Se cargan secciones de la página
+        *
+        */
+        global $main_nav_menu_items;
 
 
-    <!-- footer
+        foreach ( $main_nav_menu_items as $menu_item ) {
+
+            if ( $menu_item->type == 'post_type' and $menu_item->post_status == 'publish' ) {
+                ## Obtenemos ID del post asociado el item menú
+                $page_id = $menu_item->object_id;
+                ## Obtenemos el template de dicho post
+                $template_part_php = get_page_template_slug( $page_id );
+                ## Excluímos extensión .php
+                $template_part = str_replace( '.php', '', $template_part_php );
+
+
+                /*
+                *
+                *   Objeto página para uso dentro de templates:
+                *
+                */
+                $page = get_post( $page_id );
+
+
+                ## Si existe template, lo cargamos
+                if ( $template_part )
+                    get_template_part( $template_part );
+
+                ## Si no, usamos el por defecto
+                else
+                    get_template_part( 'content' );
+
+            }
+
+        }
+
+    ?>
+
+
+
+    <!-- Footer
     ================================================== -->
-    <? get_footer() ?>
+    <?  get_footer()  ?>
 

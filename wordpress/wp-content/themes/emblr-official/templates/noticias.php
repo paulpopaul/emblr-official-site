@@ -1,3 +1,27 @@
+<?php
+
+
+/**
+*
+*   Template Name: Noticias
+*
+*   @version    emblr-official-1
+*
+*   @author     Ensambler <emblr@ensambler.cl>
+*   @copyright  Derechos reservados 2019, Ensambler
+*
+*   @link       http://www.ensambler.cl/
+*
+*   @package    WordPress
+*   @subpackage emblr
+*   @since      5.2.2
+*
+*/
+
+
+?>
+
+
  <!-- noticias
 ================================================== -->
 
