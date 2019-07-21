@@ -40,7 +40,7 @@
 ================================================== -->
 <section class="s-services target-section section-page">
     <h1 data-aos="fade-up"> <?= $page->post_title ?> </h1>
-    <p class="aos-init aos-animate" data-aos="fade-up" > Trabajamos contigo, no para ti</p>
+    <p data-aos="fade-up"> <?= get_field( 'subtitulo', $page_id ) ?> </p>
 
     <div class="row-services" data-aos="fade-up">
 
@@ -78,6 +78,7 @@
             </div>
      
     </div>
+
 
 
     <div class="row-services hidden" data-aos="fade-up">
@@ -118,6 +119,7 @@
     </div>
     
 
+
     <div class="row-services hidden" data-aos="fade-up">
 
         <div class="box">
@@ -153,6 +155,6 @@
             </div>
         </div>
      
-    </div> 
+    </div>
     
 </section> <!-- end s-services -->

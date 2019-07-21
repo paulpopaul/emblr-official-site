@@ -5039,10 +5039,10 @@ html.no-csstransitions .home-content__main {
 
 
 /* ===================================================================
- * # apartado 1
+ * # Spot
  *
  * ------------------------------------------------------------------- */
-.apartado-1 {
+.spot {
   text-align: center;
   background: url(images/background/bg-01.svg);
   background-repeat: no-repeat;
@@ -5052,17 +5052,17 @@ html.no-csstransitions .home-content__main {
   background-attachment: scroll;
 }
 
-.apartado-1 .btn {
+.spot .btn {
   margin-top: 40px;
 }
 
-.apartado-1 h1 {
+.spot h1 {
   font-size: 42px;
   margin-top: 0;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
 }
 
-.apartado-1 h6 {
+.spot h6 {
   font-size: 22px;
   font-weight: 400;
   color: #666;
@@ -5075,66 +5075,68 @@ html.no-csstransitions .home-content__main {
 
 }
 
-.apartado-1 h6 #apartado1-text {
+.spot h6 #spot-text {
   color: #1fbda2;
+  display: block;
 }
 
-.apartado-1 #apartado1-shuffle-text {
+.spot #spot-shuffle-text {
+  display: block;
   /*visibility: hidden;*/
   opacity: 0;
   /*transition: all 0.3s ease-in-out;*/
 }
 
 /* ===================================================================
- * # Responsive apartado 1
+ * # Responsive spot
  *
  * ------------------------------------------------------------------- */
 
 @media only screen and (max-width:1400px) {
-  .section-page.apartado-1 > h1 {
+  .section-page.spot > h1 {
     font-size: 42px;
   }
 
-  .section-page.apartado-1 > h6 {
+  .section-page.spot > h6 {
     font-size: 22px;
   }
 }
 
 @media only screen and (max-width:1200px) {
-  .section-page.apartado-1 > h1 {
+  .section-page.spot > h1 {
     font-size: 40px;
   }
 
-  .section-page.apartado-1 > h6 {
+  .section-page.spot > h6 {
     font-size: 22px;
   }
 }
 
 @media only screen and (max-width:1024px) {
-  .section-page.apartado-1 > h1 {
+  .section-page.spot > h1 {
     font-size: 35px;
   }
 
-  .section-page.apartado-1 > h6 {
+  .section-page.spot > h6 {
     font-size: 18px;
   }
 }
 
 @media only screen and (max-width:768px) {
-  .section-page.apartado-1 > h1 {
+  .section-page.spot > h1 {
     font-size:28px;
   }
 
-  .section-page.apartado-1 > h6 {
+  .section-page.spot > h6 {
     font-size:16px;
   }
 
-  .section-page.apartado-1{
+  .section-page.spot{
     padding-top: 70px;
     padding-bottom: 70px;
   }
   
-  .section-page.apartado-1 .btn{
+  .section-page.spot .btn{
     margin-top: 40px;
     margin-right: 0px;
     width: 162px;
@@ -5146,31 +5148,31 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width:640px) {
-  .section-page.apartado-1 > h1 {
+  .section-page.spot > h1 {
     font-size: 25px;
   }
 
-  .section-page.apartado-1 > h6 {
+  .section-page.spot > h6 {
     font-size: 15px;
     overflow: hidden;
   }
 }
 
 @media only screen and (max-width: 561px) {
-  .section-page.apartado-1 > h6 {
+  .section-page.spot > h6 {
     height: 60px;
   }
 }
 
 @media only screen and (max-width:414px) {
-  .section-page.apartado-1 > h1 {
+  .section-page.spot > h1 {
     font-size: 20px;
   }
-  .section-page.apartado-1 > h6 {
+  .section-page.spot > h6 {
     font-size: 13px;
     height: 67px;
   }
-  .section-page.apartado-1 .btn{
+  .section-page.spot .btn{
     width: 127px;
     height: 35px !important;
     font-size: 0.8rem;

@@ -320,11 +320,11 @@
     * ------------------------------------------------------ */
 
     var typeitInit = function() {
-        var string = $('#apartado1-text').text();
+        var string = $('#spot-text').text();
 
-        $('#apartado1-text').text('');
+        $('#spot-text').text('');
 
-        new TypeIt('span#apartado1-text', {
+        new TypeIt('span#spot-text', {
           strings: string,
           speed: 60,
           loop: true,
@@ -348,7 +348,7 @@
     * ------------------------------------------------------ */
 
     var shuffleText = function() {
-        window.text = document.getElementById("apartado1-shuffle-text");
+        window.text = document.getElementById("spot-shuffle-text");
 
         window.shuffle_text = new ShuffleText(text);
         window.shuffle_text.duration = 2000;

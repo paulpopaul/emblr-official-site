@@ -45,8 +45,7 @@
   
   <div class="contact-content">
     <h1 data-aos="fade-up"> <?= $page->post_title ?> </h1>
-
-    <p data-aos="fade-up">Hagamos realidad el proyecto que tienes en mente</p>
+    <p data-aos="fade-up"> <?= get_field( 'subtitulo', $page_id ) ?> </p>
 
     <!-- <img src="<?= get_template_directory_uri() ?>/images/logo.svg" alt="" data-aos="fade-up"> -->
 

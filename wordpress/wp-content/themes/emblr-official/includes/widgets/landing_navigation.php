@@ -6,7 +6,6 @@
 *	Landing Navigation Widget
 *
 *	@author Ensambler <emblr@ensambler.cl>
-*	@author Diego Ulloa <diego@ensambler.cl>
 *	@copyright	Derechos reservados 2019, Ensambler
 *
 *	@link 	http://www.ensambler.cl/
