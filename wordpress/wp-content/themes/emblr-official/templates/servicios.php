@@ -23,15 +23,10 @@
 
     /*
     *
-    *   Objetos página, ID página
+    *   Objeto post (página)
     *
     */
-    global
-
-        $page,
-        $page_id
-
-    ;
+    global $post;
 
 
 ?>
@@ -40,8 +35,8 @@
 <!-- services
 ================================================== -->
 <section class="s-services target-section section-page">
-    <h1 data-aos="fade-up"> <?= $page->post_title ?> </h1>
-    <p data-aos="fade-up"> <?= get_field( 'subtitulo', $page_id ) ?> </p>
+    <h1 data-aos="fade-up"> <? the_title() ?> </h1>
+    <p data-aos="fade-up"> <?= get_field( 'subtitulo', $post->ID ) ?> </p>
 
     <div class="row-services" data-aos="fade-up">
 

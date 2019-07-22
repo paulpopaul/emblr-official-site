@@ -56,9 +56,13 @@
 		<div class="noticias-stories" data-aos="fade-up">
 
 
-		<?	if ( $noticias ) :
+		<?
 
-			foreach ( $noticias as $post ) :  ?>
+			if ( $noticias ) :
+
+			foreach ( $noticias as $post ) :
+
+		?>
 
 			<div class="storie-container"> <!-- storie -->
 
@@ -76,9 +80,13 @@
 
 		  	</div> <!-- storie -->
 
-		<?	endforeach;
+		<?
 
-			endif  ?>
+			endforeach;
+
+			endif
+			
+		?>
 			
 
 		</div> <!-- .noticias-stories -->

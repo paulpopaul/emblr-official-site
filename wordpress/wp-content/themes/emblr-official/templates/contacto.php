@@ -23,15 +23,10 @@
 
     /*
     *
-    *   Objetos página, ID página
+    *   Objeto post (página)
     *
     */
-    global
-
-        $page,
-        $page_id
-
-    ;
+    global $post;
 
 
 ?>
@@ -45,8 +40,8 @@
   </div>
   
   <div class="contact-content">
-    <h1 data-aos="fade-up"> <?= $page->post_title ?> </h1>
-    <p data-aos="fade-up"> <?= get_field( 'subtitulo', $page_id ) ?> </p>
+    <h1 data-aos="fade-up"> <? the_title() ?> </h1>
+    <p data-aos="fade-up"> <?= get_field( 'subtitulo', $post->ID ) ?> </p>
 
     <!-- <img src="<?= get_template_directory_uri() ?>/images/logo.svg" alt="" data-aos="fade-up"> -->
 

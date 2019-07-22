@@ -5,6 +5,7 @@
 *
 *   Template Name: Inicio
 *
+*
 *   @version    emblr-official-1
 *
 *   @author     Ensambler <emblr@ensambler.cl>
@@ -74,11 +75,11 @@
 
 <section id="home" class="s-home page-hero target-section" style="background-color:<?= $fondo ?>">
 
-    <? if ( $particles ): ?>
+    <?  if ( $particles ): ?>
     <div class="grid-overlay" id="particles">
         <!-- particles -->
     </div>
-    <? endif ?>
+    <?  endif ?>
 
 
     <div class="home-content">
@@ -87,9 +88,11 @@
             <img class="home-content__logo" src="<?= get_template_directory_uri() ?>/images/logo-home.svg">
             
 
-            <? if ( $slogan ): ?>
+            <?  if ( $slogan ): ?>
+
             <h3> <? echo $slogan ?> </h3>
-            <? endif ?>
+
+            <?  endif ?>
 
 
             <!-- <div class="home-content__video">
@@ -102,59 +105,92 @@
 
             <div class="home-content__button">
 
-                <? if ( $boton_1['mostrar'] ): ?>
-                <a href="<?= $boton_1['enlace']['url'] ?>" target="<?= $boton_1['enlace']['target'] ?>" class="smoothscroll btn btn--primary btn--large">
+            <?  if ( $boton_1['mostrar'] ): ?>
+
+                <a
+                    href="<?= $boton_1['enlace']['url'] ?>"
+                    target="<?= $boton_1['enlace']['target'] ?>"
+                    class="smoothscroll btn btn--primary btn--large"
+                >
+
                     <?= $boton_1['texto'] ?>
+
                 </a>
-                <? endif ?>
+
+            <?  endif ?>
                 
-                <? if ( $boton_2['mostrar'] ): ?>
-                <a href="<?= $boton_2['enlace']['url'] ?>" target="<?= $boton_2['enlace']['target'] ?>" class="smoothscroll btn btn--large">
+
+
+            <?  if ( $boton_2['mostrar'] ): ?>
+
+                <a
+                    href="<?= $boton_2['enlace']['url'] ?>"
+                    target="<?= $boton_2['enlace']['target'] ?>"
+                    class="smoothscroll btn btn--large"
+                >
+
                     <?= $boton_2['texto'] ?>
+
                 </a>
-                <? endif ?>
+
+            <?  endif ?>
 
             </div>
         </div> <!-- end home-content__main -->
 
 
-        <? if ( $navegacion_scroll ): ?>
+
+        <?  if ( $navegacion_scroll ): ?>
+
         <div class="home-content__scroll">
-            <a href="#sobre-nosotros" class="scroll-link smoothscroll">
-                Scroll
-            </a>
+            <a href="#sobre-nosotros" class="scroll-link smoothscroll"> Scroll </a>
         </div>
-        <? endif ?>
+
+        <?  endif ?>
 
 
-        <? if ( $redes_inicio_activo ): ?>
+        <?  if ( $redes_inicio_activo ): ?>
+
         <ul class="home-social">
-            <? global $social_links; ?>
 
-            <? foreach ( $social_links as $social_name => $social ): ?>
-            <? if ( $social ):
-                switch ( $social_name ):
-                    case "facebook": $social_name .= "-f"; break;
-                    case "linkedin": $social_name .= "-in"; break;
-                endswitch
+            <?
+
+            global $social_links;
+
+            foreach ( $social_links as $social_name => $social ):
+
+                if ( $social ):
+
+                    switch ( $social_name ):
+                        case "facebook": $social_name .= "-f"; break;
+                        case "linkedin": $social_name .= "-in"; break;
+                    endswitch
             ?>
 
             <li>
                 <a href="<?= $social['url'] ?>" target="<?= $social['target'] ?>">
                     <i class="fab fa-<?= $social_name ?>" aria-hidden="true"></i>
-                    <span><?= $social['title'] ?></span>
+                    <span> <?= $social['title'] ?> </span>
                 </a>
             </li>
             
-            <? endif ?>
-            <? endforeach ?>
+            <?
+
+                endif;
+            endforeach;
+
+            ?>
+
         </ul> <!-- end home-social -->
-        <? endif ?>
+
+        <?  endif ?>
 
     </div> <!-- end home-content -->
 
 
-    <? if ( $navegacion_lateral ): ?>
+
+    <?  if ( $navegacion_lateral ): ?>
+
     <div class="page-counter">01 / <span>05</span></div>
 
     <ul class="page-dots">
@@ -163,6 +199,7 @@
         <li><button type="button"></button></li>
         <li><button type="button"></button></li>
     </ul>
-    <? endif ?>
+
+    <?  endif ?>
 
 </section> <!-- end s-home -->

@@ -179,10 +179,10 @@
 
                 /*
                 *
-                *   Objeto página para uso dentro de templates:
+                *   Objeto post (página) para uso dentro de templates:
                 *
                 */
-                $page = get_post( $page_id );
+                $post = get_post( $page_id );
 
 
                 ## Si existe template, lo cargamos

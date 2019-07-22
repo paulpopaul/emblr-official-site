@@ -5,6 +5,7 @@
 *
 *	Información de Contacto Widget
 *
+*
 *	@author Ensambler <emblr@ensambler.cl>
 *	@copyright	Derechos reservados 2019, Ensambler
 *
@@ -18,7 +19,7 @@
 
 	class contact_info_widget extends WP_Widget {
 		// Construct
-		public function contact_info_widget( ) {
+		public function contact_info_widget ( ) {
 			$options = array(
 				'classname'		=> 'widget_contact_info',
 				'description'	=> __( 'Añade información de contacto asociada a la página.', 'emblr' )
@@ -28,7 +29,7 @@
 		}
 
 		// Front-end build
-		public function widget( $args, $instance ) {
+		public function widget ( $args, $instance ) {
 			extract( $args );
 			echo $before_widget;
 
@@ -46,24 +47,32 @@
                 <p>
                     <strong>Teléfono</strong> <span>·</span> <br class="br-hidden"> <?= $telefonos['1'] ?> <br>
                     
-                    <? if ( $telefonos['2'] ): ?>
+
+                    <?	if ( $telefonos['2'] ): ?>
+
                     <strong>Teléfono #2</strong> <span>·</span> <br class="br-hidden"> <?= $telefonos['2'] ?> <br>
-                    <? endif ?>
+
+                    <?	endif ?>
+
 
                     <strong>Email</strong> <span>·</span> <br class="br-hidden"> <?= $email_principal ?>
                 </p>
+
 
                 <p>
                     <strong>Dirección · <?= $sucursal_1['ciudad'] ?></strong> <br>
                     <?= $sucursal_1['direccion'] ?>
                 </p>
 
-                <? if( $sucursal_2['ciudad'] ): ?>
+
+                <?	if( $sucursal_2['ciudad'] ): ?>
+
                 <p>
                     <strong>Dirección · <?= $sucursal_2['ciudad'] ?></strong> <br>
                     <?= $sucursal_2['direccion'] ?>
                 </p>
-                <? endif ?>
+
+                <?	endif ?>
 
             </div>
 
@@ -72,7 +81,7 @@
  		}
 
 		// Updates old or new data
-		public function update( $new_instance, $old_instance ) {
+		public function update ( $new_instance, $old_instance ) {
 			$instance = $old_instance;
 			$instance['title'] = strip_tags( $new_instance['title'] );
 
@@ -81,13 +90,15 @@
 
 
 		// Form for user input data
-		public function form( $instance ) {
+		public function form ( $instance ) {
 			?>
 
 				<p>
+
 					<label for="<?= $this->get_field_id( 'title' ) ?>">
 						<? _e( 'Título:', 'emblr' ) ?>
 					</label>
+
 
 					<input
 						type="text"
@@ -96,6 +107,7 @@
 						name="<?= $this->get_field_name( 'title' ) ?>"
 						value="<?= esc_attr( $instance['title'] ) ?>"
 					/>
+
 				</p>
 
 			<?

@@ -23,15 +23,10 @@
 
     /**
     *
-    *   Objetos página, ID página
+    *   Objeto post (página)
     *
     */
-    global
-
-        $page,
-        $page_id
-
-    ;
+    global $post;
 
 
 
@@ -40,7 +35,7 @@
     *	Texto 1 animación máquina de escribir
     *
     */
-    $texto_1 = get_field( 'texto_1', $page_id );
+    $texto_1 = get_field( 'texto_1', $post->ID );
 
 
 
@@ -49,7 +44,7 @@
     *	Texto 2 animación shuffle letters
     *
     */
-    $texto_2 = get_field( 'texto_2', $page_id );
+    $texto_2 = get_field( 'texto_2', $post->ID );
 
 
 
@@ -58,7 +53,7 @@
     *	Texto y enlace de botón de acción
     *
     */
-    $boton = get_field( 'boton', $page_id );
+    $boton = get_field( 'boton', $post->ID );
 
 
 ?>
@@ -70,7 +65,7 @@
 
 <section id="spot" class="spot target-section section-page">
 
-	<h1 data-aos="fade-up"> <?= $page->post_title ?> </h1>
+	<h1 data-aos="fade-up"> <? the_title() ?> </h1>
 	<h6 data-aos="fade-right">
 
 	    <?	if ( $texto_1 ) : ?>

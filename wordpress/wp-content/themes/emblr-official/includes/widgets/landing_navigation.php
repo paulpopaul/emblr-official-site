@@ -5,6 +5,7 @@
 *
 *	Landing Navigation Widget
 *
+*
 *	@author Ensambler <emblr@ensambler.cl>
 *	@copyright	Derechos reservados 2019, Ensambler
 *
@@ -19,7 +20,7 @@
 
 	class landing_navigation_widget extends WP_Widget {
 		// Construct
-		public function landing_navigation_widget( ) {
+		public function landing_navigation_widget ( ) {
 			$options = array(
 				'classname'		=> 'widget_landing_navigation',
 				'description'	=> __( 'Añade navegación de sitio con enlaces #slug tipo landing page.', 'emblr' )
@@ -30,7 +31,7 @@
 
 
 		// Front-end build
-		public function widget( $args, $instance ) {
+		public function widget ( $args, $instance ) {
 			extract( $args );
 			echo $before_widget;
 			
@@ -53,7 +54,7 @@
 
 
 		// Updates old or new data
-		public function update( $new_instance, $old_instance ) {
+		public function update ( $new_instance, $old_instance ) {
 			$instance = $old_instance;
 			$instance['title'] = strip_tags( $new_instance['title'] );
 
@@ -62,10 +63,11 @@
 
 
 		// Form for user input data
-		public function form( $instance ) {
+		public function form ( $instance ) {
 			?>
 
 				<p>
+
 					<label for="<?= $this->get_field_id( 'title' ) ?>">
 						<? _e( 'Título:', 'emblr' ) ?>
 					</label>
@@ -77,6 +79,7 @@
 						name="<?= $this->get_field_name( 'title' ) ?>"
 						value="<?= esc_attr( $instance['title'] ) ?>"
 					/>
+					
 				</p>
 
 			<?

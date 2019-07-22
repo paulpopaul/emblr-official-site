@@ -5,6 +5,7 @@
 *
 *	Ensambler Official: Custom Post Type "Testimonio"
 *
+*
 *	@version 	emblr-official-1
 *
 *	@author 	Ensambler <emblr@ensambler.cl>
@@ -25,15 +26,15 @@
 	*	Registra "Testimonio" Custom Post Type
 	*
 	*/
-	function register_testimonio_custom_post_type( ) {
+	function register_testimonio_custom_post_type ( ) {
 
 		## Mensajes Custom Post Type en Admin
 		$labels = array(
 
 			'name'					=> __( 'Testimonios', 'emblr' ),
 			'singular_name'			=> __( 'Testimonio', 'emblr' ),
-			'add_new'				=> __( 'Añadir nuevo', 'emblr'),
-			'add_new_item'			=> __( 'Nuevo testimonio', 'emblr'),
+			'add_new'				=> __( 'Añadir nuevo', 'emblr' ),
+			'add_new_item'			=> __( 'Nuevo testimonio', 'emblr' ),
 			'edit_item'				=> __( 'Editar testimonio', 'emblr' ),
 			'new_item'				=> __( 'Nuevo testimonio', 'emblr' ),
 			'all_items'				=> __( 'Todos', 'emblr' ),
@@ -73,7 +74,7 @@
 	*	Agrega Custom Fields como columnas en el listado de posts "testimonio" existentes
 	*
 	*/
-	function add_testimonio_acf_columns( $columns ) {
+	function add_testimonio_acf_columns ( $columns ) {
 
 		## Juntamos columnas existentes con las indicadas
 		$fields = array(
@@ -101,7 +102,7 @@
 	*	Agrega los valores correspondientes en cada Custom Field 
 	*
 	*/
-	function add_testimonio_acf_column_values( $column, $post_id ) {
+	function add_testimonio_acf_column_values ( $column, $post_id ) {
 
 		switch ( $column ) {
 
@@ -126,7 +127,8 @@
 				$profile_img = get_field( 'perfil', $post->id );
 
 				if ( ! empty( $profile_img ) )
-					echo "<img src=\"{$profile_img[sizes][thumbnail]}\" style=\"border-radius:50%\">";
+					echo "<img src=\"{$profile_img[sizes][thumbnail]}\" style=\"border-radius:50%\">"
+				;
 
 				break
 
@@ -153,7 +155,7 @@
 	*	Genera títulos autoincrement para nuevos custom post types "testimonio"
 	*
 	*/
-	function autoincrement_testimonio_post_title( $post ) {
+	function autoincrement_testimonio_post_title ( $post ) {
 
 		$posts_status = [ 'publish', 'future', 'draft', 'pending', 'private', 'trash' ];
 

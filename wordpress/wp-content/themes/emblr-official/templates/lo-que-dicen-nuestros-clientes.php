@@ -23,15 +23,10 @@
 
     /**
     *
-    *   Objetos página, ID página
+    *   Objeto post (página)
     *
     */
-    global
-
-        $page,
-        $page_id
-
-    ;
+    global $post;
 
 
 
@@ -53,7 +48,7 @@
 
 
 <section class="s-testimonials target-section section-page">
-    <h1 data-aos="fade-up"> <?= $page->post_title ?> </h1>
+    <h1 data-aos="fade-up"> <? the_title() ?> </h1>
     <div class="testimonials__icon" data-aos="fade-up"></div>
 
     <div class="row testimonials narrow">

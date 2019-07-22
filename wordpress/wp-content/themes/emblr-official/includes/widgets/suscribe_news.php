@@ -5,6 +5,7 @@
 *
 *	Suscribe News Widget
 *
+*
 *	@author Ensambler <emblr@ensambler.cl>
 *	@copyright	Derechos reservados 2019, Ensambler
 *
@@ -19,7 +20,7 @@
 
 	class suscribe_news_widget extends WP_Widget {
 		// Construct
-		public function suscribe_news_widget( ) {
+		public function suscribe_news_widget ( ) {
 			$options = array(
 				'classname'		=> 'widget_suscribe_news',
 				'description'	=> __( 'Añade un campo de suscripción de noticias.', 'emblr' )
@@ -30,7 +31,7 @@
 
 
 		// Front-end build
-		public function widget( $args, $instance ) {
+		public function widget ( $args, $instance ) {
 			extract( $args );
 			echo $before_widget;
 		?>
@@ -51,7 +52,7 @@
 
 
 		// Updates old or new data
-		public function update( $new_instance, $old_instance ) {
+		public function update ( $new_instance, $old_instance ) {
 			$instance = $old_instance;
 
 			$instance['title'] = strip_tags( $new_instance['title'] );
@@ -64,10 +65,11 @@
 
 
 		// Form for user input data
-		public function form( $instance ) {
+		public function form ( $instance ) {
 			?>
 
 				<p> <!-- title -->
+
 					<label for="<?= $this->get_field_id( 'title' ) ?>">
 						<? _e( 'Título:', 'emblr' ) ?>
 					</label>
@@ -79,10 +81,13 @@
 						name="<?= $this->get_field_name( 'title' ) ?>"
 						value="<?= esc_attr( $instance['title'] ) ?>"
 					/>
+
 				</p>  <!-- title -->
 
 
+
 				<p>  <!-- description -->
+
 					<label for="<?= $this->get_field_id( 'description' ) ?>">
 						<? _e( 'Descripción:', 'emblr' ) ?>
 					</label>
@@ -94,10 +99,13 @@
 						name="<?= $this->get_field_name( 'description' ) ?>"
 						value="<?= esc_attr( $instance['description'] ) ?>"
 					/>
+
 				</p> <!-- description -->
 
 
+
 				<p> <!-- placeholder -->
+
 					<label for="<?= $this->get_field_id( 'placeholder' ) ?>">
 						<? _e( 'Placeholder:', 'emblr' ) ?>
 					</label>
@@ -109,10 +117,13 @@
 						name="<?= $this->get_field_name( 'placeholder' ) ?>"
 						value="<?= esc_attr( $instance['placeholder'] ) ?>"
 					/>
+
 				</p> <!-- placeholder -->
 
 
+
 				<p> <!-- send -->
+
 					<label for="<?= $this->get_field_id( 'send' ) ?>">
 						<? _e( 'Botón enviar:', 'emblr' ) ?>
 					</label>
@@ -124,6 +135,7 @@
 						name="<?= $this->get_field_name( 'send' ) ?>"
 						value="<?= esc_attr( $instance['send'] ) ?>"
 					/>
+
 				</p> <!-- send -->
 
 			<?

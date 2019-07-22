@@ -5,6 +5,7 @@
 *
 *	Ensambler Official: functions and definitions
 *
+*
 *	@version 	emblr-official-1
 *
 *	@author 	Ensambler <emblr@ensambler.cl>
@@ -25,10 +26,11 @@
 	*	Se registra menú principal
 	*
 	*/
-	function register_main_menu( ) {
+	function register_main_menu ( ) {
 
-		if ( function_exists('register_nav_menu') )
-			register_nav_menu( 'menu-principal', __('Menú principal', 'emblr') );
+		if ( function_exists( 'register_nav_menu' ) )
+			register_nav_menu( 'menu-principal', __( 'Menú principal', 'emblr' ) )
+		;
 
 	}
 
@@ -41,11 +43,11 @@
 	*	Habilita sistema de administración del tema
 	*
 	*/
-	function enable_theme_admin_options( ) {
+	function enable_theme_admin_options ( ) {
 
-		if ( function_exists('acf_add_options_page') ) {
+		if ( function_exists( 'acf_add_options_page' ) ) {
 
-			acf_add_options_page(array(
+			acf_add_options_page( array(
 
 				'page_title' 	=> __( 'Ensambler · Opciones del tema', 'emblr' ),
 				'menu_title' 	=> 'Ensambler',
@@ -55,7 +57,7 @@
 			));
 
 
-			acf_add_options_sub_page(array(
+			acf_add_options_sub_page( array(
 
 				'page_title' 	=> __( 'Ajustes del tema: @General', 'emblr' ),
 				'menu_title' 	=> __( 'General', 'emblr' ),
@@ -65,7 +67,7 @@
 			));
 
 
-			acf_add_options_sub_page(array(
+			acf_add_options_sub_page( array(
 
 				'page_title' 	=> __( 'Ajustes del tema: @Inicio', 'emblr' ),
 				'menu_title' 	=> __( 'Inicio', 'emblr' ),
@@ -75,7 +77,7 @@
 			));
 
 
-			acf_add_options_sub_page(array(
+			acf_add_options_sub_page( array(
 
 				'page_title' 	=> __( 'Ajustes del tema: @Footer' ),
 				'menu_title' 	=> __( 'Footer' ),
@@ -94,11 +96,12 @@
 
 	/**
 	*
-	*	Añade soporte para imágen destacada sólo en posts (noticias)
+	*	Añade soporte para imágen destacada en posts (noticias)
 	*
 	*/
 	if ( function_exists( 'add_theme_support' ) )
-		add_theme_support( 'post-thumbnails', array( 'post' ) );
+		add_theme_support( 'post-thumbnails', array( 'post' ) )
+	;
 
 
 
@@ -107,7 +110,7 @@
 	*	Custom Post Type: "Testimonio"
 	*
 	*/
-	include_once( get_template_directory() . '/includes/custom-post-types/testimonio.php' );
+	include_once( get_template_directory( ) . '/includes/custom-post-types/testimonio.php' );
 
 
 
@@ -116,7 +119,7 @@
     *   Registra area del menú principal como un área de widgets
 	*
     */
-	function register_menu_widget_area( ) {
+	function register_menu_widget_area ( ) {
 		/**
 		*
 		 *	Crea un widget area
@@ -150,7 +153,7 @@
     *   Registra footer como un área de widgets
 	*
     */
-	function register_footer_widget_area( ) {
+	function register_footer_widget_area ( ) {
 		/**
 		*
 		 *	Crea un widget area
@@ -184,10 +187,10 @@
 	*	Crea widget "Navegación del sitio landing-page (emblr)"
 	*
 	*/
-	function create_landing_navigation_widget( ) {
+	function create_landing_navigation_widget ( ) {
 
 		## Se carga archivo del widget
-		include_once( get_template_directory() . '/includes/widgets/landing_navigation.php' );
+		include_once( get_template_directory( ) . '/includes/widgets/landing_navigation.php' );
 		## Se registra widget
 		register_widget( 'landing_navigation_widget' );
 
@@ -202,10 +205,10 @@
 	*	Crea widget "Información de contacto (emblr)"
 	*
 	*/
-	function create_contact_info_widget( ) {
+	function create_contact_info_widget ( ) {
 
 		## Se carga archivo del widget
-		include_once( get_template_directory() . '/includes/widgets/contact_info.php' );
+		include_once( get_template_directory( ) . '/includes/widgets/contact_info.php' );
 		## Se registra widget
 		register_widget( 'contact_info_widget' );
 
@@ -220,10 +223,10 @@
 	*	Crea widget "Suscripción de noticias (emblr)"
 	*
 	*/
-	function create_suscribe_news_widget( ) {
+	function create_suscribe_news_widget ( ) {
 
 		## Se carga archivo del widget
-		include_once( get_template_directory() . '/includes/widgets/suscribe_news.php' );
+		include_once( get_template_directory( ) . '/includes/widgets/suscribe_news.php' );
 		## Se registra widget
 		register_widget( 'suscribe_news_widget' );
 
@@ -245,12 +248,17 @@
     	global $main_nav_menu_items;
 
 	    ## imprime menú en una lista simple <ul> con class pasada por parámetro
-	    if ( !empty( $main_nav_menu_items ) ) : ?>
+	    if ( !empty( $main_nav_menu_items ) ) :
+
+	    ?>
 
 	    <nav<? if ( $classname ) : ?> class="<?= $classname ?>"<? endif ?>>
 
 		    <ul>
-			<? foreach ( $main_nav_menu_items as $menu_item ) :
+
+			<?
+
+			foreach ( $main_nav_menu_items as $menu_item ) :
 				## Sólo se cargan páginas de primer nivel del menú
 				if ( $menu_item->menu_item_parent == '0' ) :
 					## Si página está en estado publicado
@@ -266,18 +274,25 @@
 						endif;
 
 					endif;
+
 			?>
 
 				<li> <a href="<?= $menu_item_link ?>"><?= $menu_item->title ?></a> </li>
 
-			<?	endif;
+			<?
 
-			endforeach ?>
+				endif;
+			endforeach
+
+			?>
+
 			</ul>
 
 		</nav>
 
-		<? endif;
+		<?
+
+		endif;
 
 	}
 
@@ -289,10 +304,9 @@
 	*
 	*/
     $theme_menus = get_nav_menu_locations( );
-    $main_nav_menu = $theme_menus[ 'menu-principal' ];
+    $main_nav_menu = $theme_menus['menu-principal'];
     ## elementos del menú principal (array)
     $main_nav_menu_items = wp_get_nav_menu_items( $main_nav_menu );
-
 
 
 ?>
