@@ -5,6 +5,7 @@
 *
 *   Template Name: Spot
 *
+*
 *   @version    emblr-official-1
 *
 *   @author     Ensambler <emblr@ensambler.cl>

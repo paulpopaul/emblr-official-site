@@ -20,7 +20,7 @@
 	
 
 
-	/*
+	/**
 	*
 	*	Se registra menú principal
 	*
@@ -36,7 +36,7 @@
 
 
 
-	/*
+	/**
 	*
 	*	Habilita sistema de administración del tema
 	*
@@ -92,7 +92,17 @@
 
 
 
-	/*
+	/**
+	*
+	*	Añade soporte para imágen destacada sólo en posts (noticias)
+	*
+	*/
+	if ( function_exists( 'add_theme_support' ) )
+		add_theme_support( 'post-thumbnails', array( 'post' ) );
+
+
+
+	/**
 	*
 	*	Custom Post Type: "Testimonio"
 	*
