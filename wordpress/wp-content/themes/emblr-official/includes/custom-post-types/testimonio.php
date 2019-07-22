@@ -71,7 +71,7 @@
 
 	/**
 	*
-	*	Agrega Custom Fields como columnas en el listado de posts "testimonio" existentes
+	*	Agrega Custom Fields como columnas en el listado de posts
 	*
 	*/
 	function add_testimonio_acf_columns ( $columns ) {
@@ -97,7 +97,7 @@
 
 
 
-	/*
+	/**
 	*
 	*	Agrega los valores correspondientes en cada Custom Field 
 	*
@@ -108,7 +108,7 @@
 
 			case 'nombre':
 
-				echo get_field( 'nombre', $post->id );
+				echo get_field( 'nombre', $post_id );
 				break
 
 			;
@@ -116,7 +116,7 @@
 
 			case 'ocupacion':
 
-				echo get_field( 'ocupacion', $post->id );
+				echo get_field( 'ocupacion', $post_id );
 				break
 
 			;
@@ -124,7 +124,7 @@
 
 			case 'perfil':
 
-				$profile_img = get_field( 'perfil', $post->id );
+				$profile_img = get_field( 'perfil', $post_id );
 
 				if ( ! empty( $profile_img ) )
 					echo "<img src=\"{$profile_img[sizes][thumbnail]}\" style=\"border-radius:50%\">"
