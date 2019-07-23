@@ -141,4 +141,36 @@
 	add_action( 'admin_enqueue_scripts', 'admin_servicio_style' );
 
 
+
+	/**
+	*
+	*	Añade vista previa del icono fontawesome seleccionado
+	*
+	*/
+	function servicio_add_icon_preview_on_field ( $field ) {
+
+		global $post;
+
+		
+		if ( $post->post_type == 'servicio' and $field['_name'] == 'icono' ) {
+
+			$icon = get_field( 'icono', $post_id );
+
+			if ( $icon ) {
+
+				echo
+					'<span style="font-size:48px; margin-bottom:10px; display:block">' .
+						$icon .
+					'</span>'
+				;
+
+			}
+			
+		}
+
+	}
+
+	add_action( 'acf/render_field/type=text', 'servicio_add_icon_preview_on_field', 1, 1 );
+
+
 ?>
