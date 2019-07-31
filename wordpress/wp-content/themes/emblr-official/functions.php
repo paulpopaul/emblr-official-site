@@ -116,6 +116,15 @@
 
 	/**
 	*
+	*	Custom Post Type: "Servicio"
+	*
+	*/
+	include_once( get_template_directory( ) . '/includes/custom-post-types/servicio.php' );
+
+
+
+	/**
+	*
     *   Registra area del menú principal como un área de widgets
 	*
     */
