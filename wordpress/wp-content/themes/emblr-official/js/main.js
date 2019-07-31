@@ -494,14 +494,38 @@
     }; 
 
 
+
     /* Services
     * ------------------------------------------------------ */
+
+    // Función que muestra los servicios en el resto de resoluciones.
     var viewServices = function() {
         $('.s-services .box').click(function() {
-            $(".row-services").not(".hidden").removeClass("abierto").addClass("hidden");
-            $(this).parent().removeClass("hidden").addClass('abierto');
+            $(".row-services .box").not(".hidden").removeClass("open").addClass("hidden");
+            $(this).removeClass("hidden").addClass("open");
+            $(this).siblings().removeClass("hidden").addClass("open");
         });
     };
+
+    // Función que muestra los servicios en Smartphone
+    var viewServicesSmartphone = function() {
+        $(".row-services .box:not(:first-of-type)").not(".hidden").removeClass("open").addClass("hidden");
+        $('.s-services .box').click(function() {
+            $(".row-services .box").not(".hidden").removeClass("open").addClass("hidden");
+            $(this).removeClass("hidden").addClass('open');
+        });
+    };
+
+    const phone = matchMedia('(min-width: 415px)');
+    const changeSize = mql => {
+        mql.matches 
+            ? viewServices()
+            : viewServicesSmartphone();
+    }
+
+    phone.addListener(changeSize);
+    changeSize(phone);
+
 
 
    /* Initialize
@@ -525,7 +549,6 @@
         shuffleText();
         typeitInit();
         seachOpaqueDisplacement();
-        viewServices();
 
     })();
 
