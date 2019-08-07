@@ -3509,6 +3509,195 @@ html.no-csstransitions .home-content__main {
 }
 
 
+/* ===================================================================
+ * # Team
+ *
+ * ------------------------------------------------------------------- */
+
+.team-section {
+    background:#000;
+  }
+
+.team-section h1 {
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+.team-section {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.team-section .container{
+  margin-top:35px;
+}
+
+.team-section .team-content{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.team-section .team-content p{
+  font-size: 15px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+
+.team-section:before {
+    position: absolute;
+    top: -0;
+    left: 0;
+    content: " ";
+/*    background: url(img/service-section-bottom.png);*/
+    background-size: 100% 100px;
+    width: 100%;
+    height: 100px;
+    float: left;
+    z-index: 99;
+}
+
+
+.team-section .box-team:first-child {
+  width: 32%;
+  float:left;
+  margin-right: 2%;
+  border: solid 1px;
+  border-color: #383737;
+}
+
+.team-section .box-team:nth-child(2) {
+  width: 32%;
+  float:left;
+  margin-right: 2%;
+  border: solid 1px;
+  border-color: #383737;
+}
+.team-section .box-team:last-child {
+  width: 32%;
+  float:left;
+  margin-right: 0px;
+  border: solid 1px;
+  border-color: #383737;
+}
+
+.our-team {
+    padding: 0px 0 40px;
+    background: #000000;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 5px solid #1fbda2;
+}
+.our-team:hover{
+    border-bottom: 5px solid #2f2f2f;
+}
+
+.our-team .pic{
+    display: inline-block;
+    width: 60%;
+    height: 130px;
+    margin-bottom: 50px;
+    z-index: 1;
+    position: relative;
+    padding-top: 20px;
+}
+.our-team .pic:before {
+    /* content: ""; */
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #00325a;
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0;
+    opacity: 1;
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+}
+.our-team:hover .pic:before{
+ height: 100%;
+    background: #2f2f2f; 
+ }
+.our-team .pic:after {
+    content: "";
+    width: 85%;
+    height: 120%;
+    border-radius: 100%;
+    background: #ffffff00;
+    position: absolute;
+    top: 33px;
+    left: 13px;
+    z-index: 1;
+    transition: all 0.3s linear 0s;
+}
+.our-team:hover .pic:after{
+    background: #1fbda2;
+}
+.our-team .pic img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+    box-shadow: 0 0 0 7px #1fbda2;
+    transform: scale(0.7);
+    position: relative;
+    z-index: 2;
+}
+.our-team:hover .pic img{
+    box-shadow: 0 0 0 9px #f7f5ec;
+    transform: scale(0.7);
+}
+.our-team .team-content{margin-bottom: 10px;}
+.our-team .title{
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+    ont-family: "Nunito Sans", sans-serif;
+    text-transform: capitalize;
+    margin-top: 0px;
+    font-family: "Nunito Sans", sans-serif;
+    margin-bottom: 5px;
+}
+.our-team .post{
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #9c9c9c;
+    text-transform:capitalize;
+    font-family: "Nunito Sans", sans-serif;
+}
+.our-team .social{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+/*    background: #2f2f2f;*/
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    transition: all 0.5s ease 0s;
+}
+.our-team:hover .social{ bottom: 0; }
+.our-team .social li{ display: inline-block; }
+.our-team .social li a{
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    color: #1fbda2;
+    transition: all 0.3s ease 0s;
+}
+.our-team .social li a:hover{
+    color: #fff;
+}
+@media only screen and (max-width: 990px){
+    .our-team{ margin-bottom: 30px; }
+}
+
+
 
 /* ===================================================================
  * # services
@@ -3801,7 +3990,7 @@ html.no-csstransitions .home-content__main {
     margin: 16px 0 16px 0;
   }
   .s-services .box-content h1{
-    font-size:26px;
+    font-size:23px;
     margin-bottom:0px;
   }
 

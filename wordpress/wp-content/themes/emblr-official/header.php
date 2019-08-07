@@ -45,6 +45,12 @@
     <!-- script
     ================================================== -->
     <script src="<?= get_template_directory_uri() ?>/js/modernizr.js"></script>
+    
+    <!-- bootstrap
+    ================================================== -->
+<!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
 
     <!-- favicons
     ================================================== -->

@@ -1,9 +1,44 @@
+<?php
+
+/**
+*
+*   Template Name: Sobre Nosotros
+*
+*
+*   @version    emblr-official-1
+*
+*   @author     Ensambler <emblr@ensambler.cl>
+*   @copyright  Derechos reservados 2019, Ensambler
+*
+*   @link       http://www.ensambler.cl/
+*
+*   @package    WordPress
+*   @subpackage emblr
+*   @since      5.2.2
+*
+*/
+
+
+
+    /*
+    *
+    *   Objeto post (página)
+    *
+    */
+    global $post;
+
+
+?>
+
+
+
+
 <!-- about
 ================================================== -->
 <section id="about" class="s-about target-section">
-
     <div class="row section-header bit-narrow" data-aos="fade-up">
         <div class="col-full">
+            <h1 data-aos="fade-up"> <? the_title() ?> </h1>
             <h3 class="subhead">Who We Are</h3>
             <h1 class="display-1">
             We are Sublime, a design and branding agency with partners worldwide. We design thoughtful digital experiences
