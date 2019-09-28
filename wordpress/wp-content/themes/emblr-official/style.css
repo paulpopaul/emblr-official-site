@@ -3759,7 +3759,20 @@ html.no-csstransitions .home-content__main {
   .our-team .pic {
     height: 160px;
   } 
+  .our-team .title {
+    font-size: 20px;
+    height: 30px;
+  }
 }
+
+@media only screen and (max-width:1400px) {
+
+  .our-team .pic {
+    margin-bottom: 35px;
+  }
+
+}
+
 
 @media only screen and (max-width:1200px) {
   .slick-team-container {
@@ -3829,6 +3842,20 @@ html.no-csstransitions .home-content__main {
     border: 3px solid transparent;
   }
 
+}
+
+@media only screen and (max-width:768px) {
+
+  .team-section .box-team:first-child {
+    margin-left: 5px;
+  }
+}
+
+@media only screen and (max-width:482px) {
+
+  .team-section .box-team:first-child {
+    margin-left: 0px;
+  }
 }
 
 @media only screen and (max-width:414px) {
