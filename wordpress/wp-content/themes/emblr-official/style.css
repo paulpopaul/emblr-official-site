@@ -3516,7 +3516,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 
 .team-section {
-    background:#000;
+    background:#000 !important;
   }
 .slick-team-container {
   position: relative;
@@ -3647,7 +3647,7 @@ html.no-csstransitions .home-content__main {
 }
 .our-team:hover .pic:before{
  height: 100%;
-    background: #2f2f2f; 
+    background: #2f2f2f;
  }
 .our-team .pic:after {
     content: none;
@@ -3721,14 +3721,35 @@ html.no-csstransitions .home-content__main {
 .our-team .social li a:hover{
     color: #fff;
 }
-@media only screen and (max-width: 990px){
-    .our-team{ margin-bottom: 30px; }
-}
+
 
 /* ===================================================================
  * # Responsive Team
  *
  * ------------------------------------------------------------------- */
+
+
+@media only screen and (max-width:3000px) {
+
+  .our-team .pic {
+    height: 300px;
+  }
+
+}
+@media only screen and (max-width:2600px) {
+
+  .our-team .pic {
+    height: 270px;
+  }
+
+}
+@media only screen and (max-width:2300px) {
+
+  .our-team .pic {
+    height: 220px;
+  }
+
+}
 
 @media only screen and (max-width:1920px) {
   .team-section .slick-team-prev {
@@ -3741,7 +3762,7 @@ html.no-csstransitions .home-content__main {
 
   .our-team .pic {
     height: 200px;
-  } 
+  }
 
   .team-section .box-team{
     width: 32% !important;
@@ -3758,7 +3779,7 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width:1600px) {
   .our-team .pic {
     height: 160px;
-  } 
+  }
   .our-team .title {
     font-size: 20px;
     height: 30px;
@@ -3783,7 +3804,7 @@ html.no-csstransitions .home-content__main {
 
   .our-team .pic {
     height: 140px;
-  } 
+  }
 
   .team-section .slick-stories-prev {
     left: -40px;
@@ -5783,7 +5804,7 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-contact {
-background-image: linear-gradient(to top, #0c0c0c 0%, black 100%);
+  background-image: linear-gradient(to top, #0c0c0c 0%, black 100%);
   color: #666;
 
   text-align: center;
@@ -5837,13 +5858,49 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
   animation: blink 1.5s infinite ease-out;
 }
 
+.traditional-form { display: none; margin-top: 60px; }
+.traditional-form div { margin-bottom: 20px; }
+.traditional-form pre {
+  padding: 0;
+  background: transparent;
+  font-family: 'Consolas';
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  text-align: left;
+}
+
+.traditional-form pre > span { color: #1FBDA2; }
+.traditional-form input,
+.traditional-form textarea {
+  width: 100%;
+  font-size: 20px;
+  font-family: Anonymous Pro;
+  color: rgba(255, 255, 255, 0.75);
+  border: 2px solid transparent;
+  /*background: #333;*/
+}
+
+.traditional-form input:focus,
+.traditional-form textarea:focus { border: 2px solid #1FBDA2; }
+
+.traditional-form textarea { resize: none; height: 100px; min-height: auto; }
+
+.traditional-form input[type="submit"] {
+  text-transform: lowercase;
+  font-family: 'Consolas';
+  margin-top: 30px;
+}
+
+.traditional-form pre::before { content: "$"; margin-right: 10px; }
+
 /* ----------------GRAPHICS: Terminal */
 
 .terminal {
   text-align: left;
   position: relative;
   margin: 20px auto;
-  width: 1000px !important;
+  max-width: 1000px !important;
   /*box-shadow: 0px 10px 25px rgba(0,0,0,.5);*/
 }
 
@@ -6170,6 +6227,11 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
 
 }
 
+@media only screen and (max-width:1024px) {
+  .terminal, .contact-bg { display: none; }
+  .traditional-form { display: block; }
+}
+
 @media only screen and (max-width:1000px) {
   .s-contact {
     padding-top: 15rem;
@@ -6245,6 +6307,8 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
   .contact-social {
     font-size: 3rem;
   }
+
+  .traditional-form pre { display: block !important; white-space:pre-wrap; }
 
 }
 
