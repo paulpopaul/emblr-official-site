@@ -1493,6 +1493,7 @@ body.menu-is-open {
 
 #qlwapp .qlwapp-message { font-size: 14px; font-family: Nunito Sans, sans-serif; }
 #qlwapp .qlwapp-box.response textarea::placeholder { color: #666; }
+.qlwapp-time { color: #ccc !important; }
 
 /* ------------------------------------------------------------------- 
  * ## display headings
