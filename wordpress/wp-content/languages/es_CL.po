@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.2.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-06-18 21:13:53+0000\n"
+"PO-Revision-Date: 2019-07-22 16:47:16+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1077,7 +1077,7 @@ msgstr "%s (abrir en una nueva pestaña)"
 
 #: wp-includes/js/dist/format-library.js:1360
 msgid "Link removed."
-msgstr "Enlace removido."
+msgstr "Enlace eliminado."
 
 #: wp-includes/js/dist/format-library.js:652
 msgid "Inline Image"
@@ -4393,7 +4393,7 @@ msgstr "Tu tema puede mostrar menús en una sola ubicación. Selecciona el menú
 #. translators: %s: site name
 #: wp-login.php:391
 msgid "Site Name: %s"
-msgstr "Nombre del sitio: %s"
+msgstr "Nombre del Sitio: %s"
 
 #. translators: Login screen title. 1: Login screen name, 2: Network or site
 #. name
@@ -6457,7 +6457,7 @@ msgstr "+ %s"
 #: wp-includes/l10n.php:1467
 msgctxt "default site language"
 msgid "Site Default"
-msgstr "Sitio Predeterminado"
+msgstr "Por defecto del sitio"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:470
 msgid "HTML description for the object, transformed for display."
@@ -12322,7 +12322,7 @@ msgstr "Color de fondo"
 #: wp-includes/js/dist/block-library.js:17504
 #: wp-includes/js/dist/block-library.js:19349
 msgid "Text Color"
-msgstr "Color del Texto"
+msgstr "Color de Texto"
 
 #: wp-includes/customize/class-wp-customize-media-control.php:241
 msgid "Change image"

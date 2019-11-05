@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.2.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-06-29 20:41:11+0000\n"
+"PO-Revision-Date: 2019-07-22 16:47:50+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1966,7 +1966,7 @@ msgstr[1] "%s bloques movidos a la Papelera."
 msgid "%s block permanently deleted."
 msgid_plural "%s blocks permanently deleted."
 msgstr[0] "%s bloque eliminado permanentemente."
-msgstr[1] "%s eliminados permanentemente."
+msgstr[1] "%s bloques eliminados permanentemente."
 
 #: wp-admin/edit.php:332
 msgid "%s block updated."
@@ -2851,7 +2851,7 @@ msgstr "Dirección de correo electrónico no válida en la petición."
 
 #: wp-admin/includes/plugin-install.php:656
 msgid "Requires PHP Version:"
-msgstr "Necesita la versión de PHP:"
+msgstr "Requiere PHP Versión:"
 
 #: wp-admin/customize.php:80
 msgid "This changeset cannot be further modified."
@@ -5715,7 +5715,7 @@ msgstr "Nombre"
 msgctxt "users"
 msgid "All <span class=\"count\">(%s)</span>"
 msgid_plural "All <span class=\"count\">(%s)</span>"
-msgstr[0] "Todos <span class=\"count\">(%s)</span>"
+msgstr[0] "Todo <span class=\"count\">(%s)</span>"
 msgstr[1] "Todos <span class=\"count\">(%s)</span>"
 
 #: wp-admin/includes/class-wp-screen.php:1090
@@ -11801,7 +11801,7 @@ msgstr "%s o superior"
 
 #: wp-admin/includes/plugin-install.php:646
 msgid "Requires WordPress Version:"
-msgstr "Necesita la versión de WordPress:"
+msgstr "Requiere WordPress Versión:"
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:726
 #: wp-admin/includes/plugin-install.php:638

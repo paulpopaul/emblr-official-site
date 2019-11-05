@@ -1,0 +1,100 @@
+#qlwapp_modal .attachments-browser .attachments {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#qlwapp_modal .wp-core-ui .attachment .thumbnail,
+#qlwapp_modal .wp-core-ui .attachment-info .thumbnail {
+  vertical-align: middle;
+  text-align: center;
+}
+#qlwapp_modal .wp-core-ui .attachment .thumbnail:before,
+#qlwapp_modal .wp-core-ui .attachment-info .thumbnail:before {
+  content: '';
+  display: inline-block;
+  width: 0px;
+  height: 100%;
+  vertical-align: middle;
+}
+#qlwapp_modal .wp-core-ui .attachment .thumbnail > i,
+#qlwapp_modal .wp-core-ui .attachment-info .thumbnail > i {
+  text-align: center;
+  font-size: 3vw;
+  display: inline-block;
+  vertical-align: middle;
+  height: auto;
+  width: auto;
+}
+#qlwapp_modal .wp-core-ui .attachment-info .thumbnail {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+}
+#qlwapp_modal .wp-core-ui .attachment-info .thumbnail > i {
+  font-size: 2em;
+  position: relative;
+  left: -1px;
+}
+#qlwapp_modal .wp-core-ui .attachment-info .qlwapp-color-picker .container {
+  box-sizing: border-box;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  padding: 11px 0;
+}
+#qlwapp_modal .wp-core-ui .attachment-info .qlwapp-color-picker #qlwapp-input-color {
+  box-sizing: border-box;
+  margin: 1px;
+  width: 65%;
+  float: right;
+}
+#qlwapp_modal .wp-core-ui .attachment-info .qlwapp-color-picker .wp-picker-container .wp-color-result {
+  width: 100%;
+  margin-top: 5px!important;
+}
+#qlwapp_modal .wp-core-ui .attachment-info .qlwapp-color-picker .wp-picker-container .wp-color-result-text {
+  z-index: 1;
+  position: relative;
+}
+.about-wrap .form-table td img.qlwapp-avatar {
+  width: 50px;
+  height: 50px;
+}
+.qlwrap .nav-tab i {
+  line-height: 26px;
+}
+.qlwrap .form-table td {
+  vertical-align: middle;
+}
+.qlwrap .qlwapp-input,
+.qlwrap .qlwapp-select2 {
+  width: 350px;
+  max-width: 100%;
+}
+.qlwrap .qlwapp-input {
+  margin: 0;
+  padding: 6px;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+#qlwapp_modal.qlwapp-modal-contact {
+  max-width: 890px;
+  max-height: 800px;
+  margin: auto;
+}
+#qlwapp_modal.qlwapp-modal-contact table {
+  width: 100%;
+  padding: 15px;
+}
+#qlwapp_modal.qlwapp-modal-contact table:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+#qlwapp_modal.qlwapp-modal-contact table th {
+  width: 60px;
+}
+#qlwapp_modal.qlwapp-modal-contact table td {
+  max-width: calc(50%-60px);
+}
+#qlwapp_modal .qlwapp-modal-contact-content {
+  bottom: 61px;
+}
+/*# sourceMappingURL=qlwapp-admin.css.map */
