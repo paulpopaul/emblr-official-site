@@ -3591,7 +3591,7 @@ html.no-csstransitions .home-content__main {
   width: 33.3%;
   padding-left: 1%;
   padding-right: 1%;
-  border-color: #383737;
+  border-color: red;
 }
 
 .our-team {
@@ -3600,7 +3600,7 @@ html.no-csstransitions .home-content__main {
     text-align: center;
     overflow: hidden;
     position: relative;
-    border: solid 1px;
+    /*border: solid 1px;*/
     border-bottom: 5px solid #1fbda2;
 
     transition: all 0.4s ease;
@@ -3610,6 +3610,7 @@ html.no-csstransitions .home-content__main {
     border-bottom: 5px solid #fff;
     transition: all 0.4s ease;
     -webkit-transition: all 0.4s ease;
+    background: #121212;
 }
 
 .our-team .pic{
