@@ -1491,6 +1491,9 @@ body.menu-is-open {
     }
 }
 
+#qlwapp .qlwapp-message { font-size: 14px; font-family: Nunito Sans, sans-serif; }
+#qlwapp .qlwapp-box.response textarea::placeholder { color: #666; }
+
 /* ------------------------------------------------------------------- 
  * ## display headings
  * ------------------------------------------------------------------- */
