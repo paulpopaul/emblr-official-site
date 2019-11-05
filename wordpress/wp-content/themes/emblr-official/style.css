@@ -3589,7 +3589,8 @@ html.no-csstransitions .home-content__main {
 
 .team-section .box-team {
   width: 33.3%;
-  padding-right: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
   border-color: #383737;
 }
 
@@ -3614,12 +3615,13 @@ html.no-csstransitions .home-content__main {
 .our-team .pic{
     display: inline-block;
     width: 60%;
-    height: 130px;
-    margin-bottom: 50px;
     z-index: 1;
     position: relative;
-    padding-top: 20px;
+    margin-top: 40px;
 }
+
+.team-content h3.title { margin-top: 30px; }
+
 .our-team .pic:before {
     /* content: ""; */
     width: 100%;
@@ -3660,13 +3662,11 @@ html.no-csstransitions .home-content__main {
     transform: scale(1);
     transition: all 0.9s ease 0s;
     box-shadow: 0 0 0 7px #1fbda2;
-    transform: scale(0.7);
     position: relative;
     z-index: 2;
 }
 .our-team:hover .pic img{
     box-shadow: 0 0 0 9px #f7f5ec;
-    transform: scale(0.7);
 }
 .our-team .team-content{margin-bottom: 10px;}
 .our-team .title{
@@ -3717,29 +3717,6 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 
-
-@media only screen and (max-width:3000px) {
-
-  .our-team .pic {
-    height: 300px;
-  }
-
-}
-@media only screen and (max-width:2600px) {
-
-  .our-team .pic {
-    height: 270px;
-  }
-
-}
-@media only screen and (max-width:2300px) {
-
-  .our-team .pic {
-    height: 220px;
-  }
-
-}
-
 @media only screen and (max-width:1920px) {
   .team-section .slick-team-prev {
     left: -65px;
@@ -3749,46 +3726,19 @@ html.no-csstransitions .home-content__main {
     right: -65px;
   }
 
-  .our-team .pic {
-    height: 200px;
-  }
-
-  .team-section .box-team {
-    
-  }
-
-  .our-team { padding-right: 1.8% !important; }
-
 }
 
 @media only screen and (max-width:1600px) {
-  .our-team .pic {
-    height: 160px;
-  }
   .our-team .title {
     font-size: 20px;
-    height: 30px;
   }
 }
-
-@media only screen and (max-width:1400px) {
-
-  .our-team .pic {
-    margin-bottom: 35px;
-  }
-
-}
-
 
 @media only screen and (max-width:1200px) {
   .slick-team-container {
     position: relative;
     margin-left: 20px;
     margin-right: 20px;
-  }
-
-  .our-team .pic {
-    height: 140px;
   }
 
   .team-section .slick-stories-prev {
@@ -3866,13 +3816,8 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width:414px) {
   .team-section .box-team{
-    
-    width: 33.3% !important;
   }
 
-  .team-section .box-team:last-child {
-    width: 33.3% !important;
-  }
 }
 
 
