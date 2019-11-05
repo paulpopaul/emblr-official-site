@@ -507,88 +507,31 @@ var teamSlider = function() {
             focusOnSelect: false,
 
             responsive: [
-            {
-                breakpoint: 1920, // or more
-                settings: {
-                    slidesToShow: 3
-                }
-            },
+                {
+                    breakpoint: 1024, // or more
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
 
-/*            {
-                breakpoint: 1600, // or more
-                settings: {
-                    slidesToShow: 3
-                }
-            },*/
+                {
+                    breakpoint: 768, // or more
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
 
+                {
+                    breakpoint: 240, // or more
+                    settings: {
+                        slidesToShow: 1
+                    }
+                },
 
-            {
-                breakpoint: 1200, // or more
-                settings: {
-                    slidesToShow: 3
-                }
-            },
-
-                        {
-                breakpoint: 1024, // or more
-                settings: {
-                    slidesToShow: 3
-                }
-            },
-
-            {
-                breakpoint: 800, // or more
-                settings: {
-                    slidesToShow: 2
-                 }
-             },
-
-            {
-                breakpoint: 768, // or more
-                settings: {
-                    slidesToShow: 2
-                }
-            },
-
-/*            {
-                breakpoint: 640,
-                settings: {
-                    slidesToShow: 1
-              }
-            },*/
-
-            {
-                breakpoint: 414, // or more
-                settings: {
-                    slidesToShow: 1
-                }
-            },
-
-/*            {
-                breakpoint: 376, // or more
-                settings: {
-                    slidesToShow: 1
-                }
-            },*/
-
-/*            {
-                breakpoint: 320, // or more
-                settings: {
-                    slidesToShow: 1
-                }
-            },*/
-
-            {
-                breakpoint: 240, // or more
-                settings: {
-                    slidesToShow: 1
-                }
-            },
-
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-          ]
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
         });
     }; 
 
