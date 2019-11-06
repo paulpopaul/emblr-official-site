@@ -3526,18 +3526,16 @@ html.no-csstransitions .home-content__main {
   position: relative;
   margin-left: 80px;
   margin-right: 80px;
-  margin-top:20px;
+  margin-top:65px;
 }
 
 .team-section h1 {
-    margin-bottom: 0px;
     text-align: center;
   }
 
 .team-section {
     position: relative;
-    padding-top: 40px;
-    padding-bottom: 40px;
+
 }
 
 .team-section .container{
@@ -3734,25 +3732,51 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width:1600px) {
+    .slick-team-container {
+        position: relative;
+        margin-left: 44px;
+        margin-right: 44px;
+    }
+
   .our-team .title {
     font-size: 20px;
   }
 }
 
+@media only screen and (max-width:1300px) {
+    .slick-team-container {
+        position: relative;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .our-team .title {
+        font-size: 20px;
+    }
+}
+
 @media only screen and (max-width:1200px) {
   .slick-team-container {
     position: relative;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 44px;
+    margin-right: 44px;
   }
 
   .team-section .slick-stories-prev {
-    left: -40px;
+    left: -20px;
   }
 
   .team-section .slick-stories-next {
-    right: -40px;
+    right: -20px;
   }
+
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1139px) {
+    .our-team .title {
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width:1024px) {
@@ -3777,7 +3801,7 @@ html.no-csstransitions .home-content__main {
 
   .team-container .round {
     /* general storie element size */
-    width: 80px;
+    width: 60px;
     height: 80px;
     border: 3px solid transparent;
   }
