@@ -3520,7 +3520,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 
 .team-section {
-    background:#000 !important;
+    background:#121212 !important;
   }
 .slick-team-container {
   position: relative;
@@ -3598,7 +3598,7 @@ html.no-csstransitions .home-content__main {
 
 .our-team {
     padding: 0px 0 70px;
-    background: #000000;
+    background: #121212;
     text-align: center;
     overflow: hidden;
     position: relative;
@@ -3612,7 +3612,7 @@ html.no-csstransitions .home-content__main {
     border-bottom: 5px solid #fff;
     transition: all 0.4s ease;
     -webkit-transition: all 0.4s ease;
-    background: #121212;
+    background: #000;
 }
 
 .our-team .pic{
