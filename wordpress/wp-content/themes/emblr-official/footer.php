@@ -117,10 +117,13 @@
     <!-- Java Script
     ================================================== -->
     <script src="<?= get_template_directory_uri() ?>/js/jquery-3.2.1.min.js"></script>
+
     <script src="<?= get_template_directory_uri() ?>/js/plugins.js"></script>
     <script src=" https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 	<script src="<?= get_template_directory_uri() ?>/js/particles.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.3/dist/typeit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+
     <script src="<?= get_template_directory_uri() ?>/js/shuffle-text.min.js"></script>
     <script src="<?= get_template_directory_uri() ?>/js/main.js"></script>
     <script src="<?= get_template_directory_uri() ?>/js/terminal-functions.js"></script>
