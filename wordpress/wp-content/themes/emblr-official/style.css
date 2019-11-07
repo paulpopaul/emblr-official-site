@@ -4003,6 +4003,13 @@ html.no-csstransitions .home-content__main {
  * # portafolio
  *
  * ------------------------------------------------------------------- */
+
+.portafolio-header{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .wrap {
   margin: 0 auto;
   max-width: 1000px;
@@ -4010,11 +4017,9 @@ html.no-csstransitions .home-content__main {
 
 }
 
-h1 {
+.sportafolio{
   text-align: center;
-  margin: 50px 0;
 }
-
 .gallery-wrap,
 #gallery {
   overflow: hidden;
@@ -4025,6 +4030,7 @@ h1 {
   padding: 0;
   list-style: none;
   overflow: hidden;
+  display: inline-block;
 }
 
 #filters li {
@@ -4083,23 +4089,9 @@ h1 {
   justify-content: center;
   z-index: 2;
   transition: all 0.3s ease-in-out;
-h2 {
-  color: #fff;
-  font-size: 1.5em;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-align: center;
-  margin: 0;
 }
-p {
-  color: #fff;
-  font-size: 1em;
-  letter-spacing: 2px;
-  text-align: center;
-  margin: 0;
-  text-transform: uppercase;
-}
-}
+
+
 
 .inside img {
   float: left;
@@ -4129,7 +4121,16 @@ p {
   }
 }
 
+/* ===================================================================
+ * # portafolio RESPONSIVE
+ *
+ * ------------------------------------------------------------------- */
 
+@media only screen and (max-width:600px) {
+  #filters li{
+    float: none;
+  }
+}
 
 
 /* ===================================================================

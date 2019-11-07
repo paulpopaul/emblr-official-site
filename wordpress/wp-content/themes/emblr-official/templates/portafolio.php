@@ -34,20 +34,23 @@ global $post;
 
 <!-- Portafolio
 ================================================== -->
+<section class="section-page">
 
 <div class="wrap">
-    <h1>Portafolio</h1>
+    <h1 class="sportafolio">Portafolio</h1>
 
-    Creamos marcas, productos y experiencias que la gente ama. Echa un vistazo a nuestros trabajos recientes.
+    <!--Creamos marcas, productos y experiencias que la gente ama. Echa un vistazo a nuestros trabajos recientes.-->
 
     <div class="gallery-wrap">
 
-        <ul id="filters" class="clearfix">
-            <li><span class="filter active" data-filter=".print, .strategy, .logo, .web">Todo</span></li>
-            <li><span class="filter" data-filter=".print">Diseño</span></li>
-            <li><span class="filter" data-filter=".strategy">Desarrollo</span></li>
-            <li><span class="filter" data-filter=".logo">Marketing</span></li>
-        </ul>
+        <div class="portafolio-header ">
+            <ul id="filters" class="clearfix">
+                <li><span class="filter active" data-filter=".print, .strategy, .logo, .web">Todo</span></li>
+                <li><span class="filter" data-filter=".print">Diseño</span></li>
+                <li><span class="filter" data-filter=".strategy">Desarrollo</span></li>
+                <li><span class="filter" data-filter=".logo">Marketing</span></li>
+            </ul>
+        </div>
 
         <div id="gallery">
 
@@ -172,7 +175,8 @@ global $post;
 
     </div><!--/gallery-wrap-->
 
-</div>
+</div>>
+</section>
 
 
 
