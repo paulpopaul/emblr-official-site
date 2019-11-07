@@ -34,145 +34,149 @@ global $post;
 
 <!-- Portafolio
 ================================================== -->
+<section id="portafolio" class="s-portafolio target-section section-page">
 
-<div class="wrap">
-    <h1>Portafolio</h1>
+    <div class="wrap">
+        <h1 class="sportafolio">Portafolio</h1>
 
-    Creamos marcas, productos y experiencias que la gente ama. Echa un vistazo a nuestros trabajos recientes.
+        <!--Creamos marcas, productos y experiencias que la gente ama. Echa un vistazo a nuestros trabajos recientes.-->
 
-    <div class="gallery-wrap">
+        <div class="gallery-wrap">
 
-        <ul id="filters" class="clearfix">
-            <li><span class="filter active" data-filter=".print, .strategy, .logo, .web">Todo</span></li>
-            <li><span class="filter" data-filter=".print">Diseño</span></li>
-            <li><span class="filter" data-filter=".strategy">Desarrollo</span></li>
-            <li><span class="filter" data-filter=".logo">Marketing</span></li>
-        </ul>
+            <div class="portafolio-header ">
+                <ul id="filters" class="clearfix">
+                    <li><span class="filter active" data-filter=".print, .strategy, .logo, .web">Todo</span></li>
+                    <li><span class="filter" data-filter=".print">Diseño</span></li>
+                    <li><span class="filter" data-filter=".strategy">Desarrollo</span></li>
+                    <li><span class="filter" data-filter=".logo">Marketing</span></li>
+                </ul>
+            </div>
 
-        <div id="gallery">
+            <div id="gallery">
 
-            <a class="gallery-item logo" href="#" data-cat="logo">
-                <div class="inside">
-                    <div class="details">
-                        <div class="text">
-                            <h2>Client Name</h2>
-                            <p>Logo</p>
+                <a class="gallery-item logo" href="#" data-cat="logo">
+                    <div class="inside">
+                        <div class="details">
+                            <div class="text">
+                                <h2>Client Name</h2>
+                                <p>Logo</p>
+                            </div>
                         </div>
+                        <div class="overlay"></div>
+                        <img src="https://unsplash.it/500/500?image=1084" alt="" />
                     </div>
-                    <div class="overlay"></div>
-                    <img src="https://unsplash.it/500/500?image=1084" alt="" />
-                </div>
-            </a>
+                </a>
 
-            <a class="gallery-item logo" href="#" data-cat="logo">
-                <div class="inside">
-                    <div class="details">
-                        <div class="text">
-                            <h2>Client Name</h2>
-                            <p>Logo</p>
+                <a class="gallery-item logo" href="#" data-cat="logo">
+                    <div class="inside">
+                        <div class="details">
+                            <div class="text">
+                                <h2>Client Name</h2>
+                                <p>Logo</p>
+                            </div>
                         </div>
+                        <div class="overlay"></div>
+                        <img src="https://unsplash.it/500/500?image=1083" alt="" />
                     </div>
-                    <div class="overlay"></div>
-                    <img src="https://unsplash.it/500/500?image=1083" alt="" />
-                </div>
-            </a>
+                </a>
 
-            <a class="gallery-item web" href="#" data-cat="web">
-                <div class="inside">
-                    <div class="details">
-                        <div class="text">
-                            <h2>Client Name</h2>
-                            <p>Web</p>
+                <a class="gallery-item web" href="#" data-cat="web">
+                    <div class="inside">
+                        <div class="details">
+                            <div class="text">
+                                <h2>Client Name</h2>
+                                <p>Web</p>
+                            </div>
                         </div>
+                        <div class="overlay"></div>
+                        <img src="https://unsplash.it/500/500?image=1082" alt="" />
                     </div>
-                    <div class="overlay"></div>
-                    <img src="https://unsplash.it/500/500?image=1082" alt="" />
-                </div>
-            </a>
+                </a>
 
-            <a class="gallery-item print" href="#" data-cat="print">
-                <div class="inside">
-                    <div class="details">
-                        <div class="text">
-                            <h2>Client Name</h2>
-                            <p>Print</p>
+                <a class="gallery-item print" href="#" data-cat="print">
+                    <div class="inside">
+                        <div class="details">
+                            <div class="text">
+                                <h2>Client Name</h2>
+                                <p>Print</p>
+                            </div>
                         </div>
+                        <div class="overlay"></div>
+                        <img src="https://unsplash.it/500/500?image=1081" alt="" />
                     </div>
-                    <div class="overlay"></div>
-                    <img src="https://unsplash.it/500/500?image=1081" alt="" />
-                </div>
-            </a>
+                </a>
 
-            <a class="gallery-item strategy" href="#" data-cat="strategy">
-                <div class="inside">
-                    <div class="details">
-                        <div class="text">
-                            <h2>Client Name</h2>
-                            <p>Strategy</p>
+                <a class="gallery-item strategy" href="#" data-cat="strategy">
+                    <div class="inside">
+                        <div class="details">
+                            <div class="text">
+                                <h2>Client Name</h2>
+                                <p>Strategy</p>
+                            </div>
                         </div>
+                        <div class="overlay"></div>
+                        <img src="https://unsplash.it/500/500?image=1080" alt="" />
                     </div>
-                    <div class="overlay"></div>
-                    <img src="https://unsplash.it/500/500?image=1080" alt="" />
-                </div>
-            </a>
+                </a>
 
-            <a class="gallery-item strategy web print" href="#" data-cat="strategy web print">
-                <div class="inside">
-                    <div class="details">
-                        <div class="text">
-                            <h2>Client Name</h2>
-                            <p>Strategy. Web. Print.</p>
+                <a class="gallery-item strategy web print" href="#" data-cat="strategy web print">
+                    <div class="inside">
+                        <div class="details">
+                            <div class="text">
+                                <h2>Client Name</h2>
+                                <p>Strategy. Web. Print.</p>
+                            </div>
                         </div>
+                        <div class="overlay"></div>
+                        <img src="https://unsplash.it/500/500?image=1079" alt="" />
                     </div>
-                    <div class="overlay"></div>
-                    <img src="https://unsplash.it/500/500?image=1079" alt="" />
-                </div>
-            </a>
+                </a>
 
-            <a class="gallery-item web" href="#" data-cat="web">
-                <div class="inside">
-                    <div class="details">
-                        <div class="text">
-                            <h2>Client Name</h2>
-                            <p>Web.</p>
+                <a class="gallery-item web" href="#" data-cat="web">
+                    <div class="inside">
+                        <div class="details">
+                            <div class="text">
+                                <h2>Client Name</h2>
+                                <p>Web.</p>
+                            </div>
                         </div>
+                        <div class="overlay"></div>
+                        <img src="https://unsplash.it/500/500?image=1078" alt="" />
                     </div>
-                    <div class="overlay"></div>
-                    <img src="https://unsplash.it/500/500?image=1078" alt="" />
-                </div>
-            </a>
+                </a>
 
-            <a class="gallery-item strategy" href="#" data-cat="strategy">
-                <div class="inside">
-                    <div class="details">
-                        <div class="text">
-                            <h2>Client Name</h2>
-                            <p>Strategy.</p>
+                <a class="gallery-item strategy" href="#" data-cat="strategy">
+                    <div class="inside">
+                        <div class="details">
+                            <div class="text">
+                                <h2>Client Name</h2>
+                                <p>Strategy.</p>
+                            </div>
                         </div>
+                        <div class="overlay"></div>
+                        <img src="https://unsplash.it/500/500?image=1077" alt="" />
                     </div>
-                    <div class="overlay"></div>
-                    <img src="https://unsplash.it/500/500?image=1077" alt="" />
-                </div>
-            </a>
+                </a>
 
-            <a class="gallery-item web strategy" href="#" data-cat="web strategy">
-                <div class="inside">
-                    <div class="details">
-                        <div class="text">
-                            <h2>Client Name</h2>
-                            <p>Strategy. Web.</p>
+                <a class="gallery-item web strategy" href="#" data-cat="web strategy">
+                    <div class="inside">
+                        <div class="details">
+                            <div class="text">
+                                <h2>Client Name</h2>
+                                <p>Strategy. Web.</p>
+                            </div>
                         </div>
+                        <div class="overlay"></div>
+                        <img src="https://unsplash.it/500/500?image=1076" alt="" />
                     </div>
-                    <div class="overlay"></div>
-                    <img src="https://unsplash.it/500/500?image=1076" alt="" />
-                </div>
-            </a>
+                </a>
 
-        </div><!--/gallery-->
+            </div><!--/gallery-->
 
-    </div><!--/gallery-wrap-->
+        </div><!--/gallery-wrap-->
 
-</div>
+    </div>
+</section>
 
 
 
