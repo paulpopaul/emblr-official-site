@@ -3603,13 +3603,13 @@ html.no-csstransitions .home-content__main {
     overflow: hidden;
     position: relative;
     /*border: solid 1px;*/
-    border-bottom: 5px solid #1fbda2;
+    border-bottom: 5px solid transparent;
 
     transition: all 0.4s ease;
     -webkit-transition: all 0.4s ease;
 }
 .our-team:hover{
-    border-bottom: 5px solid #fff;
+    border-bottom: 5px solid #1fbda2;
     transition: all 0.4s ease;
     -webkit-transition: all 0.4s ease;
     background: #000;
@@ -4003,6 +4003,8 @@ html.no-csstransitions .home-content__main {
  * # portafolio
  *
  * ------------------------------------------------------------------- */
+
+ .s-portafolio { background: #000; }
 
 .portafolio-header{
   text-align: center;
