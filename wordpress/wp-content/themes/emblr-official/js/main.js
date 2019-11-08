@@ -539,34 +539,14 @@ var teamSlider = function() {
     /* Services
     * ------------------------------------------------------ */
 
-    // Función que muestra los servicios en el resto de resoluciones.
-    var viewServices = function() {
-        $('.s-services .box').click(function() {
-            $(".row-services .box").not(".hidden").removeClass("open").addClass("hidden");
-            $(this).removeClass("hidden").addClass("open");
-            $(this).siblings().removeClass("hidden").addClass("open");
-        });
-    };
+    var more_services_button = function() {
 
-    // Función que muestra los servicios en Smartphone
-    var viewServicesSmartphone = function() {
-        $(".row-services .box:not(:first-of-type)").not(".hidden").removeClass("open").addClass("hidden");
-        $('.s-services .box').click(function() {
-            $(".row-services .box").not(".hidden").removeClass("open").addClass("hidden");
-            $(this).removeClass("hidden").addClass('open');
+        $("#more-services").on("click", function() {
+            $("#servicios").find(".hidden-service").show("normal");
+            $(this).hide();
         });
-    };
 
-    const phone = matchMedia('(min-width: 415px)');
-    const changeSize = mql => {
-        mql.matches 
-            ? viewServices()
-            : viewServicesSmartphone();
     }
-
-    phone.addListener(changeSize);
-    changeSize(phone);
-
 
     /* Portafolio
     * ------------------------------------------------------ */
@@ -622,6 +602,7 @@ var teamSlider = function() {
         typeitInit();
         seachOpaqueDisplacement();
         teamSlider();
+        more_services_button();
 
     })();
 

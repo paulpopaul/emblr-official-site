@@ -60,6 +60,8 @@
         
         <?
 
+            $service_counter = 1;
+
             if ( $servicios ):
 
                 foreach ( $servicios as $post ):
@@ -68,7 +70,7 @@
 
         ?>
 
-        <div class="col-block item-service" data-aos="fade-up">
+        <div class="col-block item-service<?= $service_counter > 6 ? ' hidden-service' : '' ?>" data-aos="fade-up">
             <div class="item-service__icon">
                 <?= $icono ?>
             </div>
@@ -84,10 +86,15 @@
         
         <?
 
+                    $service_counter++;
+
                 endforeach ;
             endif ;
 
         ?>
 
     </div>
+
+    <input id="more-services" type="submit" value="ver más servicios" class="more-services btn btn--primary btn--large">
+
 </section> <!-- end s-services -->

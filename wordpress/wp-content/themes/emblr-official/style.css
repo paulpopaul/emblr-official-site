@@ -3864,6 +3864,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-services {
   position: relative;
+  border-top: 1px solid #1a1a1a;
 }
 
 /* ------------------------------------------------------------------- 
@@ -3910,6 +3911,9 @@ html.no-csstransitions .home-content__main {
 .item-service:nth-child(2n+1) {
     padding-left: 0;
 }
+
+.more-services.btn { margin: 50px auto 0 auto; display: block; }
+.hidden-service { display: none; }
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -5251,6 +5255,7 @@ html.no-csstransitions .home-content__main {
   overflow: auto;
   background: #000;
   border-top: 1px solid #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
   padding-top: 20px;
   padding-bottom: 20px;
 }
