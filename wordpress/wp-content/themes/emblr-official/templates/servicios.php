@@ -37,7 +37,7 @@
     $servicios = get_posts( array(
 
         'post_type'     => 'servicio',
-        'numberposts'   => 6
+        'numberposts'   => -1
 
     ));
 

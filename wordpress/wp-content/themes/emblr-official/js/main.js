@@ -535,6 +535,7 @@ var teamSlider = function() {
         });
     }; 
 
+
     /* Services
     * ------------------------------------------------------ */
 
@@ -566,14 +567,19 @@ var teamSlider = function() {
     phone.addListener(changeSize);
     changeSize(phone);
 
+
     /* Portafolio
     * ------------------------------------------------------ */
 
+    /*
+    *
+    *       NOT REGISTERED AT "Initialize" MASTER FUNCTION !
+    * 
+    */
     var filterList = {
 
         init: function () {
 
-            // https://mixitup.kunkalabs.com/
             $('#gallery').mixItUp({
                 selectors: {
                     target: '.gallery-item',
@@ -590,6 +596,8 @@ var teamSlider = function() {
 
     // Filter ALL the things
     filterList.init();
+
+    /* ------------------------------------------------------ */
 
 
    /* Initialize
