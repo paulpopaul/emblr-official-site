@@ -75,7 +75,7 @@
 					<div class="pricing-table active">
 						<div class="price-header">
 							<div class="icon"><i class="flaticon-rocket"></i></div>
-							<h3 class="title">DETACH M</h3>
+							<h3 class="title">DETACH M+</h3>
 							<span class="subtitle">Medium business solution</span>
 						</div> <!-- price-header -->
 						
