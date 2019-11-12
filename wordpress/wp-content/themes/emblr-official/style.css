@@ -4011,6 +4011,8 @@ html.no-csstransitions .home-content__main {
 .s-pricing {
   border-top: 1px solid #1a1a1a;
   background: #232323;
+  overflow: hidden;
+  position: relative;
 
   background-image: url(images/background/bg-02.svg);
   background-repeat: no-repeat;
@@ -4168,6 +4170,30 @@ html.no-csstransitions .home-content__main {
 
 .pricing-table .price-body ul li:first-child {
   margin-top: 0;
+}
+
+/* Ribbon */
+.cr {
+  width: 240px;
+  padding: 16px;
+  position: absolute;
+  text-align: center;
+  color: #1a1a1a;
+  background: #f8e097;
+  z-index: 1;
+
+  font-family: Montserrat;
+  font-weight: 600;
+  /*text-transform: uppercase;*/
+}
+
+/* Positions */
+.cr-top { top: 30px; }
+.cr-left { left: -57px; }
+
+/* Rotations */
+.cr-top.cr-left {
+  transform: rotate(-45deg);
 }
 
 /* ------------------------------------------------------------------- 

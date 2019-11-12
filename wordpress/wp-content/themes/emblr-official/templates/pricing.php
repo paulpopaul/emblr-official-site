@@ -34,6 +34,8 @@
 <!-- pricing ================================================== -->
 <section class="s-pricing section-page" id="pricing">
 
+	<div class="cr cr-top cr-left cr-red"> Pack web </div>
+
 	<h3> ¿Buscando soluciones rápidas? </h3>
 	<h1> - Escoge tu producto - </h1>
 
