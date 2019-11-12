@@ -1767,7 +1767,7 @@ body.menu-is-open {
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  transform: translateY(-50%);e
+  transform: translateY(-50%);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -2253,7 +2253,7 @@ ul.page-dots button {
   margin: 0;
   background: none;
   border: none;
-  cursor: ;
+  cursor:;
 }
 
 ul.page-dots button::after {
@@ -4319,16 +4319,7 @@ html.no-csstransitions .home-content__main {
   width: 100%;
 }
 
-.overlay {
-  background: rgba(31, 186, 231, 0.8);
-  z-index: 1;
-  transition: all 0.7s ease-in-out;
-}
 
-.gallery-item:hover .details,
-.gallery-item:hover .overlay {
-  opacity: 1;
-}
 
 @media (max-width: 30em) {
   .wrap {
@@ -4381,14 +4372,10 @@ html.no-csstransitions .home-content__main {
   background-size: 760px 380px;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## bricks/masonry
  * ------------------------------------------------------------------- */
-.masonry-wrap {
-  margin-top: 7.2rem;
-  max-width: 1100px;
-  position: relative;
-}
+
 
 .masonry-wrap:after {
   content: "";
@@ -4404,12 +4391,12 @@ html.no-csstransitions .home-content__main {
 
 .masonry .grid-sizer,
 .masonry__brick {
-  width: 50%;
+  /*width: 50%;*/
 }
 
 .masonry__brick {
-  float: left;
-  padding: 0;
+  /*float: left;*/
+  /*padding: 0;*/
 }
 
 .item-folio {
@@ -4549,7 +4536,7 @@ html.no-csstransitions .home-content__main {
   color: #000000;
 }
 
-/* on hover 
+/* on hover
  * ----------------------------------------------- */
 .item-folio:hover .item-folio__thumb a::before {
   opacity: 1;
@@ -6752,3 +6739,5 @@ footer {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+
