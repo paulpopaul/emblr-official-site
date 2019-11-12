@@ -85,7 +85,7 @@
 						
 						<div class="price-body">
 							<ul>
-								<li><b>Hasta 9</b> Secciones</li>
+								<li><b>Hasta 9</b> Secciones (2 idiomas)</li>
 								<li><b>Hasta 3</b> Formularios de contacto</li>
 								<li><b>Hasta 12</b> Cuentas de email configuradas</li>
 								<li><b>2 Diseños</b> Basados en plantilla</li>
@@ -112,7 +112,7 @@
 						
 						<div class="price-body">
 							<ul>
-								<li><b>Ilimitadas</b> Secciones</li>
+								<li><b>Ilimitadas</b> Secciones (multi-idioma)</li>
 								<li><b>Ilimitados</b> Formularios de contacto</li>
 								<li><b>Ilimitadas</b> Cuentas de email configuradas</li>
 								<li><b>2 Diseños</b> Personalizados</li>
