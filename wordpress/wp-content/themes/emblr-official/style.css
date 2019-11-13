@@ -5403,14 +5403,14 @@ html.no-csstransitions .home-content__main {
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 1.286;
-  color: #FFFFFF;
+  color: #1fbda2;
   text-transform: uppercase;
   letter-spacing: .2rem;
   margin: 0 0 .3rem 0;
 }
 
 .item-folio__cat {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 1);
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.4rem;
   font-weight: 300;
@@ -5424,8 +5424,8 @@ html.no-csstransitions .home-content__main {
 
 .item-folio__project-link {
   display: block;
-  color: #FFFFFF;
-  box-shadow: 0 0 0 1px #FFFFFF;
+  color: #1fbda2;
+  box-shadow: 0 0 0 1px #1fbda2;
   border-radius: 50%;
   height: 4.2rem;
   width: 4.2rem;
