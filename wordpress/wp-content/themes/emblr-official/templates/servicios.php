@@ -109,17 +109,19 @@
         ?>
 
         <div class="col-block item-service<?= $service_counter > 6 ? ' hidden-service' : '' ?>" data-aos="fade-up">
-            <div class="item-service__icon">
-                <?= $icono ?>
-            </div>
+            <div class="item-service-content">
+                <div class="item-service__icon">
+                    <?= $icono ?>
+                </div>
 
-            <div class="item-service__text">
-                <h3 class="item-title"> <? the_title() ?> </h3>
+                <div class="item-service__text">
+                    <h3 class="item-title"> <? the_title() ?> </h3>
 
-                <p>
-                    <?= $post->post_content ?>
-                </p>
-            </div>
+                    <p>
+                        <?= $post->post_content ?>
+                    </p>
+                </div>
+            </div> <!-- item-service-content -->
         </div>
         
         <?

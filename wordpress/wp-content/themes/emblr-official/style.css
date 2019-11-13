@@ -3884,7 +3884,21 @@ html.no-csstransitions .home-content__main {
 .services-cubes { float: right; width: 40%; }
 .services-cubes .loader { margin: 0 auto; }
 
-.item-service { position: relative; z-index: 2; }
+.item-service {
+  position: relative;
+  z-index: 2;
+  counter-increment: service-item-counter;
+}
+
+.item-service .item-service-content {
+  padding: 30px;
+  border: 1px solid #00ebab0f;
+}
+
+.item-service-content:hover {
+  border-color: #1fbda2;
+  transition: border-color 0.3s linear;
+}
 
 .item-service:not(:last-of-type) {
   margin-bottom: 50px;
@@ -3892,19 +3906,26 @@ html.no-csstransitions .home-content__main {
 
 .item-service h3 {
   margin-top: 0;
+  color: #1fbda2;
+  text-transform: uppercase;
+  font-size: 16px;
+  /*margin-top: 10px;*/
 }
 
-.item-service:nth-child(2n+1) {
-  padding-right: 50px;
+.item-service:nth-child(2n+1) { /* impar */
+  padding-right: 15px;
 }
 
-.item-service:nth-child(2n+2) {
-  padding-left: 50px;
-  padding-right: 0;
+.item-service:nth-child(2n) { /* pares*/
+  padding-left: 15px;
 }
 
 .item-service__text {
   margin-left: 7.2rem;
+}
+
+.item-service__text p {
+  color: #fff;
 }
 
 .item-service__icon {
@@ -3912,10 +3933,23 @@ html.no-csstransitions .home-content__main {
   color: #1fbda2;
   font-size: 4.5rem;
   margin-top: -1.8rem;
+  position: relative;
+}
+
+.item-service__icon i::after {
+  content: "0" counter(service-item-counter);
+  color: #00ebab0f !important;
+  font-family: Nunito Sans, sans-serif;
+  font-size: 37px;
+  font-weight: 700;
+  position: absolute;
+  color: #fff;
+  top: 90px;
+  left: 0px;
 }
 
 .item-service:nth-child(2n+1) {
-    padding-left: 0;
+    /*padding-left: 0;*/
 }
 
 .more-services.btn { margin: 50px auto 0 auto; display: block; }
@@ -5092,7 +5126,7 @@ html.no-csstransitions .home-content__main {
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * services
+ * pricing
  * ------------------------------------------------------------------- */
 
 @media only screen and (max-width: 1024px) {
