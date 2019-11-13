@@ -48,13 +48,51 @@
 <!-- services
 ================================================== -->
 <section id="servicios" class="s-services target-section section-page">
-    <h1 data-aos="fade-up"> <? the_title() ?> </h1>
 
-    <div data-aos="fade-up">
-        <h2>
-            <?= get_field( 'subtitulo', $post->ID ) ?>
-        </h2>
+    <div class="services-title" data-aos="fade-up">
+        <h1 data-aos="fade-up"> <? the_title() ?> </h1>
+        <h2> <?= get_field( 'subtitulo', $post->ID ) ?> </h2>
     </div> <!-- end section-header -->
+
+    <div class="services-cubes">
+        <div class="loader">
+          <div class="box box0">
+            <div></div>
+          </div>
+
+          <div class="box box1">
+            <div></div>
+          </div>
+
+          <div class="box box2">
+            <div></div>
+          </div>
+
+          <div class="box box3">
+            <div></div>
+          </div>
+
+          <div class="box box4">
+            <div></div>
+          </div>
+
+          <div class="box box5">
+            <div></div>
+          </div>
+
+          <div class="box box6">
+            <div></div>
+          </div>
+
+          <div class="box box7">
+            <div></div>
+          </div>
+
+          <div class="ground">
+            <div></div>
+          </div>
+        </div>
+    </div> <!-- services-cubes -->
 
     <div class="bit-narrow services block-1-2 block-tab-full">
         
