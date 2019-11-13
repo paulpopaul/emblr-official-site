@@ -7632,6 +7632,27 @@ footer {
 
 }
 
-/*# sourceMappingURL=main.css.map */
 
+
+
+/* -------------------------------------------------------------------
+
+ * ScrollBar
+ * ------------------------------------------------------------------- */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1FBDA2;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 20px;
+}
+
+
+/*# sourceMappingURL=main.css.map */
 
