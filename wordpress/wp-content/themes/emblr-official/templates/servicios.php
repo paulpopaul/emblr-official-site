@@ -49,12 +49,12 @@
 ================================================== -->
 <section id="servicios" class="s-services target-section section-page">
 
-    <div class="services-title" data-aos="fade-up">
-        <h1 data-aos="fade-up"> <? the_title() ?> </h1>
-        <h2> <?= get_field( 'subtitulo', $post->ID ) ?> </h2>
+    <div class="services-title">
+        <h1 data-aos="fade-right"> <? the_title() ?> </h1>
+        <h2 data-aos="fade-right"> <?= get_field( 'subtitulo', $post->ID ) ?> </h2>
     </div> <!-- end section-header -->
 
-    <div class="services-cubes">
+    <div class="services-cubes" data-aos="fade-left">
         <div class="loader">
           <div class="box box0">
             <div></div>
@@ -135,6 +135,11 @@
 
     </div>
 
-    <input id="more-services" type="submit" value="ver más servicios" class="more-services btn btn--primary btn--large">
+    <input
+        class="more-services btn btn--primary btn--large"
+        id="more-services"
+        type="button"
+        value="ver más servicios"
+        data-aos="fade-up">
 
 </section> <!-- end s-services -->

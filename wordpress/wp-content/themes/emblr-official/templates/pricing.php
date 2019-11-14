@@ -36,20 +36,20 @@
 
 	<div class="cr cr-top cr-left cr-red"> Pack web </div>
 
-	<h3> ¿Buscando soluciones rápidas? </h3>
-	<h1> - Escoge tu producto - </h1>
+	<h3 data-aos="fade-left"> ¿Buscando soluciones rápidas? </h3>
+	<h1 data-aos="fade-left"> - Escoge tu producto - </h1>
 
 	<div class="container">
 		<div class="price-plan-wrapper">
 
 			<div class="row">
 
-				<div class="col-pricing">
+				<div class="col-pricing" data-aos="fade-right">
 					<div class="pricing-table">
 						<div class="price-header">
 							<div class="icon"><i class="flaticon-trip"></i></div>
-							<h3 class="title">ENTER S</h3>
-							<span class="subtitle">Small business solution</span>
+							<h3 class="title">SIMPLE</h3>
+							<span class="subtitle">Para levantar tus sueños</span>
 						</div>
 
 						<div class="price">
@@ -59,10 +59,12 @@
 						<div class="price-body">
 							<ul>
 								<li><b>Hasta 6</b> Secciones</li>
+								<li><b>1</b> Idioma</li>
 								<li><b>1</b> Formulario de contacto</li>
-								<li><b>Hasta 5</b> Cuentas de email configuradas</li>
+								<li><b>Hasta 5</b> Cuentas de Email configuradas</li>
 								<li><b>1 Diseño</b> Basado en plantilla</li>
-								<li><b>2 Logotipos</b> Para elección</li>
+								<li><b>Integración</b> Redes sociales</li>
+								<li><b>Auto-administrable</b> Wordpress</li>
 							</ul>
 						</div> <!-- price-body -->
 							
@@ -73,23 +75,25 @@
 				</div> <!-- columns -->
 
 
-				<div class="col-pricing">
+				<div class="col-pricing" data-aos="fade-up">
 					<div class="pricing-table active">
 						<div class="price-header">
 							<div class="icon"><i class="flaticon-rocket"></i></div>
-							<h3 class="title">DETACH M+</h3>
-							<span class="subtitle">Medium business solution</span>
+							<h3 class="title">INNOVA+</h3>
+							<span class="subtitle">Consigue el impacto que andas buscando</span>
 						</div> <!-- price-header -->
 						
-						<div class="price"><span class="dollar">$</span>599.000<!--<span class="month">/Mo</span>--></div>
+						<div class="price"><span class="dollar">$</span>699.000<!--<span class="month">/Mo</span>--></div>
 						
 						<div class="price-body">
 							<ul>
-								<li><b>Hasta 9</b> Secciones (2 idiomas)</li>
+								<li><b>Hasta 10</b> Secciones</li>
+								<li><b>Hasta 2</b> Idiomas (bilingue)</li>
 								<li><b>Hasta 3</b> Formularios de contacto</li>
-								<li><b>Hasta 12</b> Cuentas de email configuradas</li>
-								<li><b>2 Diseños</b> Basados en plantilla</li>
-								<li><b>2 Logotipos</b> Para elección</li>
+								<li><b>Hasta 12</b> Cuentas de Email configuradas</li>
+								<li><b>2 Diseños</b> Propuestas de diseño</li>
+								<li><b>Integración</b> Redes sociales</li>
+								<li><b>Auto-administrable</b> Wordpress</li>
 							</ul>
 						</div> <!-- price-body -->
 						
@@ -100,23 +104,25 @@
 				</div> <!-- columns -->
 				
 
-				<div class="col-pricing">
+				<div class="col-pricing" data-aos="fade-left">
 					<div class="pricing-table pro">
 						<div class="price-header">
 							<div class="icon"><i class="flaticon-origami"></i></div>
 							<h3 class="title">PRO X</h3>
-							<span class="subtitle">Solución comercial gigantesca</span>
+							<span class="subtitle">Solución de prestigio a tu altura</span>
 						</div> <!-- price-header -->
 						
-						<div class="price"><span class="dollar">$</span>799.000<!--<span class="month">/Mo</span>--></div>
+						<div class="price"><span class="dollar">$</span>999.000<!--<span class="month">/Mo</span>--></div>
 						
 						<div class="price-body">
 							<ul>
-								<li><b>Ilimitadas</b> Secciones (multi-idioma)</li>
+								<li><b>Hasta 15</b> Secciones</li>
+								<li><b>Hasta 4</b> Idiomas (multi-lenguaje)</li>
 								<li><b>Ilimitados</b> Formularios de contacto</li>
-								<li><b>Ilimitadas</b> Cuentas de email configuradas</li>
-								<li><b>2 Diseños</b> Personalizados</li>
-								<li><b>3 Logotipos</b> Para elección</li>
+								<li><b>Ilimitadas</b> Cuentas de Email configuradas</li>
+								<li><b>2 Diseños</b> Full Personalizados</li>
+								<li><b>Tienda Online</b> + Webpay + R.S.</li>
+								<li><b>Auto-administrable</b> Wordpress</li>
 							</ul>
 						</div> <!-- price-body -->
 						
@@ -130,5 +136,7 @@
 
 		</div> <!-- price-plan-wrapper -->
 	</div> <!-- container -->
+
+	<a href="#" class="customize-product btn btn--secondary btn--large" data-aos="fade-up">personalizar mi producto</a>
 
 </section> <!-- #pricing -->

@@ -1011,6 +1011,32 @@ input[type="button"].btn--primary:focus {
   box-shadow: 0 2px 10px rgba(31, 189, 162, 0.2);
 }
 
+/* button secondary
+ * ------------------------------------------------- */
+.btn.btn--secondary,
+button.btn--secondary,
+input[type="submit"].btn--secondary,
+input[type="reset"].btn--secondary,
+input[type="button"].btn--secondary {
+  background: #000;
+  border-color: transparent;
+  color: #FFFFFF;
+}
+
+.btn.btn--secondary:hover,
+button.btn--secondary:hover,
+input[type="submit"].btn--secondary:hover,
+input[type="reset"].btn--secondary:hover,
+input[type="button"].btn--secondary:hover,
+.btn.btn--secondary:focus,
+button.btn--secondary:focus,
+input[type="submit"].btn--secondary:focus,
+input[type="reset"].btn--secondary:focus,
+input[type="button"].btn--secondary:focus {
+  background: #141414;
+  border-color: transparent;
+}
+
 /* button modifiers
  * ------------------------------------------------- */
 .btn.full-width,
@@ -1491,6 +1517,8 @@ body.menu-is-open {
     }
 }
 
+#qlwapp .qlwapp-toggle { background: #29CEAE !important; }
+#qlwapp .qlwapp-toggle:hover { /*background: #1fb !important;*/ }
 #qlwapp .qlwapp-message { font-size: 14px; font-family: Nunito Sans, sans-serif; }
 #qlwapp .qlwapp-box.response textarea::placeholder { color: #666; }
 .qlwapp-time { color: #ccc !important; }
@@ -3877,7 +3905,8 @@ html.no-csstransitions .home-content__main {
 .s-services h2 {
   color: #1fbda2;
   max-width: 1000px;
-  margin-top: 20px;
+  margin-top: 45px;
+  margin-bottom: 0;
 }
 
 .services-title { float: left; width: 60%; position: relative; z-index: 2; }
@@ -3961,7 +3990,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .loader {
-  --duration: 5s;
+  --duration: 6s;
   --primary: rgba(31,189,162,1);
   --primary-light: #1fb; /* segunda mitad cuadro hoyo */
   --primary-rgba: rgba(39, 94, 254, 0);
@@ -4942,6 +4971,8 @@ html.no-csstransitions .home-content__main {
   overflow: hidden;
   position: relative;
 
+  text-align: center;
+
   background-image: url(images/background/bg-02.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -4954,7 +4985,7 @@ html.no-csstransitions .home-content__main {
 .s-pricing h1 { /*text-transform: uppercase;*/ }
 .s-pricing h3 { color: #1fbda2; margin-bottom: 0; margin-top: 0; }
 
-.price-plan-wrapper { margin-top: 50px; }
+.price-plan-wrapper { margin-top: 60px; }
 .col-pricing { width: 33.3%; }
 /*.price-plan-wrapper .row { padding: 0; }*/
 
@@ -5016,7 +5047,10 @@ html.no-csstransitions .home-content__main {
   font-size: 14px;
 }
 
-.pricing-table:not(.pro) .price-header .subtitle { visibility: hidden; }
+.pricing-table:not(.pro) .price-header .subtitle {
+  /*visibility: hidden;*/
+  color: rgba(0, 0, 0, 0.4);
+}
 
 .pricing-table .price {
   font-size: 50px;
@@ -5080,7 +5114,7 @@ html.no-csstransitions .home-content__main {
   display: block;
   color: #282828;
   margin: 0 30px;
-  padding: 15px 0;
+  padding: 10px 0;
   transition: .3s ease-in;
   border-bottom: 1px solid #ddd;
 }
@@ -5102,26 +5136,39 @@ html.no-csstransitions .home-content__main {
 
 /* Ribbon */
 .cr {
-  width: 240px;
+  width: 245px;
   padding: 16px;
   position: absolute;
   text-align: center;
   color: #1fbda2;
   background: #000;
+  border: 1px solid #1fbda2;
   z-index: 1;
 
   font-family: Montserrat;
   font-weight: 600;
-  /*text-transform: uppercase;*/
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 /* Positions */
-.cr-top { top: 30px; }
-.cr-left { left: -57px; }
+.cr-top { top: 27px; }
+.cr-left { left: -60px; }
 
 /* Rotations */
 .cr-top.cr-left {
   transform: rotate(-45deg);
+}
+
+/* personalizar mi producto :button */
+.customize-product {
+  margin-top: 60px;
+  border: 1px solid #1fbda2 !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.customize-product:hover {
+  border-color: #1fb !important;
 }
 
 /* ------------------------------------------------------------------- 
@@ -5319,16 +5366,17 @@ html.no-csstransitions .home-content__main {
 
 .masonry .grid-sizer,
 .masonry__brick {
-  /*width: 50%;*/
+  
 }
 
 .masonry__brick {
-  /*float: left;*/
-  /*padding: 0;*/
 }
 
 .item-folio {
   position: relative;
+}
+
+.item-folio__thumb {
   overflow: hidden;
 }
 
@@ -7679,7 +7727,7 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1FBDA2;
+  background: #29CEAE;
   border-radius: 10px;
 }
 

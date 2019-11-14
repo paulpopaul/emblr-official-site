@@ -33,9 +33,9 @@
 
 <!-- team ================================================== -->
 <section class="team-section target-section section-page">
-    <h1 data-aos="fade-up" class="aos-init aos-animate"> Conoce el Team </h1>
+    <h1 data-aos="fade-up"> Nuestro Equipo </h1>
 
-    <div class="slick-team-container">
+    <div class="slick-team-container" data-aos="fade-up">
         <!-- prev, next arrows -->
         <span class="slick-team-prev slick-team-arrow">
             <i class="fas fa-caret-left fa-2x"></i>
