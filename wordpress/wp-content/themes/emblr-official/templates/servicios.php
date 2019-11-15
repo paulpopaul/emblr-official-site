@@ -108,7 +108,7 @@
 
         ?>
 
-        <div class="col-block item-service<?= $service_counter > 6 ? ' hidden-service' : '' ?>" data-aos="fade-up">
+        <div class="item-service<?= $service_counter > 6 ? ' hidden-service' : '' ?>" data-aos="fade-up">
             <div class="item-service-content">
                 <div class="item-service__icon">
                     <?= $icono ?>

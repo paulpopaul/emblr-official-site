@@ -3900,7 +3900,9 @@ html.no-csstransitions .home-content__main {
  * ## services list
  * ------------------------------------------------------------------- */
 .services {
-  margin-top: 130px;
+  margin-top: 0px;
+  display: inline-grid;
+  grid-template-columns: 50% 50%;
 }
 
 .s-services h2 {
@@ -3917,11 +3919,13 @@ html.no-csstransitions .home-content__main {
 .item-service {
   position: relative;
   z-index: 2;
+  width: 100%;
   counter-increment: service-item-counter;
 }
 
 .item-service .item-service-content {
   padding: 30px;
+  height: 100%;
   border: 1px solid #00ebab0f;
 }
 
@@ -3931,7 +3935,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .item-service:not(:last-of-type) {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .item-service h3 {
@@ -4877,40 +4881,17 @@ html.no-csstransitions .home-content__main {
  * responsive:
  * services
  * ------------------------------------------------------------------- */
-@media only screen and (max-width:1200px) {
+@media only screen and (max-width: 1200px) {
   .services {
     max-width: 1000px;
   }
-
-  .services .item-service:nth-child(2n+1) {
-    padding-right: 30px;
-  }
-
-  .services .item-service:nth-child(2n+2) {
-    padding-left: 30px;
-  }
-
 }
 
-@media only screen and (max-width:1024px) {
-  .services { margin-top: 90px; }
+@media only screen and (max-width: 1024px) {
   .s-services h2 { font-size: 2.4rem; }
 }
 
-@media only screen and (max-width:1000px) {
-  .s-services {
-    /*padding-top: 15rem;*/
-    /*padding-bottom: 15rem;*/
-  }
-
-  .services .item-service:nth-child(2n+1) {
-    padding-right: 20px;
-  }
-
-  .services .item-service:nth-child(2n+2) {
-    padding-left: 20px;
-  }
-
+@media only screen and (max-width: 1000px) {
   .item-service__text {
     margin-left: 0;
   }
@@ -4923,7 +4904,7 @@ html.no-csstransitions .home-content__main {
 
 }
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width: 800px) {
   .services { margin-top: 60px; }
 
   .services .item-service:nth-child(n) {
@@ -4940,7 +4921,13 @@ html.no-csstransitions .home-content__main {
 
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width: 768px) {
+  .services {
+    grid-template-columns: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   .s-services {
     /*padding-top: 12rem*/
   }
@@ -4952,7 +4939,7 @@ html.no-csstransitions .home-content__main {
 
 }
 
-@media only screen and (max-width:400px) {
+@media only screen and (max-width: 400px) {
   .services .item-service:nth-child(n) {
     padding-right: 0;
     padding-left: 0;
