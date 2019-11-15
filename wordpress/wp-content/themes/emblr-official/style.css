@@ -3885,6 +3885,47 @@ html.no-csstransitions .home-content__main {
 }
 }*/
 
+# CODECEPTION
+Cubre tres tipos de test: 
+* Unitarios 
+* Funcionales
+* Aceptación: Son diseñadas a partir de requerimientos, caso de uso, validar procesos de negocio de sistema (formularios por ejemplo). 
+
+Está compuesto por Actors, que son clases autogeneradas de tresposibles tipos: 
+  * UnitTester 
+  * FuncionalTester
+  * AcceptanceTester
+
+Las clases son configuradas en archivos formato Yaml.  
+El rellenado de la base de datos tras la ejecución de cada test, el uso de patrón PageObject[47] para test de aceptación y funcionales, etc…
+
+vendor/bin/codecept bootstrap
+
+La estructura de carpetas tendría la siguiente forma: 
+  tests/acceptance/
+  tests/functional/
+  tests/unit/
+
+## TDD: Desarrollo guiado por tests
+Primero se escriben los tests que verifiquen el comportamiento antes de que el código sea implementado. 
+
+## BDD : Desarrollo guiado por comportamiento 
+Especifica qué tests de unidades de software deben cumplir unidades de comportamiento deseado.  Estos comportamientos deberían ser definidas como historias de usuario en un lenguaje común de desarrolladores y otros involucrados. 
+
+“Es útil compartir la implementación entre los distintos test de integración y funcionalidades, por ejemplo para testar una web y realzar el proceso de login en cada ejecución”. Este mecanismo está implementado mediante los objetos StepObjects propios de Codeception. 
+
+-> Codeception permite la definición de escenarios dentro de los test unitarios.
+-> Solo hay que especificarle en la configuración con qué framework estamos trabajando y Codeception se encargará de utilizar las dependencias propias del framework para ejecutar controladores a sestear.
+
+*Cept:* es el archivo de prueba de escenario más simple
+*Cest:* un formato orientado a objetos para ejecutar múltiples pruebas dentro de un solo archivo
+*Test:* pruebas escritas en PHPUnit, un framework de pruebas PHP
+
+php vendor/bin/codecept
+
+$I -> waitForElement
+
+
 
 /* ===================================================================
  * # services
@@ -3920,6 +3961,9 @@ html.no-csstransitions .home-content__main {
 }
 
 .item-service .item-service-content {
+  /* display: flex; */
+  overflow: hidden;
+  height: 350px;
   padding: 30px;
   border: 1px solid #00ebab0f;
 }
@@ -3935,6 +3979,7 @@ html.no-csstransitions .home-content__main {
 
 .item-service h3 {
   margin-top: 0;
+  height: 35px;
   color: #1fbda2;
   text-transform: uppercase;
   font-size: 16px;
@@ -3983,6 +4028,125 @@ html.no-csstransitions .home-content__main {
 
 .more-services.btn { margin: 50px auto 0 auto; display: block; }
 .hidden-service { display: none; }
+
+@media (max-width: 1900px) {
+  .item-service__text p{
+    font-size: 16px;
+  }
+  .item-service .item-service-content {
+    height: 340px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .item-service__text p{
+    font-size: 15px;
+  }
+  .item-service .item-service-content {
+    height: 355px;
+  }
+
+  .item-service h3 {
+    font-size: 1.41rem;
+    height: 30px;
+  }
+}
+  
+  @media (max-width: 1120px) {
+  .item-service__text p{
+    font-size: 1.45rem;
+  }
+  .item-service .item-service-content {
+    height: 350px;
+  }
+
+  .item-service h3 {
+    font-size: 1.4rem;
+    height: 30px;
+  }
+  .item-service__text {
+    margin-left: 6.2rem;
+  }
+
+  .item-service .item-service-content {
+      padding: 25px;
+    }
+}
+
+  @media (max-width: 1000px) {
+    .item-service__text p{
+      font-size: 1.48rem;
+    }
+    .item-service .item-service-content {
+      height: 395px;
+    }
+
+    .item-service h3 {
+      font-size: 1.7rem;
+      height: 30px;
+    }
+    .item-service__text {
+      margin-left: 6.2rem;
+    }
+
+    .item-service .item-service-content {
+      padding: 20px;
+    }
+}
+   @media (max-width: 800px) {
+    .item-service__text p{
+      font-size: 2rem;
+    }
+    .item-service .item-service-content {
+      height: 398px;
+    }
+
+    .item-service h3 {
+      font-size: 2rem;
+      height: 30px;
+    }
+    .item-service__text {
+      margin-left: 6.2rem;
+    }
+
+    .item-service .item-service-content {
+      padding: 20px;
+    }
+    .s-services h2 {
+        font-size: 2.2rem;
+    }
+    .services-cubes {
+      float: right;
+      width: 33%;
+    }
+
+  }
+
+@media (max-width: 600px) {
+    .item-service__text p {
+      font-size: 1.48rem;
+    }
+    .item-service .item-service-content {
+      height: 395px;
+    }
+
+    .item-service h3 {
+      font-size: 1.7rem;
+      height: 30px;
+    }
+    .item-service__text {
+      margin-left: 6.2rem;
+    }
+
+    .item-service .item-service-content {
+      padding: 20px;
+    }
+    .s-services h2 {
+    font-size: 2rem;
+    }
+  }
+
+
 
 /* cubes animation */
 :root {
