@@ -473,7 +473,7 @@
 #qlwapp .qlwapp-box .qlwapp-offline-text {
   font-size: 12px;
   line-height: 1.5em;
-  opacity: 0.6;
+  opacity: .6;
   display: block;
 }
 #qlwapp .qlwapp-box .qlwapp-time {

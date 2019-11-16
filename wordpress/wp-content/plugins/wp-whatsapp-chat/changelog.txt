@@ -1,8 +1,18 @@
+= 4.5.2 =
+* Fix. include full path
+
+= 4.5.1 =
+* Fix. small css issues
+
+= 4.5.0 =
+* Improvement. code refactorization with MVC
+* Improvement. new contact tab
+
 = 4.4.9 =
 * Fix. small css issues
 
 = 4.4.8 =
-* Fix. remove rating request non admin users
+* Fix. remove rating request non admin users 
 
 = 4.4.7 =
 * Improvement. button timeout readonly

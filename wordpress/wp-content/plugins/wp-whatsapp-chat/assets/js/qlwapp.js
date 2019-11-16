@@ -38,6 +38,8 @@
                 timeto = $contact.data('timeto') || false,
                 //  timeout = $contact.data('timeout'),
                 timezone = parseInt($contact.data('timezone')) || 0;
+                
+                console.log($contact.data('timezone'));
 
         // Don't scape timezone as could be 0
         if (!timeto || !timefrom || (timefrom === timeto)) {

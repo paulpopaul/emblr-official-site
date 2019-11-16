@@ -14,7 +14,22 @@ if (!class_exists('QLWAPP_Frontend')) {
 
       global $qlwapp;
 
-      if ($display = apply_filters('qlwapp_box_display', '__return_true')) {
+      include_once(QLWAPP_PLUGIN_DIR . 'includes/models/Box.php');
+      include_once(QLWAPP_PLUGIN_DIR . 'includes/models/Contact.php');
+      include_once(QLWAPP_PLUGIN_DIR . 'includes/models/Display.php');
+      include_once(QLWAPP_PLUGIN_DIR . 'includes/models/Button.php');
+
+      $box_model = new QLWAPP_Box();
+      $contact_model = new QLWAPP_Contact();
+      $button_model = new QLWAPP_Button();
+      $display_model = new QLWAPP_Display();
+
+      $contacts = $contact_model->get_contacts_reorder();
+      $display = $display_model->get();
+      $button = $button_model->get();
+      $box = $box_model->get();
+
+      if ($show = apply_filters('qlwapp_box_display', '__return_true')) {
 
         if (is_file($file = apply_filters('qlwapp_box_template', QLWAPP_PLUGIN_DIR . 'template/box.php'))) {
           include_once $file;
@@ -23,19 +38,20 @@ if (!class_exists('QLWAPP_Frontend')) {
     }
 
     function add_frontend_css() {
-      global $qlwapp;
+      $scheme_model = new QLWAPP_Scheme();
+      $scheme = $scheme_model->get();
       ?>
       <style>
         :root { 
           <?php
-          foreach ($qlwapp['scheme'] as $key => $value) {
+          foreach ($scheme as $key => $value) {
             if ($value != '') {
               printf('--%s-scheme-%s:%s;', QLWAPP_DOMAIN, $key, $value);
             }
           }
           ?>
         }
-        <?php if ($qlwapp['scheme']['brand']): ?>
+        <?php if ($scheme['brand']): ?>
           #qlwapp .qlwapp-toggle,
           #qlwapp .qlwapp-box .qlwapp-header,
           #qlwapp .qlwapp-box .qlwapp-user,
@@ -43,7 +59,7 @@ if (!class_exists('QLWAPP_Frontend')) {
             background-color: var(--qlwapp-scheme-brand);  
           }
         <?php endif; ?>
-        <?php if ($qlwapp['scheme']['text']): ?>
+        <?php if ($scheme['text']): ?>
           #qlwapp .qlwapp-toggle,
           #qlwapp .qlwapp-toggle .qlwapp-icon,
           #qlwapp .qlwapp-toggle .qlwapp-text,
@@ -56,62 +72,64 @@ if (!class_exists('QLWAPP_Frontend')) {
       <?php
     }
 
-    function box_display($display) {
+    function box_display($show) {
 
-      global $qlwapp, $wp_query;
-
+      global $wp_query;
+      $display_model = new QLWAPP_Display();
+      $display = $display_model->get();
       if (is_customize_preview()) {
         return true;
       }
 
-      if (count($qlwapp['display']['target'])) {
+      if (count($display['target'])) {
 
         if (is_front_page() || is_home() || is_search() || is_404()) {
-          $display = false;
+          $show = false;
         }
 
-        if (is_front_page() && in_array('home', $qlwapp['display']['target'])) {
+        if (is_front_page() && in_array('home', $display['target'])) {
           return true;
         }
 
-        if (is_home() && in_array('blog', $qlwapp['display']['target'])) {
+        if (is_home() && in_array('blog', $display['target'])) {
           return true;
         }
 
-        if (is_search() && in_array('search', $qlwapp['display']['target'])) {
+        if (is_search() && in_array('search', $display['target'])) {
           return true;
         }
 
-        if (is_404() && in_array('error', $qlwapp['display']['target'])) {
+        if (is_404() && in_array('error', $display['target'])) {
           return true;
         }
       }
 
       if (is_archive() && isset($wp_query->queried_object->taxonomy)) {
 
-        if (isset($qlwapp['display'][$wp_query->queried_object->taxonomy]) && count($qlwapp['display'][$wp_query->queried_object->taxonomy])) {
+        if (isset($display[$wp_query->queried_object->taxonomy]) && count($display[$wp_query->queried_object->taxonomy])) {
 
-          $display = false;
+          $show = false;
 
-          if (in_array($wp_query->queried_object->term_id, $qlwapp['display'][$wp_query->queried_object->taxonomy])) {
+          if (in_array($wp_query->queried_object->term_id, $display[$wp_query->queried_object->taxonomy])) {
             return true;
           }
 
           //backward compatibility for $term->name
-          if (in_array($wp_query->queried_object->slug, $qlwapp['display'][$wp_query->queried_object->taxonomy])) {
+          if (in_array($wp_query->queried_object->slug, $display[$wp_query->queried_object->taxonomy])) {
             return true;
           }
         }
       }
 
-      return $display;
+      return $show;
     }
 
     function do_shortcode($atts, $content = null) {
 
-      global $qlwapp;
+      $button_model = new QLWAPP_Button();
+      $button = $button_model->get();
 
-      $atts = wp_parse_args($atts, $qlwapp['button']);
+      $atts = wp_parse_args($atts, $button);
 
       ob_start();
       ?>

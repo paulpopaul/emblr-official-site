@@ -1,18 +1,37 @@
 (function ($) {
 
-  //  Validation box.contact.phone number  
-  $('form :input').keyup(function (e) {
-    if (!this.reportValidity()) {
-      $(this).closest('td').addClass('form-invalid');
-      $('#btn-save-contact').attr('disabled', 'disabled');
+  // Disbled all
+  // ---------------------------------------------------------------------------
+  function disabled(value) {
+    if (value) {
+      $('#submit').attr('disabled', true);
     } else {
-      $('#btn-save-contact').removeAttr('disabled');
-      $(this).closest('td').removeClass('form-invalid');
-      ;
+      $('#submit').attr('disabled', false);
     }
+  }
+
+  disabled(true);
+  
+  $('form').change(function (e) {
+    disabled(false);
   });
 
-  //$(document).on('ready', function () {
+  $('.button').click(function () {
+    disabled(false);
+  });
+  $('button').click(function () {
+    disabled(false);
+  });
+
+  $('.qlwapp-color-field').wpColorPicker({
+    change: function (event, ui) {
+      disabled(false);
+    },
+  });
+
+  $(document).on('tinymce_change', function (e) {
+    disabled(false);
+  });
 
   $('.qlwapp-select2').select2({allowClear: false, theme: 'default', minimumResultsForSearch: -1});
 
@@ -57,8 +76,6 @@
   });
 
   $('.qlwapp-color-field').wpColorPicker();
-  //});
-
 
   $(document).on('click', '.upload_image_button', function (e) {
     e.preventDefault();
@@ -68,7 +85,7 @@
 
     wp.media.editor.send.attachment = function (props, attachment) {
       $(button).parent().prev().attr('src', attachment.url);
-      $(button).prev().val(attachment.url);
+      $(button).prev().val(attachment.url).trigger('change');
       wp.media.editor.send.attachment = send_attachment_bkp;
     }
 
@@ -84,11 +101,103 @@
 
     $(this).parent().prev().attr('src', src);
 
-    $(this).prev().prev().val('');
+    $(this).prev().prev().val('').trigger('change');
 
     return false;
   });
 
+  // Ajax
+  // ---------------------------------------------------------------------------
+  $(document).on('qlwapp.save', 'form', function (e, action, nonce) {
+
+    var $form = $(e.currentTarget),
+            $spinner = $form.find('.settings-save-status .spinner'),
+            $saved = $form.find('.settings-save-status .saved');
+
+    $.ajax({
+      url: ajaxurl,
+      data: {
+        action: action,
+        nonce: nonce,
+        form_data: $form.serialize()
+      },
+      dataType: 'json',
+      type: 'POST',
+      beforeSend: function () {
+        disabled(true);
+        $spinner.addClass('is-active');
+      },
+      complete: function () {
+        $spinner.removeClass('is-active');
+      },
+      error: function (response) {
+        console.log(response);
+      },
+      success: function (response) {
+        $saved.addClass('is-active');
+        if (response.success) {
+          setTimeout(function () {
+            $saved.removeClass('is-active');
+          }, 2000);
+          console.log(response.data);
+        } else {
+          alert(response.data);
+        }
+      }
+    });
+
+    return false;
+  });
+
+  // Ajax Button Submit
+  // ---------------------------------------------------------------------------
+  $(document).on('submit', '#qlwapp_button_form', function (e) {
+    e.preventDefault();
+
+    var $form = $(this),
+            nonce = $form.find('#qlwapp_button_form_nonce').val();
+
+    $form.trigger('qlwapp.save', ['qlwapp_save_button', nonce]);
+
+  });
+
+  // Ajax BOX Submit
+  // ---------------------------------------------------------------------------
+  $(document).on('submit', '#qlwapp_box_form', function (e) {
+    e.preventDefault();
+
+    var $form = $(this),
+            nonce = $form.find('#qlwapp_box_form_nonce').val();
+
+    $form.trigger('qlwapp.save', ['qlwapp_save_box', nonce]);
+
+  });
+
+  // Ajax Display Submit
+  // ---------------------------------------------------------------------------
+  $(document).on('submit', '#qlwapp_display_form', function (e) {
+
+    e.preventDefault();
+
+    var $form = $(this),
+            nonce = $form.find('#qlwapp_display_form_nonce').val();
+
+    $form.trigger('qlwapp.save', ['qlwapp_save_display', nonce]);
+
+  });
+
+  // Ajax Scheme Submit
+  // ---------------------------------------------------------------------------
+  $(document).on('submit', '#qlwapp_scheme_form', function (e) {
+
+    e.preventDefault();
+
+    var $form = $(this),
+            nonce = $form.find('#qlwapp_scheme_form_nonce').val();
+
+    $form.trigger('qlwapp.save', ['qlwapp_save_scheme', nonce]);
+
+  });
 
 
 })(jQuery);

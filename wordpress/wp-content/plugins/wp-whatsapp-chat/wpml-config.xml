@@ -4,10 +4,8 @@
             <key name="box">
                 <key name="header"></key>
                 <key name="footer"></key>
-            </key>
-            <key name="chat">
                 <key name="response"></key>
-            </key>
+            </key> 
             <key name="button">
                 <key name="text"></key>
                 <key name="phone"></key>
