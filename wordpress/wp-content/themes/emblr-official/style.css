@@ -3901,8 +3901,10 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .services {
   margin-top: 0px;
+
   display: inline-grid;
   grid-template-columns: 50% 50%;
+  gap: 15px;
 }
 
 .s-services h2 {
@@ -3923,19 +3925,16 @@ html.no-csstransitions .home-content__main {
   counter-increment: service-item-counter;
 }
 
-.item-service .item-service-content {
+.item-service {
   padding: 30px;
   height: 100%;
   border: 1px solid #00ebab0f;
+  transition: border-color 0.3s linear !important;
 }
 
-.item-service-content:hover {
+.item-service:hover {
   border-color: #1fbda2;
   transition: border-color 0.3s linear;
-}
-
-.item-service:not(:last-of-type) {
-  padding-bottom: 50px;
 }
 
 .item-service h3 {
@@ -3944,14 +3943,6 @@ html.no-csstransitions .home-content__main {
   text-transform: uppercase;
   font-size: 16px;
   /*margin-top: 10px;*/
-}
-
-.item-service:nth-child(2n+1) { /* impar */
-  padding-right: 15px;
-}
-
-.item-service:nth-child(2n) { /* pares*/
-  padding-left: 15px;
 }
 
 .item-service__text {
@@ -4905,13 +4896,7 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 800px) {
-  .services { margin-top: 60px; }
-
-  .services .item-service:nth-child(n) {
-    padding-right: 0;
-    padding-left: 0;
-    max-width: 700px;
-  }
+  .services { margin-top: 35px; }
 
   .services .service-icon {
     font-size: 4.2rem;
@@ -4925,27 +4910,6 @@ html.no-csstransitions .home-content__main {
   .services {
     grid-template-columns: 100%;
   }
-}
-
-@media only screen and (max-width: 600px) {
-  .s-services {
-    /*padding-top: 12rem*/
-  }
-
-  .services .item-service:nth-child(n) {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-
-}
-
-@media only screen and (max-width: 400px) {
-  .services .item-service:nth-child(n) {
-    padding-right: 0;
-    padding-left: 0;
-    margin-bottom: 0;
-  }
-
 }
 
 /* ===================================================================
