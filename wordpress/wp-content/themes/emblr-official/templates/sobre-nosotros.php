@@ -35,69 +35,49 @@
 
 <!-- about
 ================================================== -->
-<section id="about" class="s-about target-section">
-    <div class="row section-header bit-narrow" data-aos="fade-up">
-        <div class="col-full">
-            <h1 data-aos="fade-up"> <? the_title() ?> </h1>
-            <h3 class="subhead">Who We Are</h3>
-            <h1 class="display-1">
-            We are Sublime, a design and branding agency with partners worldwide. We design thoughtful digital experiences
-            and beautiful brand aesthetic.
-            </h1>
-        </div>
-    </div> <!-- end section-header -->
+<section id="features" class="s-aboutUs target-section section-page">
+    <h1 data-aos="fade-up"> Sobre Nosotros </h1>
+    </div>
+    <!-- end section-header -->
 
-    <div class="row bit-narrow" data-aos="fade-up">
-        <div class="col-full">
-            <p class="lead">
-            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse. 
-            </p>
-        </div>
-    </div> <!-- end about-desc -->
+    <div class="features-content">
+        <div data-features-tabs="" class="features-content-col">
+            <div id="feature-1" class="features-textblock animated fadeIn __active">
+                <p> ¿Quiénes sómos? </p>
+                <p> Sómos una empresa de desarrollo de proyectos informáticos con más de 5 años de experiencia en el área de Innovación y Desarrollo.
 
-    <div class="row bit-narrow">
+Nuestros conocimientos y experiencias con las tecnologías actuales del mercado, son el pilar fundamental de nuestra organización.
+</p>
+            </div>
+            <div id="feature-2" class="features-textblock animated fadeIn">
+                <p>Misión</p>
+                <p> Apasionados por abordar las problemáticas de nuestros clientes, buscamos entregar la mejor solución acorde a su presupuesto.
+
+Ensambler tiene como propuesta, hacer uso de metodologías de desarrollo ágil, que permitan lanzar proyectos lo más rápido posible, utilizando herramientas de integración y despliegue, que permiten al cliente monitorear todos los avances que se van generando en cada etapa.
+
+Nuestra lema “Ingeniería de software para Soluciones Empresariales Integradas” tiene como respaldo un equipo altamente capacitado que desde la Ingeniería es capaz de hacer uso de herramientas, infraestructura y equipos de alto estándar tecnológico para crear soluciones que pueda integrarse a tu empresa, ayudándote a alcanzar tus metas de forma ágil y segura.</p>
             
-        <div class="about-process process block-1-2 block-tab-full">
-
-            <div class="col-block item-process" data-aos="fade-up">
-                <div class="item-process__text">
-                    <h4 class="item-title">Define</h4>
-                    <p>
-                    Quos dolores saepe mollitia deserunt accusamus autem reprehenderit. Voluptas facere animi explicabo non quis magni recusandae. 
-                    Numquam debitis pariatur omnis facere unde. Laboriosam minus amet nesciunt est. Et saepe eos maxime tempore quasi deserunt ab.
-                    </p>
-                </div>
             </div>
-            <div class="col-block item-process" data-aos="fade-up">
-                <div class="item-process__text">
-                    <h4 class="item-title">Design</h4>
-                    <p>
-                    Quos dolores saepe mollitia deserunt accusamus autem reprehenderit. Voluptas facere animi explicabo non quis magni recusandae. 
-                    Numquam debitis pariatur omnis facere unde. Laboriosam minus amet nesciunt est. Et saepe eos maxime tempore quasi deserunt ab.
-                    </p>
-                </div>
+            <div id="feature-3" class="features-textblock animated fadeIn">
+                <p>Visión</p>
+                <p> La tecnología en la actualidad es una herramienta imprescindible para las empresas e instituciones que buscan crecer y producir de forma eficaz. Buscamos ser un referente en el mercado nacional en áreas de las tecnologías de información, por esto es que hemos decidido ser una empresa en constante innovación, capaz de solucionar cualquier problemática que el sector de la tecnología requiera.
+</p>
             </div>
-            <div class="col-block item-process" data-aos="fade-up">
-                <div class="item-process__text">
-                    <h4 class="item-title">Build</h4>
-                    <p>
-                    Quos dolores saepe mollitia deserunt accusamus autem reprehenderit. Voluptas facere animi explicabo non quis magni recusandae. 
-                    Numquam debitis pariatur omnis facere unde. Laboriosam minus amet nesciunt est. Et saepe eos maxime tempore quasi deserunt ab.
-                    </p>
+        </div>
+        <div class="features-content-col">
+            <div data-features-nav="" class="features-graph">
+                <div class="button-holder"><a href="#feature-1" class="icon-features-1 btn-with-icon __active"></a><a href="#feature-2" class="icon-features-2 btn-with-icon"></a><a href="#feature-3" class="icon-features-3 btn-with-icon"></a></div>
+                <div class="animation-holder">
+                    <span class="flash-oval">
+                <img src="http://127.0.0.1:8080/wp-content/themes/emblr-official/images/logo.svg" alt="pulse">
+                </span>
                 </div>
+                <div class="button-holder">
+                    <a href="#feature-4" class="icon-features-4 btn-with-icon">
+                        </a><a href="#feature-5" class="icon-features-5 btn-with-icon"></a><a href="#feature-6" class="icon-features-6 btn-with-icon"></a></div>
             </div>
-            <div class="col-block item-process" data-aos="fade-up">
-                <div class="item-process__text">
-                    <h4 class="item-title">Launch</h4>
-                    <p>
-                    Quos dolores saepe mollitia deserunt accusamus autem reprehenderit. Voluptas facere animi explicabo non quis magni recusandae. 
-                    Numquam debitis pariatur omnis facere unde. Laboriosam minus amet nesciunt est. Et saepe eos maxime tempore quasi deserunt ab.
-                    </p>
-                </div>
-            </div>
+        </div>
+    </div>
 
-        </div> <!-- end process -->
-
-    </div> <!-- end row -->
-
-</section> <!-- end s-about -->
+</section>
+<!-- end s-about -->
