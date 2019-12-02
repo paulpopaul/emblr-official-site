@@ -1633,21 +1633,6 @@ body.menu-is-open {
  * responsive:
  * reusable and common theme styles
  * ------------------------------------------------------------------- */
-@media only screen and (max-width:1600px) {
-  /* .grid-overlay {
-    border-right: none !important;
-    border-left: none !important;
-  }
-
-  .grid-overlay::before {
-    left: 22.5%;
-  }
-
-  .grid-overlay::after {
-    right: 22.5%;
-  } */
-
-}
 
 @media only screen and (max-width:1200px) {
   .display-1 {
@@ -1656,6 +1641,11 @@ body.menu-is-open {
 
   .display-1 br {
     display: none;
+  }
+
+  .section-page > h2,
+  .section-page .inner-title > h2 {
+    font-size: 28px !important;
   }
 
 }
@@ -1673,7 +1663,8 @@ body.menu-is-open {
   padding-left:7%;
   padding-right: 7%;
 }
-	.section-page > h1 {
+  .section-page > h1,
+  .section-page .inner-title > h1 {
 		font-size: 48px;
   }
 }
@@ -1698,9 +1689,14 @@ body.menu-is-open {
   .section-header.has-bottom-sep::before {
     width: 300px;
   }
-  .section-page > h1 {
+  .section-page > h1,
+  .section-page .inner-title > h1 {
   	font-size: 42px;
+  }
 
+  .section-page > h2,
+  .section-page .inner-title > h2 {
+    font-size: 24px !important;
   }
 
 }
@@ -1736,11 +1732,19 @@ body.menu-is-open {
 
 }
 
-@media only screen and (max-width:414px) {
-	.section-page > h1 {
+@media only screen and (max-width: 414px) {
+
+  .section-page > h1,
+  .section-page .inner-title > h1 {
 		font-size: 30px;
 		font-weight: 600;
   }
+
+  .section-page > h2,
+  .section-page .inner-title > h2 {
+    font-size: 18px !important;
+  }
+
 }
 
 @media only screen and (max-width:400px) {
@@ -4459,9 +4463,6 @@ html.no-csstransitions .home-content__main {
   gap: 15px;
 }
 
-.s-services h1 {
-}
-
 .s-services h2 {
   color: #1fbda2;
   max-width: 1000px;
@@ -4496,12 +4497,13 @@ html.no-csstransitions .home-content__main {
   margin-top: 0;
   color: #1fbda2;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 20px;
   /*margin-top: 10px;*/
 }
 
 .item-service__text {
   margin-left: 7.2rem;
+  font-size: 18px;
 }
 
 .item-service__text p {
@@ -5437,7 +5439,7 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width: 1024px) {
   .s-services h2 {
     font-size: 2.4rem;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
   }
 
   .services-cubes{
@@ -5447,9 +5449,6 @@ html.no-csstransitions .home-content__main {
     left:66%;
   }
 
-}
-
-@media only screen and (max-width: 1000px) {
   .item-service__text {
     margin-left: 0;
   }
@@ -5467,10 +5466,24 @@ html.no-csstransitions .home-content__main {
     left:66%;
   }
 
+  .item-service__icon i::after {
+    left: initial;
+    right: 0;
+    top: 20px;
+  }
+
+  .item-service h3 {
+    margin-bottom: 1.4rem;
+  }
+
 }
 
 @media only screen and (max-width: 800px) {
   .services { margin-top: 35px; }
+
+  .s-services h2 {
+    padding-bottom: 30px;
+  }
 
   .services .service-icon {
     font-size: 4.2rem;
@@ -5494,14 +5507,14 @@ html.no-csstransitions .home-content__main {
     width: 100%;
   }
   .s-services h1 {
-    font-size:32px;
-    width: 50%;
-
+    width: 70%;
   }
+
   .s-services h2 {
     font-size:20px;
-    width:62%;
+    width: 70%;
   }
+
   .services-cubes{
     width:29%;
     position:absolute;
@@ -5512,18 +5525,18 @@ html.no-csstransitions .home-content__main {
 
 
 @media only screen and (max-width: 680px) {
+  .services {
+    gap: 55px;
+  }
+
   .services-title{
     width: 100%;
   }
-  .s-services h1 {
-    font-size:32px;
-    width: 50%;
 
-  }
   .s-services h2 {
-    font-size:20px;
-    width:80%;
+    width: 100%;
   }
+
   .services-cubes{
     width:29%;
     position:absolute;
@@ -5540,14 +5553,9 @@ html.no-csstransitions .home-content__main {
   .services-title{
     width: 100%;
   }
-  .s-services h1 {
-    font-size:30px;
-    width: 50%;
 
-  }
   .s-services h2 {
     font-size:20px;
-    width:80%;
   }
   .services-cubes{
     width:29%;
@@ -5565,14 +5573,9 @@ html.no-csstransitions .home-content__main {
   .services-title{
     width: 100%;
   }
-  .s-services h1 {
-    font-size:30px;
-    width: 50%;
 
-  }
   .s-services h2 {
     font-size:20px;
-    width:80%;
   }
   .services-cubes{
     width:29%;
@@ -5585,20 +5588,23 @@ html.no-csstransitions .home-content__main {
     border:none;
   }
 
+  .item-service__text {
+    font-size: 16px;
+  }
+
+  .item-service h3 {
+    font-size: 16px;
+  }
+
 }
 
 @media only screen and (max-width: 375px) {
   .services-title{
     width: 100%;
   }
-  .s-services h1 {
-    font-size:26px;
-    width: 50%;
 
-  }
   .s-services h2 {
     font-size:20px;
-    width:90%;
   }
   .services-cubes{
     width:29%;
@@ -5617,10 +5623,7 @@ html.no-csstransitions .home-content__main {
   .services-title{
     width: 100%;
   }
-  .s-services h1 {
-   font-size:24px;
-    width: 50%;
-  }
+ 
   .s-services h2 {
     font-size:16px;
   }

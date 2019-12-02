@@ -49,7 +49,7 @@
 ================================================== -->
 <section id="servicios" class="s-services target-section section-page">
 
-    <div class="services-title">
+    <div class="services-title inner-title">
         <h1 data-aos="fade-right"> <? the_title() ?> </h1>
         <h2 data-aos="fade-right"> <?= get_field( 'subtitulo', $post->ID ) ?> </h2>
     </div> <!-- end section-header -->
