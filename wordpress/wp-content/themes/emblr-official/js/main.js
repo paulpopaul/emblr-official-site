@@ -497,10 +497,10 @@
 var teamSlider = function() {
         
         $('.container-team').slick({
-            arrows: true,
-            prevArrow: $('.slick-team-prev'),
-            nextArrow: $('.slick-team-next'),
-            dots: false,
+            arrows: false,
+            // prevArrow: $('.slick-team-prev'),
+            // nextArrow: $('.slick-team-next'),
+            dots: true,
             infinite: false,
             slidesToScroll: 1,
             mobileFirst: true,

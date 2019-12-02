@@ -37,13 +37,13 @@
 
     <div class="slick-team-container" data-aos="fade-up">
         <!-- prev, next arrows -->
-        <span class="slick-team-prev slick-team-arrow">
+        <!-- <span class="slick-team-prev slick-team-arrow">
             <i class="fas fa-caret-left fa-2x"></i>
         </span>
 
         <span class="slick-team-next slick-team-arrow">
             <i class="fas fa-caret-right fa-2x"></i>
-        </span>
+        </span> -->
 
         <div class="container-team">
 
