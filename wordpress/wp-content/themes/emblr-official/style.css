@@ -5789,11 +5789,6 @@ html.no-csstransitions .home-content__main {
 
 
 @media (max-width: 30em) {
-  .wrap {
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-
   .gallery-item {
     float: none;
     width: 100%;
@@ -5808,6 +5803,10 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width:600px) {
   #filters li{
     float: none;
+  }
+
+  .gallery-item {
+    padding: 0;
   }
 }
 
