@@ -4143,9 +4143,8 @@ html.no-csstransitions .home-content__main {
 
 .team-section .box-team {
   width: 33.3%;
-  padding-left: 1%;
-  padding-right: 1%;
   border-color: red;
+  outline-width: 0;
 }
 
 .our-team {
@@ -4220,8 +4219,8 @@ html.no-csstransitions .home-content__main {
     position: relative;
     z-index: 2;
 }
-.our-team:hover .pic img{
-    box-shadow: 0 0 0 9px #f7f5ec;
+.our-team:hover .pic img {
+    box-shadow: 0 0 0 9px #fff;
 }
 .our-team .team-content{margin-bottom: 10px;}
 .our-team .title{
@@ -4229,7 +4228,7 @@ html.no-csstransitions .home-content__main {
     font-weight: 700;
     color: #ffffff;
     letter-spacing: 1px;
-    ont-family: "Nunito Sans", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     text-transform: capitalize;
     margin-top: 0px;
     font-family: "Nunito Sans", sans-serif;
@@ -4364,9 +4363,6 @@ html.no-csstransitions .home-content__main {
 
   .slick-team-container {
     position: relative;
-    margin-left: 1px;
-    margin-right: 1px;
-    /*border:1px solid red;*/
   }
   .team-container {
     text-align: center;
@@ -4383,20 +4379,40 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width:768px) {
 
-  .team-section .box-team:first-child {
-    
-  }
 }
 
 @media only screen and (max-width:482px) {
 
-  .team-section .box-team:first-child {
-    
-  }
 }
 
-@media only screen and (max-width:414px) {
-  .team-section .box-team{
+@media only screen and (max-width: 414px) {
+
+  .team-section .team-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .our-team:hover {
+    background: none;
+  }
+
+  .our-team {
+    border-bottom: none !important;
+    padding-bottom: 0;
+  }
+
+  .our-team .social {
+    position: relative;
+    margin-top: 35px;
+  }
+
+  .our-team .social,
+  .our-team:hover .social {
+    bottom: 0;
+  }
+
+  .our-team:hover .pic img {
+    box-shadow: 0 0 0 7px #1fbda2;
   }
 
 }
