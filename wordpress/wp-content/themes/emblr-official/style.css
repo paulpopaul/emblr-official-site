@@ -4472,7 +4472,7 @@ html.no-csstransitions .home-content__main {
 
 .services-title { float: left; width: 60%; position: relative; z-index: 2; }
 .services-cubes { float: right; width: 40%; }
-.services-cubes .loader { margin: 0 auto; }
+.services-cubes .loader { float: right; }
 
 .item-service {
   position: relative;
@@ -5500,6 +5500,7 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 768px) {
+
   .services {
     grid-template-columns: 100%;
   }
@@ -5521,6 +5522,12 @@ html.no-csstransitions .home-content__main {
     top:100px;
     left:68%;
   }
+
+  .services-cubes .loader {
+    margin: 0 auto;
+    float: none;
+  }
+
 }
 
 
