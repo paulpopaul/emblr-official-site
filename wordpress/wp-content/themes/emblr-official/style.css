@@ -4104,7 +4104,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .team-section .team-content p{
-  font-size: 15px;
+  font-size: 16px;
   text-align: center;
   padding-top: 20px;
 }
@@ -4232,19 +4232,18 @@ html.no-csstransitions .home-content__main {
     font-weight: 700;
     color: #ffffff;
     letter-spacing: 1px;
-    font-family: "Nunito Sans", sans-serif;
+  font-family: Montserrat;
     text-transform: capitalize;
     margin-top: 0px;
-    font-family: "Nunito Sans", sans-serif;
     margin-bottom: 5px;
 }
 .our-team .post{
     display: block;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: bold;
     color: #9c9c9c;
     text-transform:capitalize;
-    font-family: "Nunito Sans", sans-serif;
+  font-family: Montserrat;
 }
 .our-team .social{
     width: 100%;
