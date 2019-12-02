@@ -4534,7 +4534,7 @@ html.no-csstransitions .home-content__main {
     /*padding-left: 0;*/
 }
 
-.more-services.btn { margin: 50px auto 0 auto; display: block; }
+.more-services.btn { margin: 85px auto 0 auto; display: block; }
 .hidden-service { display: none; }
 
 /* cubes animation */
@@ -5944,7 +5944,7 @@ html.no-csstransitions .home-content__main {
 .gallery-item {
   float: left;
   width: 33.333%;
-  padding: 10px;
+  padding: 7.5px;
   position: relative;
   z-index: 10;
   display: none;
