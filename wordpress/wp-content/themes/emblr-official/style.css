@@ -4231,7 +4231,7 @@ html.no-csstransitions .home-content__main {
     font-size: 28px;
     font-weight: 700;
     color: #ffffff;
-    letter-spacing: 1px;
+    letter-spacing: 0;
   font-family: Montserrat;
     text-transform: capitalize;
     margin-top: 0px;
