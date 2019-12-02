@@ -1507,6 +1507,92 @@ body.menu-is-open {
   font-size: 28px !important;
 }
 
+/**
+*
+* slick dots !
+*
+*/
+
+.slick-dots {
+  display: block;
+   list-style: none;
+   height: 35px;
+   width: 100%;
+   overflow: hidden;
+   padding: 0;
+   margin: 60px 0 0 0;
+   text-align: center;
+   top: 100%;
+   left: 0;
+ }
+
+.slick-dots li { 
+  height: auto;
+  top: 11px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  margin-right: 14px !important;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  position: relative;
+
+}
+
+.slick-dots li:last-child{
+  margin-right: 0px !important;
+  }
+
+.slick-dots li button {
+  content: "";
+  background: #ffffff;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  display: block;
+  transition: all .2s ease;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  text-shadow: none;
+  color: transparent;
+}
+
+.slick-dots li.slick-active button {
+  background: #1FBDA2;
+  border-radius: 11px;
+  position: relative;
+}
+
+
+.slick-dots li.slick-active button::before {
+  content: "";
+  width: 22px; /* after width * 2 */
+  height: 22px; /* after height * 2 */
+  display: block;
+  border: 1px solid #1FBDA2;
+  border-radius: 11px;
+  position: absolute;
+  top: -7px; /* after width / 2 */
+  left: -7px; /* after height / 2 */
+}
+
+.slick-dots li.slick-active button * {
+  display:none !important;
+}
+
+.slick-dots li:not(.slick-active):hover button {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  transition: all .2s ease;
+}
+
+/* ************************************************* */
+
 .spin {
   animation-name: spin;
   animation-duration: 200ms;
@@ -4285,86 +4371,6 @@ html.no-csstransitions .home-content__main {
     color: #fff;
 }
 
-.slick-team-container .slick-dots {
-  display: block;
-   list-style: none;
-   height: 35px;
-   width: 100%;
-   overflow: hidden;
-   padding: 0;
-   margin: 60px 0 0 0;
-   text-align: center;
-   top: 100%;
-   left: 0;
- }
-
- .slick-team-container .slick-dots li { 
-  height: auto;
-  top: 11px;
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-  margin-right: 14px !important;
-  background: none;
-  border: none;
-  cursor: pointer;
-  margin-right: 10px;
-  position: relative;
-
-}
-
-.slick-team-container .slick-dots li:last-child{
-  margin-right: 0px !important;
-  }
-
-  .slick-team-container .slick-dots li button {
-  content: "";
-  background: #ffffff;
-  width: 8px;
-  height: 8px;
-  border-radius: 4px;
-  display: block;
-  transition: all .2s ease;
-  border: none;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-  text-shadow: none;
-  color: transparent;
-}
-
-.slick-team-container .slick-dots li.slick-active button {
-  background: #1FBDA2;
-  border-radius: 11px;
-  position: relative;
-}
-
-
-.slick-team-container .slick-dots li.slick-active button::before {
-  content: "";
-  width: 22px; /* after width * 2 */
-  height: 22px; /* after height * 2 */
-  display: block;
-  border: 1px solid #1FBDA2;
-  border-radius: 11px;
-  position: absolute;
-  top: -7px; /* after width / 2 */
-  left: -7px; /* after height / 2 */
-}
-
-.slick-team-container .slick-dots li.slick-active button *{
-  display:none !important;
-}
-
-
-
-.slick-team-container .slick-dots li:not(.slick-active):hover button {
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  transform: scale(1.3);
-  transition: all .2s ease;
-}
-
 
 /* ===================================================================
  * # Responsive Team
@@ -6533,9 +6539,6 @@ html.no-csstransitions .home-content__main {
   text-align: center;
 }
 
-.noticias-stories {
-}
-
 .noticias .slick-stories-arrow {
   color: #1fbda2;
   position: absolute;
@@ -6605,12 +6608,12 @@ html.no-csstransitions .home-content__main {
 
 
 
-.s-testimonials h1{
+.s-testimonials h1 {
   margin-top: 0;
   margin-bottom: 0; 
 }
 
-.s-testimonials .draggable{
+.s-testimonials .draggable {
   /*margin-left: 12%;
   margin-right: 12%;*/
 }
@@ -6649,18 +6652,6 @@ html.no-csstransitions .home-content__main {
   text-align: center;
 }
 
-.testimonials__slider .slick-dots {
- display: block;
-  list-style: none;
-  height: 35px;
-  width: 100%;
-  overflow: hidden;
-  padding: 0;
-  margin: 60px 0 0 0;
-  text-align: center;
-  top: 100%;
-  left: 0;
-}
 .col-full .testimonials__slide .foto-persona img {
   height:100px;
   border-radius:120px;
@@ -6743,73 +6734,6 @@ html.no-csstransitions .home-content__main {
 .storie-container .round .round .picture {
   width: 100%;
   height: 100%;
-}
-
-.testimonials__slider .slick-dots li { 
-  height: auto;
-  top: 11px;
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-  margin-right: 14px !important;
-  background: none;
-  border: none;
-  cursor: pointer;
-  margin-right: 10px;
-  position: relative;
-
-}
-
-.testimonials__slider .slick-dots li:last-child{
-  margin-right: 0px !important;
-  }
-
-.testimonials__slider .slick-dots li button {
-  content: "";
-  background: #ffffff;
-  width: 8px;
-  height: 8px;
-  border-radius: 4px;
-  display: block;
-  transition: all .2s ease;
-  border: none;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-  text-shadow: none;
-  color: transparent;
-}
-
-.testimonials__slider .slick-dots li.slick-active button {
-  background: #1FBDA2;
-  border-radius: 11px;
-  position: relative;
-}
-
-
-.testimonials__slider .slick-dots li.slick-active button::before {
-  content: "";
-  width: 22px; /* after width * 2 */
-  height: 22px; /* after height * 2 */
-  display: block;
-  border: 1px solid #1FBDA2;
-  border-radius: 11px;
-  position: absolute;
-  top: -7px; /* after width / 2 */
-  left: -7px; /* after height / 2 */
-}
-
-.testimonials__slider .slick-dots li.slick-active button *{
-  display:none !important;
-}
-
-
-
-.testimonials__slider .slick-dots li:not(.slick-active):hover button {
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  transform: scale(1.3);
-  transition: all .2s ease;
 }
 
 .testimonials__author {
