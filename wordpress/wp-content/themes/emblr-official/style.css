@@ -8412,6 +8412,12 @@ footer {
   border-radius: 20px;
 }
 
+@media only screen and (max-width: 1023px) {
+  ::-webkit-scrollbar {
+    display:none;
+  }
+
+}
 
 /*# sourceMappingURL=main.css.map */
 
