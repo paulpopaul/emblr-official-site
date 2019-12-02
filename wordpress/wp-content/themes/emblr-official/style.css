@@ -4501,7 +4501,7 @@ html.no-csstransitions .home-content__main {
 
 .services-title { float: left; width: 60%; position: relative; z-index: 2; }
 .services-cubes { float: right; width: 40%; }
-.services-cubes .loader { margin: 0 auto; }
+.services-cubes .loader { float: right; }
 
 .item-service {
   position: relative;
@@ -4563,7 +4563,7 @@ html.no-csstransitions .home-content__main {
     /*padding-left: 0;*/
 }
 
-.more-services.btn { margin: 50px auto 0 auto; display: block; }
+.more-services.btn { margin: 85px auto 0 auto; display: block; }
 .hidden-service { display: none; }
 
 /* cubes animation */
@@ -5529,6 +5529,7 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 768px) {
+
   .services {
     grid-template-columns: 100%;
   }
@@ -5550,6 +5551,12 @@ html.no-csstransitions .home-content__main {
     top:100px;
     left:68%;
   }
+
+  .services-cubes .loader {
+    margin: 0 auto;
+    float: none;
+  }
+
 }
 
 
@@ -5966,7 +5973,7 @@ html.no-csstransitions .home-content__main {
 .gallery-item {
   float: left;
   width: 33.333%;
-  padding: 10px;
+  padding: 7.5px;
   position: relative;
   z-index: 10;
   display: none;
