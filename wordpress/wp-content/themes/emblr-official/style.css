@@ -4382,10 +4382,16 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width:482px) {
+  .slick-team-container{
+    margin-top:0;
+  }
 
 }
 
 @media only screen and (max-width: 414px) {
+  .slick-team-container{
+    margin-top:0;
+  }
 
   .team-section .team-content {
     padding-left: 0;
@@ -4417,6 +4423,12 @@ html.no-csstransitions .home-content__main {
 
 }
 
+@media only screen and (max-width: 320px) {
+  .slick-team-container{
+    margin-top:0;
+  }
+
+}
 
 /*@media only screen and (max-width:375px) {
 .team-section .box-team{
