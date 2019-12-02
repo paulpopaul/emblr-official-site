@@ -74,7 +74,8 @@ Nuestra lema “Ingeniería de software para Soluciones Empresariales Integradas
                 </div>
                 <div class="button-holder">
                     <a href="#feature-4" class="icon-features-4 btn-with-icon">
-                        </a><a href="#feature-5" class="icon-features-5 btn-with-icon"></a><a href="#feature-6" class="icon-features-6 btn-with-icon"></a></div>
+                        </a><a href="#feature-5" class="icon-features-5 btn-with-icon"></a>
+                    <a href="#feature-6" class="icon-features-6 btn-with-icon"></a></div>
             </div>
         </div>
     </div>
