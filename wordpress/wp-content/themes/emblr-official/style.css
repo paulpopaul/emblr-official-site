@@ -1495,10 +1495,16 @@ body.menu-is-open {
   padding-bottom: 100px;
 }
 
-.section-page h1 {
+.section-page > h1,
+.section-page .inner-title > h1 {
   margin-top: 0;
   font-size: 48px;
   font-weight: 800;
+}
+
+.section-page > h2,
+.section-page .inner-title > h2 {
+  font-size: 28px !important;
 }
 
 .spin {
@@ -1641,11 +1647,6 @@ body.menu-is-open {
 
   .display-1 br {
     display: none;
-  }
-
-  .section-page > h2,
-  .section-page .inner-title > h2 {
-    font-size: 28px !important;
   }
 
 }
@@ -4103,8 +4104,9 @@ html.no-csstransitions .home-content__main {
   padding-right: 30px;
 }
 
-.team-section .team-content p{
+.team-section .team-content p {
   font-size: 18px;
+  color: #666;
   text-align: center;
   padding-top: 20px;
 }
@@ -4147,8 +4149,20 @@ html.no-csstransitions .home-content__main {
 
 .team-section .box-team {
   width: 33.3%;
-  border-color: red;
   outline-width: 0;
+}
+
+.box-team:not(:first-of-type):not(:last-of-type) .our-team {
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+}
+
+.box-team:first-of-type .our-team {
+  margin-right: 7.5px;
+}
+
+.box-team:last-of-type .our-team {
+  margin-left: 7.5px;
 }
 
 .our-team {
@@ -4163,6 +4177,7 @@ html.no-csstransitions .home-content__main {
     transition: all 0.4s ease;
     -webkit-transition: all 0.4s ease;
 }
+
 .our-team:hover{
     border-bottom: 5px solid #1fbda2;
     transition: all 0.4s ease;
@@ -4224,8 +4239,9 @@ html.no-csstransitions .home-content__main {
     z-index: 2;
 }
 .our-team:hover .pic img {
-    box-shadow: 0 0 0 9px #fff;
+    /* box-shadow: 0 0 0 9px #1fbda2; */
 }
+
 .our-team .team-content{margin-bottom: 10px;}
 .our-team .title{
     font-size: 28px;
@@ -4237,11 +4253,11 @@ html.no-csstransitions .home-content__main {
     margin-top: 0px;
     margin-bottom: 5px;
 }
-.our-team .post{
+.our-team .post {
     display: block;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
-    color: #9c9c9c;
+    color: #1fbda2;
     text-transform:capitalize;
   font-family: Montserrat;
 }
@@ -4287,13 +4303,6 @@ html.no-csstransitions .home-content__main {
     font-size: 28px;
     font-weight: 800;
     letter-spacing: 0;
-  }
-
-  .our-team .post{
-    font-size:18px;
-  }
-  .team-section .team-content p{
-    font-size:18px;
   }
 
 }
@@ -4460,16 +4469,6 @@ html.no-csstransitions .home-content__main {
 }
 
 
-
-
-/*@media only screen and (max-width:375px) {
-.team-section .box-team{
-
-  width: 33.3% !important;
-}
-}*/
-
-
 /* ===================================================================
  * # services
  *
@@ -4525,8 +4524,8 @@ html.no-csstransitions .home-content__main {
   margin-top: 0;
   color: #1fbda2;
   text-transform: uppercase;
-  font-size: 20px;
-  /*margin-top: 10px;*/
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .item-service__text {
