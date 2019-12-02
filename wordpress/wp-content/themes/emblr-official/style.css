@@ -4284,6 +4284,19 @@ html.no-csstransitions .home-content__main {
     right: -65px;
   }
 
+  .our-team .title{
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 0;
+  }
+
+  .our-team .post{
+    font-size:18px;
+  }
+  .team-section .team-content p{
+    font-size:18px;
+  }
+
 }
 
 @media only screen and (max-width:1600px) {
@@ -4293,9 +4306,6 @@ html.no-csstransitions .home-content__main {
         margin-right: 44px;
     }
 
-  .our-team .title {
-    font-size: 20px;
-  }
 }
 
 @media only screen and (max-width:1300px) {
@@ -4305,9 +4315,6 @@ html.no-csstransitions .home-content__main {
         margin-right: 60px;
     }
 
-    .our-team .title {
-        font-size: 20px;
-    }
 }
 
 @media only screen and (max-width:1200px) {
@@ -4327,12 +4334,6 @@ html.no-csstransitions .home-content__main {
 
 }
 
-
-@media only screen and (min-width: 1025px) and (max-width: 1139px) {
-    .our-team .title {
-        font-size: 16px;
-    }
-}
 
 @media only screen and (max-width:1024px) {
 
@@ -4359,6 +4360,22 @@ html.no-csstransitions .home-content__main {
     width: 60px;
     height: 80px;
     border: 3px solid transparent;
+  }
+
+  .slick-team-container{
+    margin-top:0;
+  }
+  .our-team .title{
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 0;
+  }
+
+  .our-team .post{
+    font-size:18px;
+  }
+  .team-section .team-content p{
+    font-size:18px;
   }
 
 }
@@ -4425,18 +4442,30 @@ html.no-csstransitions .home-content__main {
     box-shadow: 0 0 0 7px #1fbda2;
   }
 
-}
-
-@media only screen and (max-width: 320px) {
   .slick-team-container{
     margin-top:0;
+  }
+  .our-team .title{
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 0;
+  }
+
+  .our-team .post{
+    font-size:16px;
+  }
+  .team-section .team-content p{
+    font-size:16px;
   }
 
 }
 
+
+
+
 /*@media only screen and (max-width:375px) {
 .team-section .box-team{
-  
+
   width: 33.3% !important;
 }
 }*/
