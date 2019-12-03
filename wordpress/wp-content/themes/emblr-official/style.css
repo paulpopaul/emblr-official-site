@@ -4615,7 +4615,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .item-service h3 {
-  margin-top: 0;
+  margin-top: 10px;
   color: #1fbda2;
   text-transform: uppercase;
   font-size: 18px;
