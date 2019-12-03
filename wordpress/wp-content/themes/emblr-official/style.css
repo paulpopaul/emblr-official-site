@@ -7483,7 +7483,7 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
   animation: blink 1.5s infinite ease-out;
 }
 
-.traditional-form { display: absolute; margin-top: 60px; }
+.traditional-form { display: none; margin-top: 60px; }
 .traditional-form div { margin-bottom: 20px; }
 .traditional-form pre {
   padding: 0;
