@@ -7472,14 +7472,14 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
   animation: blink 1.5s infinite ease-out;
 }
 
-.traditional-form { display: none; margin-top: 60px; }
+.traditional-form { display: absolute; margin-top: 60px; }
 .traditional-form div { margin-bottom: 20px; }
 .traditional-form pre {
   padding: 0;
   background: transparent;
   font-family: 'Consolas';
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
   color: #fff;
   text-align: left;
 }
@@ -7488,7 +7488,7 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
 .traditional-form input,
 .traditional-form textarea {
   width: 100%;
-  font-size: 20px;
+  font-size: 16px;
   font-family: Anonymous Pro;
   color: rgba(255, 255, 255, 0.75);
   border: 2px solid transparent;
@@ -7496,17 +7496,140 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
 }
 
 .traditional-form input:focus,
-.traditional-form textarea:focus { border: 2px solid #1FBDA2; }
+.traditional-form textarea:focus {
+  border: 1px solid #1FBDA2;
 
-.traditional-form textarea { resize: none; height: 100px; min-height: auto; }
+}
+
+.traditional-form textarea {
+  resize: none;
+  height: 100px;
+  min-height: auto; }
 
 .traditional-form input[type="submit"] {
   text-transform: lowercase;
   font-family: 'Consolas';
   margin-top: 30px;
+  font-size:12px;
 }
 
-.traditional-form pre::before { content: "$"; margin-right: 10px; }
+
+@media only screen and (max-width:1024px) {
+  .traditional-form { display: absolute; margin-top: 60px; }
+  .traditional-form div { margin-bottom: 20px; }
+  .traditional-form pre {
+    padding: 0;
+    background: transparent;
+    font-family: 'Consolas';
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    text-align: left;
+  }
+
+  .traditional-form pre > span { color: #1FBDA2; }
+  .traditional-form input,
+  .traditional-form textarea {
+    width: 100%;
+    font-size: 20px;
+    font-family: Anonymous Pro;
+    color: rgba(255, 255, 255, 0.75);
+    border: 2px solid transparent;
+    /*background: #333;*/
+  }
+
+  .traditional-form input[type="submit"] {
+    text-transform: none;
+    font-family: 'Consolas';
+    margin-top: 22px;
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width:768px) {
+  .traditional-form input[type="submit"] {
+    text-transform: none;
+    font-family: 'Consolas';
+    margin-top: 26px;
+    font-size:20px;
+  }
+
+  .traditional-form pre > span { color: #1FBDA2; }
+  .traditional-form input,
+  .traditional-form textarea {
+    width: 100%;
+    font-size: 18px;
+    font-family: Anonymous Pro;
+    color: rgba(255, 255, 255, 0.75);
+    border: 2px solid transparent;
+    /*background: #333;*/
+  }
+  .traditional-form { display: absolute; margin-top: 60px; }
+  .traditional-form div { margin-bottom: 20px; }
+  .traditional-form pre {
+    padding: 0;
+    background: transparent;
+    font-family: 'Consolas';
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    text-align: left;
+  }
+}
+@media only screen and (max-width:420px) {
+
+  .traditional-form { display: absolute; margin-top: 60px; }
+  .traditional-form div { margin-bottom: 20px; }
+  .traditional-form pre {
+    padding: 0;
+    background: transparent;
+    font-family: 'Consolas';
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    text-align: left;
+  }
+  .traditional-form input[type="submit"] {
+    text-transform: none;
+    font-family: 'Consolas';
+    margin-top: 24px;
+    font-size:14px;
+  }
+
+  .traditional-form pre > span { color: #1FBDA2; }
+  .traditional-form input,
+  .traditional-form textarea {
+    width: 100%;
+    font-size: 18px;
+    font-family: Anonymous Pro;
+    color: rgba(255, 255, 255, 0.75);
+    border: 2px solid transparent;
+    /*background: #333;*/
+  }
+
+}
+
+@media only screen and (max-width:320px) {
+  .traditional-form { display: absolute; margin-top: 60px; }
+  .traditional-form div { margin-bottom: 20px; }
+  .traditional-form pre {
+    padding: 0;
+    background: transparent;
+    font-family: 'Consolas';
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    text-align: left;
+  }
+  .traditional-form input[type="submit"] {
+    text-transform: none;
+    font-family: 'Consolas';
+    margin-top: 24px;
+    font-size:12px;
+  }
+
+}
+
+/*.traditional-form pre::before { content: "$"; margin-right: 10px; }*/
 
 /* ----------------GRAPHICS: Terminal */
 

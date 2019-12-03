@@ -66,12 +66,12 @@
 
     <form class="traditional-form" method="post" action="">
         <div>
-            <pre>Escribe tu nombre</pre>
+            <pre>Nombre</pre>
             <input type="text" name="nombre" id="" class="nombre" autofocus>
         </div>
 
         <div>
-            <pre>Escribe tu correo</pre>
+            <pre>Correo</pre>
             <input type="text" name="email" id="" class="email">
         </div>
 
@@ -81,8 +81,8 @@
         </div>
 
         <div>
-            <pre>Presiona <span>enviar</span> para confirmar el mensaje</pre>
-            <input type="submit" value="enviar" class="btn btn--primary btn--large">
+            <pre>Presiona <span>enviar</span> para confirmar tu mensaje</pre>
+            <input type="submit" value="ENVIAR" class="btn btn--primary btn--large">
         </div>
     </form> <!-- traditional-form -->
   </div>
