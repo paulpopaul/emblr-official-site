@@ -3739,34 +3739,6 @@ html.no-csstransitions .home-content__main {
     left: 50px;
     z-index: -4
 }
-#features .features-graph .icon-features-1 {
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/598117/icon-1.svg);
-    background-size: 150%;
-    background-position: 50% 0
-}
-#features .features-graph .icon-features-2 {
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/598117/icon-2.svg);
-    background-size: 70%;
-    background-position: 50% 50%
-}
-#features .features-graph .icon-features-3 {
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/598117/icon-3.svg);
-    background-size: 65%
-}
-#features .features-graph .icon-features-4 {
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/598117/icon-4.svg);
-    background-size: 150%;
-    background-position: 50% 0
-}
-#features .features-graph .icon-features-5 {
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/598117/icon-5.svg);
-    background-size: 150%
-}
-#features .features-graph .icon-features-6 {
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/598117/icon-6.svg);
-    background-size: 65%;
-    background-position: 50% 50%
-}
 #features .features-graph .wave {
     position: absolute;
     opacity: 0;

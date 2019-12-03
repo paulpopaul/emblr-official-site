@@ -66,15 +66,15 @@ Nuestra lema “Ingeniería de software para Soluciones Empresariales Integradas
         </div>
         <div class="features-content-col">
             <div data-features-nav="" class="features-graph">
-                <div class="button-holder"><a href="#feature-1" class="icon-features-1 btn-with-icon __active"></a><a href="#feature-2" class="icon-features-2 btn-with-icon"></a><a href="#feature-3" class="icon-features-3 btn-with-icon"></a></div>
+                <div class="button-holder"><a href="#feature-1" class="fas fa-users btn-with-icon __active"></a><a href="#feature-2" class="fas fa-bullseye btn-with-icon"></a><a href="#feature-3" class="far fa-eye btn-with-icon"></a></div>
                 <div class="animation-holder">
                     <span class="flash-oval">
                 <img src="http://127.0.0.1:8080/wp-content/themes/emblr-official/images/logo.svg" alt="pulse">
                 </span>
                 </div>
                 <div class="button-holder">
-                    <a href="#feature-4" class="icon-features-4 btn-with-icon">
-                        </a><a href="#feature-5" class="icon-features-5 btn-with-icon"></a><a href="#feature-6" class="icon-features-6 btn-with-icon"></a></div>
+                    <a href="#feature-4" class="fas fa-quote-left btn-with-icon">
+                        </a><a href="#feature-5" class="fas fa-check btn-with-icon"></a><a href="#feature-6" class="far fa-registered btn-with-icon"></a></div>
             </div>
         </div>
     </div>
