@@ -3625,6 +3625,7 @@ html.no-csstransitions .home-content__main {
     display: flex;
     width: 70px;
     height: 70px;
+    position:relative;
     border: 1px solid #29ceae;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
@@ -3692,71 +3693,72 @@ html.no-csstransitions .home-content__main {
 #features .features-graph .label-bottom-right {
     padding-top: 75px;
 }
-/* #features .features-graph .fa-users:after {
-    content: ' ';
-    background-image: url('./images/about/top-left.svg');
+ #features .features-graph .fa-users:after {
+   content: ' ';
+    background-image: url(./images/about/top-left.svg);
     background-size: 100%;
     height: 110px;
     width: 86px;
     background-repeat: no-repeat;
     position: absolute;
-    top: 40%;
-    right: 42%;
+    top: 100px;
+    left: 36px;
 }
 #features .features-graph .fa-bullseye:after {
     content: ' ';
-    background-image: url('./images/about/top.svg');
+    background-image: url(./images/about/top.svg);
     height: 55px;
     width: 75px;
     background-repeat: no-repeat;
     position: absolute;
-    top: 40%;
-    right: 31%;
+    top: 100px;
+    left: 31px;
 }
 #features .features-graph .fa-eye:after {
     content: ' ';
-    background-image: url('./images/about/top-right.svg');
+    background-image: url(./images/about/top-right.svg);
     background-size: 100%;
     height: 110px;
     width: 85px;
-    background-repeat: no-repeat;
     position: absolute;
-    top: 40%;
-    right: 25%;
+    background-repeat: no-repeat;
+    top: 100px;
+    right: 35px;
 }
 #features .features-graph .fa-quote-left:after {
     content: ' ';
-    background-image: url('./images/about/bottom-left.svg');
+    background-image: url(./images/about/bottom-left.svg);
     background-size: 100%;
     height: 110px;
     width: 85px;
     background-repeat: no-repeat;
     position: absolute;
-    bottom: 24%;
-    right: 42%;
+    bottom: 60px;
+    left: 32px;
 }
 #features .features-graph .fa-check:after {
     content: ' ';
-    background-image: url('./images/about/bottom.svg');
-    height: 74px;
+    background-image: url(./images/about/bottom.svg);
+    height: 20px;
     width: 81px;
     background-repeat: no-repeat;
     position: absolute;
-    bottom: 26%;
-    right: 30.2%;
+    bottom: 99px;
+    left: 30px;
+   
 }
 #features .features-graph .fa-registered:after {
     content: ' ';
-    background-image: url('./images/about/bottom-right.svg');
+    background-image: url(./images/about/bottom-right.svg);
     background-size: 100%;
     height: 110px;
     width: 81px;
     background-repeat: no-repeat;
     position: absolute;
-    bottom: 23%;
-    right: 25.2%;
+    bottom: 50px;
+    right: 36px;
 }
-*/
+
 #features .features-graph #top-left-line {
     position: absolute;
     top: 170px;
@@ -3972,7 +3974,7 @@ html.no-csstransitions .home-content__main {
     -ms-transform: translateX(1px);
     transform: translateX(1px);
     z-index: 100;
-    margin: 3em auto 3em auto;
+    margin: 5em auto 3em auto;
 }
 
 .view-team.btn { margin-left: 0px;
