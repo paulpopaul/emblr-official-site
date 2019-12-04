@@ -70,37 +70,36 @@ Nuestra lema “Ingeniería de software para Soluciones Empresariales Integradas
 
         <div id="figure-block" class="features-content-col">
             <div data-features-nav="" class="features-graph">
-                <div class="top-features">
                     <div class="button-holder">
-                        <a href="#feature-1" class="fas fa-users btn-with-icon __active"></a>
-                        <a href="#feature-2" class="fas fa-bullseye btn-with-icon"></a>
-                        <a href="#feature-3" class="far fa-eye btn-with-icon"></a>
+                        <a href="#feature-1" class="fas fa-users btn-with-icon __active">
+                            <span class="sq-bt-label label-top-left">Nosotros</span>
+                        </a>
+                        <a href="#feature-2" class="fas fa-bullseye btn-with-icon">
+                            <span class="sq-bt-label label-top">Misión</span>
+                        </a>
+                        <a href="#feature-3" class="far fa-eye btn-with-icon">
+                            <span class="sq-bt-label label-top-right">Visión</span>
+                        </a>
                     </div>
-                    <div class="tagAboutUs">
-                        <p id="tagNosotros"> Nosotros </p>
-                        <p id="tagMision"> Misión </p>
-                        <p id="tagVision"> Visión </p>
-                    </div>
-                </div>
                 <div class="animation-holder">
                     <span class="flash-oval">
                         <img src="http://127.0.0.1:8080/wp-content/themes/emblr-official/images/logo.svg" alt="pulse">
                         <div class="wave hidden wave-anim"></div>
                            <div class="wave2 hidden wave-anim"></div>
                            <div class="wave3 hidden wave-anim"></div>
-                           <div class="wave4 hidden wave-anim"></div>
                     </span>
                 </div>
 
                 <div class="button-holder">
-                    <a href="#feature-4" class="fas fa-quote-left btn-with-icon"></a>
-                    <a href="#feature-5" class="fas fa-check btn-with-icon"></a>
-                    <a href="#feature-6" class="far fa-registered btn-with-icon"></a>
-                </div>
-                <div class="tagAboutUs">
-                    <p id="tagFundacion"> Fundación </p>
-                    <p id="tagFeatures"> Features </p>
-                    <p id="tagDerecho"> Derecho </p>
+                    <a href="#feature-4" class="fas fa-quote-left btn-with-icon">
+                        <span class="sq-bt-label label-bottom-left">Fundación</span>
+                    </a>
+                    <a href="#feature-5" class="fas fa-check btn-with-icon">
+                        <span class="sq-bt-label label-bottom">Features</span>
+                    </a>
+                    <a href="#feature-6" class="far fa-registered btn-with-icon">
+                        <span class="sq-bt-label label-bottom-right">Derecho</span>
+                    </a>
                 </div>
             </div>
         </div>
