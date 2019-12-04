@@ -5620,6 +5620,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .item-service h3 {
+    margin-top: 1.4rem;
     margin-bottom: 1.4rem;
   }
 
