@@ -1615,6 +1615,31 @@ body.menu-is-open {
 #qlwapp .qlwapp-box.response textarea::placeholder { color: #666; }
 .qlwapp-time { color: #ccc !important; }
 
+@media only screen and (max-width: 414px) {
+  .qlwapp-whatsapp-icon { font-size: 24px; }
+  .qlwapp-text { display: none; }
+  #qlwapp.qlwapp-button .qlwapp-toggle {
+    padding: 16px !important;
+    height: initial !important;
+    margin: 0 15px 15px 0 !important;
+  }
+
+  #qlwapp.qlwapp-button .qlwapp-toggle .qlwapp-icon {
+    margin: 0 !important;
+  }
+
+  #qlwapp.qlwapp-button .qlwapp-toggle .qlwapp-icon {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .qlwapp-whatsapp-icon { font-size: 22px; }
+  #qlwapp.qlwapp-button .qlwapp-toggle {
+    padding: 12px !important;
+  }
+}
+
 /* ------------------------------------------------------------------- 
  * ## display headings
  * ------------------------------------------------------------------- */
