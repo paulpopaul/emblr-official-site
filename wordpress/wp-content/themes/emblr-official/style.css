@@ -7694,7 +7694,7 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  .btn--large, button.btn--large {
+  .s-contact .btn--large, button.btn--large {
     height: 50px !important;
     line-height: 6px !important;
   }
@@ -7747,7 +7747,7 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  .btn--large, button.btn--large {
+  .s-contact .btn--large, button.btn--large {
     height: 50px !important;
     line-height: 6px !important;
   }
