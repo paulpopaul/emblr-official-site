@@ -7761,6 +7761,15 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
 
 }
 
+@media only screen and (max-width: 370px) {
+  .customize-product {
+    white-space: normal;
+    height: auto !important;
+    line-height: 20px !important;
+    padding: 1.9rem 3rem;
+  }
+}
+
 @media only screen and (max-width:320px) {
   .traditional-form { display: absolute; margin-top: 60px; }
   .traditional-form div { margin-bottom: 10px; }
