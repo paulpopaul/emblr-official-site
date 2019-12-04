@@ -8222,6 +8222,10 @@ footer {
   padding-right: 165px;
 }
 
+footer h1 {
+  margin-bottom: 1.8rem;
+}
+
 footer #footer-widgets a:link {
   color: #1FBDA2;
   font-weight: bold;
