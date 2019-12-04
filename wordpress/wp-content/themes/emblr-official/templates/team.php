@@ -33,7 +33,7 @@
 
 <!-- team ================================================== -->
 <section class="team-section target-section section-page">
-    <h1 data-aos="fade-up"> Nuestro Equipo </h1>
+    <h1 class="classic-title" data-aos="fade-up"> Nuestro Equipo </h1>
 
     <div class="slick-team-container" data-aos="fade-up">
         <!-- prev, next arrows -->

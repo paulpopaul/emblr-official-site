@@ -141,8 +141,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-  margin-top: 6rem;
-  margin-bottom: 1.8rem;
+  /* no margin */
 }
 
 @media only screen and (max-width:600px) {
@@ -1500,6 +1499,11 @@ body.menu-is-open {
   margin-top: 0;
   font-size: 48px;
   font-weight: 800;
+}
+
+.section-page > h1.classic-title,
+.section-page .inner-title > h1.classic-title {
+  margin-bottom: 100px;
 }
 
 .section-page > h2,
@@ -4195,7 +4199,7 @@ html.no-csstransitions .home-content__main {
   position: relative;
   margin-left: 80px;
   margin-right: 80px;
-  margin-top:65px;
+  margin-top: 0;
 }
 
 .team-section h1 {
@@ -4302,7 +4306,7 @@ html.no-csstransitions .home-content__main {
     width: 60%;
     z-index: 1;
     position: relative;
-    margin-top: 40px;
+    margin-top: 7px;
 }
 
 .team-content h3.title { margin-top: 30px; }
@@ -6026,10 +6030,13 @@ html.no-csstransitions .home-content__main {
 
  .s-portafolio { background: #000; }
 
-.portafolio-header{
+ .s-portafolio.section-page > h1.classic-title {
+   margin-bottom: 47px;
+ }
+
+.portafolio-header {
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: -4px;
 }
 
 .wrap {
@@ -6048,7 +6055,7 @@ html.no-csstransitions .home-content__main {
 }
 
 #filters {
-  margin: 1%;
+  margin: 0;
   padding: 0;
   list-style: none;
   overflow: hidden;

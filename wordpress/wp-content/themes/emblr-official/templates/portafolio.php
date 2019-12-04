@@ -36,7 +36,7 @@ global $post;
 ================================================== -->
 <section id="portafolio" class="s-portafolio target-section section-page">
 
-    <h1 class="sportafolio" data-aos="fade-up">Portafolio</h1>
+    <h1 class="sportafolio classic-title" data-aos="fade-up">Portafolio</h1>
 
     <div class="wrap">
         <!--Creamos marcas, productos y experiencias que la gente ama. Echa un vistazo a nuestros trabajos recientes.-->
