@@ -1673,7 +1673,7 @@ body.menu-is-open {
 .item-title {
   font-size: 2.4rem;
   line-height: 1.5;
-  margin-top: 0;
+  margin-top: 10px;
   margin-bottom: 2.4rem;
 }
 
@@ -4673,7 +4673,7 @@ html.no-csstransitions .home-content__main {
   float: left;
   color: #1fbda2;
   font-size: 4.5rem;
-  margin-top: -1.8rem;
+  margin-top: -0.6rem;
   position: relative;
   line-height: initial;
 }
