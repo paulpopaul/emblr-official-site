@@ -6150,6 +6150,10 @@ html.no-csstransitions .home-content__main {
   .gallery-item {
     padding: 0;
   }
+
+  .portafolio-header {
+    margin-bottom: 16px;
+  }
 }
 
 
