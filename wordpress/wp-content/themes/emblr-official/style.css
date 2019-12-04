@@ -7527,13 +7527,12 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
   font-size: 16px;
   font-family: Anonymous Pro;
   color: rgba(255, 255, 255, 0.75);
-  border: 2px solid transparent;
-  /*background: #333;*/
+  border: 1px solid transparent !important;
 }
 
 .traditional-form input:focus,
 .traditional-form textarea:focus {
-  border: 1px solid #1FBDA2;
+  border: 1px solid #1FBDA2 !important;
 
 }
 
@@ -7553,6 +7552,7 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
 @media only screen and (max-width:1024px) {
   .traditional-form { display: absolute; margin-top: 60px; }
   .traditional-form div { margin-bottom: 18px; }
+  .traditional-form div:last-of-type { margin-bottom: 0; }
   .traditional-form pre {
     padding: 0;
     background: transparent;
@@ -7570,8 +7570,6 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
     font-size: 20px;
     font-family: "Nunito Sans", sans-serif;
     color: rgba(255, 255, 255, 0.75);
-    border: 2px solid transparent;
-    /*background: #333;*/
   }
 
 
@@ -7603,21 +7601,13 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
     text-transform: none;
     font-family: 'Consolas';
     margin-top: 18px;
+    margin-bottom: 0;
     font-size: 16px;
   }
 }
 @media only screen and (max-width:768px) {
 
   .traditional-form pre > span { color: #1FBDA2; }
-  .traditional-form input,
-  .traditional-form textarea {
-    width: 100%;
-    font-size: 20px;
-    font-family: "Nunito Sans", sans-serif;
-    color: rgba(255, 255, 255, 0.75);
-    border: 2px solid transparent;
-    /*background: #333;*/
-  }
   .traditional-form { display: absolute; margin-top: 60px; }
   .traditional-form div { margin-bottom: 18px; }
   .traditional-form pre {
@@ -7678,12 +7668,7 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
   .traditional-form pre > span { color: #1FBDA2; }
   .traditional-form input,
   .traditional-form textarea {
-    width: 100%;
     font-size: 16px;
-    font-family: "Nunito Sans", sans-serif;
-    color: rgba(255, 255, 255, 0.75);
-    border: 2px solid transparent;
-    /*background: #333;*/
   }
 
   input[type="email"],
@@ -7738,15 +7723,6 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
   }
 
   .traditional-form pre > span { color: #1FBDA2; }
-  .traditional-form input,
-  .traditional-form textarea {
-    width: 100%;
-    font-size: 16px;
-    font-family: "Nunito Sans", sans-serif;
-    color: rgba(255, 255, 255, 0.75);
-    border: 2px solid transparent;
-    /*background: #333;*/
-  }
 
   input[type="email"],
   input[type="number"],
