@@ -4609,14 +4609,7 @@ html.no-csstransitions .home-content__main {
   margin-bottom: 0;
 }
 
-.services-title {
-  float: left;
-  width: 60%;
-  position: relative;
-  z-index: 2;
-}
-
-.services-title > h1::after { content: "_"; }
+.services-title { float: left; width: 60%; position: relative; z-index: 2; }
 .services-cubes { float: right; width: 40%; }
 .services-cubes .loader { float: right; }
 
