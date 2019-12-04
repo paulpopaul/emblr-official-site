@@ -4599,8 +4599,7 @@ html.no-csstransitions .home-content__main {
  * ## services list
  * ------------------------------------------------------------------- */
 .services {
-  margin-top: 0px;
-
+  margin-top: 100px;
   display: inline-grid;
   grid-template-columns: 50% 50%;
   gap: 15px;
@@ -4609,13 +4608,31 @@ html.no-csstransitions .home-content__main {
 .s-services h2 {
   color: #1fbda2;
   max-width: 1000px;
-  margin-top: 45px;
+  margin-top: 16px;
   margin-bottom: 0;
 }
 
-.services-title { float: left; width: 60%; position: relative; z-index: 2; }
-.services-cubes { float: right; width: 40%; }
-.services-cubes .loader { float: right; }
+.services-title {
+  float: left;
+  width: 64%;
+  position: relative;
+  z-index: 2;
+}
+
+.services-cubes {
+  float: right;
+  width: 36%;
+
+  position: absolute;
+  right: 11%;
+  top: 4.6%;
+}
+
+.services-cubes .loader {
+  float: right;
+  margin-right: 17%;
+  transform: scale(0.9);
+}
 
 .item-service {
   position: relative;
@@ -4659,6 +4676,7 @@ html.no-csstransitions .home-content__main {
   font-size: 4.5rem;
   margin-top: -1.8rem;
   position: relative;
+  line-height: initial;
 }
 
 .item-service__icon i::after {
@@ -4671,10 +4689,6 @@ html.no-csstransitions .home-content__main {
   color: #fff;
   top: 90px;
   left: 0px;
-}
-
-.item-service:nth-child(2n+1) {
-    /*padding-left: 0;*/
 }
 
 .more-services.btn { margin: 85px auto 0 auto; display: block; }
@@ -4695,12 +4709,6 @@ html.no-csstransitions .home-content__main {
   position: relative;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-}
-
-@media (max-width: 768px) {
-  .loader {
-    zoom: .44;
-  }
 }
 
 .loader:before, .loader:after {
@@ -5577,19 +5585,23 @@ html.no-csstransitions .home-content__main {
     max-width: 1000px;
   }
 
+  .services-cubes .loader { margin-right: 2%; }
+
 }
 
 @media only screen and (max-width: 1024px) {
-  .s-services h2 {
-    font-size: 2.4rem;
-    padding-bottom: 80px;
+  .services { margin-top: 80px; }
+  .services-cubes {
+    right: 4%;
+    top: 4.1%;
   }
 
-  .services-cubes{
-    width:27%;
-    position:absolute;
-    top:100px;
-    left:66%;
+  .services-cubes .loader {
+    transform: scale(0.8);
+  }
+
+  .s-services h2 {
+    font-size: 2.4rem;
   }
 
   .item-service__text {
@@ -5600,13 +5612,6 @@ html.no-csstransitions .home-content__main {
     float: none;
     margin-top: 0;
     font-size: 4.2rem;
-  }
-
-  .services-cubes{
-    width:29%;
-    position:absolute;
-    top:100px;
-    left:66%;
   }
 
   .item-service__icon i::after {
@@ -5621,12 +5626,16 @@ html.no-csstransitions .home-content__main {
 
 }
 
-@media only screen and (max-width: 800px) {
-  .services { margin-top: 35px; }
+@media only screen and (max-width: 876px) {
+  .services-cubes { top: 4.6%; }
+}
 
-  .s-services h2 {
-    padding-bottom: 30px;
-  }
+@media only screen and (max-width: 811px) {
+  .services-cubes { top: 6.2%; }
+}
+
+@media only screen and (max-width: 800px) {
+  .services { margin-top: 60px; }
 
   .services .service-icon {
     font-size: 4.2rem;
@@ -5634,11 +5643,14 @@ html.no-csstransitions .home-content__main {
     margin-top: 0;
   }
 
-  .services-cubes{
-    width:29%;
-    position:absolute;
-    top:100px;
-    left:66%;
+  .services-cubes {
+    right: 3%;
+    top: 2.6%;
+  }
+  
+  .services-cubes .loader {
+    margin-right: 0;
+    transform: scale(0.7);
   }
 }
 
@@ -5646,96 +5658,76 @@ html.no-csstransitions .home-content__main {
 
   .services {
     grid-template-columns: 100%;
+    gap: 60px;
   }
-  .services-title{
+
+  .services-title {
     width: 100%;
-  }
-  .s-services h1 {
-    width: 70%;
   }
 
   .s-services h2 {
-    font-size:20px;
-    width: 70%;
+    font-size: 20px;
   }
 
-  .services-cubes{
-    width:29%;
-    position:absolute;
-    top:100px;
-    left:68%;
+  .services-cubes {
+    right: 5%;
+    top: -1.1%;
   }
 
   .services-cubes .loader {
-    margin: 0 auto;
-    float: none;
+    transform: scale(0.3);
+  }
+
+  .item-service {
+    padding: 0;
+    border: none;
+  }
+
+  .more-services.btn {
+    margin-top: 40px;
   }
 
 }
-
 
 @media only screen and (max-width: 680px) {
-  .services {
-    gap: 55px;
+  .services-title > h1 {
+    width: 75%;
   }
 
-  .services-title{
-    width: 100%;
+ .services-cubes {
+    right: 2%;
   }
-
-  .s-services h2 {
-    width: 100%;
-  }
-
-  .services-cubes{
-    width:29%;
-    position:absolute;
-    top:88px;
-    left:70%;
-  }
-  .item-service{
-    padding: 0;
-    border:none;
-  }
-
 }
+
+@media only screen and (max-width: 640px) {
+ .services-cubes {
+    right: -1%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+ .services-cubes {
+    right: 0;
+    top: 0.3%;
+  }
+
+  .services-cubes .loader {
+    transform: scale(0.4);
+  }
+}
+
 @media only screen and (max-width: 480px) {
-  .services-title{
-    width: 100%;
-  }
-
-  .s-services h2 {
-    font-size:20px;
-  }
-  .services-cubes{
-    width:29%;
-    position:absolute;
-    top:88px;
-    left:70%;
-  }
-  .item-service{
-    padding: 0;
-    border:none;
-  }
 
 }
+
 @media only screen and (max-width: 414px) {
-  .services-title{
-    width: 100%;
+  .services-cubes {
+    top: -0.5%;
+    right: -4%;
   }
 
-  .s-services h2 {
-    font-size:20px;
-  }
-  .services-cubes{
-    width:29%;
-    position:absolute;
-    top:88px;
-    left:68%;
-  }
-  .item-service{
-    padding: 0;
-    border:none;
+  .services-cubes .loader {
+    transform: scale(0.3);
   }
 
   .item-service__text {
@@ -5745,48 +5737,17 @@ html.no-csstransitions .home-content__main {
   .item-service h3 {
     font-size: 16px;
   }
-
 }
 
-@media only screen and (max-width: 375px) {
-  .services-title{
-    width: 100%;
+@media only screen and (max-width: 380px) {
+  .services-cubes {
+    right: -5%;
   }
-
-  .s-services h2 {
-    font-size:20px;
-  }
-  .services-cubes{
-    width:29%;
-    position:absolute;
-    top:80px;
-    left:63%px;
-  }
-  .item-service{
-    padding: 0;
-    border:none;
-  }
-
 }
+
 @media only screen and (max-width: 320px) {
-
-  .services-title{
-    width: 100%;
-  }
- 
   .s-services h2 {
-    font-size:16px;
-  }
-  .services-cubes{
-    width:33%;
-    position:absolute;
-    top:86px;
-    left:196px;
-  }
-
-  .item-service{
-    padding: 0;
-    border:none;
+    font-size: 16px;
   }
 }
 
