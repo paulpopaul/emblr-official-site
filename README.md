@@ -20,16 +20,16 @@ curl -L https://git.io/fjO2E | bash
 --
 
 ### Opcional:
-Añadir alias **"emblr-site"** al bash_profile para acceder directamente al directorio de trabajo.
+Añadir alias **"@emblr-site"** al bash_profile para acceder directamente al directorio de trabajo.
 *(Reemplazar ".bash_profile" por el archivo bash indicado en caso de ser necesario).*
 
 En Terminal:
 ```
-echo "alias 'emblr-site'='cd `pwd`'" >> ~/.bash_profile && source ~/.bash_profile
+echo "alias '@emblr-site'='cd `pwd`'" >> ~/.bash_profile && source ~/.bash_profile
 ```
 Uso:
 ```
-emblr-site
+@emblr-site
 ```
 
 --
