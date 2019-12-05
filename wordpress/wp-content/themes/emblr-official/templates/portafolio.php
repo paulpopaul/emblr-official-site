@@ -71,7 +71,7 @@ global $post;
                         </p>
                     </div>
 
-                    <a href="http://www.murtao.cl/" class="item-folio__project-link" title="Project link">
+                    <a target="_blank" href="http://www.murtao.cl/" class="item-folio__project-link" title="Project link">
                         <i class="icon-link"></i>
                     </a>
 
