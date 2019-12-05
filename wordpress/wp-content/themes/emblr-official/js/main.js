@@ -178,7 +178,10 @@
                 e.preventDefault();
                 var options = {
                     index: i,
-                    showHideOpacity: true
+                    showHideOpacity: true,
+                    getDoubleTapZoom: function() {
+                        return 0.7;
+                    }
                 }
 
                 // initialize PhotoSwipe
