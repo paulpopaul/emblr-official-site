@@ -56,7 +56,7 @@ global $post;
 
                 <div class="masonry__brick item-folio gallery-item strategy " href="#" data-cat="strategy" data-aos="fade-up">
                     <div class="item-folio__thumb">
-                        <a href="<?= get_template_directory_uri() ?>/images/portfolio/home-murtao.jpg" class="thumb-link" data-size="1867x7723">
+                        <a href="<?= get_template_directory_uri() ?>/images/portfolio/home-murtao.jpg" class="thumb-link" data-size="1920x7944">
                             <img src="<?= get_template_directory_uri() ?>/images/portfolio/porta-01.jpg" alt="" />
                         </a>
                     </div>
@@ -83,7 +83,7 @@ global $post;
 
                 <div class="masonry__brick item-folio gallery-item strategy " href="#" data-cat="strategy">
                     <div class="item-folio__thumb">
-                        <a href="<?= get_template_directory_uri() ?>/images/portfolio/home-cisnenegro.jpg" class="thumb-link" data-size="1867x4543x">
+                        <a href="<?= get_template_directory_uri() ?>/images/portfolio/home-cisnenegro.jpg" class="thumb-link" data-size="1921x4673">
                             <img src="<?= get_template_directory_uri() ?>/images/portfolio/porta-02.jpg" alt="" />
                         </a>
                     </div>
@@ -110,7 +110,7 @@ global $post;
 
                 <div class="masonry__brick item-folio gallery-item strategy " href="#" data-cat="strategy">
                     <div class="item-folio__thumb">
-                        <a href="<?= get_template_directory_uri() ?>/images/portfolio/home-divina.jpg" class="thumb-link" data-size="4001x2306">
+                        <a href="<?= get_template_directory_uri() ?>/images/portfolio/home-divina.jpg" class="thumb-link" data-size="1921x1107">
                             <img src="<?= get_template_directory_uri() ?>/images/portfolio/porta-03.jpg" alt="" />
                         </a>
                     </div>
@@ -137,7 +137,7 @@ global $post;
 
                 <div class="masonry__brick item-folio gallery-item strategy " href="#" data-cat="strategy">
                     <div class="item-folio__thumb">
-                        <a href="<?= get_template_directory_uri() ?>/images/portfolio/home-katari.jpg" class="thumb-link" data-size="1867x4227">
+                        <a href="<?= get_template_directory_uri() ?>/images/portfolio/home-katari.jpg" class="thumb-link" data-size="1920x4348">
                             <img src="<?= get_template_directory_uri() ?>/images/portfolio/porta-04.jpg" alt="" />
                         </a>
                     </div>
@@ -164,7 +164,7 @@ global $post;
 
                 <div class="masonry__brick item-folio gallery-item strategy " href="#" data-cat="strategy">
                     <div class="item-folio__thumb">
-                        <a href="<?= get_template_directory_uri() ?>/images/portfolio/home-regen.jpg" class="thumb-link" data-size="4001x5524">
+                        <a href="<?= get_template_directory_uri() ?>/images/portfolio/home-regen.jpg" class="thumb-link" data-size="1921x2652">
                             <img src="<?= get_template_directory_uri() ?>/images/portfolio/porta-05.jpg" alt="" />
                         </a>
                     </div>
