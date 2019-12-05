@@ -6098,6 +6098,8 @@ html.no-csstransitions .home-content__main {
   }
 }
 
+.pswp__counter { }
+
 /* ===================================================================
  * # portafolio RESPONSIVE
  *
@@ -7486,25 +7488,27 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
 }
 
 .traditional-form pre > span { color: #1FBDA2; }
-.traditional-form input,
+.traditional-form input[type="text"],
 .traditional-form textarea {
   width: 100%;
-  font-size: 16px;
-  font-family: Anonymous Pro;
-  color: rgba(255, 255, 255, 0.75);
+  font-size: 20px;
+  font-family: "Nunito Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.4);
   border: 1px solid transparent !important;
+  padding: 7px 20px !important;
 }
 
 .traditional-form input:focus,
 .traditional-form textarea:focus {
   border: 1px solid #1FBDA2 !important;
-
+  color: #fff;
 }
 
 .traditional-form textarea {
   resize: none;
   height: 100px;
-  min-height: auto; }
+  min-height: auto;
+}
 
 .traditional-form input[type="submit"] {
   text-transform: lowercase;
@@ -7514,212 +7518,74 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
 }
 
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
   .traditional-form { display: absolute; margin-top: 60px; }
   .traditional-form div { margin-bottom: 18px; }
   .traditional-form div:last-of-type { margin-bottom: 0; }
   .traditional-form pre {
-    padding: 0;
-    background: transparent;
     font-family: "Nunito Sans", sans-serif;
-    font-weight: bold;
     font-size: 20px;
-    color: #fff;
-    text-align: left;
   }
 
-  .traditional-form pre > span { color: #1FBDA2; }
-  .traditional-form input,
-  .traditional-form textarea {
-    width: 100%;
-    font-size: 20px;
-    font-family: "Nunito Sans", sans-serif;
-    color: rgba(255, 255, 255, 0.75);
-  }
-
-
-  input[type="email"],
-  input[type="number"],
-  input[type="search"],
-  input[type="text"],
-  input[type="tel"],
-  input[type="url"],
-  input[type="password"],
-  textarea,
-  select {
-    display: block;
-    height: 5rem;
+  .traditional-form input[type="email"],
+  .traditional-form input[type="number"],
+  .traditional-form input[type="search"],
+  .traditional-form input[type="text"],
+  .traditional-form input[type="tel"],
+  .traditional-form input[type="url"],
+  .traditional-form input[type="password"],
+  .traditional-form textarea,
+  .traditional-form select {
     padding: 8px 8px;
-    border: 0;
-    outline: none;
-    color: rgba(255, 255, 255, 0.7);
     font-family: "Nunito Sans", sans-serif;
     font-size: 20px;
-    line-height: 3rem;
-    max-width: 100%;
-    background: rgba(255, 255, 255, 0.05);
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
   }
 
   .traditional-form input[type="submit"] {
     text-transform: none;
-    font-family: 'Consolas';
     margin-top: 18px;
     margin-bottom: 0;
     font-size: 16px;
+    width: 100%;
   }
 }
-@media only screen and (max-width:768px) {
 
-  .traditional-form pre > span { color: #1FBDA2; }
-  .traditional-form { display: absolute; margin-top: 60px; }
-  .traditional-form div { margin-bottom: 18px; }
+@media only screen and (max-width: 414px) {
   .traditional-form pre {
-    padding: 0;
-    background: transparent;
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    color: #fff;
-    text-align: left;
-  }
-
-  input[type="email"],
-  input[type="number"],
-  input[type="search"],
-  input[type="text"],
-  input[type="tel"],
-  input[type="url"],
-  input[type="password"],
-  textarea,
-  select {
-    display: block;
-    height: 5rem;
-    padding: 8px 8px;
-    border: 0;
-    outline: none;
-    color: rgba(255, 255, 255, 0.7);
-    font-family: "Nunito Sans", sans-serif;
-    font-size: 20px;
-    line-height: 3rem;
-    max-width: 100%;
-    background: rgba(255, 255, 255, 0.05);
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .traditional-form input[type="submit"] {
-    text-transform: none;
-    font-family: 'Consolas';
-    margin-top: 18px;
-    font-size:16px;
-  }
-}
-@media only screen and (max-width:414px) {
-
-  .traditional-form { display: absolute; margin-top: 60px; }
-  .traditional-form div { margin-bottom: 18px; }
-  .traditional-form pre {
-    padding: 0;
-    background: transparent;
-    font-family: 'Consolas';
-    font-weight: bold;
     font-size: 18px;
-    color: #fff;
-    text-align: left;
   }
 
-  .traditional-form pre > span { color: #1FBDA2; }
-  .traditional-form input,
+  .traditional-form input[type="text"],
   .traditional-form textarea {
     font-size: 16px;
   }
 
-  input[type="email"],
-  input[type="number"],
-  input[type="search"],
-  input[type="text"],
-  input[type="tel"],
-  input[type="url"],
-  input[type="password"],
-  textarea,
-  select {
-    display: block;
-    height: 5rem;
-    padding: 8px 8px;
-    border: 0;
-    outline: none;
-    color: rgba(255, 255, 255, 0.7);
-    font-family: "Nunito Sans", sans-serif;
+  .traditional-form input[type="email"],
+  .traditional-form input[type="number"],
+  .traditional-form input[type="search"],
+  .traditional-form input[type="text"],
+  .traditional-form input[type="tel"],
+  .traditional-form input[type="url"],
+  .traditional-form input[type="password"],
+  .traditional-form textarea,
+  .traditional-form select {
     font-size: 16px;
-    line-height: 3rem;
-    max-width: 100%;
-    background: rgba(255, 255, 255, 0.05);
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
   }
+
   .s-contact .btn--large, button.btn--large {
     height: 50px !important;
     line-height: 6px !important;
   }
 
   .traditional-form input[type="submit"] {
-    text-transform: none;
-    font-family: 'Consolas';
-    margin-top: 18px;
-    font-size:14px;
+    font-size: 14px;
   }
 
 }
 
-@media only screen and (max-width:375px) {
-
-  .traditional-form { display: absolute; margin-top: 60px; }
+@media only screen and (max-width: 375px) {
   .traditional-form div { margin-bottom: 12px; }
-  .traditional-form pre {
-    padding: 0;
-    background: transparent;
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    color: #fff;
-    text-align: left;
-  }
-
-  .traditional-form pre > span { color: #1FBDA2; }
-
-  input[type="email"],
-  input[type="number"],
-  input[type="search"],
-  input[type="text"],
-  input[type="tel"],
-  input[type="url"],
-  input[type="password"],
-  textarea,
-  select {
-    display: block;
-    height: 5rem;
-    padding: 8px 8px;
-    border: 0;
-    outline: none;
-    color: rgba(255, 255, 255, 0.7);
-    font-family: "Nunito Sans", sans-serif;
-    font-size: 16px;
-    line-height: 3rem;
-    max-width: 100%;
-    background: rgba(255, 255, 255, 0.05);
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-  .s-contact .btn--large, button.btn--large {
-    height: 50px !important;
-    line-height: 6px !important;
-  }
-
   .traditional-form input[type="submit"] {
-    text-transform: none;
-    font-family: 'Consolas';
     margin-top: 12px;
     font-size:12px;
   }
@@ -7735,21 +7601,13 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
   }
 }
 
-@media only screen and (max-width:320px) {
-  .traditional-form { display: absolute; margin-top: 60px; }
+@media only screen and (max-width: 320px) {
   .traditional-form div { margin-bottom: 10px; }
   .traditional-form pre {
-    padding: 0;
-    background: transparent;
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: bold;
     font-size: 16px;
-    color: #fff;
-    text-align: left;
   }
+
   .traditional-form input[type="submit"] {
-    text-transform: none;
-    font-family: 'Consolas';
     margin-top: 10px;
     font-size:12px;
   }
