@@ -137,7 +137,8 @@
     var ssPhotoswipe = function() {
         var items = [],
             $pswp = $('.pswp')[0],
-            $folioItems = $('.item-folio');
+            $folioItems = $('.item-folio'),
+            $projectLink = $folioItems.find('.item-folio__project-link');
 
         // get items
         $folioItems.each( function(i) {
@@ -164,6 +165,10 @@
             }
 
             items.push(item);
+        });
+
+        $projectLink.on('click', function(e) {
+            e.stopPropagation();
         });
 
         // bind click event
