@@ -71,7 +71,7 @@ global $post;
                         </p>
                     </div>
 
-                    <a target="_blank" href="http://www.murtao.cl/" class="item-folio__project-link" title="Project link">
+                    <a href="http://www.murtao.cl/" target="_blank" class="item-folio__project-link" title="Project link">
                         <i class="icon-link"></i>
                     </a>
 
@@ -98,7 +98,7 @@ global $post;
                         </p>
                     </div>
 
-                    <a href="https://www.cisnenegrostudio.com/" class="item-folio__project-link" title="Project link">
+                    <a href="http://www.cisnenegrostudio.com/" target="_blank" class="item-folio__project-link" title="Project link">
                         <i class="icon-link"></i>
                     </a>
 
@@ -125,7 +125,7 @@ global $post;
                         </p>
                     </div>
 
-                    <a href="https://www.divinasur.cl/" class="item-folio__project-link" title="Project link">
+                    <a href="http://www.divinasur.cl/" target="_blank" class="item-folio__project-link" title="Project link">
                         <i class="icon-link"></i>
                     </a>
 
@@ -152,7 +152,7 @@ global $post;
                         </p>
                     </div>
 
-                    <a href="https://www.katariconsultores.cl/" class="item-folio__project-link" title="Project link">
+                    <a href="https://www.katariconsultores.cl/" target="_blank" class="item-folio__project-link" title="Project link">
                         <i class="icon-link"></i>
                     </a>
 
@@ -179,115 +179,7 @@ global $post;
                         </p>
                     </div>
 
-                    <a href="https://www.regenhaus.cl/" class="item-folio__project-link" title="Project link">
-                        <i class="icon-link"></i>
-                    </a>
-
-                    <div class="item-folio__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                    </div>
-                </div> <!-- end masonry__brick -->
-
-                <!--
-                <div class="masonry__brick item-folio gallery-item print " href="#" data-cat="print" data-aos="fade-up">
-                    <div class="item-folio__thumb">
-                        <a href="https://unsplash.it/1000/1000?image=1079" class="thumb-link" data-size="1000x1000">
-                            <img src="https://unsplash.it/1000/1000?image=1079" alt="" />
-                        </a>
-                    </div>
-
-                    <div class="item-folio__text">
-                        <h3 class="item-folio__title">
-                            Shutterbug
-                        </h3>
-
-                        <p class="item-folio__cat">
-                            Branding
-                        </p>
-                    </div>
-
-                    <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                        <i class="icon-link"></i>
-                    </a>
-
-                    <div class="item-folio__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                    </div>
-                </div>
-
-
-                <div class="masonry__brick item-folio gallery-item web " href="#" data-cat="web" data-aos="fade-up">
-                    <div class="item-folio__thumb">
-                        <a href="https://unsplash.it/1000/1000?image=1078" class="thumb-link" data-size="1000x1000">
-                            <img src="https://unsplash.it/1000/1000?image=1078" alt="" />
-                        </a>
-                    </div>
-
-                    <div class="item-folio__text">
-                        <h3 class="item-folio__title">
-                            Shutterbug
-                        </h3>
-
-                        <p class="item-folio__cat">
-                            Branding
-                        </p>
-                    </div>
-
-                    <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                        <i class="icon-link"></i>
-                    </a>
-
-                    <div class="item-folio__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                    </div>
-                </div>
-
-
-                <div class="masonry__brick item-folio gallery-item strategy " href="#" data-cat="strategy" data-aos="fade-up">
-                    <div class="item-folio__thumb">
-                        <a href="https://unsplash.it/1000/1000?image=1077" class="thumb-link" data-size="1000x1000">
-                            <img src="https://unsplash.it/1000/1000?image=1077" alt="" />
-                        </a>
-                    </div>
-
-                    <div class="item-folio__text">
-                        <h3 class="item-folio__title">
-                            Shutterbug
-                        </h3>
-
-                        <p class="item-folio__cat">
-                            Branding
-                        </p>
-                    </div>
-
-                    <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                        <i class="icon-link"></i>
-                    </a>
-
-                    <div class="item-folio__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                    </div>
-                </div>
-
-
-                <div class="masonry__brick item-folio gallery-item web strategy" href="#" data-cat="web strategy" data-aos="fade-up">
-                    <div class="item-folio__thumb">
-                        <a href="https://unsplash.it/1000/1000?image=1071" class="thumb-link" data-size="1000x1000">
-                            <img src="https://unsplash.it/1000/1000?image=1071" alt="" />
-                        </a>
-                    </div>
-
-                    <div class="item-folio__text">
-                        <h3 class="item-folio__title">
-                            Shutterbug
-                        </h3>
-
-                        <p class="item-folio__cat">
-                            Branding
-                        </p>
-                    </div>
-
-                    <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                    <a href="https://www.regenhaus.cl/" target="_blank" class="item-folio__project-link" title="Project link">
                         <i class="icon-link"></i>
                     </a>
 
