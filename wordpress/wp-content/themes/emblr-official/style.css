@@ -5886,7 +5886,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .pricing-table .price-footer {
-  margin-top: 40px;
+  margin-top: 35px;
 }
 
 .pricing-table .price-footer .order-btn {
@@ -5906,7 +5906,7 @@ html.no-csstransitions .home-content__main {
   font-weight: 600;
   position: relative;
   overflow: hidden;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   background-color: #1fbda2;
 }
 
@@ -5924,7 +5924,7 @@ html.no-csstransitions .home-content__main {
   display: block;
   color: #282828;
   margin: 0 30px;
-  padding: 10px 0;
+  padding: 6px 0;
   transition: .3s ease-in;
   border-bottom: 1px solid #ddd;
 }
