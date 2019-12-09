@@ -4268,18 +4268,18 @@ html.no-csstransitions .home-content__main {
   outline-width: 0;
 }
 
-.box-team:not(:first-of-type):not(:last-of-type) .our-team {
+.box-team .our-team {
   margin-left: 7.5px;
   margin-right: 7.5px;
 }
 
-.box-team:first-of-type .our-team {
+/*.box-team:first-of-type .our-team {
   margin-right: 7.5px;
 }
 
 .box-team:last-of-type .our-team {
   margin-left: 7.5px;
-}
+}*/
 
 .our-team {
     padding: 0px 0 70px;
@@ -4432,11 +4432,24 @@ html.no-csstransitions .home-content__main {
 
 }
 
+@media only screen and (max-width:1369px) {
+    .slick-team-container {
+        margin-left: -7px;
+        margin-right: -7px;
+
+    }
+    .team-section .team-content{
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+
+}
+
 @media only screen and (max-width:1300px) {
     .slick-team-container {
         position: relative;
-        margin-left: 60px;
-        margin-right: 60px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
 }
@@ -4444,9 +4457,11 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width:1200px) {
   .slick-team-container {
     position: relative;
-    margin-left: 44px;
-    margin-right: 44px;
+    margin-left: 0;
+    margin-right: 0;
   }
+
+
 
   .team-section .slick-stories-prev {
     left: -20px;
@@ -4460,6 +4475,10 @@ html.no-csstransitions .home-content__main {
 
 
 @media only screen and (max-width:1024px) {
+    .team-section .team-content{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 
   .slick-team-container {
     position: relative;
