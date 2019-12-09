@@ -4431,7 +4431,18 @@ html.no-csstransitions .home-content__main {
     }
 
 }
+@media only screen and (max-width:1418px) {
+    .pricing-table .price-body ul li {
+        margin:0 7%;
+    }
 
+}
+@media only screen and (max-width:1388px) {
+    .pricing-table .price-body ul li {
+        margin:0 6%;
+    }
+
+}
 @media only screen and (max-width:1369px) {
     .slick-team-container {
         margin-left: -7px;
@@ -4441,6 +4452,12 @@ html.no-csstransitions .home-content__main {
 
 }
 
+@media only screen and (max-width:1360px) {
+    .pricing-table .price-body ul li {
+        margin:0 5%;
+    }
+
+}
 @media only screen and (max-width:1300px) {
     .slick-team-container {
         position: relative;
@@ -4463,6 +4480,10 @@ html.no-csstransitions .home-content__main {
 
     .team-section .slick-stories-next {
     right: -20px;
+    }
+
+    .pricing-table .price-body ul li {
+        margin:0 4%;
     }
 
 }
