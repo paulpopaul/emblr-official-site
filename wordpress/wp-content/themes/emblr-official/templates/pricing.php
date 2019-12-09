@@ -59,8 +59,8 @@
 						<div class="price-body">
 							<ul>
 								<li><b>Hasta 6</b> Secciones</li>
-								<li><b>1</b> Idioma</li>
-								<li><b>1</b> Formulario de contacto</li>
+								<li><b>Hasta 1</b> Idioma</li>
+								<li><b>Hasta 1</b> Formulario de contacto&nbsp;&nbsp;</li>
 								<li><b>Hasta 5</b> Cuentas de Email configuradas</li>
 								<li><b>1 Diseño</b> Basado en plantilla</li>
 								<li><b>Integración</b> Redes sociales</li>
@@ -91,7 +91,7 @@
 								<li><b>Hasta 2</b> Idiomas</li>
 								<li><b>Hasta 3</b> Formularios de contacto</li>
 								<li><b>Hasta 12</b> Cuentas de Email configuradas</li>
-								<li><b>2 Diseños</b> Propuestas de diseño</li>
+								<li><b>2 Propuestas</b> de diseño</li>
 								<li><b>Integración</b> Redes sociales</li>
 								<li><b>Auto-administrable</b> Wordpress</li>
 							</ul>
@@ -118,7 +118,7 @@
 							<ul>
 								<li><b>Hasta 15</b> Secciones</li>
 								<li><b>Hasta 4</b> Idiomas</li>
-								<li><b>Ilimitados</b> Formularios de contacto</li>
+								<li><b>Hasta 9</b> Formularios de contacto</li>
 								<li><b>Ilimitadas</b> Cuentas de Email configuradas</li>
 								<li><b>2 Diseños</b> Full Personalizados</li>
 								<li><b>Tienda Online</b> + Webpay + R.S.</li>
