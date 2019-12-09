@@ -39,8 +39,11 @@
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 900 720" enable-background="new 0 0 900 720" xml:space="preserve" id="worldmap"></svg>
   </div>
 
-    <h1 data-aos="fade-up"> <? the_title() ?> </h1>
-    <p data-aos="fade-up"> <?= get_field( 'subtitulo', $post->ID ) ?> </p>
+    <h1 data-aos="fade-up" data-text="<? the_title() ?>" class="glitch"> <? the_title() ?> </h1>
+    <div class="glitch contact-sub" data-text="<?= get_field( 'subtitulo', $post->ID ) ?>">
+      <?= get_field( 'subtitulo', $post->ID ) ?>
+      <span class="cursor"></span>
+    </div>
   
     <div class="contact-content">
     <!-- <img src="<?= get_template_directory_uri() ?>/images/logo.svg" alt="" data-aos="fade-up"> -->

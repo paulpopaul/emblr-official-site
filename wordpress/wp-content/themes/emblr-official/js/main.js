@@ -608,7 +608,15 @@ $(".btn-with-icon").on("click", function() {
     // Filter ALL the things
     filterList.init();
 
-    /* ------------------------------------------------------ */
+
+    /* Contacto
+    * ------------------------------------------------------ */
+
+    var contactCursorDissapear = function() {
+        $('input#prompt').one('click', function() {
+            $('.s-contact .cursor').hide()
+        })
+    };
 
 
    /* Initialize
@@ -635,6 +643,7 @@ $(".btn-with-icon").on("click", function() {
         teamSlider();
         more_services_button();
         aboutUsAnimation();
+        contactCursorDissapear();
 
     })();
 
