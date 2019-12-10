@@ -6051,6 +6051,55 @@ html.no-csstransitions .home-content__main {
   .customize-product { margin-top: 60px; }
 }
 
+@media only screen and (max-width: 414px) {
+  .pricing-table .price-header .title {
+    font-weight: 800;
+  }
+  .pricing-table .price-footer {
+    margin-top: 22px;
+  }
+
+  .pricing-table .price-footer .order-btn {
+    margin-bottom: 24px;
+  }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+  .pricing-table .price-header .title {
+    font-size: 19px;
+  }
+
+  .pricing-table .price-header .subtitle {
+    margin-bottom: 2px;
+  }
+
+  .pricing-table .price {
+    font-size: 38px;
+    font-weight: 900;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+
+  .pricing-table .price-body ul li {
+    font-size: 14px;
+  }
+
+  .pricing-table .price-footer{
+    margin-top: 18px;
+  }
+
+  .pricing-table .price-footer .order-btn {
+    width: 130px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 10px;
+    margin-bottom: 18px;
+
+  }
+}
+
 /* ===================================================================
  * # portafolio
  *
