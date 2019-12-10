@@ -5924,7 +5924,7 @@ html.no-csstransitions .home-content__main {
   display: block;
   color: #282828;
   margin: 0 30px;
-  padding: 6px 0;
+  padding: 10px 0;
   transition: .3s ease-in;
   border-bottom: 1px solid #ddd;
 }
@@ -6000,6 +6000,15 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 680px) { /* one line */
   .col-pricing { width: 100%; padding: 0; }
+}
+
+/** HEIGHT RESPONSIVE **/
+@media only screen and (max-height: 767px) {
+  .pricing-table .price-body ul li { padding: 6px 0; }
+}
+
+@media only screen and (max-height: 700px) {
+  .pricing-table .price-body ul li { padding: 4px 0; }
 }
 
 /* ===================================================================
