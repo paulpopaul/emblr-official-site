@@ -3528,9 +3528,9 @@ html.no-csstransitions .home-content__main {
     align-items: center;
 }
 
-/*#text-block {
-  width: 55%;
-}*/
+#text-block {
+  padding-right: 30px;
+}
 
 #figure-block {
   width: 45% !important;
