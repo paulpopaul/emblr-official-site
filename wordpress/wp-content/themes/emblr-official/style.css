@@ -4614,6 +4614,54 @@ html.no-csstransitions .home-content__main {
   }
 
 }
+@media only screen and (max-width: 320px) {
+  .section-page > h1.classic-title{
+    margin-bottom: 50px !important;
+  }
+
+  .our-team .pic{
+    margin-top: 8px;
+    width: 130px !important;
+  }
+
+  .our-team .pic img {
+    box-shadow: 0 0 0 7px #1fbda2 !important;
+  }
+
+  .team-content h3.title {
+    margin-top: 5px;
+  }
+
+  .our-team .title {
+    margin-bottom: 2px;
+    font-size: 22px;
+  }
+  .our-team .post {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .our-team .team-content {
+    margin-bottom: 6px;
+  }
+
+  .team-section .team-content p {
+    padding-top: 6px;
+    font-size: 15px;
+  }
+  .our-team .social {
+    margin-top: 20px;
+  }
+  .our-team .social li a {
+    padding: 8px;
+    font-size: 18px;
+
+  }
+
+  .team-section .slick-dots{
+    display:none !important;
+  }
+
+}
 
 
 /* ===================================================================
