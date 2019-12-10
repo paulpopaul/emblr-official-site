@@ -3477,7 +3477,7 @@ html.no-csstransitions .home-content__main {
 
 #features .features-textblock p {
     color: #666666;
-    font-size: 18px;
+    font-size: 26px;
     line-height: 1.7em;
     font-family: Nunito sans;
 }
@@ -3485,7 +3485,7 @@ html.no-csstransitions .home-content__main {
 #features .features-textblock p:first-child {
   color: #29ceae;
   float:left;
-  font-size: 18px;
+  font-size: 26px;
   font-family: montserrat;
   padding-right: 3px;
   font-weight: bold;
@@ -3673,7 +3673,7 @@ html.no-csstransitions .home-content__main {
 #features .features-graph .sq-bt-label {
     letter-spacing: 0;
     color: #fff;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
     line-height: 16px;
     font-family: Nunito Sans;
@@ -3692,6 +3692,7 @@ html.no-csstransitions .home-content__main {
     margin-left: 10px;
 }
 #features .features-graph .label-bottom-left {
+    left: -8px;
     padding-top:  75px;
 }
 #features .features-graph .label-bottom {
