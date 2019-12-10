@@ -506,13 +506,13 @@ var teamSlider = function() {
         
         $('.container-team').slick({
             arrows: false,
-            // prevArrow: $('.slick-team-prev'),
-            // nextArrow: $('.slick-team-next'),
             dots: true,
-            infinite: false,
+            infinite: true,
             slidesToScroll: 1,
             mobileFirst: true,
             focusOnSelect: false,
+            autoplay: true,
+            autoplaySpeed: 3500,
 
             responsive: [
                 {
