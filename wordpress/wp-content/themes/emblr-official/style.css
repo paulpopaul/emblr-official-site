@@ -1614,17 +1614,11 @@ body.menu-is-open {
 }
 
 #qlwapp .qlwapp-toggle { background: #29CEAE !important; }
-#qlwapp .qlwapp-toggle:hover { /*background: #1fb !important;*/ }
 #qlwapp .qlwapp-message { font-size: 14px; font-family: Nunito Sans, sans-serif; }
 #qlwapp .qlwapp-box.response textarea::placeholder { color: #666; }
 .qlwapp-time { color: #ccc !important; }
 
 @media only screen and (max-width: 414px) {
-  .section-page > h1.classic-title,
-  .section-page .inner-title > h1.classic-title {
-    margin-bottom: 35px !important;
-  }
-
   .qlwapp-whatsapp-icon { font-size: 24px; }
   .qlwapp-text { display: none; }
   #qlwapp.qlwapp-button .qlwapp-toggle {
@@ -1821,8 +1815,14 @@ body.menu-is-open {
   }
 
 }
-@media only screen and (max-width:768px) {
+
+@media only screen and (max-width: 768px) {
+  .section-page {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
 }
+
 @media only screen and (max-width:700px) {
   .display-1 {
     font-size: 3.2rem;
@@ -1854,6 +1854,10 @@ body.menu-is-open {
 }
 
 @media only screen and (max-width: 414px) {
+  .section-page {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
   .section-page > h1,
   .section-page .inner-title > h1 {
@@ -1866,6 +1870,10 @@ body.menu-is-open {
     font-size: 18px !important;
   }
 
+  .section-page > h1.classic-title,
+  .section-page .inner-title > h1.classic-title {
+    margin-bottom: 35px !important;
+  }
 }
 
 @media only screen and (max-width:400px) {
