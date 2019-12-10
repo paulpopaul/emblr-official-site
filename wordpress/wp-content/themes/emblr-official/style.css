@@ -6011,6 +6011,15 @@ html.no-csstransitions .home-content__main {
   .pricing-table .price-body ul li { padding: 4px 0; }
 }
 
+/* para iphone 5, 5se */
+@media only screen and (max-height: 568px) {
+  .pricing-table .price-body ul li { padding: 0; border: none !important; }
+  .pricing-table .price-header .subtitle { margin-bottom: 0; }
+  .pricing-table .price-footer { margin-top: 25px; }
+  .pricing-table .price { font-size: 42px; }
+  .pricing-table .price-header .icon { height: 30px !important; }
+}
+
 /* ===================================================================
  * # portafolio
  *
