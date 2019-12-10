@@ -3644,7 +3644,6 @@ html.no-csstransitions .home-content__main {
     margin-left: 8%;
     margin-right: 8%;
     text-align: center;
-    opacity: 0.5;
     filter: alpha(opacity=50);
 }
 #features .features-graph .btn-with-icon.__active {
@@ -3665,6 +3664,7 @@ html.no-csstransitions .home-content__main {
     padding: 35%;
     color: #fff;
     transition: all 0.1ms linear;
+    opacity: 1;
 }
 
 #features .features-graph .btn-with-icon:hover {
