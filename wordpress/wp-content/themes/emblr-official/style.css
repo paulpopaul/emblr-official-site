@@ -1503,7 +1503,7 @@ body.menu-is-open {
 
 .section-page > h1.classic-title,
 .section-page .inner-title > h1.classic-title {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 .section-page > h2,
@@ -1620,6 +1620,11 @@ body.menu-is-open {
 .qlwapp-time { color: #ccc !important; }
 
 @media only screen and (max-width: 414px) {
+  .section-page > h1.classic-title,
+  .section-page .inner-title > h1.classic-title {
+    margin-bottom: 35px !important;
+  }
+
   .qlwapp-whatsapp-icon { font-size: 24px; }
   .qlwapp-text { display: none; }
   #qlwapp.qlwapp-button .qlwapp-toggle {
@@ -4486,6 +4491,25 @@ html.no-csstransitions .home-content__main {
     /*border:1px solid green; */
     }
 
+    .our-team:hover {
+      background: none;
+    }
+  
+    .our-team {
+      border-bottom: none !important;
+      padding-bottom: 0;
+    }
+  
+    .our-team .social {
+      position: relative;
+      margin-top: 35px;
+    }
+  
+    .our-team .social,
+    .our-team:hover .social {
+      bottom: 0;
+    }
+
     .our-team .pic {
     width: 180px !important;
     }
@@ -4559,25 +4583,6 @@ html.no-csstransitions .home-content__main {
   .team-section .team-content {
     padding-left: 0;
     padding-right: 0;
-  }
-
-  .our-team:hover {
-    background: none;
-  }
-
-  .our-team {
-    border-bottom: none !important;
-    padding-bottom: 0;
-  }
-
-  .our-team .social {
-    position: relative;
-    margin-top: 35px;
-  }
-
-  .our-team .social,
-  .our-team:hover .social {
-    bottom: 0;
   }
 
   .our-team:hover .pic img {
