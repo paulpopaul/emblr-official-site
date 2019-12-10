@@ -1811,7 +1811,7 @@ body.menu-is-open {
 
   .section-page > h2,
   .section-page .inner-title > h2 {
-    font-size: 24px !important;
+    font-size: 26px !important;
   }
 
 }
@@ -1867,7 +1867,7 @@ body.menu-is-open {
 
   .section-page > h2,
   .section-page .inner-title > h2 {
-    font-size: 18px !important;
+    font-size: 22px !important;
   }
 
   .section-page > h1.classic-title,
@@ -4639,7 +4639,7 @@ html.no-csstransitions .home-content__main {
 .s-services h2 {
   color: #1fbda2;
   max-width: 1000px;
-  margin-top: 16px;
+  margin-top: 15px;
   margin-bottom: 0;
 }
 
@@ -5686,10 +5686,10 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 768px) {
-
   .services {
+    margin-top: 50px;
     grid-template-columns: 100%;
-    gap: 60px;
+    gap: 50px;
   }
 
   .services-title {
@@ -5702,7 +5702,7 @@ html.no-csstransitions .home-content__main {
 
   .services-cubes {
     right: 5%;
-    top: -1.1%;
+    top: calc(-1.1% - 30px);
   }
 
   .services-cubes .loader {
@@ -5715,7 +5715,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .more-services.btn {
-    margin-top: 40px;
+    margin-top: 0px;
   }
 
 }
@@ -5739,7 +5739,7 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width: 600px) {
  .services-cubes {
     right: 0;
-    top: 0.3%;
+    top: calc(0.3% - 30px);
   }
 
   .services-cubes .loader {
@@ -5753,7 +5753,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 414px) {
   .services-cubes {
-    top: -0.5%;
+    top: calc(-0.3% - 50px);
     right: -4%;
   }
 
@@ -5772,7 +5772,8 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 380px) {
   .services-cubes {
-    right: -5%;
+    top: calc(-0.1% - 50px);
+    right: -10%;
   }
 }
 
