@@ -3478,7 +3478,6 @@ html.no-csstransitions .home-content__main {
 #features .features-textblock p {
     color: #666666;
     font-size: 18px;
-    font-weight: bold;
     line-height: 1.7em;
     font-family: Nunito sans;
 }
@@ -3489,6 +3488,7 @@ html.no-csstransitions .home-content__main {
   font-size: 18px;
   font-family: montserrat;
   padding-right: 3px;
+  font-weight: bold;
 }
 
 .fadeIn {
