@@ -81,7 +81,7 @@ global $post;
                 </div> <!-- end masonry__brick -->
 
 
-                <div class="masonry__brick item-folio gallery-item strategy " href="#" data-cat="strategy">
+                <div class="masonry__brick item-folio gallery-item strategy " href="#" data-cat="strategy" data-aos="fade-up">
                     <div class="item-folio__thumb">
                         <a href="<?= get_template_directory_uri() ?>/images/portfolio/home-cisnenegro.jpg" class="thumb-link" data-size="1921x4673">
                             <img src="<?= get_template_directory_uri() ?>/images/portfolio/screen-cisne.png" alt="" />
@@ -108,7 +108,7 @@ global $post;
                 </div> <!-- end masonry__brick -->
 
 
-                <div class="masonry__brick item-folio gallery-item strategy " href="#" data-cat="strategy">
+                <div class="masonry__brick item-folio gallery-item strategy " href="#" data-cat="strategy" data-aos="fade-up">
                     <div class="item-folio__thumb">
                         <a href="<?= get_template_directory_uri() ?>/images/portfolio/home-divina.jpg" class="thumb-link" data-size="1921x1107">
                             <img src="<?= get_template_directory_uri() ?>/images/portfolio/screen-divina.png" alt="" />
@@ -135,7 +135,7 @@ global $post;
                 </div> <!-- end masonry__brick -->
 
 
-                <div class="masonry__brick item-folio gallery-item strategy " href="#" data-cat="strategy">
+                <div class="masonry__brick item-folio gallery-item strategy " href="#" data-cat="strategy" data-aos="fade-up">
                     <div class="item-folio__thumb">
                         <a href="<?= get_template_directory_uri() ?>/images/portfolio/home-katari.jpg" class="thumb-link" data-size="1920x4348">
                             <img src="<?= get_template_directory_uri() ?>/images/portfolio/screen-katari.jpg" alt="" />
@@ -162,7 +162,7 @@ global $post;
                 </div> <!-- end masonry__brick -->
 
 
-                <div class="masonry__brick item-folio gallery-item strategy " href="#" data-cat="strategy">
+                <div class="masonry__brick item-folio gallery-item strategy " href="#" data-cat="strategy" data-aos="fade-up">
                     <div class="item-folio__thumb">
                         <a href="<?= get_template_directory_uri() ?>/images/portfolio/home-regen.jpg" class="thumb-link" data-size="1921x2652">
                             <img src="<?= get_template_directory_uri() ?>/images/portfolio/screen-regen.jpg" alt="" />
