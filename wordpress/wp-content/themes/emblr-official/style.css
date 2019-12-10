@@ -5799,7 +5799,7 @@ html.no-csstransitions .home-content__main {
 .s-pricing h2 { text-align: center; }
 .s-pricing h2 { color: #1fbda2; margin-bottom: 0; margin-top: 0; }
 
-.price-plan-wrapper { margin-top: 60px; }
+.price-plan-wrapper { margin-top: 100px; }
 .col-pricing { width: 33.3%; }
 /*.price-plan-wrapper .row { padding: 0; }*/
 
@@ -5813,7 +5813,6 @@ html.no-csstransitions .home-content__main {
   /*box-shadow: 0 0 7px 0 rgba(31, 189, 162, 0.35);*/
   border-radius: 10px;
   border: 2px solid #000;
-  margin-bottom: 30px;
 }
 
 .pricing-table.pro {
@@ -5976,7 +5975,7 @@ html.no-csstransitions .home-content__main {
 
 /* personalizar mi producto :button */
 .customize-product {
-  margin-top: 60px;
+  margin-top: 100px;
   border: 1px solid #1fbda2 !important;
   transition: all 0.3s ease-in-out !important;
 }
@@ -5996,13 +5995,25 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 1279px) {
   .col-pricing { width: 50%; padding: 0 15px; }
+  .price-plan-wrapper .col-pricing:not(:last-of-type) .pricing-table {
+    margin-bottom: 30px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
   .price-plan-wrapper .row { width: 100%; }
 }
 
-@media only screen and (max-width: 680px) { /* one line */
+@media only screen and (max-width: 768px) {
+  .cr { font-size: 16px; }
+}
+
+@media only screen and (min-width: 415px) and (max-width: 768px) {
+  .s-pricing h1 { font-size: 38px; }
+}
+
+/* one line */
+@media only screen and (max-width: 680px) {
   .col-pricing { width: 100%; padding: 0; }
 }
 
@@ -6022,6 +6033,14 @@ html.no-csstransitions .home-content__main {
   .pricing-table .price-footer { margin-top: 25px; }
   .pricing-table .price { font-size: 42px; }
   .pricing-table .price-header .icon { height: 30px !important; }
+}
+
+@media only screen and (max-width: 414px) {
+  .cr { font-size: 14px; }
+  .cr-top { top: 10px; }
+  .cr-left { left: -80px; }
+  .price-plan-wrapper,
+  .customize-product { margin-top: 60px; }
 }
 
 /* ===================================================================
