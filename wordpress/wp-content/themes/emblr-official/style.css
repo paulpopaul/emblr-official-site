@@ -1857,7 +1857,7 @@ body.menu-is-open {
 
   .section-page > h1,
   .section-page .inner-title > h1 {
-		font-size: 30px;
+		font-size: 36px;
 		font-weight: 600;
   }
 
@@ -1891,7 +1891,7 @@ body.menu-is-open {
 
 @media only screen and (max-width:375px) {
 	.section-page > h1 {
-		font-size: 24px;
+		font-size: 32px;
   }
 }
 /* ===================================================================
