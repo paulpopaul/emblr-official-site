@@ -5791,9 +5791,8 @@ html.no-csstransitions .home-content__main {
 }
 
 .s-pricing h1,
-.s-pricing h3 { text-align: center; }
-.s-pricing h1 { /*text-transform: uppercase;*/ }
-.s-pricing h3 { color: #1fbda2; margin-bottom: 0; margin-top: 0; }
+.s-pricing h2 { text-align: center; }
+.s-pricing h2 { color: #1fbda2; margin-bottom: 0; margin-top: 0; }
 
 .price-plan-wrapper { margin-top: 60px; }
 .col-pricing { width: 33.3%; }

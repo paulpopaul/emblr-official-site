@@ -36,8 +36,8 @@
 
 	<div class="cr cr-top cr-left cr-red"> Pack web </div>
 
-	<h3 data-aos="fade-left"> ¿Buscando soluciones rápidas? </h3>
-	<h1 data-aos="fade-left"> - Escoge tu producto - </h1>
+	<h1 data-aos="fade-left"> ¿Buscando soluciones rápidas? </h1>
+	<h2 data-aos="fade-left"> Escoge tu producto </h2>
 
 	<div class="container">
 		<div class="price-plan-wrapper">
