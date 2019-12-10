@@ -4656,7 +4656,7 @@ html.no-csstransitions .home-content__main {
 
   position: absolute;
   right: 11%;
-  top: 4.6%;
+  top: 3.3%;
 }
 
 .services-cubes .loader {
@@ -4721,7 +4721,7 @@ html.no-csstransitions .home-content__main {
   left: 0px;
 }
 
-.more-services.btn { margin: 85px auto 0 auto; display: block; }
+.more-services.btn { margin: 100px auto 0 auto; display: block; }
 .hidden-service { display: none; }
 
 /* cubes animation */
@@ -5620,7 +5620,6 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 1024px) {
-  .services { margin-top: 80px; }
   .services-cubes {
     right: 4%;
     top: 4.1%;
@@ -5666,8 +5665,6 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 800px) {
-  .services { margin-top: 60px; }
-
   .services .service-icon {
     font-size: 4.2rem;
     float: none;
