@@ -7249,6 +7249,10 @@ html.no-csstransitions .home-content__main {
   .testimonials__icon {
     margin-left: -1.95rem;
   }
+  .clientes-logo img {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 
@@ -7264,6 +7268,10 @@ html.no-csstransitions .home-content__main {
   .testimonials__icon {
     margin-left: -1.65rem;
     /*top: 9rem;*/
+  }
+  .clientes-logo img {
+    width: 78px;
+    height: 78px;
   }
 
 }
@@ -7291,6 +7299,10 @@ html.no-csstransitions .home-content__main {
     height: 24px;
     width: 32px;
   }
+  .clientes-logo img {
+    width: 72px;
+    height: 72px;
+  }
 }
 
 
@@ -7299,12 +7311,20 @@ html.no-csstransitions .home-content__main {
   .testimonials__slider {
     font-size: 2.1rem !important;
   }
+  .clientes-logo img {
+    width: 68px;
+    height: 68px;
+  }
 }
 
 /* 320x568 / iPhone 4,5,5c / 165j */
 @media only screen and (max-width:320px) {
   .testimonials__slider {
     font-size: 1.9rem !important;
+  }
+  .clientes-logo img {
+    width: 62px;
+    height: 62px;
   }
 }
 
