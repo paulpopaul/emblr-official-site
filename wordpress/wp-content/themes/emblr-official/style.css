@@ -3480,6 +3480,7 @@ html.no-csstransitions .home-content__main {
     font-size: 18px;
     font-weight: bold;
     line-height: 1.7em;
+    font-family: Nunito sans;
 }
 
 #features .features-textblock p:first-child {
@@ -3663,6 +3664,7 @@ html.no-csstransitions .home-content__main {
     align-items: center;
     padding: 35%;
     color: #fff;
+    transition: all 0.1ms linear;
 }
 
 #features .features-graph .btn-with-icon:hover {
@@ -3674,7 +3676,7 @@ html.no-csstransitions .home-content__main {
     font-size: 14px;
     font-weight: bold;
     line-height: 16px;
-    font-family: montserrat;
+    font-family: Nunito Sans;
     position: absolute;
 }
 
