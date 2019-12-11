@@ -4644,7 +4644,7 @@ html.no-csstransitions .home-content__main {
     margin: 50px 0 0 0;
   }
 
-
+  .our-team .social { margin-top: 50px; }
 }
 
 @media only screen and (max-width: 320px) {
