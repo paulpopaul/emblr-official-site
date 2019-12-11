@@ -4584,6 +4584,9 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 414px) {
+  .section-page > h1.classic-title{
+    margin-bottom: 50px !important;
+  }
   .slick-team-container{
     margin-top:0;
   }
@@ -4591,6 +4594,10 @@ html.no-csstransitions .home-content__main {
   .team-section .team-content {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .our-team .pic{
+    margin-top: 8px;
   }
 
   .our-team:hover .pic img {
@@ -4613,7 +4620,13 @@ html.no-csstransitions .home-content__main {
     font-size:16px;
   }
 
+  .team-section .slick-dots{
+    margin: 50px 0 0 0;
+  }
+
+
 }
+
 @media only screen and (max-width: 320px) {
   .section-page > h1.classic-title{
     margin-bottom: 50px !important;
