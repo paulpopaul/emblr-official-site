@@ -6026,7 +6026,7 @@ html.no-csstransitions .home-content__main {
   z-index: 1;
 
   font-family: Montserrat;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
 }
@@ -6072,7 +6072,12 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 768px) {
-  .cr { font-size: 16px; }
+  .cr { font-size: 16px; padding: 12px; }
+  .cr-top { top: 20px; }
+  .cr-left { left: -73px; }
+
+  .price-plan-wrapper { margin-top: 70px; }
+  .customize-product { margin-top: 60px; }
 }
 
 @media only screen and (min-width: 415px) and (max-width: 768px) {
@@ -6103,14 +6108,6 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 414px) {
-  .cr { font-size: 14px; }
-  .cr-top { top: 10px; }
-  .cr-left { left: -80px; }
-  .price-plan-wrapper,
-  .customize-product { margin-top: 60px; }
-}
-
-@media only screen and (max-width: 414px) {
   .pricing-table .price-header .title {
     font-weight: 800;
   }
@@ -6121,6 +6118,13 @@ html.no-csstransitions .home-content__main {
   .pricing-table .price-footer .order-btn {
     margin-bottom: 24px;
   }
+
+  .cr { font-size: 14px; }
+  .cr-top { top: 15px; }
+  .cr-left { left: -80px; }
+
+  .price-plan-wrapper,
+  .customize-product { margin-top: 50px; }
 
 }
 
@@ -6155,8 +6159,10 @@ html.no-csstransitions .home-content__main {
     line-height: 44px;
     font-size: 10px;
     margin-bottom: 18px;
-
   }
+
+  .cr { font-size: 12px; }
+  .cr-left { left: -85px; }
 }
 
 /* ===================================================================
