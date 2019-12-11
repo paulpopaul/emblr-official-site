@@ -5765,9 +5765,9 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 768px) {
   .services {
-    margin-top: 50px;
+    margin-top: 70px;
     grid-template-columns: 100%;
-    gap: 50px;
+    gap: 70px;
   }
 
   .services-title {
@@ -5830,6 +5830,11 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 414px) {
+  .services {
+    margin-top: 50px;
+    gap: 50px;
+  }
+
   .services-cubes {
     top: calc(-0.3% - 50px);
     right: -4%;
