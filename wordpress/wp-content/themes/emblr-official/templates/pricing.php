@@ -64,7 +64,7 @@
 								<li><b>Hasta 5</b> Cuentas de Email</li>
 								<li><b>1 Diseño</b> Basado en plantilla</li>
 								<li><b>Integración</b> Redes sociales</li>
-								<li><b>Auto-administrable</b> Wordpress</li>
+								<li><b>Autoadministrable</b> Wordpress</li>
 							</ul>
 						</div> <!-- price-body -->
 							
@@ -93,7 +93,7 @@
 								<li><b>Hasta 12</b> Cuentas de Email</li>
 								<li><b>2 Propuestas</b> de diseño</li>
 								<li><b>Integración</b> Redes sociales</li>
-								<li><b>Auto-administrable</b> Wordpress</li>
+								<li><b>Autoadministrable</b> Wordpress</li>
 							</ul>
 						</div> <!-- price-body -->
 						
@@ -122,7 +122,7 @@
 								<li><b>Ilimitadas</b> Cuentas de Email</li>
 								<li><b>2 Diseños</b> Full Personalizados</li>
 								<li><b>Tienda Online</b> + Webpay + R.S.</li>
-								<li><b>Auto-administrable</b> Wordpress</li>
+								<li><b>Autoadministrable</b> Wordpress</li>
 							</ul>
 						</div> <!-- price-body -->
 						

@@ -6092,6 +6092,18 @@ html.no-csstransitions .home-content__main {
   }
 }
 
+/* última caja de pricing alineada al medio con w@50% */
+@media only screen and (max-width: 1279px) and (min-width: 680px) {
+  .price-plan-wrapper .col-pricing:last-child {
+    width: 100%;
+  }
+
+  .price-plan-wrapper .col-pricing:last-child .pricing-table {
+    margin: 0 auto;
+    width: 65%;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .price-plan-wrapper .row { width: 100%; }
 }
@@ -6103,6 +6115,11 @@ html.no-csstransitions .home-content__main {
 
   .price-plan-wrapper { margin-top: 70px; }
   .customize-product { margin-top: 60px; }
+
+  .pricing-table .price-body ul li { padding: 7px 0; }
+  .pricing-table .price-footer {
+    margin-top: 30px;
+  }
 }
 
 @media only screen and (min-width: 415px) and (max-width: 768px) {
@@ -6112,6 +6129,7 @@ html.no-csstransitions .home-content__main {
 /* one line */
 @media only screen and (max-width: 680px) {
   .col-pricing { width: 100%; padding: 0; }
+  .pricing-table .price-body ul li { padding: 10px 0; }
 }
 
 /** HEIGHT RESPONSIVE **/
