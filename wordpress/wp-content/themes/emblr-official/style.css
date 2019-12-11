@@ -6092,6 +6092,18 @@ html.no-csstransitions .home-content__main {
   }
 }
 
+/* última caja de pricing alineada al medio con w@50% */
+@media only screen and (max-width: 1279px) and (min-width: 680px) {
+  .price-plan-wrapper .col-pricing:last-child {
+    width: 100%;
+  }
+
+  .price-plan-wrapper .col-pricing:last-child .pricing-table {
+    margin: 0 auto;
+    width: 65%;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .price-plan-wrapper .row { width: 100%; }
 }
@@ -6103,6 +6115,11 @@ html.no-csstransitions .home-content__main {
 
   .price-plan-wrapper { margin-top: 70px; }
   .customize-product { margin-top: 60px; }
+
+  .pricing-table .price-body ul li { padding: 7px 0; }
+  .pricing-table .price-footer {
+    margin-top: 30px;
+  }
 }
 
 @media only screen and (min-width: 415px) and (max-width: 768px) {
@@ -6112,6 +6129,7 @@ html.no-csstransitions .home-content__main {
 /* one line */
 @media only screen and (max-width: 680px) {
   .col-pricing { width: 100%; padding: 0; }
+  .pricing-table .price-body ul li { padding: 10px 0; }
 }
 
 /** HEIGHT RESPONSIVE **/
@@ -6163,6 +6181,7 @@ html.no-csstransitions .home-content__main {
     margin-bottom: 2px;
   }
 
+  .pricing-table .price-body ul li { padding: 0; }
   .pricing-table .price {
     font-size: 38px;
     font-weight: 900;
@@ -6170,11 +6189,7 @@ html.no-csstransitions .home-content__main {
     margin-bottom: 3px;
   }
 
-  .pricing-table .price-body ul li {
-    font-size: 14px;
-  }
-
-  .pricing-table .price-footer{
+  .pricing-table .price-footer {
     margin-top: 18px;
   }
 
@@ -7792,13 +7807,10 @@ html.no-csstransitions .home-content__main {
 }
 
 .s-contact > *:not(.contact-bg) { position: relative; z-index: 2; }
-
-.s-contact > h2 {
-
-}
+.contact-sub { margin-top: 0 !important; }
 
 .contact-content {
-  margin-top: 60px;
+  margin-top: 100px;
 }
 
 .contact-content * {
@@ -7861,6 +7873,7 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
 }
 
 .traditional-form pre > span { color: #1FBDA2; }
+.traditional-form input[type="text"] { height: 5.8rem; }
 .traditional-form input[type="text"],
 .traditional-form textarea {
   width: 100%;
@@ -7881,15 +7894,19 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
   resize: none;
   height: 100px;
   min-height: auto;
+  padding: 13px 20px !important;
 }
 
 .traditional-form input[type="submit"] {
-  text-transform: lowercase;
-  font-family: 'Consolas';
+  text-transform: uppercase;
   margin-top: 30px;
-  font-size:12px;
 }
 
+
+/* ===================================================================
+ * # contact
+ * # responsive
+ * ------------------------------------------------------------------- */
 
 @media only screen and (max-width: 1024px) {
   .traditional-form { display: absolute; }
@@ -7898,7 +7915,7 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
   .traditional-form pre {
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     color: #fff;
   }
 
@@ -7920,19 +7937,18 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
     text-transform: none;
     margin-top: 18px;
     margin-bottom: 0;
-    font-size: 16px;
     width: 100%;
   }
 }
 
-@media only screen and (max-width: 414px) {
-  .contact-sub {
-    font-size: 18px !important;
-    line-height: 18px;
-  }
+@media only screen and (max-width: 768px) {
+  .contact-content { margin-top: 70px; }
+}
 
+@media only screen and (max-width: 414px) {
+  .contact-content { margin-top: 50px; }
   .traditional-form pre {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .traditional-form input[type="text"],
@@ -7949,25 +7965,19 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
   .traditional-form input[type="password"],
   .traditional-form textarea,
   .traditional-form select {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .s-contact .btn--large, button.btn--large {
     height: 50px !important;
     line-height: 6px !important;
   }
-
-  .traditional-form input[type="submit"] {
-    font-size: 14px;
-  }
-
 }
 
 @media only screen and (max-width: 375px) {
   .traditional-form div { margin-bottom: 12px; }
   .traditional-form input[type="submit"] {
     margin-top: 12px;
-    font-size:12px;
   }
 
 }
@@ -7984,12 +7994,28 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
 @media only screen and (max-width: 320px) {
   .traditional-form div { margin-bottom: 10px; }
   .traditional-form pre {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .traditional-form input[type="submit"] {
     margin-top: 10px;
-    font-size:12px;
+  }
+
+  .traditional-form input[type="email"],
+  .traditional-form input[type="number"],
+  .traditional-form input[type="search"],
+  .traditional-form input[type="text"],
+  .traditional-form input[type="tel"],
+  .traditional-form input[type="url"],
+  .traditional-form input[type="password"],
+  .traditional-form textarea,
+  .traditional-form select {
+    font-size: 16px;
+  }
+
+  .traditional-form input[type="text"], .traditional-form textarea {
+    padding: 8px 20px !important;
+    height: auto;
   }
 
 }
