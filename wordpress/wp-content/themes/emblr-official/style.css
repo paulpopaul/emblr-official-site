@@ -4577,10 +4577,9 @@ html.no-csstransitions .home-content__main {
     margin-bottom: 70px !important;
   }
 
-  .our-team .pic{
+  .our-team .pic {
     margin-top: 8px;
-    width: 250px !important;
-
+    width: 240px !important;
   }
 
   .our-team .social {
@@ -4628,6 +4627,10 @@ html.no-csstransitions .home-content__main {
     font-size: 24px;
     font-weight: 800;
     letter-spacing: 0;
+  }
+
+  .our-team .pic {
+    width: 180px !important;
   }
 
   .our-team .post{
@@ -6298,6 +6301,10 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 
 @media only screen and (max-width: 768px) {
+  .s-portafolio.section-page > h1.classic-title {
+    margin-bottom: 15px !important;
+  }
+
   .portafolio-header {
     margin-bottom: 70px;
   }
