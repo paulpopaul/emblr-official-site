@@ -7544,24 +7544,23 @@ html.no-csstransitions .home-content__main {
   }
 
   .testimonials__icon {
-    display: none;
-  }
-
-  .testimonials__iconb {
-    margin-top: -22px;
-    margin-bottom: 0px;
-    height: 28px;
-    width: 32px;
+    margin-top: 33px;
+    margin-bottom: 33px;
+    height: 32px;
+    width: 44px;
     background-color: transparent;
     background-image: url(images/icons/icon-quote.svg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
-    top: 2rem;
+    /*top: 15rem;*/
     left: 50%;
-    margin-left: -159px;
+    margin-left: -2.25rem;
   }
+
+
+
 
   .clientes-logo img {
     width: 68px;
@@ -7587,6 +7586,29 @@ html.no-csstransitions .home-content__main {
     margin:50px 0 0 0;
   }
 
+}
+
+/* sólo iphone 6/7/8 */
+@media only screen and (max-width: 375px) and (max-height: 667px) {
+
+  .testimonials__icon {
+    display: none;
+  }
+
+  .testimonials__iconb {
+    margin-top: -22px;
+    margin-bottom: 0px;
+    height: 28px;
+    width: 32px;
+    background-image: url(images/icons/icon-quote.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    top: 2rem;
+    left: 50%;
+    margin-left: -159px;
+  }
 }
 
 /* 320x568 / iPhone 4,5,5c / 165j */
