@@ -1897,7 +1897,7 @@ body.menu-is-open {
 
 }
 
-@media only screen and (max-width:375px) {
+@media only screen and (max-width:320px) {
 	.section-page > h1 {
 		font-size: 32px;
   }
@@ -6082,7 +6082,7 @@ html.no-csstransitions .home-content__main {
 
 /* para iphone 5, 5se */
 @media only screen and (max-height: 568px) {
-  .pricing-table .price-body ul li { padding: 0; border: none !important; }
+  .pricing-table .price-body ul li { padding: 2px 0; border: none !important; }
   .pricing-table .price-header .subtitle { margin-bottom: 0; }
   .pricing-table .price-footer { margin-top: 25px; }
   .pricing-table .price { font-size: 42px; }
@@ -6154,24 +6154,24 @@ html.no-csstransitions .home-content__main {
  .s-portafolio { background: #000; }
 
  .s-portafolio.section-page > h1.classic-title {
-   margin-bottom: 47px;
+   margin-bottom: 15px;
  }
 
 .portafolio-header {
   text-align: center;
-  margin-bottom: -4px;
+  margin-bottom: 100px;
 }
 
 .wrap {
   margin: 0 auto;
   max-width: 100%;
   width: 100%;
-
 }
 
 .sportafolio{
   text-align: center;
 }
+
 .gallery-wrap,
 #gallery {
   overflow: hidden;
@@ -6244,14 +6244,10 @@ html.no-csstransitions .home-content__main {
   transition: all 0.3s ease-in-out;
 }
 
-
-
 .inside img {
   float: left;
   width: 100%;
 }
-
-
 
 @media (max-width: 30em) {
   .gallery-item {
@@ -6260,12 +6256,16 @@ html.no-csstransitions .home-content__main {
   }
 }
 
-.pswp__counter { }
-
 /* ===================================================================
  * # portafolio RESPONSIVE
  *
  * ------------------------------------------------------------------- */
+
+@media only screen and (max-width: 768px) {
+  .portafolio-header {
+    margin-bottom: 70px;
+  }
+}
 
 @media only screen and (max-width:600px) {
   #filters li{
@@ -6277,7 +6277,27 @@ html.no-csstransitions .home-content__main {
   }
 
   .portafolio-header {
-    margin-bottom: 16px;
+    margin-bottom: 70px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .s-portafolio.section-page > h1.classic-title {
+    margin-bottom: 50px !important;
+  }
+
+  .portafolio-header {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #filters li span {
+    font-size: 14px;
+  }
+
+  .portafolio-header {
+    margin-bottom: 10px;
   }
 }
 
