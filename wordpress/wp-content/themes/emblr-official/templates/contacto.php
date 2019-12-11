@@ -40,10 +40,10 @@
   </div>
 
     <h1 data-aos="fade-up" data-text="<? the_title() ?>" class="glitch"> <? the_title() ?> </h1>
-    <div class="glitch contact-sub" data-text="<?= get_field( 'subtitulo', $post->ID ) ?>">
+    <h2 class="glitch contact-sub" data-text="<?= get_field( 'subtitulo', $post->ID ) ?>">
       <?= get_field( 'subtitulo', $post->ID ) ?>
       <span class="cursor"></span>
-    </div>
+    </h2>
   
     <div class="contact-content">
     <!-- <img src="<?= get_template_directory_uri() ?>/images/logo.svg" alt="" data-aos="fade-up"> -->

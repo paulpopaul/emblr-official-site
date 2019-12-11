@@ -7695,13 +7695,10 @@ html.no-csstransitions .home-content__main {
 }
 
 .s-contact > *:not(.contact-bg) { position: relative; z-index: 2; }
-
-.s-contact > h2 {
-
-}
+.contact-sub { margin-top: 0 !important; }
 
 .contact-content {
-  margin-top: 60px;
+  margin-top: 100px;
 }
 
 .contact-content * {
@@ -7764,6 +7761,7 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
 }
 
 .traditional-form pre > span { color: #1FBDA2; }
+.traditional-form input[type="text"] { height: 5.8rem; }
 .traditional-form input[type="text"],
 .traditional-form textarea {
   width: 100%;
@@ -7784,15 +7782,19 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
   resize: none;
   height: 100px;
   min-height: auto;
+  padding: 13px 20px !important;
 }
 
 .traditional-form input[type="submit"] {
-  text-transform: lowercase;
-  font-family: 'Consolas';
+  text-transform: uppercase;
   margin-top: 30px;
-  font-size:12px;
 }
 
+
+/* ===================================================================
+ * # contact
+ * # responsive
+ * ------------------------------------------------------------------- */
 
 @media only screen and (max-width: 1024px) {
   .traditional-form { display: absolute; }
@@ -7801,7 +7803,7 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
   .traditional-form pre {
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     color: #fff;
   }
 
@@ -7823,19 +7825,18 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
     text-transform: none;
     margin-top: 18px;
     margin-bottom: 0;
-    font-size: 16px;
     width: 100%;
   }
 }
 
-@media only screen and (max-width: 414px) {
-  .contact-sub {
-    font-size: 18px !important;
-    line-height: 18px;
-  }
+@media only screen and (max-width: 768px) {
+  .contact-content { margin-top: 70px; }
+}
 
+@media only screen and (max-width: 414px) {
+  .contact-content { margin-top: 50px; }
   .traditional-form pre {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .traditional-form input[type="text"],
@@ -7852,25 +7853,19 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
   .traditional-form input[type="password"],
   .traditional-form textarea,
   .traditional-form select {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .s-contact .btn--large, button.btn--large {
     height: 50px !important;
     line-height: 6px !important;
   }
-
-  .traditional-form input[type="submit"] {
-    font-size: 14px;
-  }
-
 }
 
 @media only screen and (max-width: 375px) {
   .traditional-form div { margin-bottom: 12px; }
   .traditional-form input[type="submit"] {
     margin-top: 12px;
-    font-size:12px;
   }
 
 }
@@ -7887,12 +7882,28 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
 @media only screen and (max-width: 320px) {
   .traditional-form div { margin-bottom: 10px; }
   .traditional-form pre {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .traditional-form input[type="submit"] {
     margin-top: 10px;
-    font-size:12px;
+  }
+
+  .traditional-form input[type="email"],
+  .traditional-form input[type="number"],
+  .traditional-form input[type="search"],
+  .traditional-form input[type="text"],
+  .traditional-form input[type="tel"],
+  .traditional-form input[type="url"],
+  .traditional-form input[type="password"],
+  .traditional-form textarea,
+  .traditional-form select {
+    font-size: 16px;
+  }
+
+  .traditional-form input[type="text"], .traditional-form textarea {
+    padding: 8px 20px !important;
+    height: auto;
   }
 
 }
