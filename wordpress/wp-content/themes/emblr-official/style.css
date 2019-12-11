@@ -6181,6 +6181,7 @@ html.no-csstransitions .home-content__main {
     margin-bottom: 2px;
   }
 
+  .pricing-table .price-body ul li { padding: 0; }
   .pricing-table .price {
     font-size: 38px;
     font-weight: 900;
@@ -6188,11 +6189,7 @@ html.no-csstransitions .home-content__main {
     margin-bottom: 3px;
   }
 
-  .pricing-table .price-body ul li {
-    font-size: 14px;
-  }
-
-  .pricing-table .price-footer{
+  .pricing-table .price-footer {
     margin-top: 18px;
   }
 
