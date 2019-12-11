@@ -7472,10 +7472,21 @@ html.no-csstransitions .home-content__main {
 		padding-right:0;
   }
 }
+
+
+@media only screen and (min-width:414px) {
+  .testimonials__slider p::after,
+  .testimonials__slider p::before{
+    content: "\"";
+  }
+
+}
 /* Iphone 678+ / 328 */
 @media only screen and (max-width:414px) {
   .testimonials__slider p {
 	font-size: 16px;
+    margin-bottom: 50px;
+
   }
 
     .testimonials__author {
@@ -7493,29 +7504,133 @@ html.no-csstransitions .home-content__main {
     width: 72px;
     height: 72px;
   }
+
+  .testimonials__slider .slick-dots{
+    margin:50px 0 0 0;
+  }
 }
 
 
 /* iPhone 6,7,8 / 303 */
 @media only screen and (max-width:375px) {
+
+  .s-testimonials h1 {
+    margin-bottom: 50px;
+  }
+
   .testimonials__slider {
     font-size: 2.1rem !important;
   }
+
+  .col-full .testimonials__slide .foto-persona img{
+    width:114px;
+    height: 114px;
+    margin-bottom: 0;
+  }
+
+  .testimonials__icon {
+    display: none;
+  }
+
+  .testimonials__iconb {
+    margin-top: -22px;
+    margin-bottom: 0px;
+    height: 28px;
+    width: 32px;
+    background-color: transparent;
+    background-image: url(images/icons/icon-quote.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    top: 2rem;
+    left: 50%;
+    margin-left: -159px;
+  }
+
   .clientes-logo img {
     width: 68px;
     height: 68px;
   }
+
+  .testimonials__slider p{
+    margin-bottom: 28px;
+    font-size: 16px;
+    text-indent:37px;
+  }
+
+  .testimonials__author {
+    font-size: 20px;
+  }
+
+  .testimonials__author span {
+    font-size: 16px;
+
+  }
+  .s-testimonials .testimonials__slider .slick-dots {
+    height: 32px;
+    margin:50px 0 0 0;
+  }
+
 }
 
 /* 320x568 / iPhone 4,5,5c / 165j */
 @media only screen and (max-width:320px) {
+
+  .s-testimonials h1 {
+    margin-bottom: 50px;
+  }
+
   .testimonials__slider {
     font-size: 1.9rem !important;
   }
+
+  .col-full .testimonials__slide .foto-persona img{
+    width:108px;
+    height: 108px;
+    margin-bottom: 0;
+  }
+
+  .testimonials__icon {
+    display: none;
+  }
+
+  .testimonials__iconb {
+    margin-top: -22px;
+    margin-bottom: 0px;
+    height: 28px;
+    width: 28px;
+    background-color: transparent;
+    background-image: url(images/icons/icon-quote.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    top: 2rem;
+    left: 50%;
+    margin-left: -133px;
+  }
+
   .clientes-logo img {
     width: 62px;
     height: 62px;
   }
+
+  .testimonials__slider p{
+    margin-bottom: 28px;
+    font-size: 15px;
+    text-indent:39px;
+  }
+
+  .testimonials__author {
+    font-size: 18px;
+  }
+  .s-testimonials .testimonials__slider .slick-dots {
+    display:none !important;
+    height: 32px;
+    margin:50px 0 0 0;
+  }
+
 }
 
 

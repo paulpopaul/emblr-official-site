@@ -70,13 +70,16 @@
         
             <div class="testimonials__slide">
 
-                <div class="foto-persona"> 
+                <div class="foto-persona">
+
                     <img src="<?= $profile['sizes']['thumbnail'] ?>" />
+                    <div class="testimonials__iconb" data-aos="fade-up"></div>
+
                 </div>
 
 
                 <p>
-                    "<?= $recomendacion ?>"
+                    <?= $recomendacion ?>
                 </p>
 
 
