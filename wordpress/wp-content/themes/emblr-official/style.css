@@ -7488,14 +7488,6 @@ html.no-csstransitions .home-content__main {
   }
 }
 
-
-@media only screen and (min-width:414px) {
-  .testimonials__slider p::after,
-  .testimonials__slider p::before{
-    content: "\"";
-  }
-
-}
 /* Iphone 678+ / 328 */
 @media only screen and (max-width:414px) {
   .testimonials__slider p {
@@ -7525,6 +7517,12 @@ html.no-csstransitions .home-content__main {
   }
 }
 
+@media only screen and (min-width: 376px) {
+  .testimonials__slider p::after,
+  .testimonials__slider p::before {
+    content: "\"";
+  }
+}
 
 /* iPhone 6,7,8 / 303 */
 @media only screen and (max-width:375px) {
