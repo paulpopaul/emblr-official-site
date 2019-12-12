@@ -5990,6 +5990,8 @@ html.no-csstransitions .home-content__main {
   top: -12px;
 }
 
+.pricing-table .price-body { font-size: 18px; }
+
 .pricing-table .price-footer {
   margin-top: 35px;
 }
@@ -6177,7 +6179,7 @@ html.no-csstransitions .home-content__main {
     margin-bottom: 24px;
   }
 
-  .price-body { font-size: 16px; }
+  .pricing-table .price-body { font-size: 16px; }
 
   .cr { font-size: 14px; }
   .cr-top { top: 15px; }
@@ -6373,7 +6375,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 320px) {
   #filters li span {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .portafolio-header {
@@ -7964,6 +7966,8 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
     font-weight: 600;
     color: #fff;
   }
+
+  .traditional-form .submit-area pre { font-weight: 500; }
 
   .traditional-form input[type="email"],
   .traditional-form input[type="number"],
