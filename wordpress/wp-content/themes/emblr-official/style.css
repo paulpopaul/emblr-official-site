@@ -3606,6 +3606,10 @@ html.no-csstransitions .home-content__main {
     -webkit-justify-content: center;
     align-items: center
 }
+
+#text-top span {
+    bottom:75px;
+}
 #features .features-graph .animation-holder {
     display: flex;
     justify-content: center;
@@ -3682,6 +3686,7 @@ html.no-csstransitions .home-content__main {
 
 #features .features-graph .label-top-left {
     padding-top: 75px;
+    left: -6px;
 }
 #features .features-graph .label-top {
     padding-top: 75px;

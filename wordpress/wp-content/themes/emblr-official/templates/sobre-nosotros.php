@@ -70,7 +70,7 @@ Nuestra lema “Ingeniería de software para Soluciones Empresariales Integradas
 
         <div id="figure-block" class="features-content-col">
             <div data-features-nav="" class="features-graph">
-                    <div class="button-holder">
+                    <div class="button-holder" id="text-top">
                         <a href="#feature-1" class="fas fa-users btn-with-icon __active">
                             <span class="sq-bt-label label-top-left">Nosotros</span>
                         </a>
