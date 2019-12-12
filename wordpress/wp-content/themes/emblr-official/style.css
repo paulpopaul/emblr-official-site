@@ -6350,6 +6350,10 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width:600px) {
+  .s-portafolio.section-page > h1.classic-title {
+    margin-bottom: 70px !important;
+  }
+
   #filters li{
     float: none;
   }
