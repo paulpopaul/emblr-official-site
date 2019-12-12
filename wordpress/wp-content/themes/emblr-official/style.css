@@ -5872,6 +5872,8 @@ html.no-csstransitions .home-content__main {
   .s-services h2 {
     font-size: 16px;
   }
+
+  .item-service__icon i::after { top: 15px; }
 }
 
 
