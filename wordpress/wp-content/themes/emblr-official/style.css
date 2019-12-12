@@ -6146,7 +6146,7 @@ html.no-csstransitions .home-content__main {
 
 /** HEIGHT RESPONSIVE **/
 @media only screen and (max-height: 767px) {
-  .pricing-table .price-body ul li { padding: 6px 0; }
+  /* .pricing-table .price-body ul li { padding: 6px 0; } */
 }
 
 @media only screen and (max-height: 700px) {
@@ -6163,6 +6163,7 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 414px) {
+  .pricing-table .price-body ul li { padding: 6px 0; }
   .pricing-table .price-header .title {
     font-weight: 800;
   }
