@@ -1897,11 +1897,18 @@ body.menu-is-open {
 
 }
 
-@media only screen and (max-width:320px) {
+@media only screen and (max-width: 320px) {
 	.section-page > h1 {
 		font-size: 32px;
   }
+
+  .section-page > h2,
+  .section-page .inner-title > h2 {
+    font-size: 20px !important;
+  }
 }
+
+
 /* ===================================================================
  * # header styles
  *
