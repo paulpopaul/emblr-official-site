@@ -83,7 +83,7 @@
             <textarea name="subject" id="" class="subject"></textarea>
         </div>
 
-        <div>
+        <div class="submit-area">
             <pre>Presiona <span>enviar</span> para confirmar tu mensaje</pre>
             <input type="submit" value="ENVIAR" class="btn btn--primary btn--large">
         </div>
