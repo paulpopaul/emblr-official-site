@@ -4597,6 +4597,8 @@ html.no-csstransitions .home-content__main {
     margin: 70px 0 0 0;
   }
 
+  .our-team .title { margin-bottom: 0; }
+
 }
 
 @media only screen and (max-width:482px) {
@@ -4630,7 +4632,7 @@ html.no-csstransitions .home-content__main {
   .slick-team-container{
     margin-top:0;
   }
-  .our-team .title{
+  .our-team .title {
     font-size: 24px;
     font-weight: 800;
     letter-spacing: 0;
@@ -4643,15 +4645,18 @@ html.no-csstransitions .home-content__main {
   .our-team .post{
     font-size:16px;
   }
-  .team-section .team-content p{
-    font-size:16px;
+
+  .team-content h3.title { margin-top: 20px; }
+  .team-section .team-content p {
+    font-size: 16px;
+    padding-top: 10px;
   }
 
   .team-section .slick-dots{
     margin: 50px 0 0 0;
   }
 
-  .our-team .social { margin-top: 50px; }
+  .our-team .social { margin-top: 20px; }
 }
 
 @media only screen and (max-width: 375px) {
