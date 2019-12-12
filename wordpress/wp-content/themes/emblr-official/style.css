@@ -7743,38 +7743,31 @@ html.no-csstransitions .home-content__main {
   }
 }
 
+
+
 @media only screen and (max-width:1024px) {
-  .section-page.spot > h1 {
-    font-size: 35px;
+  .section-page.spot{
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 
-  .section-page.spot > h6 {
-    font-size: 18px;
-  }
-}
-
-@media only screen and (max-width:768px) {
   .section-page.spot > h1 {
     font-size:28px;
   }
 
   .section-page.spot > h6 {
-    font-size:16px;
+    font-size:17px;
+    height: 52px;
   }
 
-  .section-page.spot{
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-  
   .section-page.spot .btn{
-    margin-top: 40px;
-    margin-right: 0px;
-    width: 162px;
-    height: 45px !important;
-    font-size: 1rem;
-    line-height: 4rem !important;
-    padding: 0;  
+    margin-top: 44px;
+    margin-bottom:0;
+
+    width: 200px;
+    height: 55px !important;
+    font-size: 12px;
+    line-height: 50px !important;
   }
 }
 
@@ -7796,19 +7789,71 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width:414px) {
+  .section-page.spot{
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+  }
   .section-page.spot > h1 {
+    font-size: 22px;
+    margin-bottom:28px;
+  }
+  .section-page.spot > h6 {
+    font-size: 15px;
+    height: 76px;
+  }
+
+  .section-page.spot .btn{
+    margin-top: 22px;
+    margin-bottom:0;
+    width: 156px;
+    height: 46px !important;
+    font-size: 10px;
+    line-height: 44px !important;
+  }
+}
+
+@media only screen and (max-width:375px) {
+
+  .section-page.spot > h1 {
+    font-size: 21px;
+    margin-bottom:24px;
+  }
+  .section-page.spot > h6 {
+    font-size: 15px;
+    height: 98px;
+  }
+
+  .section-page.spot .btn{
+    margin-top: 22px;
+    margin-bottom:0;
+    width: 156px;
+    height: 46px !important;
+    font-size: 10px;
+    line-height: 44px !important;
+  }
+}
+
+@media only screen and (max-width:320px) {
+
+  .section-page.spot > h1 {
+    margin-bottom: 26px;
     font-size: 20px;
   }
   .section-page.spot > h6 {
-    font-size: 13px;
-    height: 67px;
+    font-size: 14px;
+    height: 97px;
   }
+
   .section-page.spot .btn{
-    width: 127px;
-    height: 35px !important;
-    font-size: 0.8rem;
-    line-height: 3.3rem !important;
+    margin-top: 18px;
+    margin-bottom:0;
+    width: 154px;
+    height: 46px !important;
+    font-size: 10px;
+    line-height: 44px!important;
   }
+
 }
 
 
