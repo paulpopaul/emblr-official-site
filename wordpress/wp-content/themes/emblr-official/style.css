@@ -1672,7 +1672,7 @@ body.menu-is-open {
 .item-title {
   font-size: 2.4rem;
   line-height: 1.5;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 2.4rem;
 }
 
@@ -4732,7 +4732,7 @@ html.no-csstransitions .home-content__main {
 .s-services h2 {
   color: #1fbda2;
   max-width: 1000px;
-  margin-top: 15px;
+  margin-top: 40px;
   margin-bottom: 0;
 }
 
@@ -4780,8 +4780,8 @@ html.no-csstransitions .home-content__main {
 .item-service h3 {
   color: #1fbda2;
   text-transform: uppercase;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .item-service__text {
@@ -4810,7 +4810,7 @@ html.no-csstransitions .home-content__main {
   font-weight: 700;
   position: absolute;
   color: #fff;
-  top: 90px;
+  top: 80px;
   left: 0px;
 }
 
@@ -5724,6 +5724,7 @@ html.no-csstransitions .home-content__main {
 
   .s-services h2 {
     font-size: 2.4rem;
+    margin-top: 40px;
   }
 
   .item-service__text {
