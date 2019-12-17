@@ -246,6 +246,26 @@
 
 
 	/**
+	 * 
+	 * 	Agrega clase Light Theme en body
+	 * 
+	 */
+	function theme ( ) {
+
+		$hour = (int)( date('H') );
+
+		if ( $hour >= 6 and $hour < 21 )
+			echo 'light-theme';
+			
+		else
+			echo 'dark-theme'
+		;
+		
+	}
+
+
+
+	/**
 	*
     *   Imprime menú principal (de 1 nivel) en cualquier locación
     *
