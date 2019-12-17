@@ -29,7 +29,7 @@
                 <div class="fl-col-group">
                     <div class="fl-rich-text marca">
                         <p>
-                            <span><?= $registro_marca['ano'] ?></span><span>&nbsp;ENSAMBLER&reg;</span>
+                            <span><?= date('Y') ?></span><span>&nbsp;ENSAMBLER&reg;</span>
                             <br>
                             <span><?= $registro_marca['derechos'] ?></span>
                         </p>

@@ -26,6 +26,7 @@
 	*	Se registra menú principal
 	*
 	*/
+	add_action( 'after_setup_theme', 'register_main_menu' );
 	function register_main_menu ( ) {
 
 		if ( function_exists( 'register_nav_menu' ) )
@@ -34,8 +35,6 @@
 
 	}
 
-	add_action( 'after_setup_theme', 'register_main_menu' );
-
 
 
 	/**
@@ -43,6 +42,7 @@
 	*	Habilita sistema de administración del tema
 	*
 	*/
+	add_action( 'acf/init', 'enable_theme_admin_options' );
 	function enable_theme_admin_options ( ) {
 
 		if ( function_exists( 'acf_add_options_page' ) ) {
@@ -90,8 +90,6 @@
 
 	}
 
-	add_action( 'acf/init', 'enable_theme_admin_options' );
-
 
 
 	/**
@@ -127,8 +125,10 @@
 	*
     *   Registra area del menú principal como un área de widgets
 	*
-    */
+	*/
+	add_action( 'widgets_init', 'register_menu_widget_area' );
 	function register_menu_widget_area ( ) {
+
 		/**
 		*
 		 *	Crea un widget area
@@ -153,16 +153,16 @@
 		
 	}
 
-	add_action( 'widgets_init', 'register_menu_widget_area' );
-
 
 
 	/**
 	*
     *   Registra footer como un área de widgets
 	*
-    */
+	*/
+	add_action( 'widgets_init', 'register_footer_widget_area' );
 	function register_footer_widget_area ( ) {
+
 		/**
 		*
 		 *	Crea un widget area
@@ -187,8 +187,6 @@
 		
 	}
 
-	add_action( 'widgets_init', 'register_footer_widget_area' );
-
 
 
 	/**
@@ -196,6 +194,7 @@
 	*	Crea widget "Navegación del sitio landing-page (emblr)"
 	*
 	*/
+	add_action( 'widgets_init', 'create_landing_navigation_widget' );
 	function create_landing_navigation_widget ( ) {
 
 		## Se carga archivo del widget
@@ -205,8 +204,6 @@
 
 	}
 
-	add_action( 'widgets_init', 'create_landing_navigation_widget' );
-
 
 
 	/**
@@ -214,6 +211,7 @@
 	*	Crea widget "Información de contacto (emblr)"
 	*
 	*/
+	add_action( 'widgets_init', 'create_contact_info_widget' );
 	function create_contact_info_widget ( ) {
 
 		## Se carga archivo del widget
@@ -223,8 +221,6 @@
 
 	}
 
-	add_action( 'widgets_init', 'create_contact_info_widget' );
-
 
 
 	/**
@@ -232,6 +228,7 @@
 	*	Crea widget "Suscripción de noticias (emblr)"
 	*
 	*/
+	add_action( 'widgets_init', 'create_suscribe_news_widget' );
 	function create_suscribe_news_widget ( ) {
 
 		## Se carga archivo del widget
@@ -240,8 +237,6 @@
 		register_widget( 'suscribe_news_widget' );
 
 	}
-
-	add_action( 'widgets_init', 'create_suscribe_news_widget' );
 
 
 
