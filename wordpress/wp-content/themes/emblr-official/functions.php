@@ -242,10 +242,10 @@
 
 	/**
 	 * 
-	 * 	Agrega clase Light Theme en body
+	 * 	Agrega clase Light/Dark Theme en body
 	 * 
 	 */
-	function theme ( ) {
+	function emblr_theme ( ) {
 
 		$hour = (int)( date('H') );
 

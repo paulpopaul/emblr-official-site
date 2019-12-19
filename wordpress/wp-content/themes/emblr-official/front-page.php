@@ -35,7 +35,7 @@
 ?>
 
 
-<body id="top" class="<? theme() ?>">
+<body id="top" class="<? emblr_theme() ?>">
     
     <!-- ( preloader )
     ================================================== -->
