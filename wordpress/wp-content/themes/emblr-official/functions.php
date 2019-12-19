@@ -123,6 +123,15 @@
 
 	/**
 	*
+	*	Custom Post Type: "Personal"
+	*
+	*/
+	include_once( get_template_directory( ) . '/includes/custom-post-types/personal.php' );
+
+
+
+	/**
+	*
     *   Registra area del menú principal como un área de widgets
 	*
 	*/
