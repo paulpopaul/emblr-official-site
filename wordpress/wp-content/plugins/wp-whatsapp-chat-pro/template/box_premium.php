@@ -39,12 +39,12 @@
                   ?>
                   <a class="qlwapp-account" 
                      data-action="<?php echo ($contact['chat'] ? 'chat' : 'open'); ?>" 
+                     data-phone="<?php echo qlwapp_format_phone($contact['phone']); ?>" 
+                     data-message="<?php echo esc_html($contact['message']); ?>" 
                      data-timefrom="<?php echo esc_attr($contact['timefrom']); ?>" 
                      data-timeto="<?php echo esc_attr($contact['timeto']); ?>" 
                      data-timeout="<?php echo esc_attr($contact['timeout']); ?>" 
-                     data-phone="<?php echo esc_attr($contact['phone']); ?>" 
-                     data-timezone="<?php echo esc_attr($contact['timezone']); ?>"
-                     data-message="<?php echo esc_html($contact['message']); ?>" href="javascript:void(0);" target="_blank"> 
+                     data-timezone="<?php echo qlwapp_get_timezone_offset($contact['timezone']); ?>" href="javascript:void(0);" target="_blank"> 
                        <?php if (!empty($contact['avatar'])): ?>
                       <div class="qlwapp-avatar">
                         <div class="qlwapp-avatar-container">
@@ -94,14 +94,12 @@
     <?php endif; ?>
     <a class="qlwapp-toggle" 
        data-action="<?php echo ($box['enable'] === 'yes' ? 'box' : 'open'); ?>" 
-       data-phone="<?php echo esc_attr($button['phone']); ?>" 
+       data-phone="<?php echo qlwapp_format_phone($button['phone']); ?>" 
+       data-message="<?php echo esc_html($button['message']); ?>" 
        data-timefrom="<?php echo esc_attr($button['timefrom']); ?>" 
        data-timeto="<?php echo esc_attr($button['timeto']); ?>" 
        data-timeout="<?php echo esc_attr($button['timeout']); ?>" 
-       data-phone="<?php echo esc_attr($button['phone']); ?>" 
-       data-timezone="<?php echo esc_attr($button['timezone']); ?>"
-       data-message="<?php echo esc_html($button['message']); ?>" 
-       href="javascript:void(0);" target="_blank">
+       data-timezone="<?php echo qlwapp_get_timezone_offset($button['timezone']); ?>" href="javascript:void(0);" target="_blank">
          <?php if ($button['icon']): ?>
         <i class="qlwapp-icon <?php echo esc_attr($button['icon']); ?>"></i>
       <?php endif; ?>

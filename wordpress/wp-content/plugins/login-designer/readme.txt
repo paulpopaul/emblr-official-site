@@ -7,7 +7,7 @@ Tags: login, custom login, customize wordpress login, wordpress login, customize
 Requires at least: 4.7
 Tested up to: 5.3
 Requires PHP: 5.2.4
-Stable tag: 1.2.0
+Stable tag: 1.2.1
 License: GPL-3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -87,9 +87,9 @@ Please reach out via the official [plugin support forum](https://wordpress.org/s
 == Changelog ==
 
 ### Enhancements
-* Supports [WordPress 5.3](https://github.com/thatplugincompany/login-designer/pull/37)
-* Add filters for popular SEO plugins to [ignore the Login Designer page](https://github.com/thatplugincompany/login-designer/pull/26)
+* Add minor [UI tweaks](https://github.com/thatplugincompany/login-designer/pull/42) to better support WordPress 5.3
 
 ### Bug Fixes
-* Update [color controls](https://github.com/thatplugincompany/login-designer/pull/36) for WordPress 5.3
-* Fix [excessive border](https://github.com/thatplugincompany/login-designer/pull/37) on the login form for WordPress 5.3+
+* Add [missing JavaScript variable](https://github.com/thatplugincompany/login-designer/pull/41) for customize partials
+* Improve the [RankMath filter](https://github.com/thatplugincompany/login-designer/pull/44)
+* Custom logos now display properly [on mobile](https://github.com/thatplugincompany/login-designer/pull/43)

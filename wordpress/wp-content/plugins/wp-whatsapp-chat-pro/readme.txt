@@ -3,6 +3,15 @@ License: Copyright
 
 == Changelog ==
 
+= 2.4.0 =
+* Fix. button icon modal
+
+= 2.3.9 =
+* Fix. timezone offset
+
+= 2.3.8 =
+* Fix. small css issues
+
 = 2.3.7 =
 * Improvement. button timeout readonly
 * Improvement. button timeout available hours

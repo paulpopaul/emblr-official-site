@@ -191,12 +191,12 @@
         success: function (response) {
           if (response.success) {
 
+            $modal.addClass('reload');
+
             if (modal.model.attributes.id == undefined) {
               modal.close(e);
             }
-
-            $modal.addClass('reload');
-
+            
           } else {
             alert(response.data);
           }

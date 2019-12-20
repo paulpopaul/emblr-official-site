@@ -4,7 +4,7 @@
  * Plugin Name:       WhatsApp Chat
  * Plugin URI:        https://quadlayers.com/portfolio/wordpress-whatsapp-chat/
  * Description:       WhatsApp Chat allows your visitors to contact you or your team through WhatsApp chat with a single click.
- * Version:           4.5.2
+ * Version:           4.5.4
  * Author:            QuadLayers
  * Author URI:        https://quadlayers.com
  * License:           GPL-2.0+
@@ -19,7 +19,7 @@ if (!defined('QLWAPP_PLUGIN_NAME')) {
   define('QLWAPP_PLUGIN_NAME', 'WhatsApp Chat');
 }
 if (!defined('QLWAPP_PLUGIN_VERSION')) {
-  define('QLWAPP_PLUGIN_VERSION', '4.5.2');
+  define('QLWAPP_PLUGIN_VERSION', '4.5.4');
 }
 if (!defined('QLWAPP_PLUGIN_FILE')) {
   define('QLWAPP_PLUGIN_FILE', __FILE__);

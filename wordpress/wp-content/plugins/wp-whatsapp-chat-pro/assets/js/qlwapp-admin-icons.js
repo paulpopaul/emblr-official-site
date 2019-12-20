@@ -25,10 +25,10 @@
     },
     current: function (e) {
       'use strict';
-
       var modal = this;
-
-      modal.$el.find('.' + modal.model.attributes.icon).closest('li').focus();
+      if (modal.model.attributes.icon != '') {
+        modal.$el.find('.' + modal.model.attributes.icon).closest('li').focus();
+      }
     },
     select: function (e) {
       'use strict';
@@ -67,8 +67,6 @@
     submit: function (e) {
       e.preventDefault();
       var modal = this;
-      ;
-
 
       var $input = $('input[name="icon"]');
 

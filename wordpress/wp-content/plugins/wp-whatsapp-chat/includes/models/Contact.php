@@ -35,13 +35,13 @@ class QLWAPP_Contact extends QLWAPP_Model {
     return 0;
   }
 
-  function add_contact($contact_data) {    
+  function add_contact($contact_data) {
     $contact_data['id'] = $this->get_next_id();
     $contact_data['order'] = count($this->get_contacts()) + 1;
     return $this->save($contact_data);
   }
 
-  function update_contact($contact_data) {    
+  function update_contact($contact_data) {
     return $this->save($contact_data);
   }
 
@@ -112,6 +112,10 @@ class QLWAPP_Contact extends QLWAPP_Model {
       $default[0] = $this->get_args();
       $default[0]['id'] = 0;
       $result = $default;
+    } else {
+      foreach ($result as $id => $c) {
+        $result[$id] = wp_parse_args($c, $this->get_args());
+      }
     }
     return $result;
   }

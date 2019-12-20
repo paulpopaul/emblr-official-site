@@ -4,7 +4,7 @@
  * Plugin Name: WhatsApp Chat PRO
  * Description: Send messages directly to your WhatsApp phone number.
  * Plugin URI: https://quadlayers.com/portfolio/wordpress-whatsapp-chat/
- * Version: 2.3.8
+ * Version: 2.4.0
  * Author: QuadLayers
  * Author URI: https://quadlayers.com
  * Copyright: 2018 QuadLayers (https://quadlayers.com)
@@ -20,7 +20,7 @@ if (!defined('QLWAPP_PRO_PLUGIN_NAME')) {
   define('QLWAPP_PRO_PLUGIN_NAME', 'WhatsApp Chat PRO');
 }
 if (!defined('QLWAPP_PRO_PLUGIN_VERSION')) {
-  define('QLWAPP_PRO_PLUGIN_VERSION', '2.3.8');
+  define('QLWAPP_PRO_PLUGIN_VERSION', '2.4.0');
 }
 if (!defined('QLWAPP_PRO_PLUGIN_FILE')) {
   define('QLWAPP_PRO_PLUGIN_FILE', __FILE__);

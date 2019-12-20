@@ -1,3 +1,10 @@
+= 4.5.4 =
+* Fix. reload modal on add new contact
+
+= 4.5.3 =
+* Fix. message not saving
+* Fix. undefined order, timeto, timeout
+
 = 4.5.2 =
 * Fix. include full path
 

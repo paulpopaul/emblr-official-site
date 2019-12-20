@@ -89,7 +89,7 @@ class QLWAPP_Settings {
     if (isset($qlwapp['chat']['response']) && !isset($qlwapp['box']['response'])) {
       $qlwapp['box']['response'] = $qlwapp['chat']['response'];
     }
-    if (isset($qlwapp['user']['message'])) {
+    if (isset($qlwapp['user']['message']) && !isset($qlwapp['button']['message'])) {
       $qlwapp['button']['message'] = $qlwapp['user']['message'];
     }
     if (isset($qlwapp['button']['rounded']) && $qlwapp['button']['rounded'] == 1) {
