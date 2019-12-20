@@ -298,8 +298,15 @@
 					if ( $menu_item->post_status == 'publish' ) :
 						## Si es de tipo post
 						if ( $menu_item->type == 'post_type' ) :
-							## Modificamos enlace para dejarlo de tipo slug -> http://www.ensambler.cl/#menu-item/
+							## Modificamos enlace para dejarlo de tipo slug -> http://www.ensambler.cl/#menu-item
 							$menu_item_link = str_replace( get_site_url() . '/', '#', $menu_item->url );
+							## Se elimina último "/" del hash
+							$menu_item_link = substr( $menu_item_link, 0, -1 );
+							
+							## Si $menu_item_link está vacío entonces se trata de la página de inicio
+							if ( !$menu_item_link ) :
+								$menu_item_link = '#inicio';
+							endif;
 
 						else:
 							$menu_item_link = $menu_item->url;
@@ -310,7 +317,7 @@
 
 			?>
 
-				<li> <a href="<?= $menu_item_link ?>"><?= $menu_item->title ?></a> </li>
+				<li> <a href="<?= $menu_item_link ?>" class="smoothscroll"><?= $menu_item->title ?></a> </li>
 
 			<?
 

@@ -68,12 +68,12 @@
 ?>
 
 
-<!-- home
+<!-- inicio
 ================================================== -->
 <!--<section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center> -->
 
 
-<section id="home" class="s-home page-hero target-section" style="background-color:<?= $fondo ?>">
+<section id="inicio" class="s-inicio page-hero target-section" style="background-color:<?= $fondo ?>">
 
     <?  if ( $particles ): ?>
     <div class="grid-overlay" id="particles">

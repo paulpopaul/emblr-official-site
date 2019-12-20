@@ -2720,7 +2720,7 @@ ul.page-dots li:not(.active):hover button::after {
  * # home
  *
  * ------------------------------------------------------------------- */
-.s-home {
+.s-inicio {
   width: 100%;
   height: 100vh;
   min-height: 700px;
@@ -2728,7 +2728,7 @@ ul.page-dots li:not(.active):hover button::after {
   display: table;
 }
 
-/* .s-home::before {
+/* .s-inicio::before {
   display: block;
   content: "";
   position: absolute;
@@ -2741,7 +2741,7 @@ ul.page-dots li:not(.active):hover button::after {
   z-index: 2;
 }
 
-.s-home::after {
+.s-inicio::after {
   display: block;
   content: "";
   width: 50%;
@@ -2756,11 +2756,11 @@ ul.page-dots li:not(.active):hover button::after {
   right: 0;
 } */
 
-.s-home .grid-overlay > div {
+.s-inicio .grid-overlay > div {
   display: none;
 }
 
-.no-js .s-home {
+.no-js .s-inicio {
   background: #000000;
 }
 
@@ -3133,7 +3133,7 @@ html.no-csstransitions .home-content__main {
     padding-top: 4.5rem;
   }
 
-  .s-home{
+  .s-inicio{
     height: 100vh !important;
   }
 }
@@ -3188,7 +3188,7 @@ html.no-csstransitions .home-content__main {
     font-size: 3.7rem;
   }
 
- /* .s-home{
+ /* .s-inicio{
     height: 120vh;
   }*/
 
@@ -3218,7 +3218,7 @@ html.no-csstransitions .home-content__main {
 } 
 
 @media screen and (min-width: 1366px) and (max-height: 1000px) {
-   .s-home{
+   .s-inicio{
     min-height: 900px;
    }
 }
@@ -3505,7 +3505,7 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width:400px) {
-  .s-home {
+  .s-inicio {
     min-height: 630px;
   }
 
