@@ -93,7 +93,7 @@
                     </div>
 
                     <div class="team-content">
-                        <h3 class="title"> <?= $nombre ?> </h3>
+                        <a href="<?= get_the_permalink( $persona->ID ) ?>"><h3 class="title"> <?= $nombre ?> </h3></a>
                         <span class="post"> <?= $ocupacion ?> </span>
 
                         <p>
