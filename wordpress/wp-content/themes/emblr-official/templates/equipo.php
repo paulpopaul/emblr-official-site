@@ -61,8 +61,9 @@
 
                 foreach ( $personal as $persona ) :
 
+                    $nombre     = $persona->post_title;
+
                     $profile    = get_field( 'perfil', $persona->ID );
-                    $nombre     = get_field( 'nombre', $persona->ID );
                     $ocupacion  = get_field( 'ocupacion', $persona->ID );
                     $resena     = get_field( 'resena', $persona->ID );
 
@@ -78,7 +79,7 @@
                         
                         $linkedin   = $redes[ 'linkedin' ];
                         $github     = $redes[ 'github' ];
-                        $whatsapp   = $redes[ 'whatsapp' ];
+                        $email      = $redes[ 'email' ];
                     
                     endif;
 
@@ -103,7 +104,7 @@
                     <ul class="social">
                         <li> <a href="<?= $linkedin ? $linkedin : '#' ?>" target="_blank" class="fab fa-linkedin"></a> </li>
                         <li> <a href="<?= $github ? $github : '#' ?>" target="_blank" class="fab fa-github"></a> </li>
-                        <li> <a href="<?= $whatsapp ? $whatsapp : '#' ?>" target="_blank" class="fab fa-whatsapp"></a> </li>
+                        <li> <a href="<?= $email ? "mailto:$email?subject=Contacto%20desde%20Ensambler&reg;" : '#' ?>" class="fas fa-envelope"></a> </li>
                     </ul>
 
                 </div> <!-- our-team -->

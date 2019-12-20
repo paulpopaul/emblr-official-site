@@ -56,7 +56,8 @@
 			'menu_position'			=> 20,
 			'exclude_from_search'	=> true,
 			'show_in_nav_menus'		=> false,
-			'supports'				=> array( 'custom_fields' )
+			'supports'				=> array( 'title', 'custom_fields' ),
+			'rewrite' 				=> array( 'slug' => 'equipo' )
 
 		);
 
@@ -80,7 +81,7 @@
 		$fields = array(
 
 			'cb'			=> $columns['cb'],
-			'nombre'		=> __( 'Nombre', 'emblr' ),
+			'title'			=> __( 'Nombre', 'emblr' ),
 			'ocupacion'		=> __( 'Ocupación', 'emblr' ),
 			'resena' 		=> __( 'Reseña', 'emblr' ),
 			'perfil'		=> '',
@@ -104,14 +105,6 @@
 
 		switch ( $column ) {
 
-			case 'nombre':
-
-				echo get_field( 'nombre', $post_id );
-				break
-
-			;
-
-
 			case 'ocupacion':
 
 				echo get_field( 'ocupacion', $post_id );
@@ -125,7 +118,7 @@
 				$profile_img = get_field( 'perfil', $post_id );
 
 				if ( ! empty( $profile_img ) )
-					echo "<img src=\"{$profile_img['sizes']['thumbnail']}\" style=\"border-radius:50%\">"
+					echo "<img src=\"{$profile_img['sizes']['thumbnail']}\" style=\"border-radius:50%;display:block;margin:0 auto\">"
 				;
 
 				break
