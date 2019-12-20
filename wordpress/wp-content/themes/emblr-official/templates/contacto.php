@@ -34,7 +34,7 @@
 
 <!-- contact
 ================================================== -->
-<section id="contact" class="s-contact target-section section-page">
+<section id="contacto" class="s-contact target-section section-page">
   <div class="contact-bg">
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 900 720" enable-background="new 0 0 900 720" xml:space="preserve" id="worldmap"></svg>
   </div>

@@ -48,7 +48,7 @@
 
 
 <!-- equipo ================================================== -->
-<section class="team-section target-section section-page">
+<section id="equipo" class="team-section target-section section-page">
     <h1 class="classic-title" data-aos="fade-up"> Nuestro Equipo </h1>
 
     <div class="slick-team-container" data-aos="fade-up">

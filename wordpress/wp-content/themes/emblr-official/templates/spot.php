@@ -86,7 +86,7 @@
 
 	<?	if ( $boton ) : ?>
 
-	<span data-aos="fade-up" data-aos-offset="10">
+	<span data-aos="fade-up">
 		<a
 			href="<?= $boton['url'] ?>"
 			target="<?= $boton['target'] ?>"

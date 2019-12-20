@@ -33,9 +33,9 @@
 
 
 
-<!-- about
+<!-- sobre nosotros
 ================================================== -->
-<section id="features" class="s-aboutUs target-section section-page">
+<section id="sobre-nosotros" class="s-sobre-nosotros target-section section-page">
     <h1 data-aos="fade-up"> Sobre Nosotros </h1>
     </div>
     <!-- end section-header -->
@@ -48,7 +48,7 @@
 
 Nuestros conocimientos y experiencias con las tecnologías actuales del mercado, son el pilar fundamental de nuestra organización.
 </p>
-            <input class="view-team btn btn--primary btn--large" id="view-team" type="button" value="ver equipo">
+            <a href="#equipo" class="btn btn--primary btn--large smoothscroll" id="view-team">ver equipo</a>
             </div>
 
             <div id="feature-2" class="features-textblock animated fadeIn">
@@ -106,4 +106,4 @@ Nuestra lema “Ingeniería de software para Soluciones Empresariales Integradas
     </div>
 
 </section>
-<!-- end s-about -->
+<!-- end sobre nosotros -->

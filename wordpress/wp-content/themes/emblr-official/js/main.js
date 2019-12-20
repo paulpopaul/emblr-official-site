@@ -573,7 +573,7 @@ $(".btn-with-icon").on("click", function() {
     var more_services_button = function() {
 
         $("#more-services").on("click", function() {
-            $("#servicios").find(".hidden-service").show("normal");
+            $("#nuestros-servicios").find(".hidden-service").show("normal");
             $(this).hide();
         });
 

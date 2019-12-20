@@ -47,7 +47,7 @@
 
 <!-- services
 ================================================== -->
-<section id="servicios" class="s-services target-section section-page">
+<section id="nuestros-servicios" class="s-services target-section section-page">
 
     <div class="services-title inner-title">
         <h1 data-aos="fade-right"> <? the_title() ?> </h1>
