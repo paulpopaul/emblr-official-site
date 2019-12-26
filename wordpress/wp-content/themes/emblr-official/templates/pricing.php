@@ -25,8 +25,44 @@
     *   Objeto post (página)
     *
     */
-    global $post;
+	global $post;
+	
 
+
+	/**
+	 * 
+	 *	Textos botones:
+	 *		1. solicitar (plan)
+	 *		2. personalizar producto
+	 * 
+	 */
+	$texto_boton_solicitar		= get_field( 'texto_boton_solicitar', $post->ID );
+	$texto_boton_personalizar	= get_field( 'texto_boton_personalizar', $post->ID );
+
+
+
+	/**
+	 * 
+	 *	Etiqueta de sección
+	 * 
+	 */
+	$etiqueta = get_field( 'etiqueta_seccion', $post->ID );
+
+	if ( $etiqueta ) :
+
+		$etiqueta_titulo		= $etiqueta[ 'titulo' ];
+		$etiqueta_visibilidad	= $etiqueta[ 'visibilidad' ];
+		
+	endif;
+
+
+
+	/**
+	 * 
+	 *	Planes
+	 * 
+	 */
+	$planes = get_field( 'planes', $post->ID );
 
 ?>
 
@@ -34,109 +70,86 @@
 <!-- pricing ================================================== -->
 <section class="s-pricing section-page" id="pricing">
 
-	<div class="cr cr-top cr-left cr-red"> Pack web </div>
+	<?	if ( $etiqueta_visibilidad ) :	?>
 
-	<h1 data-aos="fade-left"> ¿Buscando soluciones rápidas? </h1>
-	<h2 data-aos="fade-left"> Escoge tu producto </h2>
+	<div class="cr cr-top cr-left cr-red"> <?= $etiqueta_titulo ?> </div>
+
+	<?	endif	?>
+
+	<h1 data-aos="fade-left"> <? the_title() ?> </h1>
+	<h2 data-aos="fade-left"> <?= get_field( 'subtitulo', $post->ID ) ?> </h2>
 
 	<div class="container">
 		<div class="price-plan-wrapper">
 
 			<div class="row">
 
+			<?
+
+				foreach ( $planes as $plan ) :
+
+					$nombre			= $plan[ 'nombre' ];
+					$descripcion	= $plan[ 'descripcion' ];
+					$precio			= $plan[ 'precio' ];
+
+					// Lista (array) de detalles:
+					$features		= $plan[ 'features' ];
+
+					// Nombre de clase:
+					$classname		= strtolower( explode( ' ', $nombre )[ 0 ] );
+
+			?>
+
 				<div class="col-pricing" data-aos="fade-right">
-					<div class="pricing-table">
+
+					<div class="pricing-table <?= $classname ?>">
+
 						<div class="price-header">
-							<div class="icon"><i class="flaticon-trip"></i></div>
-							<h3 class="title">SIMPLE</h3>
-							<span class="subtitle">Para levantar tus sueños</span>
-						</div>
+							<div class="icon"> <i class="flaticon-trip"></i> </div>
+							<h3 class="title"> <?= $nombre ?> </h3>
+							<span class="subtitle"> <?= $descripcion ?> </span>
+						</div> <!-- price-header -->
 
 						<div class="price">
-							<span class="dollar">$</span>399.000<!--<span class="month">/Mo</span>-->
+							<span class="dollar">$</span><?= $precio ?><!--<span class="month">/Mo</span>-->
 						</div> <!-- price -->
 							
 						<div class="price-body">
 							<ul>
-								<li><b>Hasta 6</b> Secciones</li>
-								<li><b>Hasta 1</b> Idioma</li>
-								<li><b>Hasta 1</b> Formulario</li>
-								<li><b>Hasta 5</b> Cuentas de Email</li>
-								<li><b>1 Diseño</b> Basado en plantilla</li>
-								<li><b>Integración</b> Redes sociales</li>
-								<li><b>Autoadministrable</b> Wordpress</li>
+
+							<?
+
+								foreach ( $features as $feature ) :
+
+									$cantidad	= $feature[ 'cantidad' ];
+									$detalle 	= $feature[ 'detalle' ];
+
+							?>
+
+								<li><b> <?= $cantidad ?> </b> <?= $detalle ?> </li>
+
+							<?	endforeach	?>
+
 							</ul>
 						</div> <!-- price-body -->
 							
 						<div class="price-footer">
-							<a class="order-btn" href="">Solicitar</a>
+							<a class="order-btn" href="#"> <?= $texto_boton_solicitar ?> </a>
 						</div> <!-- price-footer -->
-					</div> <!-- pricing-table-15 -->
-				</div> <!-- columns -->
 
-
-				<div class="col-pricing" data-aos="fade-up">
-					<div class="pricing-table active">
-						<div class="price-header">
-							<div class="icon"><i class="flaticon-rocket"></i></div>
-							<h3 class="title">INNOVA+</h3>
-							<span class="subtitle">Consigue el impacto que andas buscando</span>
-						</div> <!-- price-header -->
-						
-						<div class="price"><span class="dollar">$</span>699.000<!--<span class="month">/Mo</span>--></div>
-						
-						<div class="price-body">
-							<ul>
-								<li><b>Hasta 10</b> Secciones</li>
-								<li><b>Hasta 2</b> Idiomas</li>
-								<li><b>Hasta 3</b> Formularios</li>
-								<li><b>Hasta 12</b> Cuentas de Email</li>
-								<li><b>2 Propuestas</b> de diseño</li>
-								<li><b>Integración</b> Redes sociales</li>
-								<li><b>Autoadministrable</b> Wordpress</li>
-							</ul>
-						</div> <!-- price-body -->
-						
-						<div class="price-footer">
-							<a class="order-btn" href="">Solicitar</a>
-						</div> <!-- price-footer -->
-					</div> <!-- pricing-table-15-active -->
-				</div> <!-- columns -->
+					</div> <!-- pricing-table -->
+					
+				</div> <!-- col-pricing -->
 				
-
-				<div class="col-pricing" data-aos="fade-left">
-					<div class="pricing-table pro">
-						<div class="price-header">
-							<div class="icon"><i class="flaticon-origami"></i></div>
-							<h3 class="title">PRO X</h3>
-							<span class="subtitle">Solución de prestigio a tu altura</span>
-						</div> <!-- price-header -->
-						
-						<div class="price"><span class="dollar">$</span>999.000<!--<span class="month">/Mo</span>--></div>
-						
-						<div class="price-body">
-							<ul>
-								<li><b>Hasta 15</b> Secciones</li>
-								<li><b>Hasta 4</b> Idiomas</li>
-								<li><b>Hasta 9</b> Formularios</li>
-								<li><b>Ilimitadas</b> Cuentas de Email</li>
-								<li><b>2 Diseños</b> Full Personalizados</li>
-								<li><b>Tienda Online</b> + Webpay + R.S.</li>
-								<li><b>Autoadministrable</b> Wordpress</li>
-							</ul>
-						</div> <!-- price-body -->
-						
-						<div class="price-footer">
-							<a class="order-btn" href="">Solicitar</a>
-						</div> <!-- price-footer -->
-					</div> <!-- pricing-table-15 -->
-				</div> <!-- columns -->
+			<?	endforeach	?>
 
 			</div> <!-- row -->
 
 		</div> <!-- price-plan-wrapper -->
 	</div> <!-- container -->
 
-	<a href="#" class="customize-product btn btn--secondary btn--large" data-aos="fade-up">personalizar mi producto</a>
+	<a href="#" class="customize-product btn btn--secondary btn--large" data-aos="fade-up">
+		<?= $texto_boton_personalizar ?>
+	</a>
 
 </section> <!-- #pricing -->
