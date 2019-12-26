@@ -26,18 +26,6 @@
     *
     */
 	global $post;
-	
-
-
-	/**
-	 * 
-	 *	Textos botones:
-	 *		1. solicitar (plan)
-	 *		2. personalizar producto
-	 * 
-	 */
-	$texto_boton_solicitar		= get_field( 'texto_boton_solicitar', $post->ID );
-	$texto_boton_personalizar	= get_field( 'texto_boton_personalizar', $post->ID );
 
 
 
@@ -48,12 +36,23 @@
 	 */
 	$etiqueta = get_field( 'etiqueta_seccion', $post->ID );
 
-	if ( $etiqueta ) :
 
-		$etiqueta_titulo		= $etiqueta[ 'titulo' ];
-		$etiqueta_visibilidad	= $etiqueta[ 'visibilidad' ];
-		
-	endif;
+
+	/**
+	 * 
+	 *	Botón Solicitar
+	 * 
+	 */
+	$solicitar = get_field( 'solicitar', $post->ID );
+
+
+
+	/**
+	 * 
+	 *	Botón Personalizar
+	 * 
+	 */
+	$personalizar = get_field( 'personalizar', $post->ID );
 
 
 
@@ -64,15 +63,16 @@
 	 */
 	$planes = get_field( 'planes', $post->ID );
 
+
 ?>
 
 
 <!-- pricing ================================================== -->
 <section class="s-pricing section-page" id="pricing">
 
-	<?	if ( $etiqueta_visibilidad ) :	?>
+	<?	if ( $etiqueta[ 'visibilidad' ] ) :	?>
 
-	<div class="cr cr-top cr-left cr-red"> <?= $etiqueta_titulo ?> </div>
+	<div class="cr cr-top cr-left cr-red"> <?= $etiqueta[ 'titulo' ] ?> </div>
 
 	<?	endif	?>
 
@@ -97,6 +97,9 @@
 
 					// Nombre de clase:
 					$classname		= strtolower( explode( ' ', $nombre )[ 0 ] );
+
+					// Código plan (parámetro):
+					$codigo			= $classname;
 
 			?>
 
@@ -134,7 +137,12 @@
 						</div> <!-- price-body -->
 							
 						<div class="price-footer">
-							<a class="order-btn" href="#"> <?= $texto_boton_solicitar ?> </a>
+							<a
+								href="<?= esc_url( "/{$solicitar['accion']}?plan=$codigo" ) ?>"
+								class="order-btn">
+
+								<?= $solicitar[ 'texto' ] ?>
+							</a>
 						</div> <!-- price-footer -->
 
 					</div> <!-- pricing-table -->
@@ -148,8 +156,12 @@
 		</div> <!-- price-plan-wrapper -->
 	</div> <!-- container -->
 
-	<a href="#" class="customize-product btn btn--secondary btn--large" data-aos="fade-up">
-		<?= $texto_boton_personalizar ?>
+	<a
+		href="<?= esc_url( "/{$personalizar['accion']}" ) ?>"
+		class="customize-product btn btn--secondary btn--large"
+		data-aos="fade-up">
+
+		<?= $personalizar[ 'texto' ] ?>
 	</a>
 
 </section> <!-- #pricing -->
