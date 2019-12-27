@@ -127,6 +127,15 @@
 	*
 	*/
 	include_once( get_template_directory( ) . '/includes/custom-post-types/personal.php' );
+	
+	
+	
+	/**
+	*
+	*	Custom Post Type: "Portafolio"
+	*
+	*/
+	include_once( get_template_directory( ) . '/includes/custom-post-types/portafolio.php' );
 
 
 
