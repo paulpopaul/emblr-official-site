@@ -43,6 +43,15 @@
     ));
 
 
+
+    /**
+     * 
+     *  Visibilidad logos clientes destacados
+     * 
+     */
+    $visibilidad_clientes = get_field( 'visibilidad_clientes', $post->ID );
+
+    
 ?>
 
 
@@ -105,8 +114,9 @@
 
 
 
-<!-- clientes logos
+<!-- logos clientes
 ================================================== -->
+<?  if ( $visibilidad_clientes ) : ?>
 
 <section id="testimonials-clientes-logo" class="target-section section-page">
     <div data-aos="flip-down" data-aos-offset="0">
@@ -127,3 +137,5 @@
 
     </div>
 </section>
+
+<?  endif   ?>
