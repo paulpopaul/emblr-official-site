@@ -20,12 +20,40 @@
 
 
 
-/*
-*
-*   Objeto post (página)
-*
-*/
-global $post;
+    /*
+    *
+    *   Objeto post (página)
+    *
+    */
+    global $post;
+
+
+
+    /**
+     * 
+     *  Lista de Categorías (selector)
+     * 
+     */
+    $categorias = get_categories(array(
+        'taxonomy'      => 'category',
+        'parent'        => get_cat_ID( 'portafolio' ),
+        'hide_empty'    => 0
+    ));
+
+
+
+    /**
+    *
+    *   Colección de posts tipo "trabajo"
+    *
+    */
+    $trabajos = get_posts(array(
+
+        'post_type'     => 'trabajo',
+        'order'         => 'ASC',
+        'numberposts'   => -1
+
+    ));
 
 
 ?>
@@ -39,154 +67,106 @@ global $post;
     <h1 class="sportafolio classic-title" data-aos="fade-up">Portafolio</h1>
 
     <div class="wrap background-porta">
-        <!--Creamos marcas, productos y experiencias que la gente ama. Echa un vistazo a nuestros trabajos recientes.-->
-
         <div class="gallery-wrap">
 
             <div class="portafolio-header">
+
+            <?
+
+                foreach ( $categorias as $categoria ) {
+                    $string_categorias .= ".{$categoria->slug}, ";
+                }
+
+                $string_categorias = substr( $string_categorias, 0 , -2 );
+
+            ?>
+
                 <ul id="filters" class="clearfix" data-aos="fade-up">
-                    <li><span class="filter active" data-filter=".print, .strategy, .logo, .web">Todo</span></li>
-                    <li><span class="filter" data-filter=".print">Diseño</span></li>
-                    <li><span class="filter" data-filter=".strategy">Desarrollo</span></li>
-                    <li><span class="filter" data-filter=".logo">Marketing</span></li>
-                </ul>
-            </div>
+
+                    <li>
+                        <span class="filter active" data-filter="<?= $string_categorias ?>">
+                            Todo
+                        </span>
+                    </li>
+
+                    <?  foreach ( $categorias as $categoria ) : ?>
+
+                    <li>
+                        <span class="filter" data-filter=".<?= $categoria->slug ?>">
+                            <?= $categoria->name ?>
+                        </span>
+                    </li>
+                    
+                    <?  endforeach  ?>
+
+                </ul> <!-- filters -->
+
+            </div> <!-- portafolio-header -->
+
 
             <div id="gallery">
+                
+                <?
+                
+                    foreach ( $trabajos as $trabajo ) :
 
-                <div class="masonry__brick item-folio gallery-item strategy " href="#" data-cat="strategy" data-aos="fade-up">
+                        /**
+                         * 
+                         *  Categorías
+                         * 
+                         */
+                        $string_categorias = "";
+                        $categorias = get_field( 'categoria', $trabajo->ID );
+
+                        foreach ( $categorias as $categoria ) {
+                            $string_categorias .= ".{$categoria->slug}, ";
+                        }
+        
+                        $string_categorias  = substr( $string_categorias, 0 , -2 );
+                        $categorias_classes = preg_replace( '/[\.,]/', '', $string_categorias );
+
+
+                        /**
+                         * 
+                         *  Campos
+                         * 
+                         */
+                        $titulo         = get_the_title( $trabajo->ID );
+                        $miniatura      = get_field( 'miniatura', $trabajo->ID );
+                        $razon_social   = get_field( 'razon_social', $trabajo->ID );
+                        $enlace         = get_field( 'enlace', $trabajo->ID );
+                        $descripcion    = get_field( 'descripcion', $trabajo->ID );
+                        $fullscreen     = get_field( 'fullscreen', $trabajo->ID );
+
+                ?>
+
+                <div
+                    class="masonry__brick item-folio gallery-item <?= $categorias_classes ?>"
+                    href="#" data-cat="<?= $string_categorias ?>"
+                >
+
                     <div class="item-folio__thumb">
-                        <a href="<?= get_template_directory_uri() ?>/images/portfolio/home-murtao.jpg" class="thumb-link" data-size="1920x7944">
-                            <img src="<?= get_template_directory_uri() ?>/images/portfolio/screen-murtao.png" alt="" />
+                        <a href="<?= $fullscreen['sizes']['large'] ?>" class="thumb-link" data-size="1920x7944">
+                            <img src="<?= $miniatura['sizes']['large'] ?>" />
                         </a>
                     </div>
 
                     <div class="item-folio__text">
-                        <h3 class="item-folio__title">
-                            Murtao
-                        </h3>
-
-                        <p class="item-folio__cat">
-                            Restorán
-                        </p>
+                        <h3 class="item-folio__title"> <?= $titulo ?> </h3>
+                        <p class="item-folio__cat"> <?= $razon_social ?> </p>
                     </div>
 
-                    <a href="http://www.murtao.cl/" target="_blank" class="item-folio__project-link" title="Project link">
+                    <a href="<?= $enlace ?>" target="_blank" class="item-folio__project-link">
                         <i class="icon-link"></i>
                     </a>
 
                     <div class="item-folio__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                        <p> <?= $descripcion ?> </p>
                     </div>
+
                 </div> <!-- end masonry__brick -->
 
-
-                <div class="masonry__brick item-folio gallery-item strategy " href="#" data-cat="strategy" data-aos="fade-up">
-                    <div class="item-folio__thumb">
-                        <a href="<?= get_template_directory_uri() ?>/images/portfolio/home-cisnenegro.jpg" class="thumb-link" data-size="1921x4673">
-                            <img src="<?= get_template_directory_uri() ?>/images/portfolio/screen-cisne.png" alt="" />
-                        </a>
-                    </div>
-
-                    <div class="item-folio__text">
-                        <h3 class="item-folio__title">
-                            Cisne Negro
-                        </h3>
-
-                        <p class="item-folio__cat">
-                            Estudio de grabación
-                        </p>
-                    </div>
-
-                    <a href="http://www.cisnenegrostudio.com/" target="_blank" class="item-folio__project-link" title="Project link">
-                        <i class="icon-link"></i>
-                    </a>
-
-                    <div class="item-folio__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                    </div>
-                </div> <!-- end masonry__brick -->
-
-
-                <div class="masonry__brick item-folio gallery-item strategy " href="#" data-cat="strategy" data-aos="fade-up">
-                    <div class="item-folio__thumb">
-                        <a href="<?= get_template_directory_uri() ?>/images/portfolio/home-divina.jpg" class="thumb-link" data-size="1921x1107">
-                            <img src="<?= get_template_directory_uri() ?>/images/portfolio/screen-divina.png" alt="" />
-                        </a>
-                    </div>
-
-                    <div class="item-folio__text">
-                        <h3 class="item-folio__title">
-                            DivinaSur
-                        </h3>
-
-                        <p class="item-folio__cat">
-                            Damas de compañía
-                        </p>
-                    </div>
-
-                    <a href="http://www.divinasur.cl/" target="_blank" class="item-folio__project-link" title="Project link">
-                        <i class="icon-link"></i>
-                    </a>
-
-                    <div class="item-folio__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                    </div>
-                </div> <!-- end masonry__brick -->
-
-
-                <div class="masonry__brick item-folio gallery-item strategy " href="#" data-cat="strategy" data-aos="fade-up">
-                    <div class="item-folio__thumb">
-                        <a href="<?= get_template_directory_uri() ?>/images/portfolio/home-katari.jpg" class="thumb-link" data-size="1920x4348">
-                            <img src="<?= get_template_directory_uri() ?>/images/portfolio/screen-katari.jpg" alt="" />
-                        </a>
-                    </div>
-
-                    <div class="item-folio__text">
-                        <h3 class="item-folio__title">
-                            Katari Consultores
-                        </h3>
-
-                        <p class="item-folio__cat">
-                            Consultoria
-                        </p>
-                    </div>
-
-                    <a href="https://www.katariconsultores.cl/" target="_blank" class="item-folio__project-link" title="Project link">
-                        <i class="icon-link"></i>
-                    </a>
-
-                    <div class="item-folio__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                    </div>
-                </div> <!-- end masonry__brick -->
-
-
-                <div class="masonry__brick item-folio gallery-item strategy " href="#" data-cat="strategy" data-aos="fade-up">
-                    <div class="item-folio__thumb">
-                        <a href="<?= get_template_directory_uri() ?>/images/portfolio/home-regen.jpg" class="thumb-link" data-size="1921x2652">
-                            <img src="<?= get_template_directory_uri() ?>/images/portfolio/screen-regen.jpg" alt="" />
-                        </a>
-                    </div>
-
-                    <div class="item-folio__text">
-                        <h3 class="item-folio__title">
-                            Regenhaus
-                        </h3>
-
-                        <p class="item-folio__cat">
-                            Corredora de Propiedades
-                        </p>
-                    </div>
-
-                    <a href="https://www.regenhaus.cl/" target="_blank" class="item-folio__project-link" title="Project link">
-                        <i class="icon-link"></i>
-                    </a>
-
-                    <div class="item-folio__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                    </div>
-                </div> <!-- end masonry__brick -->
+                <?  endforeach  ?>
 
             </div><!--/gallery-->
 
