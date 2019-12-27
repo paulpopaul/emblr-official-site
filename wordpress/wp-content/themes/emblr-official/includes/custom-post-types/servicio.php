@@ -106,7 +106,12 @@
 
 			case 'icono':
 
-				echo '<span style="font-size:32px">' . get_field( 'icono', $post_id ) . '</span>';
+				echo
+					'<span style="font-size:32px;display:block;text-align:center">' .
+						get_field( 'icono', $post_id ) .
+					'</span>'
+				;
+				
 				break
 
 			;
@@ -159,7 +164,7 @@
 			if ( $icon ) {
 
 				echo
-					'<span style="font-size:48px; margin-bottom:10px; display:block">' .
+					'<span style="font-size:48px;margin-bottom:10px;display:block">' .
 						$icon .
 					'</span>'
 				;

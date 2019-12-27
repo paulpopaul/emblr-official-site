@@ -131,7 +131,7 @@
 
 				$categorias = get_field( 'categoria', $post_id );
 
-				foreach( $categorias as $categoria ) {
+				foreach ( $categorias as $categoria ) {
 					$categoria_string .=  "{$categoria->name} - ";
 				}
 
