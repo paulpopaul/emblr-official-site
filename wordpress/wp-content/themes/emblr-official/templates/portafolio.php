@@ -104,7 +104,7 @@
             </div> <!-- portafolio-header -->
 
 
-            <div id="gallery">
+            <div id="gallery" data-aos="fade-up">
                 
                 <?
                 
@@ -115,7 +115,8 @@
                          *  Categorías
                          * 
                          */
-                        $categorias = get_field( 'categoria', $trabajo->ID );
+                        $categorias  = get_field( 'categoria', $trabajo->ID );
+                        $cat_classes = '';
 
                         foreach ( $categorias as $categoria ) {
                             $cat_classes .= "{$categoria->slug} ";
