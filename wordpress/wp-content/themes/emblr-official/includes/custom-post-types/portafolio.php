@@ -3,7 +3,7 @@
 
 /**
 *
-*	Ensambler Official: Custom Post Type "trabajo"
+*	Ensambler Official: Custom Post Type "Trabajo"
 *
 *
 *	@version 	emblr-official-1

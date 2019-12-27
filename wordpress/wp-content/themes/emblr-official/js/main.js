@@ -598,7 +598,8 @@ $(".btn-with-icon").on("click", function() {
                 },
 
                 load: {
-                    filter: '.gallery-item' // show all items on page load.
+                    // show all items on page load:
+                    filter: $('#filters').find('.filter.active').data('filter')
                 }
             });
 
