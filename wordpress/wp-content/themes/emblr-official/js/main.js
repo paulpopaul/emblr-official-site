@@ -596,8 +596,9 @@ $(".btn-with-icon").on("click", function() {
                     target: '.gallery-item',
                     filter: '.filter'
                 },
+
                 load: {
-                    filter: '.print, .strategy, .logo, .web' // show all items on page load.
+                    filter: '.gallery-item' // show all items on page load.
                 }
             });
 

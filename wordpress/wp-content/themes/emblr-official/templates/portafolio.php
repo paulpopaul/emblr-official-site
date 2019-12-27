@@ -74,17 +74,17 @@
             <?
 
                 foreach ( $categorias as $categoria ) {
-                    $string_categorias .= ".{$categoria->slug}, ";
+                    $data_filters .= ".{$categoria->slug}, ";
                 }
 
-                $string_categorias = substr( $string_categorias, 0 , -2 );
+                $data_filters = substr( $data_filters, 0 , -2 );
 
             ?>
 
                 <ul id="filters" class="clearfix" data-aos="fade-up">
 
                     <li>
-                        <span class="filter active" data-filter="<?= $string_categorias ?>">
+                        <span class="filter active" data-filter="<?= $data_filters ?>">
                             Todo
                         </span>
                     </li>
@@ -115,15 +115,13 @@
                          *  Categorías
                          * 
                          */
-                        $string_categorias = "";
                         $categorias = get_field( 'categoria', $trabajo->ID );
 
                         foreach ( $categorias as $categoria ) {
-                            $string_categorias .= ".{$categoria->slug}, ";
+                            $cat_classes .= "{$categoria->slug} ";
                         }
-        
-                        $string_categorias  = substr( $string_categorias, 0 , -2 );
-                        $categorias_classes = preg_replace( '/[\.,]/', '', $string_categorias );
+
+                        $cat_classes = substr( $cat_classes, 0, -1 );
 
 
                         /**
@@ -140,10 +138,7 @@
 
                 ?>
 
-                <div
-                    class="masonry__brick item-folio gallery-item <?= $categorias_classes ?>"
-                    href="#" data-cat="<?= $string_categorias ?>"
-                >
+                <div class="masonry__brick item-folio gallery-item <?= $cat_classes ?>" href="#">
 
                     <div class="item-folio__thumb">
                         <a href="<?= $fullscreen['sizes']['large'] ?>" class="thumb-link" data-size="1920x7944">
