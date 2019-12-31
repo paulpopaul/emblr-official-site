@@ -2381,19 +2381,30 @@ body.menu-is-open {
   transform: rotate(45deg);
 }
 
+#right-navigation-controls {
+  overflow: visible;
+  position: fixed;
+  top: 40%;
+  right: 3.7rem;
+
+  z-index: 4;
+}
+
 .page-counter {
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: .35rem;
   color: #FFFFFF;
+  display: block;
+
   -ms-transform: rotate(-90deg); /* IE 9 */
   -webkit-transform: rotate(-90deg); /* Safari 3-8 */
   transform: rotate(-90deg);
-  position: fixed;
-  right: 6.2rem; /* 6.2rem / 4.9rem */
-  top: 60%;
-  z-index: 4;
+
+  position: relative;
+  top: 40px;
+  right: 25px;
 }
 
 .page-counter span:first-child {
@@ -2403,10 +2414,7 @@ body.menu-is-open {
 ul.page-dots {
   margin: 0;
   list-style: none;
-  position: fixed;
-  top: 40%;
-  right: 9.2rem;
-  z-index: 4;
+  display: inline-block;
 }
 
 ul.page-dots li {
@@ -2605,12 +2613,8 @@ ul.page-dots li:not(.active):hover button::after {
     right: 84px;
   }
 
-  .page-counter {
-    right: 3.5rem;
-  }
-
-  ul.page-dots {
-    right: 6.5rem;
+  #right-navigation-controls {
+    right: 1rem;
   }
 
 }

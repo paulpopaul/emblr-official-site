@@ -190,18 +190,22 @@
 
 
     <?  if ( $navegacion_lateral ): ?>
+    
+    <div id="right-navigation-controls">
 
-    <div id="page-counter" class="page-counter"> <span>01</span> / <span>05</span> </div>
+        <ul id="page-dots" class="page-dots">
 
-    <ul id="page-dots" class="page-dots">
+            <!--
+                <li class="active"><button type="button"></button></li>
+                <li><button type="button"></button></li>
+            -->
 
-        <!--
-            Estructura:
-            <li class="active"><button type="button"></button></li>
-            <li><button type="button"></button></li>
-        -->
+        </ul>
 
-    </ul>
+        <div id="page-counter" class="page-counter"> <span>01</span> / <span>05</span> </div>
+
+
+    </div> <!-- #right-navigation-controls -->
 
     <?  endif ?>
 
