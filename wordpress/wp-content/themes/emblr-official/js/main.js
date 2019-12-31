@@ -50,6 +50,27 @@
     };
 
 
+    /* scrollDownTo: target
+    * ------------------------------------------------------ */
+    var scrollDownTo = function( target_id, callback ) {
+
+        $('html, body')
+            .stop()
+            .animate({
+                'scrollTop': $( target_id ).offset().top
+            }, cfg.scrollDuration, 'swing' )
+            .promise().done(function() {
+                window.location.hash = target_id;
+
+                if ( typeof callback === 'function' )
+                    callback()
+                ;
+            })
+        ;
+
+    };
+
+
    /* Menu on Scrolldown
     * ------------------------------------------------------ */
     var ssMenuOnScrolldown = function() {
@@ -215,9 +236,7 @@
     var ssSmoothScroll = function() {
         
         $('.smoothscroll').on('click', function (e) {
-            var target = this.hash,
-                $target = $(target)
-            ;
+            var target = this.hash;
             
             e.preventDefault();
             e.stopPropagation();
@@ -227,11 +246,7 @@
                 $('.header-menu-toggle').trigger('click');
             }
 
-            $('html, body').stop().animate({
-                'scrollTop': $target.offset().top
-            }, cfg.scrollDuration, 'swing').promise().done(function () {
-                window.location.hash = target;
-            });
+            scrollDownTo( target );
         });
 
     };
@@ -615,10 +630,150 @@ $(".btn-with-icon").on("click", function() {
     * ------------------------------------------------------ */
 
     var contactCursorDissapear = function() {
+
         $('input#prompt').one('click', function() {
             $('.s-contact .cursor').hide()
         })
+
     };
+
+
+    /* Page right navigation Functions
+    * ------------------------------------------------------ */
+
+    var buildNavigationControl = function() {
+
+        var $pagedots = $( '#page-dots' )
+        let $pagecounter = $( '#page-counter' )
+
+        var $pages = $( '.target-section' )
+
+        // 1. Crea botón por cada sección con clase target-section (página) en ul.page-dots
+        $pages.each(function( i, page ) {
+            
+            var $li_button = $( '<li><button type="button"></button></li>' )
+
+            if ( i == 0 )
+                $li_button.addClass( 'active' )
+            ;
+
+            $li_button.attr({
+                'data-section': '#' + $(page).attr('id'),
+                'data-position': i + 1
+            })
+
+            $pagedots.append( $li_button )
+
+        });
+
+        // 2. Inserta número de páginas total en page-counter
+        $pagecounter.find( 'span:last-child' )
+            .text(function() {
+                return ( $pages.length < 10 ) ?
+                    '0' + $pages.length : $pages.length
+                ;
+            })
+        ;
+
+
+        // 3. Añade listener para acción "llevar a la página" al clickear el botón
+        $pagedots.find( 'li button' )
+            .on('click', function() {
+
+                let $target = $( this )
+                let target_id = $target.parent().data( 'section' )
+
+                $target.addClass( 'clicked' )
+                
+                // Se hace ScrollTo a la página
+                scrollDownTo( target_id, function() {
+                    $( '#page-dots' ).find( 'button.clicked' )
+                        .removeClass( 'clicked' )
+                    ;
+                })
+
+            })
+        ;
+
+        // 4. Actualiza controles de navegación a medida que se hace scroll sobre las páginas
+        var pages_waypoint_handler = function() {
+
+            let page_target = this.element.id
+
+            let $target = $( '#page-dots' )
+                .find( `li[data-section="#${page_target}"]` )
+                .find( 'button' )
+            ;
+
+            updateNavigationControl( 'page-dots', $target )
+            updateNavigationControl( 'page-counter', $target )
+
+        };
+
+        $pages.waypoint({
+            offset: '50%',
+            handler: function( direction ) {
+                if ( direction === 'down' )
+                    pages_waypoint_handler.call( this )
+                ;
+            }
+        })
+
+        $pages.waypoint({
+            offset: '-50%',
+            handler: function( direction ) {
+                if ( direction === 'up' )
+                    pages_waypoint_handler.call( this )
+                ;
+            }
+        })
+
+    };
+
+
+    /* UpdateRightNavigation
+    * ------------------------------------------------------ */
+   var updateNavigationControl = function( control, $target ) {
+
+        switch ( control ) {
+
+            case 'page-dots':
+
+                // Actualiza dot en page-dots
+                $( '#page-dots' ).find( 'li.active' )
+                    .removeClass( 'active' )
+                ;
+
+                $target.parent()
+                    .addClass( 'active' )
+                ;
+
+                break
+
+            ;
+
+            case 'page-counter':
+
+                // Actualiza el número de sección en page-counter
+                $( '#page-counter' ).find( 'span:first-child' )
+                    .text(function() {
+                        let position = $target.parent().data( 'position' )
+                        
+                        if ( position < 10 )
+                            position = '0' + position
+                        ;
+
+                        return position
+                    })
+                ;
+
+                break
+                
+            ;
+
+        }
+
+   };
 
 
    /* Initialize
@@ -646,6 +801,7 @@ $(".btn-with-icon").on("click", function() {
         more_services_button();
         aboutUsAnimation();
         contactCursorDissapear();
+        buildNavigationControl();
 
     })();
 

@@ -14,7 +14,7 @@
     ?>
 
 
-    <footer class="target-section">
+    <footer>
         <div class="row" data-aos="fade-up">
             <div class="col-full ss-copyright">
                 <div class="fl-col-group" id="footer-widgets">

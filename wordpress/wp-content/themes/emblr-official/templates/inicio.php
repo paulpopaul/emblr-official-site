@@ -191,13 +191,16 @@
 
     <?  if ( $navegacion_lateral ): ?>
 
-    <div class="page-counter">01 / <span>05</span></div>
+    <div id="page-counter" class="page-counter"> <span>01</span> / <span>05</span> </div>
 
-    <ul class="page-dots">
-        <li class="active"><button type="button"></button></li>
-        <li><button type="button"></button></li>
-        <li><button type="button"></button></li>
-        <li><button type="button"></button></li>
+    <ul id="page-dots" class="page-dots">
+
+        <!--
+            Estructura:
+            <li class="active"><button type="button"></button></li>
+            <li><button type="button"></button></li>
+        -->
+
     </ul>
 
     <?  endif ?>

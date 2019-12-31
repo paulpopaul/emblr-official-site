@@ -63,7 +63,7 @@
  <!-- Spot
 ================================================== -->
 
-<section id="spot" class="spot target-section section-page">
+<section id="spot" class="spot section-page">
 
 	<h1 data-aos="fade-up"> <? the_title() ?> </h1>
 	<h6 data-aos="fade-right">

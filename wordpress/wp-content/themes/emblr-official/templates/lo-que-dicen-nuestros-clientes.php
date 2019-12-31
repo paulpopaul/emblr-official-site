@@ -51,12 +51,12 @@
      */
     $visibilidad_clientes = get_field( 'visibilidad_clientes', $post->ID );
 
-    
+
 ?>
 
 
 
-<section class="s-testimonials target-section section-page">
+<section id="testimonios" class="s-testimonials section-page">
     <h1 data-aos="fade-up"> <? the_title() ?> </h1>
     <div class="testimonials__icon" data-aos="fade-up"></div>
 
@@ -118,7 +118,7 @@
 ================================================== -->
 <?  if ( $visibilidad_clientes ) : ?>
 
-<section id="testimonials-clientes-logo" class="target-section section-page">
+<section id="testimonials-clientes-logo" class="section-page">
     <div data-aos="flip-down" data-aos-offset="0">
 
         <div class="clientes-logo">

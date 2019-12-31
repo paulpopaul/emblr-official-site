@@ -353,7 +353,7 @@
 	*
 	*/
     $theme_menus = get_nav_menu_locations( );
-    $main_nav_menu = $theme_menus['menu-principal'];
+    $main_nav_menu = $theme_menus[ 'menu-principal' ];
     ## elementos del menú principal (array)
     $main_nav_menu_items = wp_get_nav_menu_items( $main_nav_menu );
 

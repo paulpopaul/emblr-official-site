@@ -2396,7 +2396,7 @@ body.menu-is-open {
   z-index: 4;
 }
 
-.page-counter span {
+.page-counter span:first-child {
   color: #1FBDA2;
 }
 
@@ -2412,6 +2412,7 @@ ul.page-dots {
 ul.page-dots li {
   padding: 0;
   margin-bottom: 14px;
+  position: relative;
 }
 
 ul.page-dots button {
@@ -2432,6 +2433,12 @@ ul.page-dots button::after {
   border-radius: 4px;
   display: block;
   transition: all .2s ease;
+  position: relative;
+  z-index: 99;
+}
+
+ul.page-dots button.clicked::after {
+  background: #1fbda2;
 }
 
 ul.page-dots li.active button::before {

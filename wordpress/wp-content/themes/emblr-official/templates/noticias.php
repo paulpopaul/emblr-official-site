@@ -40,7 +40,7 @@
  <!-- Noticias
 ================================================== -->
 
-<section id="noticias" class="noticias target-section section-page">
+<section id="noticias" class="noticias section-page">
 
 	<div class="slick-stories-container">
 		<!-- prev, next arrows -->
