@@ -60,8 +60,6 @@
                 'scrollTop': $( target_id ).offset().top
             }, cfg.scrollDuration, 'swing' )
             .promise().done(function() {
-                window.location.hash = target_id;
-
                 if ( typeof callback === 'function' )
                     callback()
                 ;
@@ -658,7 +656,7 @@ $(".btn-with-icon").on("click", function() {
             ;
 
             $li_button.attr({
-                'data-section': '#' + $(page).attr('id'),
+                'data-section': $(page).attr('id'),
                 'data-position': i + 1
             })
 
@@ -686,7 +684,7 @@ $(".btn-with-icon").on("click", function() {
                 $target.addClass( 'clicked' )
                 
                 // Se hace ScrollTo a la página
-                scrollDownTo( target_id, function() {
+                scrollDownTo( `#${target_id}`, function() {
                     $( '#page-dots' ).find( 'button.clicked' )
                         .removeClass( 'clicked' )
                     ;
@@ -701,12 +699,13 @@ $(".btn-with-icon").on("click", function() {
             let page_target = this.element.id
 
             let $target = $( '#page-dots' )
-                .find( `li[data-section="#${page_target}"]` )
+                .find( `li[data-section="${page_target}"]` )
                 .find( 'button' )
             ;
 
             updateNavigationControl( 'page-dots', $target )
             updateNavigationControl( 'page-counter', $target )
+            updateNavigationControl( 'hash', page_target )
 
         };
 
@@ -769,6 +768,13 @@ $(".btn-with-icon").on("click", function() {
 
                 break
                 
+            ;
+
+            case 'hash':
+                // $target: section string
+                window.location.hash = `!${$target}`
+                break
+
             ;
 
         }
