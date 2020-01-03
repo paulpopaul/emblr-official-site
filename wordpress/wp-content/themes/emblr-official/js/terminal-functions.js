@@ -61,6 +61,7 @@
         out_editable = document.createElement('textarea')
       }
       
+      out_editable.name = s.n
       out_editable.autocomplete = "off"
       out_editable.className += s.c || ''
       out_editable.value = s.r
@@ -81,8 +82,8 @@
   const cout_f = t => render([{r: t, c: 'out_f'}])
   const cerr = t => render([{r: t, c: 'err'}])
   const cok = t => render([{r: t, c: 'ok'}])
-  const cout_i = t => render_editable([{r: t, c: 'out_i', t: 'i'}])
-  const cout_a = t => render_editable([{r: t, c: 'out_a', t: 'a'}])
+  const cout_i = ( t, n ) => render_editable([{r: t, c: 'out_i', t: 'i', n: n}])
+  const cout_a = ( t, n ) => render_editable([{r: t, c: 'out_a', t: 'a', n: n}])
 
   const removeElement = (array, element) => {
     const index = array.indexOf(element)
@@ -186,9 +187,13 @@
       if (!result) return
    	
       // outs & name:
-      if (n == 1) name = $prompt.value.split(" ")[0] // obtiene sólo nombre
-      if (n <= 2) cout_i($prompt.value)
-      else if (n == 3) cout_a($prompt.value)
+      if (n == 1) {
+        name = $prompt.value.split(" ")[0] // obtiene sólo nombre
+        cout_i($prompt.value, 'nombre')
+      }
+
+      if (n == 2) cout_i($prompt.value, 'email')
+      else if (n == 3) cout_a($prompt.value, 'consulta')
       
       history.push($prompt.value)
       h = history.length
@@ -233,18 +238,30 @@
         $prompt.style.display = "none"
 
         var progress_bar = document.createElement("div")
-        // var progress_bar = document.querySelector(".progress-bar")
         progress_bar.className = "progress-bar"
 
         $prev.appendChild(progress_bar)
         progress_bar.className += " progress-bar-fill"
-        
-        setTimeout(() => {
-          // progress_bar.style.display = "none"
 
-          cok('\n\n> Mensaje enviado.\nTe responderemos a la brevedad. ~\n\n\n')
-          cok('Done .')
+        // Se esperan 1500ms a que termine la animación de cargando (fake)
+        setTimeout(() => {
+          // Se envían datos a la función general de envío:
+          window.sendContactForm( '#terminal-form', ( response ) => {
+            //callback:
+            if ( 'OK' === response ) {
+              // success
+              cok('\n\n> Mensaje enviado.\nTe responderemos a la brevedad. ~\n\n\n')
+              cok('Done .')
+
+            } else {
+              // failure
+              cerr( '\n\n> No se envió el mensaje\n' )
+              cerr( `Detalle: ${response} ~` )
+            }
+
+          })
         }, 1500)
+ 
       }
       
     } else if (e.key === 'ArrowUp') {

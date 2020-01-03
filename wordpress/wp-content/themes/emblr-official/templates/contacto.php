@@ -55,7 +55,7 @@
           <span class="terminal__circle terminal__circle--green"></span>
         </div>
 
-        <div class='terminal__window'>
+        <div id="terminal-form" class='terminal__window'>
           <div id='prev'>
             
           </div>
@@ -67,25 +67,25 @@
         </div>
     </div> <!-- terminal -->
 
-    <form class="traditional-form" method="post" action="">
+    <form id="traditional-form" class="traditional-form">
         <div>
             <pre>Nombre</pre>
-            <input type="text" name="nombre" id="" class="nombre" autofocus>
+            <input type="text" name="nombre" class="nombre" required autofocus>
         </div>
 
         <div>
             <pre>Correo</pre>
-            <input type="text" name="email" id="" class="email">
+            <input type="email" name="email" class="email" pattern="[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
         </div>
 
         <div>
             <pre>Consulta</pre>
-            <textarea name="subject" id="" class="subject"></textarea>
+            <textarea name="consulta" class="subject" maxlength="150" minlength="15" required></textarea>
         </div>
 
         <div class="submit-area">
             <pre>Presiona <span>enviar</span> para confirmar tu mensaje</pre>
-            <input type="submit" value="ENVIAR" class="btn btn--primary btn--large">
+            <input id="traditional-form-submit" type="submit" value="ENVIAR" class="btn btn--primary btn--large">
         </div>
     </form> <!-- traditional-form -->
   </div>

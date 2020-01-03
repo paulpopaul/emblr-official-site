@@ -9,7 +9,8 @@
     
     var cfg = {
         scrollDuration : 800, // smoothscroll duration
-        mailChimpURL   : 'https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc'   // mailchimp url
+        mailChimpURL   : 'https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc',   // mailchimp url
+        formSendURL    : '/wp-content/themes/emblr-official/actions/enviar-contacto.php'  // contact send url
     },
 
     $WIN = $(window);
@@ -782,6 +783,48 @@ $(".btn-with-icon").on("click", function() {
    };
 
 
+   /* Send Contact Form: General send (terminal and traditional)
+    * ---------------------------------------------------------- */
+   window.sendContactForm = function( form, callback ) {
+
+        let data = {
+            nombre  : $( 'input[name="nombre"]', form ).val(),
+            email   : $( 'input[name="email"]', form ).val(),
+            consulta: $( 'textarea[name="consulta"]', form ).val()
+        }
+
+        $.post( cfg.formSendURL, data, function( response ) {
+            if ( typeof callback === 'function' )
+                callback( response )
+            ;
+        })
+
+   };
+
+
+   /* Traditional form
+    * ------------------------------------------------------ */
+   var traditionalFormValidate = function() {
+
+        $('#traditional-form').on('submit', function(e) {
+            e.preventDefault()
+
+            sendContactForm( '#traditional-form', function( response ) {
+                // callback
+
+                if ( 'OK' === response )
+                    // success
+                    alert( 'envío finalizado' )    // REEMPLAZAR POR ALERT BOX MODAL
+
+                else
+                    // failure
+                    alert( `no se envió el mensaje: ${response}` )   // REEMPLAZAR POR ALERT BOX MODAL
+            })
+        })
+
+   };
+
+
    /* Initialize
     * ------------------------------------------------------ */
     (function clInit() {
@@ -808,6 +851,7 @@ $(".btn-with-icon").on("click", function() {
         aboutUsAnimation();
         contactCursorDissapear();
         buildNavigationControl();
+        traditionalFormValidate();
 
     })();
 
