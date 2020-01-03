@@ -134,14 +134,23 @@
         <div class="opaque-controls"></div>
 
         <a class="icon-search">
-            <div class="search">
+
+            <form role="search" method="get" id="searchform" action="<?= home_url( '/' ) ?>" class="search">
+
                 <input id="search" type="checkbox" /><label class="search-init" for="search"></label>
-                <label class="search-active" for="search"></label> 
-            <div class="search-border"></div>
-                <input class="search-field" id="search-field" type="text" placeholder="Buscar" />
-            <div class="close-search"></div> 
-            </div>
-        </a> 
+                <label class="search-active" for="search"></label>
+
+                <div class="search-border"></div>
+
+                <!-- WORDPRESS SEARCH INPUT -->
+                <input type="text" id="s" name="s" class="search-field" placeholder="Buscar" />
+                <!-- /WORDPRESS SEARCH INPUT -->
+
+                <div class="close-search"></div>
+                
+            </form> <!-- search -->
+
+        </a>  <!-- icon-search -->
 
         <?  endif  ?>
 

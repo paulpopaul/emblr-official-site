@@ -2167,6 +2167,35 @@ body.menu-is-open {
   top: 40px;
 }
 
+/* -------------------------------------------------------------------
+ * ## search-page results
+ * ------------------------------------------------------------------- */
+ .s-search-results h2 { display: inline; }
+ .s-search-results h2::before {
+  content: "\f101";
+  font-family: "Font Awesome 5 Free";
+  font-style: 24px;
+  color: #1fbda2;
+  margin-right: 5px;
+}
+
+.s-search-results article:not(:first-of-type) { margin-top: 40px; }
+.s-search-results .fa-search { color: #fff; margin-right: 5px; }
+.s-search-results > tiny {
+  margin-bottom: 40px;
+  display: inline-block;
+  color: #1fbda2;
+  font-weight: bold;
+}
+
+.s-search-results .entry-content { padding-left: 41px; }
+
+.s-search-results mark {
+  /* background-color: #1fbda2; */
+  font-weight: bold;
+}
+
+
 /* ------------------------------------------------------------------- 
  * ## main navigation 
  * ------------------------------------------------------------------- */
