@@ -55,7 +55,7 @@
 			'public'				=> true,
 			'menu_icon'				=> 'dashicons-portfolio',
 			'menu_position'			=> 20,
-			'exclude_from_search'	=> true,
+			'exclude_from_search'	=> false,
 			'show_in_nav_menus'		=> false,
 			'supports'				=> array( 'title', 'custom_fields' )
 
