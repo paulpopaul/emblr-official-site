@@ -2170,6 +2170,19 @@ body.menu-is-open {
 /* -------------------------------------------------------------------
  * ## search-page results
  * ------------------------------------------------------------------- */
+ .header-logo .marca {
+   font-family: "Nunito Sans";
+   font-size: 14px;
+   color: #666; 
+   font-weight: bold;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+
+   position: relative;
+   bottom: 10px;
+   left: 38px;
+  }
+
  .s-search-results { margin-top: 60px; }
  .s-search-results h2 { display: inline; }
  .s-search-results h2::before {

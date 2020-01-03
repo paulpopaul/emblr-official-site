@@ -44,11 +44,11 @@
 
 	<div class="slick-stories-container">
 		<!-- prev, next arrows -->
-		<span class="slick-stories-prev slick-stories-arrow">
+		<span class="slick-stories-prev slick-stories-arrow" data-aos="fade-right">
 			<i class="fas fa-caret-left fa-2x"></i>
 		</span>
 
-		<span class="slick-stories-next slick-stories-arrow">
+		<span class="slick-stories-next slick-stories-arrow" data-aos="fade-left">
 			<i class="fas fa-caret-right fa-2x"></i>
 		</span>
 		

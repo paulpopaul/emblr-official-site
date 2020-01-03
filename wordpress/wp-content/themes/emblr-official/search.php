@@ -26,7 +26,10 @@
     *   Objeto post (resultados)
     *
     */
-    global $post;
+    global
+        $post,
+        $wp_query
+    ;
 
 
     /*
@@ -74,7 +77,21 @@
 
         <div class="header-logo">
             <a class="site-logo" href="#">
+
+            <?
+            
+                if ( $wp_query->found_posts < 10 ) :
+                    $total_resultados = '0' . $wp_query->found_posts;
+
+                else :
+                    $total_resultados = $wp_query->found_posts;
+
+                endif;
+
+            ?>
+
                 <img src="<?= get_template_directory_uri() ?>/images/logo.svg" alt="Homepage">
+                <span class="marca"> total <?= $total_resultados ?> </span>
             </a>
         </div> <!-- end header-logo -->
 
@@ -182,6 +199,9 @@
         
     </section>
     <!-- Sección: Resultado búsqueda -->
+
+    
+    <? get_template_part( 'templates/noticias' ) ?>
 
 
     <? get_footer() ?>
