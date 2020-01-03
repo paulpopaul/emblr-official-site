@@ -2170,6 +2170,7 @@ body.menu-is-open {
 /* -------------------------------------------------------------------
  * ## search-page results
  * ------------------------------------------------------------------- */
+ .s-search-results { margin-top: 60px; }
  .s-search-results h2 { display: inline; }
  .s-search-results h2::before {
   content: "\f101";

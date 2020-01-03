@@ -29,39 +29,159 @@
     global $post;
 
 
+    /*
+    *   Título menú
+    */
+    $titulo_menu = get_field( 'titulo_menu', 'options' );
+
+
+    /*
+    *   Widgets menú
+    */
+    $widgets_menu = get_field( 'widgets_menu', 'options' );
+
+
+    /*
+    *   Redes menú
+    */
+    $redes_menu = get_field( 'redes_menu', 'options' );
+
+
+    /*
+    *   Mini logo esquinero
+    */
+    $logo_esquina = get_field( 'logo_esquina', 'options' );
+
+
+    /*
+    *   Búsqueda
+    */
+    $busqueda = get_field( 'busqueda', 'options' );
+
 ?>
 
 
 <? get_header() ?>
 
+<body id="top" class="<? emblr_theme() ?>">
 
-<!-- Sección: Resultado búsqueda -->
-<section id="search-results" class="section-page s-search-results" data-aos="fade-up">
-    
-    <h1> Resultados de búsqueda: </h1>
-    <!-- <i class="fas fa-search"></i> --> <tiny> Usted ingresó: "<?= $_GET['s'] ?>" </tiny>
 
-    <? while ( have_posts() ) : the_post() ?>
-        <article>
+    <!-- Header
+        ================================================== -->
+    <header class="s-header">
+        
+        <?  if ( $logo_esquina ) :  ?>
 
-            <a href="<? the_permalink() ?>">
-                <h2 class="entry-title main_title"> <? the_title() ?> </h2>
+        <div class="header-logo">
+            <a class="site-logo" href="#">
+                <img src="<?= get_template_directory_uri() ?>/images/logo.svg" alt="Homepage">
             </a>
+        </div> <!-- end header-logo -->
 
-            <div class="entry-content">
-                <?
-                    $content = get_the_content();
-                    $content = str_replace( $_GET['s'], "<mark>${_GET['s']}</mark>", $content );
+        <?  endif  ?>
 
-                    echo $content
-                ?>
+
+        <nav class="header-nav">
+            <div class="header-nav__bg"> <!-- blur background efx --> </div>
+
+            <div class="header-nav__content-container">
+                <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+                <h3> <?= $titulo_menu ?> </h3>
+
+                <div class="header-nav__content">
+                    
+                    <?
+
+                        if ( function_exists( 'custom_wp_nav_menu' ) )
+                            custom_wp_nav_menu( 'header-nav__list' );
+
+                    ?>
+
+
+                    <?  if ( $widgets_menu ) :  ?>
+
+                    <div id="menu-widgets">
+
+                        <?  dynamic_sidebar( 'main-menu' )  ?>
+
+                    </div>
+
+                    <?  endif  ?>
+
+                </div> <!-- end header-nav__content -->
             </div>
 
-        </article>
-    <? endwhile ?>
-    
-</section>
-<!-- Sección: Resultado búsqueda -->
+        </nav> <!-- end header-nav -->
+
+        
+        <?  if ( $busqueda ) :  ?>
+
+        <div class="opaque-controls"></div>
+
+        <a class="icon-search">
+
+            <form role="search" method="get" id="searchform" action="<?= home_url( '/' ) ?>" class="search">
+
+                <input id="search" type="checkbox" checked/><label class="search-init" for="search"></label>
+                <label class="search-active" for="search"></label>
+
+                <div class="search-border focus"></div>
+
+                <!-- WORDPRESS SEARCH INPUT -->
+                <input
+                    type="text"
+                    id="s" name="s"
+                    class="search-field"
+                    placeholder="Buscar"
+                    value="<?= $_GET['s']?>"
+                    autofocus
+                />
+                <!-- /WORDPRESS SEARCH INPUT -->
+
+                <div class="close-search"></div>
+                
+            </form> <!-- search -->
+
+        </a>  <!-- icon-search -->
+
+        <?  endif  ?>
 
 
-<? get_footer() ?>
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- Sección: Resultado búsqueda -->
+    <section id="search-results" class="section-page s-search-results" data-aos="fade-up">
+        
+        <h1> Resultados de búsqueda: </h1>
+        <!-- <i class="fas fa-search"></i> --> <tiny> Usted ingresó: "<?= $_GET['s'] ?>" </tiny>
+
+        <? while ( have_posts() ) : the_post() ?>
+            <article>
+
+                <a href="<? the_permalink() ?>">
+                    <h2 class="entry-title main_title"> <? the_title() ?> </h2>
+                </a>
+
+                <div class="entry-content">
+                    <?
+                        $content = get_the_content();
+                        $content = str_replace( $_GET['s'], "<mark>${_GET['s']}</mark>", $content );
+
+                        echo $content
+                    ?>
+                </div>
+
+            </article>
+        <? endwhile ?>
+        
+    </section>
+    <!-- Sección: Resultado búsqueda -->
+
+
+    <? get_footer() ?>
