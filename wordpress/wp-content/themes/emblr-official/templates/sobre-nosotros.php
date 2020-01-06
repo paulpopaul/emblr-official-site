@@ -88,6 +88,21 @@ Nuestra lema “Ingeniería de software para Soluciones Empresariales Integradas
                 <p> La tecnología en la actualidad es una herramienta imprescindible para las empresas e instituciones que buscan crecer y producir de forma eficaz. Buscamos ser un referente en el mercado nacional en áreas de las tecnologías de información, por esto es que hemos decidido ser una empresa en constante innovación, capaz de solucionar cualquier problemática que el sector de la tecnología requiera.
                 </p>
             </div>
+            <div id="feature-4" class="features-textblock animated fadeIn">
+                <p>Fundación</p>
+                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+            </div>
+            <div id="feature-5" class="features-textblock animated fadeIn">
+                <p>Features</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+            </div>
+            <div id="feature-6" class="features-textblock animated fadeIn">
+                <p>Derecho</p>
+                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+            </div>
              
         </div>
 
