@@ -19,3 +19,5 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {font-family:"Bold Regular";src:url("Bold-Regular.eot?") format("eot"),url("Bold-Regular.woff") format("woff"),url("Bold-Regular.ttf") format("truetype"),url("Bold-Regular.svg#BoldRegular") format("svg");font-weight:normal;font-style:normal;}
