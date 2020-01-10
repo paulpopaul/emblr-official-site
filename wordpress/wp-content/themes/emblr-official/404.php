@@ -14,16 +14,16 @@
 
         <div class="notfound">
             <div class="notfound-404">
-                <h1>404</h1>
+                <h1> 404 </h1>
             </div>
 
-            <h2>PAGINA NO ENCONTRADA</h2>
+            <h2> <?= __( 'PAGINA NO ENCONTRADA', 'emblr' ) ?> </h2>
 
             <div class="notfoundtext">
-                <p>La página que busca podría haberse eliminado o no está disponible temporalmente</p>
+                <p> <?= __( 'La página que busca podría haberse eliminado o no está disponible temporalmente', 'emblr' ) ?> </p>
             </div>
             
-            <a class="pag-inicio" href="<?= home_url() ?>">PAGINA DE INICIO</a>
+            <a class="pag-inicio" href="<?= home_url() ?>"> <?= __( 'PAGINA DE INICIO', 'emblr' ) ?> </a>
 
             <?
 
