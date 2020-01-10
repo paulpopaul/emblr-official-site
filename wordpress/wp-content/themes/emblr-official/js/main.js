@@ -35,7 +35,7 @@
         $WIN.on('load', function() {
 
             //force page scroll position to top at page refresh
-            $('html, body').animate({ scrollTop: 0 }, 'normal');
+            // $('html, body').animate({ scrollTop: 0 }, 'normal');
 
             // will first fade out the loading animation 
             $("#loader").fadeOut("slow", function() {
@@ -708,6 +708,16 @@ $(".btn-with-icon").on("click", function() {
 
             updateNavigationControl( 'page-dots', $target )
             updateNavigationControl( 'page-counter', $target )
+
+            if ( page_target === 'inicio' && window.location.hash.substr(0, 2) !== '#!' ) {
+                let target = document.querySelector( `#${page_target}` )
+                
+                // fast scroll to:
+                target.scrollIntoView( true )
+
+                return true
+            }
+
             updateNavigationControl( 'hash', page_target )
 
         };
