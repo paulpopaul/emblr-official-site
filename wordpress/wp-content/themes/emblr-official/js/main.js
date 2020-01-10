@@ -237,8 +237,10 @@
         $('.smoothscroll').on('click', function (e) {
             var target = this.hash;
             
-            e.preventDefault();
-            e.stopPropagation();
+            if ( $('body').attr('id') === 'main-page' ) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
 
             // checks if menu is open
             if ( $('body').hasClass('menu-is-open') ) {

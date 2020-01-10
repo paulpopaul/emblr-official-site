@@ -66,7 +66,7 @@
 
 <? get_header() ?>
 
-<body id="top" class="<? emblr_theme() ?>">
+<body class="<? emblr_theme() ?>">
 
 
     <!-- Header

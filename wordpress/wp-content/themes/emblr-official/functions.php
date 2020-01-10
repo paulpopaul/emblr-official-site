@@ -309,6 +309,8 @@
 						if ( $menu_item->type == 'post_type' ) :
 							## Modificamos enlace para dejarlo de tipo slug -> http://www.ensambler.cl/#menu-item
 							$menu_item_link = str_replace( get_site_url() . '/', '#', $menu_item->url );
+							## Se agrega la ruta absoluta de la página de inicio del sitio
+							$menu_item_link = get_home_url() . $menu_item_link;
 							## Se elimina último "/" del hash
 							$menu_item_link = substr( $menu_item_link, 0, -1 );
 							
