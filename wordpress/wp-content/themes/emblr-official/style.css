@@ -8959,11 +8959,10 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
   }
 }
 
-
 /* ===================================================================
- * # pagina 404
- *
- * ------------------------------------------------------------------- */
+* # pagina 404
+*
+* ------------------------------------------------------------------- */
 
 #notfound {
   position: relative;
@@ -9167,7 +9166,7 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
 
 @media only screen and (max-width: 480px) {
 
-  .notfound .notfoundtext{
+  .notfound .notfoundtext {
     width: 89%;
     padding-bottom: 8px;
   }
@@ -9176,17 +9175,21 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
     height: 122px;
     line-height: 122px;
   }
+
   .notfound .notfound-404 h1 {
     font-size: 122px;
   }
+
   .notfound h2 {
     font-size: 22px;
-    margin-top:26px;
+    margin-top: 26px;
     margin-bottom: 16px;
   }
+
   .notfound p {
     font-size: 17px;
   }
+
   .notfound a {
     font-size: 16px;
   }
@@ -9249,6 +9252,8 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
       }
     }
   }
+}
+
 
 /* ===================================================================
  * # footer
