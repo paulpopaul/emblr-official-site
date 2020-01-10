@@ -1,5 +1,7 @@
 <?php get_header() ?>
 
+<body>
+
 <!-- Contenido página 404 aquí -->
 
     <div id="notfound">
@@ -9,14 +11,18 @@
             <div></div>
             <div></div>
         </div>
+
         <div class="notfound">
             <div class="notfound-404">
                 <h1>404</h1>
             </div>
+
             <h2>PAGINA NO ENCONTRADA</h2>
+
             <div class="notfoundtext">
-            <p>La página que busca podría haberse eliminado o no está disponible temporalmente</p>
+                <p>La página que busca podría haberse eliminado o no está disponible temporalmente</p>
             </div>
+            
             <a class="pag-inicio" href="<?= home_url() ?>">PAGINA DE INICIO</a>
 
             <?
@@ -25,7 +31,7 @@
                 *   Redes menú
                 */
                 $redes_menu = get_field( 'redes_menu', 'options' );
-                
+
             ?>
 
             <?  if ( $redes_menu ):  ?>
@@ -58,4 +64,6 @@
         </div>
     </div>
 
-<?php get_footer() ?>
+<!-- Contenido página 404 aquí -->
+
+    <?php get_footer() ?>
