@@ -304,12 +304,43 @@
             <p>La página que busca podría haberse eliminado o no está disponible temporalmente</p>
             </div>
             <a class="pag-inicio" href="#">PAGINA DE INICIO</a>
+
+            <?
+
+                /*
+                *   Redes menú
+                */
+                $redes_menu = get_field( 'redes_menu', 'options' );
+                
+            ?>
+
+            <?  if ( $redes_menu ):  ?>
+
             <div class="notfound-social">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-            </div>
+
+                <?  global $social_links  ?>
+
+                <?  foreach ( $social_links as $social_name => $social ) :  ?>
+
+                <?  if ( $social ) :
+
+                    switch ( $social_name ) :
+                        case "facebook": $social_name .= "-f";      break;
+                        case "linkedin": $social_name .= "-in";     break;
+                    endswitch
+                ?>
+
+                <a href="<?= $social['url'] ?>" target="<?= $social['target'] ?>">
+                    <i class="fab fa-<?= $social_name ?>"></i>
+                </a>
+
+                <?  endif  ?>
+                <?  endforeach  ?>
+
+            </div> <!-- notfound-social -->
+
+            <?  endif  ?>
+
         </div>
     </div>
 
