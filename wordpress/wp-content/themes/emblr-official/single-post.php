@@ -21,6 +21,14 @@
 
         /**
          * 
+         *  Tiempo de lectura
+         * 
+         */
+        $tiempo_lectura = get_field( 'tiempo_lectura', $post->ID );
+
+
+        /**
+         * 
          *  Categorías del post
          * 
          */
@@ -46,7 +54,10 @@
         <!-- POST HEADER -->
 
         <h1 class="post-title"> <? the_title() ?> </h1>
-        <tiny class="post-date"> <? the_date( 'j F, Y' ) ?> · X <?= __( 'minutos de lectura', 'emblr' ) ?> </tiny>
+        <tiny class="post-date">
+            <? the_date( 'j F, Y' ) ?>
+            <? if ( $tiempo_lectura ): ?> · <?= $tiempo_lectura ?> <?= __( 'minutos de lectura', 'emblr' ) ?> <? endif ?>
+        </tiny>
 
         <!-- POST HEADER -->
 
