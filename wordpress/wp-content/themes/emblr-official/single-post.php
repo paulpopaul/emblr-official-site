@@ -201,6 +201,10 @@
 
                             </div> <!-- post-author-container -->
                         </div> <!-- post-author-box -->
+                    
+                    <? else: ?>
+                        
+                        <?= __( 'No asignado' ) ?>
 
                     <? endif ?>
 
@@ -208,7 +212,7 @@
 
 
                 <div class="post-sidebar-container">
-                    <? get_sidebar( 'posts' ) ?>
+                    <? dynamic_sidebar( 'post-sidebar' ) ?>
                 </div> <!-- post-sidebar-container -->
 
             </aside>
