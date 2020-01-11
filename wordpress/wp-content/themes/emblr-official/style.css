@@ -9939,15 +9939,38 @@ ul.post-author-social {
 .post-sidebar-container .widget_categories a:visited:hover { color: #fff; }
 
 /* sidebar: últimos post */
-.post-sidebar-container .widget_smart_recent_entries { margin-top: 60px; }
-.post-sidebar-container .widget_smart_recent_entries h5 {
+.post-sidebar-container .widget_smart_recent_entries .srpw-title {
+  color: #fff;
+}
+
+/* sidebar: últimos posts & social follow widget estilos comunes */
+.post-sidebar-container .widget_smart_recent_entries,
+.post-sidebar-container .widget_social_follow { margin-top: 60px; }
+
+.post-sidebar-container .widget_smart_recent_entries h5,
+.post-sidebar-container .widget_social_follow h5 {
   padding-bottom: 20px;
   margin-bottom: 30px;
 
   border-bottom: 1px solid rgba(102, 102, 102, 0.35);
 }
 
-.post-sidebar-container .widget_smart_recent_entries .srpw-title {
+/* social follow widget: "síguenos" */
+.widget_social_follow .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.widget_social_follow .social a {
+  padding: 10px;
+  font-size: 20px;
+  color: #1fbda2;
+  transition: all 0.3s ease 0s;
+}
+
+.widget_social_follow .social a:hover {
   color: #fff;
 }
 

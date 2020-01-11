@@ -289,6 +289,23 @@
 
 
 	/**
+	*
+	*	Crea widget "Ensambler Social Follow"
+	*
+	*/
+	add_action( 'widgets_init', 'create_social_follow_widget' );
+	function create_social_follow_widget ( ) {
+
+		## Se carga archivo del widget
+		include_once( get_template_directory( ) . '/includes/widgets/social-follow.php' );
+		## Se registra widget
+		register_widget( 'social_follow_widget' );
+
+	}
+
+
+
+	/**
 	 * 
 	 * 	Agrega clase Light/Dark Theme en body
 	 * 
