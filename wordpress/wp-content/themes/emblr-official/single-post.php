@@ -119,7 +119,24 @@
                             <h6> <?= __( 'compartir este post', 'emblr' ) ?> </h6>
                         </div>
 
-                        <!-- botones redes aquí -->
+                        <div class="post-share-buttons">
+
+                            <? $url = get_the_permalink() ?>
+                            
+                            <!-- facebook -->
+                            <a target="_blank" href="<?= "http://www.facebook.com/sharer.php?u=${url}" ?>">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <!-- facebook -->
+                            
+                            <!-- twitter -->
+                            <a target="_blank" href="<?= "http://www.twitter.com/share?url=${url}" ?>">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <!-- twitter -->
+
+                        </div> <!-- post-share-buttons -->
+
                     </div> <!-- post-share -->
 
                     <!-- POST TAXONOMIES and SHARE -->

@@ -9804,10 +9804,12 @@ h1.post-title {
   border-bottom: 1px solid rgba(102, 102, 102, 0.35);
 }
 
+/* títulos estilos comunes */
+.post-taxonomy-title,
+.post-share-title { align-self: center; }
+
 .post-taxonomies h6 {
   margin: 0;
-  padding-top: 8px;
-
   display: inline;
 
   font-family: "Nunito Sans";
@@ -9972,6 +9974,52 @@ ul.post-author-social {
 
 .widget_social_follow .social a:hover {
   color: #fff;
+}
+
+/* share buttons */
+.post-share-buttons a {
+  display: inline-block;
+  position: relative;
+  margin: 0 0 0 13px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  min-width: 30px;
+  min-height: 30px;
+  width: 100%;
+  height: auto;
+  max-width: 50px;
+  max-height: 50px;
+  font-size: 20px;
+  background-color: transparent;
+  border: 1px solid #1fbda2;
+}
+
+.post-share-buttons a:hover {
+  /* border-color: #fff; */
+}
+
+.post-share-buttons i {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 500;
+  color: #666;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+}
+
+.post-share-buttons a:hover i {
+  color: #fff;
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
 }
 
 
