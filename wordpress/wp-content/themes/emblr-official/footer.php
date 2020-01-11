@@ -15,7 +15,7 @@
 
 
     <footer>
-        <div class="row" data-aos="fade-up">
+        <div class="row">
             <div class="col-full ss-copyright">
                 <div class="fl-col-group" id="footer-widgets">
 
