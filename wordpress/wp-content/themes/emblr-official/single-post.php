@@ -24,7 +24,7 @@
          *  Categorías del post
          * 
          */
-        $categorias = get_categories( );
+        $categorias = get_the_category( $post->ID );
 
 
         /**
@@ -32,7 +32,7 @@
          *  Etiquetas del post
          * 
          */
-        $etiquetas = get_tags( );
+        $etiquetas = get_the_tags( $post-> ID );
 
     ?>
 
