@@ -9903,13 +9903,14 @@ h1.post-title {
 
 .post-author-content p { font-size: 15px; margin-top: 16.5px; }
 
-.post-author-social {
+ul.post-author-social {
+  margin-bottom: 11px !important;
   bottom: 15px !important;
 }
 
 /* sidebar: posts */
 .post-sidebar-container {
-  margin-top: 55px;
+  margin-top: 60px;
 }
 
 .post-sidebar-container .widget_categories ul {
@@ -9936,6 +9937,19 @@ h1.post-title {
 
 .post-sidebar-container .widget_categories a:link:hover,
 .post-sidebar-container .widget_categories a:visited:hover { color: #fff; }
+
+/* sidebar: últimos post */
+.post-sidebar-container .widget_smart_recent_entries { margin-top: 60px; }
+.post-sidebar-container .widget_smart_recent_entries h5 {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+
+  border-bottom: 1px solid rgba(102, 102, 102, 0.35);
+}
+
+.post-sidebar-container .widget_smart_recent_entries .srpw-title {
+  color: #fff;
+}
 
 
 /*# sourceMappingURL=main.css.map */
