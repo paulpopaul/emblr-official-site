@@ -9760,11 +9760,15 @@ footer {
  * ## ENTRADAS -> Noticias
  * ------------------------------------------------------------------- */
 
-section.s-noticias {
+section.s-post-view {
   background: #000;
 }
 
-.post-title { }
+h1.post-title {
+  font-family: "Nunito Sans";
+  font-weight: 500;
+}
+
 .post-date { }
 
 .post-grid-container {
@@ -9803,8 +9807,53 @@ section.s-noticias {
 .s-noticias aside { }
 
 .post-writter { }
-.post-writter h5 { margin: 0; }
+
+.post-writter h5 {
+  margin: 0;
+
+  font-family: "Nunito Sans";
+  font-weight: bold;
+  font-size: 20px;
+}
+
 .post-writter h5::first-letter { text-transform: uppercase; }
+
+/* author */
+.post-author-box {
+  border: 1px solid rgba(102, 102, 102, 0.35);
+  margin-top: 6.5px;
+}
+
+.post-author-container {
+  background: transparent;
+  border-bottom: none;
+
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.post-author-profile { width: 150px !important; }
+
+.post-author-container:hover { border-bottom: none; }
+
+.post-author-title {
+  font-family: "Nunito Sans";
+  font-weight: bold;
+
+  margin-top: 12px;
+}
+
+.post-author-ocupation {
+  font-family: "Nunito Sans" !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+}
+
+.post-author-content p { font-size: 15px; margin-top: 16.5px; }
+
+.post-author-social {
+  bottom: 15px !important;
+}
 
 
 /*# sourceMappingURL=main.css.map */

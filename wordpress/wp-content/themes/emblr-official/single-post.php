@@ -10,12 +10,20 @@
          */
         global $post;
 
+
+        /**
+         * 
+         *  Autor
+         * 
+         */
+        $autor = get_field( 'autor', $post->ID );
+
     ?>
 
 
     <!-- Contenido de entradas -->
 
-    <section class="section-page s-noticias article">
+    <section class="section-page s-post-view article">
 
         <? the_post() ?>
 
@@ -65,6 +73,7 @@
 
                 <section class="post-comments">
                     <!-- sistema comentarios aquí -->
+                    <? //comments_template() ?>
                 </section>
 
                 <!-- POST COMMENTS -->
@@ -80,6 +89,65 @@
 
                 <div class="post-writter">
                     <h5> <?= __( 'sobre el autor' ) ?> </h5>
+
+                    <?
+
+                        if ( $autor ) :
+
+                            $nombre_autor     = $autor->post_title;
+
+                            $profile_autor    = get_field( 'perfil', $autor->ID );
+                            $ocupacion_autor  = get_field( 'ocupacion', $autor->ID );
+                            $resena_autor     = get_field( 'resena', $autor->ID );
+
+                            // Profile (si url imagen está roto):
+                            $profile_autor = $profile_autor ?
+                                $profile_autor[ 'sizes' ][ 'large' ] : '#empty-profile-image-url'
+                            ;
+
+                            // Redes (opcional):
+                            $redes_autor = get_field( 'redes', $autor->ID );
+
+                            if ( $redes_autor ):
+                                
+                                $linkedin   = $redes_autor[ 'linkedin' ];
+                                $github     = $redes_autor[ 'github' ];
+                                $email      = $redes_autor[ 'email' ];
+                            
+                            endif;
+
+                    ?>
+
+                        <div class="post-author-box box-team">
+                            <div class="post-author-container our-team">
+
+                                <div class="post-author-profile pic">
+                                    <img src="<?= $profile_autor ?>">
+                                </div>
+
+                                <div class="post-author-content team-content">
+                                    <a href="<?= get_the_permalink( $autor->ID ) ?>">
+                                        <h3 class="post-author-title"> <?= $nombre_autor ?> </h3>
+                                    </a>
+
+                                    <span class="post-author-ocupation post"> <?= $ocupacion_autor ?> </span>
+
+                                    <p>
+                                        <?= $resena_autor ?>
+                                    </p>
+                                </div>
+
+                                <ul class="post-author-social social">
+                                    <li> <a href="<?= $linkedin ? $linkedin : '#' ?>" target="_blank" class="fab fa-linkedin"></a> </li>
+                                    <li> <a href="<?= $github ? $github : '#' ?>" target="_blank" class="fab fa-github"></a> </li>
+                                    <li> <a href="<?= $email ? "mailto:$email?subject=Contacto%20desde%20Ensambler&reg;" : '#' ?>" class="fas fa-envelope"></a> </li>
+                                </ul>
+
+                            </div> <!-- post-author-container -->
+                        </div> <!-- post-author-box -->
+
+                    <? endif ?>
+
                 </div> <!-- post-writter -->
 
 
