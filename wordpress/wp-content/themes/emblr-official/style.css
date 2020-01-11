@@ -9775,11 +9775,11 @@ h1.post-title {
   display: grid;
   grid-template-columns: 75% 25%;   /* definir esto ! */
   gap: 20px;
+
+  margin-top: 35px;
 }
 
 /* artículo */
-.post-article { }
-
 .post-featured-img {
   display: inline-block;
   padding: 8px;
@@ -9788,7 +9788,6 @@ h1.post-title {
 }
 
 .post-featured-img img { display: block; }
-.post-content { margin-top: 13px; }
 .post-content p { padding: 10px 0 !important; }
 .post-content p.p-highlight { font-size: 18px; }
 
