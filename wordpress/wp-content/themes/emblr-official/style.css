@@ -9847,11 +9847,9 @@ h1.post-title {
   cursor: default;
 }
 
-/* .post-taxonomies-content .btn:hover {
-  background: #fff;
-  color: #000;
-  border-color: #fff;
-} */
+.post-taxonomies-content .btn:hover {
+  color: #fff;
+}
 
 .post-labels { }
 .post-share { }
@@ -9882,8 +9880,8 @@ h1.post-title {
   background: transparent;
   border-bottom: none;
 
-  margin-left: 8px;
-  margin-right: 8px;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
 }
 
 .post-author-profile { width: 150px !important; }
@@ -9996,10 +9994,6 @@ ul.post-author-social {
   border: 1px solid #1fbda2;
 }
 
-.post-share-buttons a:hover {
-  /* border-color: #fff; */
-}
-
 .post-share-buttons i {
   font-family: "Font Awesome 5 Brands";
   font-weight: 500;
@@ -10011,10 +10005,6 @@ ul.post-author-social {
 
 .post-share-buttons a:hover i {
   color: #fff;
-  -moz-transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -ms--transform: rotate(360deg);
-  transform: rotate(360deg);
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
   -o-transition: all .5s;
