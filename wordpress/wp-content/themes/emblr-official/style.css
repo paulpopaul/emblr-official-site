@@ -9775,8 +9775,6 @@ h1.post-title {
   display: grid;
   grid-template-columns: 75% 25%;   /* definir esto ! */
   gap: 20px;
-  
-  margin-top: 23px;
 }
 
 /* artículo */
@@ -9795,8 +9793,65 @@ h1.post-title {
 .post-content p.p-highlight { font-size: 18px; }
 
 /* taxonomías */
-.post-taxonomies { }
-.post-categories { }
+.post-taxonomies > div {
+  display: grid;
+  grid-template-columns: max-content auto;
+
+  border-top: 1px solid rgba(102, 102, 102, 0.35);
+  padding: 35px 0;
+}
+
+.post-taxonomies > div:last-of-type {
+  border-bottom: 1px solid rgba(102, 102, 102, 0.35);
+}
+
+.post-taxonomies h6 {
+  margin: 0;
+  padding-top: 8px;
+
+  display: inline;
+
+  font-family: "Nunito Sans";
+  font-weight: bold;
+  font-size: 14px;
+
+  letter-spacing: 0;
+  color: #666;
+}
+
+.post-taxonomies-content { margin-bottom: -7px; }
+.post-taxonomies-content .btn {
+  float: left;
+  padding: 0px 25px;
+  margin: 0 0 7px 15px;
+
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: normal;
+
+  font-family: "Nunito Sans";
+	font-size: 17px;
+  font-weight: 500;
+
+  text-align: center;
+  line-height: 32px;
+
+  color: #666;
+
+  background: transparent;
+  border: 1px solid #1fbda2;
+  border-radius: 17px;
+
+  height: auto;
+  cursor: default;
+}
+
+/* .post-taxonomies-content .btn:hover {
+  background: #fff;
+  color: #000;
+  border-color: #fff;
+} */
+
 .post-labels { }
 .post-share { }
 
@@ -9876,11 +9931,13 @@ h1.post-title {
 
 .post-sidebar-container .widget_categories a,
 .post-sidebar-container .widget_categories a:link
-.post-sidebar-container .widget_categories a:link:visited {
+.post-sidebar-container .widget_categories a:visited {
   color: #1fbda2;
 }
 
-.post-sidebar-container .widget_categories a:link:hover { color: #fff; }
+.post-sidebar-container .widget_categories a:link:hover,
+.post-sidebar-container .widget_categories a:visited:hover { color: #fff; }
 
 
 /*# sourceMappingURL=main.css.map */
+

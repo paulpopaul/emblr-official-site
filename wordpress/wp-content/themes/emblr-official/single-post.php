@@ -18,6 +18,22 @@
          */
         $autor = get_field( 'autor', $post->ID );
 
+
+        /**
+         * 
+         *  Categorías del post
+         * 
+         */
+        $categorias = get_categories( );
+
+
+        /**
+         * 
+         *  Etiquetas del post
+         * 
+         */
+        $etiquetas = get_tags( );
+
     ?>
 
 
@@ -30,7 +46,7 @@
         <!-- POST HEADER -->
 
         <h1 class="post-title"> <? the_title() ?> </h1>
-        <tiny class="post-date"> <? the_date( 'j F, Y' ) ?> · X <?= __( 'minutos de lectura' ) ?> </tiny>
+        <tiny class="post-date"> <? the_date( 'j F, Y' ) ?> · X <?= __( 'minutos de lectura', 'emblr' ) ?> </tiny>
 
         <!-- POST HEADER -->
 
@@ -52,18 +68,59 @@
                 <!-- POST TAXONOMIES and SHARE -->
 
                 <section class="post-taxonomies">
-
                     <div class="post-categories">
-                        <!-- categorías aquí -->
-                    </div>
+
+                        <div class="post-taxonomy-title">
+                            <h6> <?= __( 'categorías', 'emblr' ) ?> </h6>
+                        </div>
+
+                        <div class="post-taxonomies-content">
+
+                            <? if ( $categorias ): ?>
+
+                                <? foreach ( $categorias as $categoria ): ?>
+                                
+                                    <a class="btn"> <?= $categoria->name ?> </a> 
+
+                                <? endforeach ?>
+
+                            <? endif ?>
+
+                        </div> <!-- post-taxonomies-content -->
+                    </div> <!-- post-categories -->
+
 
                     <div class="post-labels">
-                        <!-- etiquetas aquí -->
-                    </div>
+
+                         <div class="post-taxonomy-title">
+                             <h6> <?= __( 'etiquetas', 'emblr' ) ?> </h6>
+                        </div>
+
+
+                        <div class="post-taxonomies-content">
+                            
+                            <? if ( $etiquetas ): ?>
+
+                                <? foreach ( $etiquetas as $etiqueta ): ?>
+
+                                    <a class="btn"> <?= $etiqueta->name ?> </a> 
+
+                                <? endforeach ?>
+
+                            <? endif ?>
+
+                        </div> <!-- post-taxonomies-content -->
+                    </div> <!-- post-labels -->
+
 
                     <div class="post-share">
-                        <!-- compartir aquí -->
-                    </div>
+
+                        <div class="post-share-title">
+                            <h6> <?= __( 'compartir este post', 'emblr' ) ?> </h6>
+                        </div>
+
+                        <!-- botones redes aquí -->
+                    </div> <!-- post-share -->
 
                     <!-- POST TAXONOMIES and SHARE -->
                 </section>
@@ -72,7 +129,6 @@
                 <!-- POST COMMENTS -->
 
                 <section class="post-comments">
-                    <!-- sistema comentarios aquí -->
                     <? //comments_template() ?>
                 </section>
 
@@ -88,7 +144,7 @@
             <aside>
 
                 <div class="post-writter">
-                    <h5> <?= __( 'sobre el autor' ) ?> </h5>
+                    <h5> <?= __( 'sobre el autor', 'emblr' ) ?> </h5>
 
                     <?
 
