@@ -2078,7 +2078,7 @@ body.menu-is-open {
   right: 12.9rem;
   width: 2rem;
   height: 0rem;
-  cursos:pointer;
+  cursor:pointer;
 }
 .search .close-search:before, .search .close-search:after {
   content: "";
@@ -9755,5 +9755,56 @@ footer {
 
 }
 
-/*# sourceMappingURL=main.css.map */
 
+/* ------------------------------------------------------------------- 
+ * ## ENTRADAS -> Noticias
+ * ------------------------------------------------------------------- */
+
+section.s-noticias {
+  background: #000;
+}
+
+.post-title { }
+.post-date { }
+
+.post-grid-container {
+  display: grid;
+  grid-template-columns: 75% 25%;   /* definir esto ! */
+  gap: 20px;
+  
+  margin-top: 23px;
+}
+
+/* artículo */
+.post-article { }
+
+.post-featured-img {
+  display: inline-block;
+  padding: 8px;
+
+  border: 1px solid #1fbda2;
+}
+
+.post-featured-img img { display: block; }
+.post-content { margin-top: 13px; }
+.post-content p { padding: 10px 0 !important; }
+.post-content p.p-highlight { font-size: 18px; }
+
+/* taxonomías */
+.post-taxonomies { }
+.post-categories { }
+.post-labels { }
+.post-share { }
+
+/* comentarios */
+.post-comments { }
+
+/* sidebar */
+.s-noticias aside { }
+
+.post-writter { }
+.post-writter h5 { margin: 0; }
+.post-writter h5::first-letter { text-transform: uppercase; }
+
+
+/*# sourceMappingURL=main.css.map */

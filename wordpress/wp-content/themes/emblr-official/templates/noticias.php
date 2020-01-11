@@ -70,13 +70,15 @@
 					<div class="round">
 						<div class="round">
 							<div class="picture">
-								<img src="<? the_post_thumbnail() ?>">
+								<a href="<? the_permalink() ?>">
+									<img src="<? the_post_thumbnail() ?>">
+								</a>
 							</div>
 						</div>
 					</div>
 				</div> <!-- .storie-container -->
 
-				<h5> <? the_title() ?> </h5>
+				<a href="<? the_permalink() ?>"> <h5> <? the_title() ?> </h5> </a>
 
 		  	</div> <!-- storie -->
 
