@@ -9804,11 +9804,9 @@ h1.post-title {
 .post-comments { }
 
 /* sidebar */
-.s-noticias aside { }
+.s-post-view aside { }
 
-.post-writter { }
-
-.post-writter h5 {
+.s-post-view aside h5 {
   margin: 0;
 
   font-family: "Nunito Sans";
@@ -9816,9 +9814,9 @@ h1.post-title {
   font-size: 20px;
 }
 
-.post-writter h5::first-letter { text-transform: uppercase; }
+.s-post-view aside h5::first-letter { text-transform: uppercase; }
 
-/* author */
+/* sidebar: author */
 .post-author-box {
   border: 1px solid rgba(102, 102, 102, 0.35);
   margin-top: 6.5px;
@@ -9854,6 +9852,35 @@ h1.post-title {
 .post-author-social {
   bottom: 15px !important;
 }
+
+/* sidebar: posts */
+.post-sidebar-container {
+  margin-top: 55px;
+}
+
+.post-sidebar-container .widget_categories ul {
+  list-style: none;
+  margin-left: 0;
+  margin-top: 16px;
+}
+
+.post-sidebar-container .widget_categories ul li { text-align: right; }
+.post-sidebar-container .widget_categories ul li:not(:last-of-type) {
+  border-bottom: 1px solid rgba(102, 102, 102, 0.35);
+
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.post-sidebar-container .widget_categories ul li a { float: left; }
+
+.post-sidebar-container .widget_categories a,
+.post-sidebar-container .widget_categories a:link
+.post-sidebar-container .widget_categories a:link:visited {
+  color: #1fbda2;
+}
+
+.post-sidebar-container .widget_categories a:link:hover { color: #fff; }
 
 
 /*# sourceMappingURL=main.css.map */

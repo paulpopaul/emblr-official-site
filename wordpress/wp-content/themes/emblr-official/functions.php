@@ -206,6 +206,26 @@
 	}
 
 
+	/**
+    *
+    *	Se registra sidebar de entradas (noticias)
+    *
+    */
+	add_action( 'widgets_init', 'register_post_sidebar' );
+	function register_post_sidebar() {
+		register_sidebar(array(
+			'name'			=> 'Sidebar de entradas',
+			'id'			=> 'sidebar-posts',
+			'description'	=> 'Agregar widgets a sidebar de noticias',
+			'class'			=> 'sidebar',
+			'before_widget'	=> '<div id="%1$s" class="post-sidebar %2$s">',
+			'after_widget'	=> '</div>',
+			'before_title'	=> '<h5 class="widget-title">',
+			'after_title'	=> '</h5>'
+		));
+	}
+
+
 
 	/**
 	*

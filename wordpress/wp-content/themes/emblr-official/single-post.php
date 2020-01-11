@@ -151,7 +151,9 @@
                 </div> <!-- post-writter -->
 
 
-                <!-- resto contenido sidebar -->
+                <div class="post-sidebar-container">
+                    <? get_sidebar( 'posts' ) ?>
+                </div> <!-- post-sidebar-container -->
 
             </aside>
 
