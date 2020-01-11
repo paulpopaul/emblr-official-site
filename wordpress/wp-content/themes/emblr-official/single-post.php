@@ -154,10 +154,13 @@
                 </section>
 
 
+                <div class="post-writter-mobile"> <!-- sobre el autor dispositivos móviles --> </div>
+
+
                 <!-- POST COMMENTS -->
 
                 <section class="post-comments">
-                    <? //comments_template() ?>
+                    <? comments_template() ?>
                 </section>
 
                 <!-- POST COMMENTS -->
@@ -252,6 +255,35 @@
     </section>
 
     <!-- Contenido de entradas -->
+
+    
+    <script type="text/javascript">
+
+        ($ => {
+
+            $(window).resize(() => {
+
+                let width = $(window).width()
+
+                let $post_writter = $( '.post-writter',  'aside' )
+                let $mobile_post_writter = $( '.post-writter-mobile' )
+
+
+                if ( width < 1024 && $post_writter.length > 0  )
+                    $mobile_post_writter.append( $post_writter )
+
+                else if ( width >= 1024 && $post_writter.length === 0 ) {
+                    $post_writter = $( '.post-writter',  '.post-writter-mobile' )
+                    $('aside').prepend( $post_writter )
+                }
+
+            })
+
+            $(window).trigger( 'resize' )
+
+        })( jQuery )
+
+    </script>
 
 
 <? get_footer() ?>

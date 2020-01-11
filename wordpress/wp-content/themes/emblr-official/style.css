@@ -9855,7 +9855,42 @@ h1.post-title {
 .post-share { }
 
 /* comentarios */
-.post-comments { }
+.post-comments { margin-top: 70px; }
+.post-comments .comment-notes,
+.post-comments .comment-form-cookies-consent { display: none; }
+.post-comments h3#reply-title {
+  margin-bottom: 50px;
+  font-family: "Nunito Sans";
+  font-size: 32px;
+  font-weight: normal;
+  color: #666;
+}
+
+.post-comments input[type="text"],
+.post-comments input[type="email"],
+.post-comments textarea {
+  width: 80%;
+  margin-bottom: 15px;
+  border: 1px solid rgba(151, 151, 151, 0.17);
+}
+
+.post-comments textarea { resize: none; }
+
+.post-comments input[type="submit"] {
+  background: #1fbda2;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 30px;
+  margin-bottom: 0;
+  margin-top: 10px;
+
+  font-family: "Nunito Sans";
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: normal;
+}
+
+.post-comments label { font-size: 18px; font-weight: normal; }
 
 /* sidebar */
 .s-post-view aside { }
@@ -10010,6 +10045,14 @@ ul.post-author-social {
   -o-transition: all .5s;
   -ms-transition: all .5s;
   transition: all .5s;
+}
+
+
+/* ------------------------------------------------------------------- 
+ * ## Responsive: ENTRADAS -> Noticias
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width: 1023px) {
+  .post-grid-container { grid-template-columns: 100%; }
 }
 
 
