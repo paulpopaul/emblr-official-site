@@ -9855,7 +9855,37 @@ h1.post-title {
 .post-share { }
 
 /* comentarios */
-.post-comments { margin-top: 70px; }
+.post-comments { margin-top: 50px; }
+.post-comments h3#comments {
+  font-family: "Nunito Sans";
+  font-weight: normal;
+  font-size: 32px;
+
+  color: #666666;
+}
+
+.post-comments .comment-author.vcard img {
+  width: 55px;
+  height: 55px;
+
+  border-radius: 50px;
+}
+
+.post-comments .comment-author.vcard span.says { display: none; }
+.post-comments .comment-author.vcard cite.fn {
+  position: relative;
+  bottom: 23px;
+
+  margin-left: 20px;
+
+  font-family: "Nunito Sans";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 23px;
+
+  color: #fff;
+}
+
 .post-comments .comment-notes,
 .post-comments .comment-form-cookies-consent { display: none; }
 .post-comments h3#reply-title {
@@ -9874,20 +9904,72 @@ h1.post-title {
   border: 1px solid rgba(151, 151, 151, 0.17);
 }
 
-.post-comments textarea { resize: none; }
+.post-comments input[type="text"]:focus,
+.post-comments input[type="email"]:focus,
+.post-comments textarea:focus { border-color: #1fbda2; }
 
+.post-comments ol.commentlist {
+  margin-left: 0;
+  margin-bottom: 70px;
+  padding-bottom: 70px;
+  
+  border-bottom: 1px solid rgba(102, 102, 102, 0.35);
+  list-style-type: none;
+}
+
+.post-comments ol.commentlist li.comment {  margin-top: 50px; }
+.post-comments .comment-body { color:  #a4a4a4; }
+.post-comments .comment-body .comment-meta { margin-top: -35px; margin-bottom: 5px; }
+.post-comments .comment-body .comment-meta a { color:  #666; font-size: 14px; }
+
+.post-comments .reply { margin-top: 15px; }
+.post-comments .comment-reply-link {
+  background: #1fbda2;
+  color: #000;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 30px;
+
+  padding: 0.7rem 2.3rem;
+  margin-bottom: 0;
+
+  font-family: "Nunito Sans";
+  font-size: 17px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+}
+
+.post-comments .comment-reply-link:hover { background: #666; color: #fff; }
+
+.post-comments .comment-meta,
+.post-comments .comment-body p,
+.post-comments .reply { margin-left: 80px; }
+
+.post-comments .logged-in-as a {
+  color: #666;
+
+  font-family: "Nunito Sans";
+  font-size: 16px; 
+}
+
+.post-comments textarea { resize: none; }
 .post-comments input[type="submit"] {
   background: #1fbda2;
   text-transform: capitalize;
   border: none;
   border-radius: 30px;
   margin-bottom: 0;
-  margin-top: 10px;
+  margin-top: 5px;
 
   font-family: "Nunito Sans";
   font-size: 18px;
   font-weight: bold;
   letter-spacing: normal;
+}
+
+.post-comments input[type="submit"]:hover {
+  background: #666;
+  color: #fff;
 }
 
 .post-comments label { font-size: 18px; font-weight: normal; }
@@ -9920,7 +10002,6 @@ h1.post-title {
 }
 
 .post-author-profile { width: 150px !important; }
-
 .post-author-container:hover { border-bottom: none; }
 
 .post-author-title {
