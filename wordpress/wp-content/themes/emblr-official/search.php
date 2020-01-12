@@ -125,6 +125,37 @@
 
                     <?  endif  ?>
 
+
+
+                    <?  if ( $redes_menu ):  ?>
+
+                    <ul class="header-nav__social">
+
+                        <?  global $social_links  ?>
+
+                        <?  foreach ( $social_links as $social_name => $social ) :  ?>
+
+                        <?  if ( $social ) :
+
+                                switch ( $social_name ) :
+                                    case "facebook": $social_name .= "-f";      break;
+                                    case "linkedin": $social_name .= "-in";     break;
+                                endswitch
+                        ?>
+
+                        <li>
+                            <a href="<?= $social['url'] ?>" target="<?= $social['target'] ?>">
+                                <i class="fab fa-<?= $social_name ?>"></i>
+                            </a>
+                        </li>
+                        
+                        <?  endif  ?>
+                        <?  endforeach  ?>
+
+                    </ul>
+
+                    <?  endif  ?>
+
                 </div> <!-- end header-nav__content -->
             </div>
 

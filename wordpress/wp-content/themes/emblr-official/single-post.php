@@ -1,82 +1,104 @@
+<?php
+
+
+/**
+*
+*   Post Noticias
+*
+*
+*   @version    emblr-official-1
+*
+*   @author     Ensambler <emblr@ensambler.cl>
+*   @copyright  Derechos reservados 2020, Ensambler
+*
+*   @link       http://www.ensambler.cl/
+*
+*   @package    WordPress
+*   @subpackage emblr
+*   @since      5.2.2
+*
+*/
+
+
+
+    /**
+     * 
+     *  Objeto referencia al post actual
+     * 
+     */
+    global
+        $post,
+        $wp_query
+    ;
+
+
+    /*
+    *   Título menú
+    */
+    $titulo_menu = get_field( 'titulo_menu', 'options' );
+
+
+    /*
+    *   Widgets menú
+    */
+    $widgets_menu = get_field( 'widgets_menu', 'options' );
+
+
+    /*
+    *   Redes menú
+    */
+    $redes_menu = get_field( 'redes_menu', 'options' );
+
+
+    /*
+    *   Mini logo esquinero
+    */
+    $logo_esquina = get_field( 'logo_esquina', 'options' );
+
+
+    /*
+    *   Búsqueda
+    */
+    $busqueda = get_field( 'busqueda', 'options' );
+
+
+    /**
+     * 
+     *  Autor
+     * 
+     */
+    $autor = get_field( 'autor', $post->ID );
+
+
+    /**
+     * 
+     *  Tiempo de lectura
+     * 
+     */
+    $tiempo_lectura = get_field( 'tiempo_lectura', $post->ID );
+
+
+    /**
+     * 
+     *  Categorías del post
+     * 
+     */
+    $categorias = get_the_category( $post->ID );
+
+
+    /**
+     * 
+     *  Etiquetas del post
+     * 
+     */
+    $etiquetas = get_the_tags( $post-> ID );
+
+?>
+
+
 <? get_header() ?>
 
-
-    <?
-
-        /**
-         * 
-         *  Objeto referencia al post actual
-         * 
-         */
-        global
-            $post,
-            $wp_query
-        ;
-
-
-        /*
-        *   Título menú
-        */
-        $titulo_menu = get_field( 'titulo_menu', 'options' );
-
-
-        /*
-        *   Widgets menú
-        */
-        $widgets_menu = get_field( 'widgets_menu', 'options' );
-
-
-        /*
-        *   Redes menú
-        */
-        $redes_menu = get_field( 'redes_menu', 'options' );
-
-
-        /*
-        *   Mini logo esquinero
-        */
-        $logo_esquina = get_field( 'logo_esquina', 'options' );
-
-
-        /*
-        *   Búsqueda
-        */
-        $busqueda = get_field( 'busqueda', 'options' );
-
-
-        /**
-         * 
-         *  Autor
-         * 
-         */
-        $autor = get_field( 'autor', $post->ID );
-
-
-        /**
-         * 
-         *  Tiempo de lectura
-         * 
-         */
-        $tiempo_lectura = get_field( 'tiempo_lectura', $post->ID );
-
-
-        /**
-         * 
-         *  Categorías del post
-         * 
-         */
-        $categorias = get_the_category( $post->ID );
-
-
-        /**
-         * 
-         *  Etiquetas del post
-         * 
-         */
-        $etiquetas = get_the_tags( $post-> ID );
-
-    ?>
-
+<body class="s-posts <? emblr_theme() ?>">
 
     <!-- Header
     ================================================== -->
@@ -119,6 +141,37 @@
                         <?  dynamic_sidebar( 'main-menu' )  ?>
 
                     </div>
+
+                    <?  endif  ?>
+
+
+                    
+                    <?  if ( $redes_menu ):  ?>
+
+                    <ul class="header-nav__social">
+
+                        <?  global $social_links  ?>
+
+                        <?  foreach ( $social_links as $social_name => $social ) :  ?>
+
+                        <?  if ( $social ) :
+
+                                switch ( $social_name ) :
+                                    case "facebook": $social_name .= "-f";      break;
+                                    case "linkedin": $social_name .= "-in";     break;
+                                endswitch
+                        ?>
+
+                        <li>
+                            <a href="<?= $social['url'] ?>" target="<?= $social['target'] ?>">
+                                <i class="fab fa-<?= $social_name ?>"></i>
+                            </a>
+                        </li>
+                        
+                        <?  endif  ?>
+                        <?  endforeach  ?>
+
+                    </ul>
 
                     <?  endif  ?>
 
