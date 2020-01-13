@@ -273,23 +273,6 @@
 
 	/**
 	*
-	*	Crea widget "Suscripción de noticias (emblr)"
-	*
-	*/
-	add_action( 'widgets_init', 'create_suscribe_news_widget' );
-	function create_suscribe_news_widget ( ) {
-
-		## Se carga archivo del widget
-		include_once( get_template_directory( ) . '/includes/widgets/suscribe_news.php' );
-		## Se registra widget
-		register_widget( 'suscribe_news_widget' );
-
-	}
-
-
-
-	/**
-	*
 	*	Crea widget "Ensambler Social Follow"
 	*
 	*/

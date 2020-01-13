@@ -9397,8 +9397,11 @@ footer .fl-col-small:last-child {
   padding-right: 0;
 }
 
+footer .widget_mc4wp_form_widget { padding-right: 0; }
+
 footer .widget_contact_info h1::before,
-footer .widget_suscribe_news h1::before {
+footer .widget_suscribe_news h1::before,
+footer .widget_mc4wp_form_widget h1::before {
   content: "";
   float: left;
   height: 22px;
@@ -9456,7 +9459,8 @@ footer .fl-col span {
   margin-top: 30px;
 }
 
-.input-group button {
+.input-group button,
+.widget_mc4wp_form_widget input[type="submit"] {
   margin: 0px;
   line-height: 3.8rem;
   height: 40px;
