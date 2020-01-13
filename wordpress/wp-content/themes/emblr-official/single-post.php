@@ -98,7 +98,7 @@
 
 <? get_header() ?>
 
-<body class="s-posts <? emblr_theme() ?>">
+<body id="posts" class="<? emblr_theme() ?>">
 
     <!-- Header
     ================================================== -->
@@ -145,7 +145,7 @@
                     <?  endif  ?>
 
 
-                    
+
                     <?  if ( $redes_menu ):  ?>
 
                     <ul class="header-nav__social">

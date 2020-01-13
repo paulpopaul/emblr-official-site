@@ -1922,6 +1922,10 @@ body.menu-is-open {
   top: 21px;
 }
 
+body:not(#main-page) .s-header + section {
+  padding-top: 140px;
+}
+
 /* -------------------------------------------------------------------
  * ## header logo
  * ------------------------------------------------------------------- */
@@ -2183,7 +2187,6 @@ body.menu-is-open {
    left: 38px;
   }
 
- .s-search-results { margin-top: 60px; }
  .s-search-results h2 { display: inline; }
  .s-search-results h2::before {
   content: "\f101";
@@ -9917,7 +9920,7 @@ h1.post-title {
   list-style-type: none;
 }
 
-.post-comments ol.commentlist li.comment {  margin-top: 50px; }
+.post-comments ol.commentlist li.comment {  margin-top: 65px; }
 .post-comments .comment-body { color:  #a4a4a4; }
 .post-comments .comment-body .comment-meta { margin-top: -35px; margin-bottom: 5px; }
 .post-comments .comment-body .comment-meta a { color:  #666; font-size: 14px; }
@@ -10056,7 +10059,26 @@ ul.post-author-social {
 
 /* sidebar: últimos post */
 .post-sidebar-container .widget_smart_recent_entries .srpw-title {
+  display: table-row;
+  line-height: 26px;
   color: #fff;
+}
+
+.post-sidebar-container .widget_smart_recent_entries .srpw-title:hover {
+  color: #666;
+}
+
+.post-sidebar-container .widget_smart_recent_entries .srpw-content {
+  display: flow-root;
+}
+
+.post-sidebar-container .widget_smart_recent_entries .srpw-thumbnail {
+  width: auto;
+  height: 80px;
+}
+
+.post-sidebar-container .widget_smart_recent_entries .srpw-time {
+  margin-top: 2px;
 }
 
 /* sidebar: últimos posts & social follow widget estilos comunes */
