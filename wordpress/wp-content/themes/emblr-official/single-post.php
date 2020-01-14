@@ -190,7 +190,47 @@
                 <!-- POST COMMENTS -->
 
                 <section class="post-comments">
-                    <? comments_template() ?>
+
+                    <?
+                        $comments_count = get_comment_count( $post-> ID );
+                        $approved_count = $comments_count[ 'approved' ];
+                    ?>
+
+                    <h3 id="comments"> <?= $approved_count ?> <?= __( 'Comentarios', 'emblr' ) ?> </h3>
+                    
+                    
+                    <!-- COMMENT LIST -->
+
+                    <ol class="commentlist">
+
+                        <?
+
+                            wp_list_comments(array(
+                                'page' => $post->ID
+                            ));
+
+                        ?>
+
+                    </ol> <!-- commentlist -->
+
+                    <!-- COMMENT LIST -->
+
+
+                    <!-- COMMENT FORM -->
+
+                    <?
+
+                        $args = array(
+                            'title_reply' => __( 'Deja un comentario', 'emblr' ),
+                            'label_submit' => __( 'Postear', 'emblr' )
+                        );
+
+                        comment_form( $args );
+
+                    ?>
+
+                    <!-- COMMENT FROM -->
+
                 </section>
 
                 <!-- POST COMMENTS -->

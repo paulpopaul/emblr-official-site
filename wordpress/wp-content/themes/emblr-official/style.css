@@ -9862,6 +9862,13 @@ h1.post-title {
 .post-share { }
 
 /* comentarios */
+form#commentform { display: grid; }
+form#commentform p.comment-form-author { order: 1; }
+form#commentform p.comment-form-email { order: 2; }
+form#commentform p.comment-form-url { order: 3; }
+form#commentform p.comment-form-comment { order: 4; }
+form#commentform p.form-submit { order: 5; }
+
 .post-comments { margin-top: 50px; }
 .post-comments h3#comments {
   font-family: "Nunito Sans";
@@ -9967,6 +9974,7 @@ h1.post-title {
   border-radius: 30px;
   margin-bottom: 0;
   margin-top: 5px;
+  padding: 0 50px;
 
   font-family: "Nunito Sans";
   font-size: 18px;
