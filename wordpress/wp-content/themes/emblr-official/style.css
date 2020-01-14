@@ -93,15 +93,23 @@ body {
 }
 
 body {
-  background: rgba(18,18,18,1);
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.7rem;
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
-  color: rgba(255, 255, 255, 0.3);
   margin: 0;
   padding: 0;
+}
+
+body.dark-theme {
+  background: rgba(18,18,18,1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+body.light-theme {
+  background: #fff;
+  color: #a4a4a4;
 }
 
 /* ------------------------------------------------------------------- 
@@ -1993,12 +2001,13 @@ body:not(#main-page) .s-header + section {
   transform: translate(-85%, -50%);
   width: 1.8rem;
   height: 30%;
-  border: 2px solid white;
+  border: 2px solid;
   border-radius: 6rem;
   transition: all 0.4s 0.4s, background-color 0.5s;
 }
 
-
+body.dark-theme .search .search-border { border-color: #fff; }
+body.light-theme .search .search-border { border-color: #242b3f; }
 
 .search .search-border.opaque {
   background-color: #000 !important;
@@ -2010,7 +2019,8 @@ body:not(#main-page) .s-header + section {
   right: 98px;
 }
 
-.search .search-border:after { /* palo lupa */
+/* palo lupa */
+.search .search-border:after {
   content: "";
   position: absolute;
   right: -2rem;
@@ -2019,10 +2029,12 @@ body:not(#main-page) .s-header + section {
   height: 0.2rem;
   transform-origin: 100% 50%;
   transform: rotate(225deg) translatex(3rem);
-  background: white;
   border-radius: 0.6rem;
   transition: all 0.2s 0.8s;
 }
+
+body.dark-theme .search .search-border::after { background: #fff; }
+body.light-theme .search .search-border::after { background: #242b3f; }
 
 .search .search-field {
   position: relative;
@@ -2170,6 +2182,9 @@ body:not(#main-page) .s-header + section {
   right: 165px;
   top: 40px;
 }
+
+body.dark-theme .icon-search { border-right-color: #fff; }
+body.light-theme .icon-search { border-right-color: #242b3f; }
 
 /* -------------------------------------------------------------------
  * ## search-page results
@@ -2453,6 +2468,9 @@ body:not(#main-page) .s-header + section {
   right: 25px;
 }
 
+body.dark-theme .page-counter { color: #fff; }
+body.light-theme .page-counter { color: #242b3f; }
+
 .page-counter span:first-child {
   color: #1FBDA2;
 }
@@ -2481,7 +2499,6 @@ ul.page-dots button {
 
 ul.page-dots button::after {
   content: "";
-  background: #ffffff;
   width: 8px;
   height: 8px;
   border-radius: 4px;
@@ -2490,6 +2507,9 @@ ul.page-dots button::after {
   position: relative;
   z-index: 99;
 }
+
+body.dark-theme ul.page-dots button::after { background: #ffffff; }
+body.light-theme ul.page-dots button::after { background: #242b3f; }
 
 ul.page-dots button.clicked::after {
   background: #1fbda2;
@@ -2589,11 +2609,13 @@ ul.page-dots li:not(.active):hover button::after {
   margin-top: -1px;
   right: auto;
   bottom: auto;
-  background-color: white;
   position: absolute;
   right: 11px; /* left: 11px */
   top: 50%;
 }
+
+body.dark-theme .header-menu-icon { background-color: #fff; }
+body.light-theme .header-menu-icon { background-color: #242b3f; }
 
 .header-menu-icon::before,
 .header-menu-icon::after {
@@ -2817,8 +2839,12 @@ ul.page-dots li:not(.active):hover button::after {
   display: none;
 }
 
-.no-js .s-inicio {
+body.dark-theme .s-inicio {
   background: #000000;
+}
+
+body.light-theme .s-inicio {
+  background: #f8f8f8;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2852,8 +2878,10 @@ ul.page-dots li:not(.active):hover button::after {
   font-size: 3.8rem;
   line-height: 1.342;
   font-style: normal;
-  color: #9c9c9c;
 }
+
+body.dark-theme .home-content h3 { color: #9c9c9c; }
+body.light-theme .home-content h3 { color: #888; }
 
 .home-content__main {
   position: relative;
@@ -2945,15 +2973,32 @@ ul.page-dots li:not(.active):hover button::after {
 }
 
 .home-content__button .btn:not(.btn--primary) {
-  background-color: #000000;
   border-color: transparent;
-  color: #FFFFFF;
+}
+
+body.dark-theme .home-content__button .btn:not(.btn--primary) {
+  background-color: #000;
+  color: #fff;
+}
+
+body.light-theme .home-content__button .btn:not(.btn--primary) {
+  background-color: #242b3f;
+  color: #fff;
 }
 
 .home-content__button .btn:not(.btn--primary):hover,
 .home-content__button .btn:not(.btn--primary):focus {
-  background-color: #141414;
   border-color: transparent;
+}
+
+body.dark-theme .home-content__button .btn:not(.btn--primary):hover,
+body.dark-theme .home-content__button .btn:not(.btn--primary):focus {
+  background-color: #141414;
+}
+
+body.light-theme .home-content__button .btn:not(.btn--primary):hover,
+body.light-theme .home-content__button .btn:not(.btn--primary):focus {
+  background-color: #242b3f;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2983,9 +3028,17 @@ ul.page-dots li:not(.active):hover button::after {
   text-transform: uppercase;
   letter-spacing: .35rem;
   text-align: left;
-  color: #FFFFFF;
   position: relative;
-  /*padding-right: 180px;*/
+}
+
+body.dark-theme .home-content__scroll .scroll-link,
+body.dark-theme .footer__scroll .scroll-link {
+  color: #fff;
+}
+
+body.light-theme .home-content__scroll .scroll-link,
+body.light-theme .footer__scroll .scroll-link {
+  color: #242b3f;
 }
 
 .home-content__scroll .scroll-link:hover,
@@ -3009,10 +3062,12 @@ ul.page-dots li:not(.active):hover button::after {
 }
 
 .home-social a {
-  color: white;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
+
+body.dark-theme .home-social a { color: #fff; }
+body.light-theme .home-social a { color: #242b3f; }
 
 .home-social li {
   position: relative;
@@ -3046,8 +3101,6 @@ ul.page-dots li:not(.active):hover button::after {
 }
 
 .home-social span {
-  background-color: #000000;
-  color: #FFFFFF;
   font-size: 1.2rem;
   line-height: 30px;
   top: 0;
@@ -3066,6 +3119,16 @@ ul.page-dots li:not(.active):hover button::after {
   transition-duration: 0.2s;
 }
 
+body.dark-theme .home-social span {
+  background: #000;
+  color: #fff;
+}
+
+body.light-theme .home-social span {
+  background: #242b3f;
+  color: #fff;
+}
+
 .home-social span::after {
   display: block;
   content: "";
@@ -3073,12 +3136,15 @@ ul.page-dots li:not(.active):hover button::after {
   height: 0;
   border-top: 6px solid transparent;
   border-bottom: 6px solid transparent;
-  border-right: 6px solid #000000;
+  border-right: 6px solid;
   position: absolute;
   top: 50%;
   left: -6px;
   margin-top: -6px;
 }
+
+body.dark-theme .home-social span::after { border-right-color: #000; }
+body.light-theme .home-social span::after { border-right-color: #242b3f; }
 
 .home-social li:hover span {
   opacity: 1;

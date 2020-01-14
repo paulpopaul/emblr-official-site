@@ -121,7 +121,7 @@ Nuestra lema “Ingeniería de software para Soluciones Empresariales Integradas
                     </div>
                 <div class="animation-holder">
                     <span class="flash-oval">
-                        <img src="http://127.0.0.1:8080/wp-content/themes/emblr-official/images/logo.svg" alt="pulse">
+                        <img src="http://127.0.0.1:8080/wp-content/themes/emblr-official/images/logo-<? emblr_theme() ?>.svg" alt="pulse">
                         <div class="wave hidden wave-anim"></div>
                            <div class="wave2 hidden wave-anim"></div>
                            <div class="wave3 hidden wave-anim"></div>

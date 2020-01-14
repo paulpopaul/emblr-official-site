@@ -52,7 +52,7 @@
             <div class="header-logo">
                 <a class="site-logo" href="#">
 
-                <img src="<?= get_template_directory_uri() ?>/images/logo.svg" alt="Homepage">
+                <img src="<?= get_template_directory_uri() ?>/images/logo-<? emblr_theme() ?>.svg" alt="Homepage">
 
                 <? if ( $posts_number_results ) :
 

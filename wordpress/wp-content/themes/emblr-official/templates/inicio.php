@@ -22,12 +22,6 @@
 
 
     /*
-    *   Fondo
-    */
-    $fondo = get_field( 'color_fondo', 'options' );
-
-
-    /*
     *   Slogan principal
     */
     $slogan = get_field( 'slogan', 'options' );
@@ -73,7 +67,7 @@
 <!--<section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center> -->
 
 
-<section id="inicio" class="s-inicio page-hero target-section" style="background-color:<?= $fondo ?>">
+<section id="inicio" class="s-inicio page-hero target-section">
 
     <?  if ( $particles ): ?>
     <div class="grid-overlay" id="particles">
@@ -85,7 +79,7 @@
     <div class="home-content">
         <div class="row home-content__main">
 
-            <img class="home-content__logo" src="<?= get_template_directory_uri() ?>/images/logo-home.svg">
+            <img class="home-content__logo" src="<?= get_template_directory_uri() ?>/images/logo-home-<? emblr_theme() ?>.svg">
             
 
             <?  if ( $slogan ): ?>
