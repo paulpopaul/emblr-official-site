@@ -2105,7 +2105,7 @@ body.light-theme .search .search-border.opaque::after { background: #fff; }
 
 body.dark-theme .search .search-field { color: #ffffff; }
 body.light-theme .search .search-field { color: #242b3f; }
-body.light-theme .search .opaque + .search-field { color: #fff; }
+body.light-theme .search .opaque + .search-field { color: #242b3f; }
 body.light-theme .search .search-field::placeholder { color: #242b3f; }
 
 .search .search-border.focus {
@@ -2188,11 +2188,15 @@ body.dark-theme .search #search:checked ~ .search-border {
 }
 
 body.light-theme .search #search:checked ~ .search-border {
-  background: #f8f8f8;
+  background: #fff !important;
 }
 
-.search #search:checked ~ .search-border.opaque {
-  /*border-color: #1a1a1a;*/
+body.light-theme .search #search:checked ~ .search-border.opaque {
+  border-color: #242B3F !important;
+}
+
+body.light-theme .search #search:checked ~ .search-border.opaque.focus {
+  border-color: #1fbda2 !important;
 }
 
 /* Transición palito de la lupa */
@@ -2208,16 +2212,12 @@ body.light-theme .search #search:checked ~ .search-border {
   transition: opacity 0.2s 0.6s;
 }
 
-/* body.light-theme .opaque .search #search:checked ~ .search-field::placeholder {
-  color: pink !important;
+body.light-theme .search #search:checked ~ .opaque + .search-field::placeholder {
+  color: #666 !important;
 }
 
-body.light-theme .opaque .search #search:checked ~ .search-field:focus::placeholder {
-  color: green !important;
-} */
-
 body.light-theme .search #search:checked ~ .search-field:focus::placeholder {
-  color: red !important;
+  color: #a4a4a4 !important;
 }
 
 .search #search:checked ~ .close-search {
