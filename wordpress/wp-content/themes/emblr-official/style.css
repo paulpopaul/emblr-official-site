@@ -5126,9 +5126,18 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-services {
   position: relative;
-  border-top: 1px solid #1a1a1a;
   overflow-x: hidden;
 }
+
+.light-theme .s-services {
+  border-top: 1px solid #d6d6d6;
+}
+
+
+.dark-theme .s-services {
+  border-top: 1px solid #1a1a1a;
+}
+
 
 body.light-theme .s-services { background: #f8f8f8; }
 
@@ -7273,8 +7282,13 @@ body.light-theme #filters li span.active {
  *
  * ------------------------------------------------------------------- */
 .noticias {
-  border-bottom: 1px solid #1a1a1a;
   position: relative;
+}
+.light-theme .noticias {
+  border-bottom: 1px solid #d6d6d6;
+}
+.dark-theme .noticias {
+  border-bottom: 1px solid #1a1a1a;
 }
 
 body.dark-theme .noticias {
@@ -7932,10 +7946,18 @@ body.light-theme .storie-container .round {
 
 #testimonials-clientes-logo {
   overflow: auto;
-  border-top: 1px solid #1a1a1a;
-  border-bottom: 1px solid #1a1a1a;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.light-theme #testimonials-clientes-logo {
+  border-top: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.dark-theme #testimonials-clientes-logo {
+  border-top: 1px solid #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
 }
 
 .light-theme #testimonials-clientes-logo {
@@ -8800,7 +8822,6 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
 
 .terminal__window {
   line-height: 2.5rem;
-  color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -8810,6 +8831,14 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
   background-color: #000;
+}
+
+.light-theme .terminal__window {
+  color: rgb(36,43,63);
+}
+
+.dark-theme .terminal__window {
+  color: #fff;
 }
 
 .terminal__window--highlight {
@@ -8877,6 +8906,13 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
 .terminal__window textarea {
   font-size: 20px;
   font-weight: bold;
+}
+
+.light-theme .terminal__window textarea {
+  color: rgb(36,43,63);
+}
+
+.dark-theme .terminal__window textarea {
   color: #fff;
 }
 
