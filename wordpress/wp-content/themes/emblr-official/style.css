@@ -98,7 +98,7 @@ body {
   font-size: 1.7rem;
   font-style: normal;
   font-weight: normal;
-  line-height: 1.941;
+  line-height: 1.5;
   color: rgba(255, 255, 255, 0.3);
   margin: 0;
   padding: 0;
@@ -9795,7 +9795,7 @@ h1.post-title {
 }
 
 .post-featured-img img { display: block; }
-.post-content p { padding: 10px 0 !important; }
+.post-content p { padding: 13px 0 !important; }
 .post-content p.p-highlight { font-size: 18px; }
 
 /* taxonomías */
@@ -9817,7 +9817,7 @@ h1.post-title {
 
 .post-taxonomies h6 {
   margin: 0;
-  display: inline;
+  /* display: inline; */
 
   font-family: "Nunito Sans";
   font-weight: bold;
@@ -9831,7 +9831,7 @@ h1.post-title {
 .post-taxonomies-content .btn {
   float: left;
   padding: 0px 25px;
-  margin: 0 0 14px 15px;
+  margin: 0 0 7px 15px;
 
   text-decoration: none;
   text-transform: capitalize;
@@ -9934,9 +9934,15 @@ form#commentform p.form-submit { order: 5; }
 .post-comments ol.commentlist li.comment {  margin-top: 65px; }
 .post-comments .comment-body { color:  #a4a4a4; }
 .post-comments .comment-body .comment-meta { margin-top: -35px; margin-bottom: 5px; }
-.post-comments .comment-body .comment-meta a { color:  #666; font-size: 14px; }
+.post-comments .comment-body .comment-meta a {
+  color:  #666;
+  font-size: 14px;
 
-.post-comments .reply { margin-top: 15px; }
+  display: block;
+  padding-top: 10px;
+}
+
+.post-comments .reply { margin-top: 25px; }
 .post-comments .comment-reply-link {
   background: #1fbda2;
   color: #000;
@@ -9954,6 +9960,7 @@ form#commentform p.form-submit { order: 5; }
 }
 
 .post-comments .comment-reply-link:hover { background: #666; color: #fff; }
+.post-comments .comment-body p { margin-top: 11px; }
 
 .post-comments .comment-meta,
 .post-comments .comment-body p,
@@ -10144,7 +10151,7 @@ ul.post-author-social {
 .post-share-buttons a {
   display: inline-block;
   position: relative;
-  margin: 0 0 0 13px;
+  margin: 0 0 0 11px;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
@@ -10153,8 +10160,8 @@ ul.post-author-social {
   min-height: 30px;
   width: 100%;
   height: auto;
-  max-width: 50px;
-  max-height: 50px;
+  max-width: 45px;
+  max-height: 45px;
   font-size: 20px;
   background-color: transparent;
   border: 1px solid #1fbda2;
@@ -10165,7 +10172,7 @@ ul.post-author-social {
   font-weight: 500;
   color: #666;
   margin: 0;
-  line-height: 50px;
+  line-height: 45px;
   text-align: center;
 }
 
@@ -10211,7 +10218,6 @@ ul.post-author-social {
   }
 
   .post-writter h5 { margin-bottom: 25px; }
-  .post-author-ocupation { margin-top: -5px; }
   .post-author-content { text-align: left; padding-left: 50px; }
 
   .post-author-profile.pic { margin-top: 0 !important; width: 160px !important; }
@@ -10219,7 +10225,7 @@ ul.post-author-social {
   .post-author-content,
   .post-author-social { padding-left: 50px !important; }
 
-  .post-author-content p { margin-top: 7px; }
+  .post-author-content p { margin-top: 10px; }
   .post-author-title { margin-top: 0; display: inline; }
   .post-author-social {
     grid-column-start: 2;
