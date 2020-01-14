@@ -297,7 +297,7 @@
 
 		$hour = (int)( date('H') );
 
-		if ( true || $hour >= 6 and $hour < 21 )
+		if ( true || ( $hour >= 6 and $hour < 21 ) )
 			echo 'light-theme';
 			
 		else
