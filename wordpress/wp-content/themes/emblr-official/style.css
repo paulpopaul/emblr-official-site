@@ -9330,13 +9330,15 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
  * ------------------------------------------------------------------- */
 footer {
   padding-top: 140px;
-  background-color: #000000;
   text-align: center;
   position: relative;
 
   padding-left: 165px;
   padding-right: 165px;
 }
+
+body.dark-theme footer { background: #000000; }
+body.light-theme footer { background: #fff; }
 
 footer h1 {
   margin-bottom: 1.8rem;
@@ -9353,8 +9355,17 @@ footer #footer-widgets a:link:hover {
 
 footer, #suscribe {
   font-size: 16px;
-  color: #666;
 }
+
+body.dark-theme footer,
+body.dark-theme footer strong,
+body.dark-theme footer b,
+body.dark-theme #suscribe { color: #666; }
+
+body.light-theme footer,
+body.light-theme footer strong,
+body.light-theme footer b,
+body.light-theme #suscribe { color: #888; }
 
 footer #suscribe {
 
@@ -9422,8 +9433,12 @@ footer .marca span {
   letter-spacing: 2px;
 }
 
-footer .marca span:first-child {
+body.dark-theme footer .marca span:first-child {
   color: #FFFFFF;
+}
+
+body.light-theme footer .marca span:first-child {
+  color: #162441;
 }
 
 footer .marca span:nth-child(2) {
@@ -9479,11 +9494,13 @@ footer .widget_mc4wp_form_widget h1::before {
 }
 
 footer .fl-col-small h1 {
-  color: #ffffff;
   font-weight: 800;
   font-size: 28px;
   letter-spacing: 0.1px;
 }
+
+body.dark-theme footer .fl-col-small h1 { color: #fff; }
+body.light-theme footer .fl-col-small h1 { color: #162441; }
 
 footer .sobre-nosotros span:first-child {
   font-weight: bold;
@@ -9574,16 +9591,18 @@ footer .widget_landing_navigation.fl-col:not(:first-of-type) > div {
     display: inline;
     width: calc(100% - 90px - 3px);
     height: 40px;
-    border: 1px solid #1a1a1a;
+    border: 1px solid;
     border-right: none;
     padding: 1rem 1rem;
-    color: #fff;
 
     position: relative;
     bottom: 1px;
 
     transition: all 0.15s ease-in-out;
 }
+
+body.dark-theme #suscribe { border-color: #1a1a1a; color: #fff; }
+body.light-theme #suscribe { border-color: rgba(151, 151, 151, 0.3); color: #888; }
 
 #suscribe:focus {
   border: 1px solid rgba(31, 189, 162, 0.8);
@@ -9594,8 +9613,15 @@ footer .widget_landing_navigation.fl-col:not(:first-of-type) > div {
 }
 
 #suscribe::placeholder {
-  color: #666;
   transition: all 0.15s ease-in-out;
+}
+
+body.dark-theme #suscribe::placeholder {
+  color: #666;
+}
+
+body.light-theme #suscribe::placeholder {
+  color: #888;
 }
 
 #suscribe:focus::placeholder {
@@ -9607,7 +9633,8 @@ footer .widget_landing_navigation.fl-col:not(:first-of-type) > div {
   bottom: calc(110px + 34px);
 }
 
-.footer__scroll::after { /* línea vertical footer */
+/* línea vertical footer */
+.footer__scroll::after {
   content: "";
   display: block;
   background-color: #333;
