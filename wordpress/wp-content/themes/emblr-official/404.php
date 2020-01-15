@@ -1,6 +1,6 @@
 <?php get_header() ?>
 
-<body>
+<body id="not-found" class="<? emblr_theme() ?>">
 
 <!-- Contenido página 404 aquí -->
 
