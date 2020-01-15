@@ -51,9 +51,9 @@
     };
 
 
-    /* scrollDownTo: target
+    /* scrollTo: target
     * ------------------------------------------------------ */
-    var scrollDownTo = function( target_id, callback ) {
+    var scrollTo = function( target_id, callback ) {
 
         $('html, body')
             .stop()
@@ -247,7 +247,7 @@
                 $('.header-menu-toggle').trigger('click');
             }
 
-            scrollDownTo( target );
+            scrollTo( target );
         });
 
     };
@@ -687,7 +687,7 @@ $(".btn-with-icon").on("click", function() {
                 $target.addClass( 'clicked' )
                 
                 // Se hace ScrollTo a la página
-                scrollDownTo( `#${target_id}`, function() {
+                scrollTo( `#${target_id}`, function() {
                     $( '#page-dots' ).find( 'button.clicked' )
                         .removeClass( 'clicked' )
                     ;
