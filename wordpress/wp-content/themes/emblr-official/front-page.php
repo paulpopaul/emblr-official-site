@@ -92,40 +92,42 @@
     <!-- Footer
     ================================================== -->
     <?  get_footer()  ?>
+
+
     <style>
         body.light-theme #return-to-top{
             background: #242B3F;
         }
+
         body.light-theme #return-to-top i{
             color: #fff;
         }
+
         body.dark-theme #return-to-top{
             background: #000;
             border: 2px solid #1FBDA2;
         }
+
         body.dark-theme #return-to-top i{
             color: #fff;
             left: 21px;
             top: 14px;
         }
+
         @media only screen and (max-width: 3000px) {
             #return-to-top {
                 position: fixed;
-                bottom: 20px;
-                left: 20px;
+                bottom: 17px;
+                left: 23px;
                 width: 58px;
                 height: 58px;
                 cursor: pointer;
                 -webkit-border-radius: 100px;
                 -moz-border-radius: 100px;
                 border-radius: 100px;
-                -webkit-transition: all 0.3s linear;
-                -moz-transition: all 0.3s ease;
-                -ms-transition: all 0.3s ease;
-                -o-transition: all 0.3s ease;
-                transition: all 0.3s ease;
                 z-index: 99;
             }
+
             #return-to-top i {
                 margin: 0;
                 position: relative;
@@ -138,14 +140,17 @@
                 -o-transition: all 0.3s ease;
                 transition: all 0.3s ease;
             }
+
             #return-to-top:hover {
                 background: #242B3F;
             }
+
             #return-to-top:hover i {
                 color: #fff;
                 top: 12px;
             }
         }
+
         @media only screen and (max-width: 414px) {
             #return-to-top {
                 left: initial;
@@ -155,21 +160,20 @@
             }
         }
     </style>
+
+
     <div>
         <a id="return-to-top" class="dissapear"><i class="fas fa-chevron-up"></i></a>
     </div>
     <script>
         $('#inicio').waypoint({
-            handler: function(direction) {
+            offset: '-50%',
+            handler: function() {
                 $('#return-to-top').toggleClass('dissapear');
-            },
-
-            offset: '-50%'
+            }
         });
         
         $('#return-to-top').click(function() {
-            $('body,html').animate({
-                scrollTop : 0
-            }, 800);
+            scrollTo('#inicio');
         });
     </script>

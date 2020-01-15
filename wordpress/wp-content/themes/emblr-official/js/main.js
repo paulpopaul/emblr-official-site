@@ -53,7 +53,7 @@
 
     /* scrollTo: target
     * ------------------------------------------------------ */
-    var scrollTo = function( target_id, callback ) {
+    window.scrollTo = function( target_id, callback ) {
 
         $('html, body')
             .stop()
