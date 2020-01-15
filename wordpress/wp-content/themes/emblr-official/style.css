@@ -9544,7 +9544,7 @@ circle[fill="#FBD9E"] { /* color marcador debe coincidir */
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 1.6px;
-  color: #1FBDA2;
+  color: #1FBDA2 !important;
   margin-top: 6px;
 }
 
