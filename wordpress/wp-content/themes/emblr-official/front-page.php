@@ -113,7 +113,7 @@
                 position: fixed;
                 bottom: 14px;
                 margin-left: 17px;
-                display: block;
+                display: none;
                 width: 58px;
                 height: 58px;
                 -webkit-border-radius: 100px;
