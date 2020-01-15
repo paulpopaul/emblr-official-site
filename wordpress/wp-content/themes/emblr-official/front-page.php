@@ -113,9 +113,9 @@
                 position: fixed;
                 bottom: 20px;
                 left: 20px;
-                display: none;
                 width: 58px;
                 height: 58px;
+                cursor: pointer;
                 -webkit-border-radius: 100px;
                 -moz-border-radius: 100px;
                 border-radius: 100px;
@@ -156,16 +156,17 @@
         }
     </style>
     <div>
-        <a id="return-to-top"><i class="fas fa-chevron-up"></i></a>
+        <a id="return-to-top" class="dissapear"><i class="fas fa-chevron-up"></i></a>
     </div>
     <script>
-        $(window).scroll(function() {
-            if ($(this).scrollTop() >= 50) {
-                $('#return-to-top').fadeIn(0);
-            } else {
-                $('#return-to-top').fadeOut(200);
-            }
+        $('#inicio').waypoint({
+            handler: function(direction) {
+                $('#return-to-top').toggleClass('dissapear');
+            },
+
+            offset: '-50%'
         });
+        
         $('#return-to-top').click(function() {
             $('body,html').animate({
                 scrollTop : 0

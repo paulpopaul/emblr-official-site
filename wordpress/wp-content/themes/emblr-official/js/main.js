@@ -296,7 +296,7 @@
 
         $('.home-content__scroll').waypoint({
             handler: function(direction) {
-                $('.home-content__scroll').toggleClass('blurred-element');
+                $('.home-content__scroll').toggleClass('dissapear');
             },
 
             offset: '80%'
@@ -304,7 +304,7 @@
 
         $('footer').waypoint({
             handler: function(direction) {
-                $('.page-dots, .page-counter').toggleClass('blurred-element');
+                $('.page-dots, .page-counter').toggleClass('dissapear');
             },
 
             offset: '75%'

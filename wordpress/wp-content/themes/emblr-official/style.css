@@ -1512,7 +1512,7 @@ body.menu-is-open {
   background-color: #0f0f0f;
 }
 
-.blurred-element {
+.dissapear {
   opacity: 0;
   -moz-opacity: 0;
 
@@ -1521,13 +1521,6 @@ body.menu-is-open {
   -moz-transition: opacity 0.1s ease-in-out;
   -o-transition: opacity 0.1s ease-in-out;
 }
-
-/*.blurred-back {
-  filter: blur(9.7px);
-  -webkit-filter: blur(9.7px);
-  transition: all 0.2s ease-in-out;
-  opacity: .63;
-}*/
 
 .target-section {
   transition: filter 0.2s ease-in-out;
@@ -3561,7 +3554,7 @@ html.no-csstransitions .home-content__main {
     margin: 0;
   }
 
-  .blurred-element {
+  .dissapear {
     transition: unset;
     -webkit-transition: unset;
     -moz-transition: unset;
