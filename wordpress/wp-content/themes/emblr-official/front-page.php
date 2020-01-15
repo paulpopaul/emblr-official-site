@@ -111,8 +111,8 @@
         @media only screen and (max-width: 3000px) {
             #return-to-top {
                 position: fixed;
-                bottom: 14px;
-                margin-left: 17px;
+                bottom: 20px;
+                left: 20px;
                 display: none;
                 width: 58px;
                 height: 58px;
@@ -159,7 +159,7 @@
     <script>
         $(window).scroll(function() {
             if ($(this).scrollTop() >= 50) {
-                $('#return-to-top').fadeIn(200);
+                $('#return-to-top').fadeIn(0);
             } else {
                 $('#return-to-top').fadeOut(200);
             }
