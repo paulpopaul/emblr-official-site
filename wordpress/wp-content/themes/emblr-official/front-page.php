@@ -148,7 +148,9 @@
         }
         @media only screen and (max-width: 414px) {
             #return-to-top {
+                left: initial;
                 right: 8px;
+                bottom: 11px;
                 text-decoration: none;
             }
         }
