@@ -3015,7 +3015,7 @@ body.dark-theme .home-content h3 { color: #9c9c9c; }
   text-align: center;
 }
 
-.home-logo-container { position: relative; display: inline-flex; }
+.home-logo-container { position: relative; }
 /* logo superpuesto */
 .home-logo-container img + img {
   position: absolute;
@@ -3433,6 +3433,8 @@ html.no-csstransitions .home-content__main {
   .home-content__logo {
     width: 303px;
   }
+
+  .home-logo-container img + img { bottom: 6px; }
 }
 
 /* end home content logo responsive
