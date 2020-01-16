@@ -58,7 +58,10 @@
             <div class="header-logo">
                 <a class="site-logo" href="#">
 
-                <img src="<?= get_template_directory_uri() ?>/images/logo-<? emblr_theme() ?>.svg" alt="Homepage">
+                <span class="header-logo-container">
+                    <img src="<?= get_template_directory_uri() ?>/images/logo-light-theme.svg">
+                    <img src="<?= get_template_directory_uri() ?>/images/logo-dark-theme.svg">
+                </span>
 
                 <? if ( $posts_number_results ) :
 

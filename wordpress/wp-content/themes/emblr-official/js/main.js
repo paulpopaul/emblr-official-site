@@ -841,10 +841,17 @@ $(".btn-with-icon").on("click", function() {
     * ------------------------------------------------------ */
     var botonSwitchToggle = function() {
 
-        const chk = document.getElementById('chk');
+        const chk = document.getElementById('chk')
+        
         chk.addEventListener('change', () => {
-            document.body.classList.toggle('dark-theme');
-        });
+            document.body.classList.add('in-transition')
+            document.body.classList.toggle('light-theme')
+            document.body.classList.toggle('dark-theme')
+
+            setTimeout(() => {
+                document.body.classList.remove('in-transition')
+            }, 2000);
+        })
 
     };
 
@@ -866,7 +873,7 @@ $(".btn-with-icon").on("click", function() {
 
     };
 
-    
+
    /* Initialize
     * ------------------------------------------------------ */
     (function clInit() {

@@ -142,6 +142,21 @@ a:active {
   background: rgba(153,153,153,1);
 }
 
+body.in-transition,
+body.in-transition *,
+body.in-transition *::after,
+body.in-transition *::before {
+  transition: background-color 1s ease-out 0s,
+              background 1s ease-out 0s,
+              color 1s ease-out 0s,
+              opacity 1s ease-out 0s !important;
+
+  -webkit-transition: background-color 1s ease-out 0s,
+                      background 1s ease-out 0s,
+                      color 1s ease-out 0s,
+                      opacity 1s ease-out 0s !important;
+}
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -1527,7 +1542,7 @@ body.menu-is-open {
 }
 
 .target-section {
-  transition: filter 0.2s ease-in-out;
+  /* transition: filter 0.2s ease-in-out; */
 }
 
 .section-page {
@@ -2017,6 +2032,13 @@ body:not(#main-page) .s-header + section {
   outline: 0;
   border: none;
 }
+
+.header-logo .header-logo-container { position: relative; }
+.header-logo .header-logo-container img + img { position: absolute; left:0; }
+
+body.light-theme .header-logo-container img + img,
+body.dark-theme .header-logo-container img:first-child { opacity: 0; }
+
 @media only screen and (max-width: 3000px) {
   .header-logo {
     left: 20rem;
@@ -2993,9 +3015,19 @@ body.dark-theme .home-content h3 { color: #9c9c9c; }
   text-align: center;
 }
 
+.home-logo-container { position: relative; }
+/* logo superpuesto */
+.home-logo-container img + img {
+  position: absolute;
+  left: 0;
+}
+
 .home-content__logo {
   width: 948px;
 }
+
+body.light-theme .home-logo-container img + img,
+body.dark-theme .home-logo-container img:first-child { opacity: 0; }
 
 /* ------------------------------------------------------------------- 
  * ## home video link
@@ -10848,11 +10880,17 @@ ul.post-author-social {
 /* -------------------------------------------------------------------
  * ## BOTON SWITCH TOOGLE
  * ------------------------------------------------------------------- */
-body.light-theme .toggle-control input:checked ~ .control{
+body.light-theme .toggle-control .control {
   background-color: #242B3F;
+  border-color: transparent;
 }
 
-body.light-theme .toggle-control .control:after {
+body.dark-theme .toggle-control .control {
+  background-color: #000;
+  border-color: #1fbda2;
+}
+
+.toggle-control .control:after {
   background: white;
 }
 
@@ -10886,8 +10924,8 @@ body.light-theme .toggle-control .control:after {
   height: 30px;
   width: 70px;
   border-radius: 25px;
-  background-color: darkgray;
-  transition: background-color 0.15s ease-in;
+  border: 1px solid;
+  transition: all 0.3s ease-in;
 }
 
 
@@ -10895,12 +10933,13 @@ body.light-theme .toggle-control .control:after {
   content: "";
   position: absolute;
   left: 5px;
-  top: 5px;
+  top: 4px;
   width: 20px;
   height: 20px;
   border-radius: 25px;
   transition: left 0.15s ease-in;
 }
+
 @media only screen and (max-width:768px) {
   .toggle-control input:checked ~ .control:after {
     left: 35px;

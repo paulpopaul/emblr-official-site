@@ -79,7 +79,10 @@
     <div class="home-content">
         <div class="row home-content__main">
 
-            <img class="home-content__logo" src="<?= get_template_directory_uri() ?>/images/logo-home-<? emblr_theme() ?>.svg">
+           <span class="home-logo-container">
+                <img class="home-content__logo" src="<?= get_template_directory_uri() ?>/images/logo-home-light-theme.svg">
+                <img class="home-content__logo" src="<?= get_template_directory_uri() ?>/images/logo-home-dark-theme.svg">
+           </span>
             
 
             <?  if ( $slogan ): ?>
