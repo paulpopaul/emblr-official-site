@@ -142,34 +142,8 @@ a:active {
   background: rgba(153,153,153,1);
 }
 
-body.in-transition,
-body.in-transition a,
-body.in-transition p,
-body.in-transition b,
-body.in-transition i,
-body.in-transition strong,
-body.in-transition tiny,
-body.in-transition h1,
-body.in-transition h2,
-body.in-transition h3,
-body.in-transition h4,
-body.in-transition h5,
-body.in-transition h6,
-body.in-transition ::after,
-body.in-transition ::before {
-  transition: color 1s ease-out 0s !important;
-}
-
-body.in-transition .header-logo img,
-body.in-transition .home-logo-container img {
-  transition: opacity 1s ease-out 0s !important;
-}
-
-/* body.in-transition section, */
-body.in-transition ::after,
-body.in-transition ::before {
-  transition: background 1s ease-out 0s,
-              background-color 1s ease-out 0s !important;
+body.in-transition * {
+  transition: none !important;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -5356,6 +5330,7 @@ body.dark-theme .item-service__icon i::after { color: #00ebab0f !important; }
           transform: translateZ(200px) rotate(var(--r));
   -webkit-animation: mask var(--duration) linear forwards infinite;
           animation: mask var(--duration) linear forwards infinite;
+  transition: none !important;
 }
 
 body.light-theme .loader:before,
@@ -10931,7 +10906,7 @@ body.dark-theme .toggle-control .control {
   width: 0;
 }
 
-.toggle-control input:checked ~ .control:after {
+.toggle-control input:checked ~ .control::after {
   left: 44px;
 }
 .toggle-control .control {
@@ -10942,11 +10917,11 @@ body.dark-theme .toggle-control .control {
   width: 70px;
   border-radius: 25px;
   border: 1px solid;
-  transition: all 0.3s ease-in;
+  /* transition: all 0.3s ease-in; */
 }
 
 
-.toggle-control .control:after {
+.toggle-control .control::after {
   content: "";
   position: absolute;
   left: 5px;
@@ -10954,11 +10929,15 @@ body.dark-theme .toggle-control .control {
   width: 20px;
   height: 20px;
   border-radius: 25px;
-  transition: left 0.15s ease-in;
+}
+
+.toggle-control .control::after,
+body.in-transition .toggle-control .control::after {
+  transition: left 0.3s ease-in-out !important;
 }
 
 @media only screen and (max-width:768px) {
-  .toggle-control input:checked ~ .control:after {
+  .toggle-control input:checked ~ .control::after {
     left: 35px;
   }
   .toggle-control .control{
@@ -10970,7 +10949,7 @@ body.dark-theme .toggle-control .control {
 
 }
 @media only screen and (max-width:414px) {
-  .toggle-control input:checked ~ .control:after {
+  .toggle-control input:checked ~ .control::after {
     left: 35px;
   }
   .toggle-control .control{
