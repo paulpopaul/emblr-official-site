@@ -46,6 +46,11 @@
     <!-- Header
     ================================================== -->
     <header class="s-header">
+
+        <label class="toggle-control" id="chk" >
+            <input type="checkbox" checked="checked" for="chk">
+            <span class="control"></span>
+        </label>
         
         <?  if ( $logo_esquina ) :  ?>
 

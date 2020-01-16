@@ -836,6 +836,13 @@ $(".btn-with-icon").on("click", function() {
 
    };
 
+    var botonSwitchToggle = function() {
+        const chk = document.getElementById('chk');
+        chk.addEventListener('change', () => {
+            document.body.classList.toggle('dark-theme');
+        });
+    };
+
     var botonSubir = function() {
         $('#inicio').waypoint({
             offset: '-50%',
@@ -843,8 +850,6 @@ $(".btn-with-icon").on("click", function() {
                 $('#return-to-top').toggleClass('dissapear');
             }
         });
-    };
-    var botonSubirReturn = function() {
         $('#return-to-top').click(function () {
             scrollTo('#inicio');
         });
@@ -877,8 +882,8 @@ $(".btn-with-icon").on("click", function() {
         contactCursorDissapear();
         buildNavigationControl();
         traditionalFormValidate();
+        botonSwitchToggle();
         botonSubir();
-        botonSubirReturn();
 
     })();
 

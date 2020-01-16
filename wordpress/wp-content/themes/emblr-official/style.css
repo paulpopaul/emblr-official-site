@@ -2013,7 +2013,18 @@ body:not(#main-page) .s-header + section {
   outline: 0;
   border: none;
 }
+@media only screen and (max-width: 3000px) {
+  .header-logo {
+    left: 20rem;
+    top: 46%;
+  }
+}
 
+@media only screen and (max-width: 768px) {
+  .header-logo {
+    left: 13rem;
+  }
+}
 .header-logo img {
 /*  width: 155px;*/
   height: 36px;
@@ -2756,9 +2767,6 @@ body.light-theme .header-menu-icon { background-color: #242b3f; }
  * header
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:1200px) {
-  .header-logo {
-    left: 60px;
-  }
 
   .icon-search {
     right: 145px;
@@ -2828,9 +2836,6 @@ body.light-theme .header-menu-icon { background-color: #242b3f; }
 }
 
 @media only screen and (max-width:800px) {
-  .header-logo {
-    left: 40px;
-  }
 
   .header-menu-toggle, .opaque-controls {
     right: 40px;
@@ -10826,6 +10831,86 @@ ul.post-author-social {
 
 /*# sourceMappingURL=main.css.map */
 
+/* -------------------------------------------------------------------
+ * ## BOTON SWITCH TOOGLE
+ * ------------------------------------------------------------------- */
+body.light-theme .toggle-control input:checked ~ .control{
+  background-color: #242B3F;
+}
+
+body.light-theme .toggle-control .control:after {
+  background: white;
+}
+
+.toggle-control {
+  display: block;
+  position: relative;
+  padding-left: 74px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.toggle-control input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.toggle-control input:checked ~ .control:after {
+  left: 44px;
+}
+.toggle-control .control {
+  position: absolute;
+  top: 18px;
+  left: 85px;
+  height: 30px;
+  width: 70px;
+  border-radius: 25px;
+  background-color: darkgray;
+  transition: background-color 0.15s ease-in;
+}
+
+
+.toggle-control .control:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 25px;
+  transition: left 0.15s ease-in;
+}
+@media only screen and (max-width:768px) {
+  .toggle-control input:checked ~ .control:after {
+    left: 35px;
+  }
+  .toggle-control .control{
+    left: 39px;
+    top:18px;
+    height: 30px;
+    width: 60px;
+  }
+
+}
+@media only screen and (max-width:414px) {
+  .toggle-control input:checked ~ .control:after {
+    left: 35px;
+  }
+  .toggle-control .control{
+    left: 18px;
+    top:26px;
+    height: 30px;
+    width: 60px;
+  }
+
+}
 /* -------------------------------------------------------------------
  * ## BOTON SUBIR
  * ------------------------------------------------------------------- */
