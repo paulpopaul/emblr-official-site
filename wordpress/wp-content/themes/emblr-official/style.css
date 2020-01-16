@@ -143,18 +143,33 @@ a:active {
 }
 
 body.in-transition,
-body.in-transition *,
-body.in-transition *::after,
-body.in-transition *::before {
-  transition: background-color 1s ease-out 0s,
-              background 1s ease-out 0s,
-              color 1s ease-out 0s,
-              opacity 1s ease-out 0s !important;
+body.in-transition a,
+body.in-transition p,
+body.in-transition b,
+body.in-transition i,
+body.in-transition strong,
+body.in-transition tiny,
+body.in-transition h1,
+body.in-transition h2,
+body.in-transition h3,
+body.in-transition h4,
+body.in-transition h5,
+body.in-transition h6,
+body.in-transition ::after,
+body.in-transition ::before {
+  transition: color 2s ease-out 0s !important;
+}
 
-  -webkit-transition: background-color 1s ease-out 0s,
-                      background 1s ease-out 0s,
-                      color 1s ease-out 0s,
-                      opacity 1s ease-out 0s !important;
+body.in-transition .header-logo img,
+body.in-transition .home-logo-container img {
+  transition: opacity 2s ease-out 0s !important;
+}
+
+body.in-transition .section-page,
+body.in-transition ::after,
+body.in-transition ::before {
+  transition: background 2s ease-out 0s,
+              background-color 2s ease-out 0s !important;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
