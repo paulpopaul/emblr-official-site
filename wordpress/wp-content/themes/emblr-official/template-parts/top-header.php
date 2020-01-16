@@ -51,6 +51,7 @@
             <input type="checkbox" checked="checked" for="chk">
             <span class="control"></span>
         </label>
+
         
         <?  if ( $logo_esquina ) :  ?>
 
@@ -194,6 +195,7 @@
 
     </header> <!-- end s-header -->
 
+    
     <!-- botonSubir
     ================================================== -->
     <div>

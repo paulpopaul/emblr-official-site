@@ -836,25 +836,37 @@ $(".btn-with-icon").on("click", function() {
 
    };
 
+
+   /* Switch theme button
+    * ------------------------------------------------------ */
     var botonSwitchToggle = function() {
+
         const chk = document.getElementById('chk');
         chk.addEventListener('change', () => {
             document.body.classList.toggle('dark-theme');
         });
+
     };
 
+
+    /* Return to top scroll button
+    * ------------------------------------------------------ */
     var botonSubir = function() {
+
         $('#inicio').waypoint({
             offset: '-50%',
             handler: function () {
                 $('#return-to-top').toggleClass('dissapear');
             }
         });
+
         $('#return-to-top').click(function () {
             scrollTo('#inicio');
         });
+
     };
 
+    
    /* Initialize
     * ------------------------------------------------------ */
     (function clInit() {
