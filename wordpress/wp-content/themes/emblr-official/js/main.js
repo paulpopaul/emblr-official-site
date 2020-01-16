@@ -836,6 +836,19 @@ $(".btn-with-icon").on("click", function() {
 
    };
 
+    var botonSubir = function() {
+        $('#inicio').waypoint({
+            offset: '-50%',
+            handler: function () {
+                $('#return-to-top').toggleClass('dissapear');
+            }
+        });
+    };
+    var botonSubirReturn = function() {
+        $('#return-to-top').click(function () {
+            scrollTo('#inicio');
+        });
+    };
 
    /* Initialize
     * ------------------------------------------------------ */
@@ -864,6 +877,8 @@ $(".btn-with-icon").on("click", function() {
         contactCursorDissapear();
         buildNavigationControl();
         traditionalFormValidate();
+        botonSubir();
+        botonSubirReturn();
 
     })();
 

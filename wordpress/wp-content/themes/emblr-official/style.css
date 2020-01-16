@@ -10826,3 +10826,71 @@ ul.post-author-social {
 
 /*# sourceMappingURL=main.css.map */
 
+/* -------------------------------------------------------------------
+ * ## BOTON SUBIR
+ * ------------------------------------------------------------------- */
+
+body.light-theme #return-to-top{
+  background: #242B3F;
+}
+
+body.light-theme #return-to-top i{
+  color: #fff;
+}
+
+body.dark-theme #return-to-top{
+  background: #000;
+  border: 2px solid #1FBDA2;
+}
+
+body.dark-theme #return-to-top i{
+  color: #fff;
+  left: 21px;
+  top: 14px;
+}
+
+@media only screen and (max-width: 3000px) {
+  #return-to-top {
+    position: fixed;
+    bottom: 17px;
+    left: 23px;
+    width: 58px;
+    height: 58px;
+    cursor: pointer;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    z-index: 99;
+  }
+
+  #return-to-top i {
+    margin: 0;
+    position: relative;
+    left: 23px;
+    top: 15px;
+    font-size: 15px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  #return-to-top:hover {
+    background: #242B3F;
+  }
+
+  #return-to-top:hover i {
+    color: #fff;
+    top: 12px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #return-to-top {
+    left: initial;
+    right: 8px;
+    bottom: 11px;
+    text-decoration: none;
+  }
+}
