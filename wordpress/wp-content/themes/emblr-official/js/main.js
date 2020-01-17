@@ -850,7 +850,7 @@ $(".btn-with-icon").on("click", function() {
 
             setTimeout(() => {
                 document.body.classList.remove('in-transition')
-            }, 2000);
+            }, 100);
         })
 
     };
