@@ -1726,10 +1726,21 @@ body.dark-theme .qlwapp-whatsapp-icon{
 
 
 @media only screen and (max-width: 414px) {
+  #qlwapp {
+    right: 1px;
+    bottom: -68px !important;
+    transition: bottom 0.3s ease;
+  }
+
+  #qlwapp.no-return-to-top {
+    bottom: 0 !important;
+  }
+
   .qlwapp-whatsapp-icon {
     font-size: 24px;
     color: #242B3F !important;
   }
+
   .qlwapp-text {
     display: none;
   }
@@ -10825,6 +10836,10 @@ ul.post-author-social {
 /* iPad Pro */
 @media only screen and (max-width: 1024px) {
 
+  body:not(#main-page) .s-header ~ section {
+    padding-top: 125px;
+  }
+
   .s-post-view h1.post-title { margin-bottom: 10px; }
   .post-grid-container { margin-top: 20px; }
 
@@ -10893,8 +10908,8 @@ ul.post-author-social {
 /* iPhone 6, 7, 8 all plus */
 @media only screen and (max-width: 414px) {
 
-  body:not(#main-page) .s-header + section {
-    padding-top: 70px;
+  body:not(#main-page) .s-header ~ section {
+    padding-top: 90px;
   }
 
   .post-featured-img { padding: 5px; }
@@ -11050,9 +11065,10 @@ body.in-transition .toggle-control .control::after {
   .toggle-control input:checked ~ .control::after {
     left: 35px;
   }
+
   .toggle-control .control{
     left: 18px;
-    top:26px;
+    top: 23px;
     height: 30px;
     width: 60px;
   }

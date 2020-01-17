@@ -353,6 +353,7 @@
                 offset: '-50%',
                 handler: function () {
                     $('#return-to-top').toggleClass('dissapear')
+                    $('#qlwapp').toggleClass('no-return-to-top')
                 }
             })
 
