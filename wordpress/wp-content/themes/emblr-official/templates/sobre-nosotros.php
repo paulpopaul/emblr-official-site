@@ -63,7 +63,7 @@
                         </div>
                 </div>
     </div>
-    <div class="features-content">
+    <div class="features-content" data-aos="fade-up">
         <div data-features-tabs class="features-content-col" id="text-block">
             <div id="feature-1" class="features-textblock animated fadeIn __active">
                 <p> ¿Quiénes sómos? </p>

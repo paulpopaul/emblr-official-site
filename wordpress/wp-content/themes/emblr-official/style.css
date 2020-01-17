@@ -10374,7 +10374,22 @@ h1.post-title {
 
 .post-featured-img img { display: block; }
 .post-content p { padding: 13px 0 !important; }
-.post-content p.p-highlight { font-size: 18px; }
+.post-content p.highlight { font-size: 18px; }
+
+body.light-theme .post-content p.highlight { color: #a4a4a4; }
+body.dark-theme .post-content p.highlight { color: #fff; }
+
+.post-content p.has-background {
+  background-color: transparent !important;
+}
+
+body.light-theme .post-content p.has-background {
+  color: #a4a4a4 !important;
+}
+
+body.dark-theme .post-content p.has-background {
+  color: rgba(255, 255, 255, 0.3) !important;
+}
 
 /* taxonomías */
 .post-taxonomies > div {
@@ -10621,7 +10636,7 @@ form#commentform p.form-submit { order: 5; }
   margin-right: 10px !important;
 }
 
-.light-theme .post-author-container {
+.post-author-container {
   background: transparent !important;
 }
 
@@ -10800,7 +10815,7 @@ ul.post-author-social {
 .light-theme .post-share-buttons a:hover i {
   color: #A4A4A4;
 }
-.dark-theme post-share-buttons a:hover i {
+.dark-theme .post-share-buttons a:hover i {
   color: #fff;
 }
 

@@ -66,7 +66,7 @@
 
                 <div class="entry-content">
                     <?
-                        $content = get_the_content();
+                        $content = get_the_excerpt();
                         $content = str_replace( $_GET['s'], "<mark>${_GET['s']}</mark>", $content );
 
                         echo $content
