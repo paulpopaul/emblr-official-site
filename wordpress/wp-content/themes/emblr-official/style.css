@@ -122,9 +122,16 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-a:hover,
 a:focus,
 a:active {
+  color: rgba(255,255,255,1);
+}
+
+.light-theme a:hover{
+  color: #A4A4A4;
+}
+
+.dark-theme a:hover{
   color: rgba(255,255,255,1);
 }
 
@@ -814,7 +821,7 @@ select {
   padding: 1.5rem 2.4rem;
   border: 0;
   outline: none;
-  color: rgba(255, 255, 255, 0.7);
+
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.5rem;
   line-height: 3rem;
@@ -824,6 +831,14 @@ select {
   transition: all 0.3s ease-in-out;
 }
 
+.light-theme input[type="text"]:focus, .light-theme textarea, .light-theme select {
+  color: #666;
+}
+
+.dark-theme input[type="text"] {
+  color: rgba(255, 255, 255, 0.7);
+}
+  
 .ss-custom-select {
   position: relative;
   padding: 0;
@@ -903,8 +918,14 @@ legend {
   font-size: 1.4rem;
   margin-bottom: .9rem;
   line-height: 1.714;
-  color: #FFFFFF;
   display: block;
+}
+
+legend.light-theme {
+  color: rgb(102,102,102);
+}
+legend.dark-theme {
+  color: #FFFFFF;
 }
 
 input[type="checkbox"],
@@ -1019,6 +1040,24 @@ input[type="button"] {
   background-color: #c5c5c5;
   border: .2rem solid #c5c5c5; 
 }
+
+.light-theme .btn,
+.light-theme button,
+.light-theme input[type="submit"],
+.light-theme input[type="reset"],
+.light-theme input[type="button"] {
+  color: #fff;
+}
+
+.dark-theme .btn,
+.dark-theme button,
+.dark-theme input[type="submit"],
+.dark-theme input[type="reset"],
+.dark-theme input[type="button"] {
+  color: #000000;
+}
+
+
 
 .btn:hover,
 button:hover,
@@ -10310,8 +10349,12 @@ footer {
  * ## ENTRADAS -> Noticias
  * ------------------------------------------------------------------- */
 
-section.s-post-view {
+.dark-theme section.s-post-view {
   background: #000;
+}
+
+.light-theme section.s-post-view {
+  background: #fff;
 }
 
 h1.post-title {
@@ -10397,9 +10440,15 @@ h1.post-title {
   cursor: default;
 }
 
-.post-taxonomies-content .btn:hover {
+.light-theme .post-taxonomies-content .btn:hover {
+  color: #A4A4A4;
+}
+
+.dark-theme .post-taxonomies-content .btn:hover {
   color: #fff;
 }
+
+
 
 .post-labels { }
 .post-share { }
@@ -10440,6 +10489,12 @@ form#commentform p.form-submit { order: 5; }
   font-style: normal;
   font-size: 23px;
 
+}
+
+.light-theme .post-comments .comment-author.vcard cite.fn {
+  color: rgb(36,43,63);
+}
+.dark-theme .post-comments .comment-author.vcard cite.fn {
   color: #fff;
 }
 
@@ -10488,7 +10543,6 @@ form#commentform p.form-submit { order: 5; }
 .post-comments .reply { margin-top: 25px; }
 .post-comments .comment-reply-link {
   background: #1fbda2;
-  color: #000;
   text-transform: capitalize;
   border: none;
   border-radius: 30px;
@@ -10500,6 +10554,12 @@ form#commentform p.form-submit { order: 5; }
   font-size: 17px;
   font-weight: normal;
   letter-spacing: 0.5px;
+}
+.light-theme .post-comments .comment-reply-link {
+  color: #fff;
+}
+.dark-theme .post-comments .comment-reply-link {
+  color: #000;
 }
 
 .post-comments .comment-reply-link:hover { background: #666; color: #fff; }
@@ -10569,6 +10629,10 @@ form#commentform p.form-submit { order: 5; }
   margin-right: 10px !important;
 }
 
+.light-theme .post-author-container {
+  background: transparent !important;
+}
+
 .post-author-profile.pic { width: 150px !important; }
 .post-author-profile.pic img { box-shadow: 0 0 0 5px #1fbda2; }
 .post-author-container:hover { border-bottom: none; }
@@ -10623,8 +10687,12 @@ ul.post-author-social {
   color: #1fbda2;
 }
 
-.post-sidebar-container .widget_categories a:link:hover,
-.post-sidebar-container .widget_categories a:visited:hover { color: #fff; }
+.light-theme .post-sidebar-container .widget_categories a:link:hover,
+.light-theme .post-sidebar-container .widget_categories a:visited:hover { color: rgb(36,43,63); }
+
+.dark-theme .post-sidebar-container .widget_categories a:link:hover,
+.dark-theme .post-sidebar-container .widget_categories a:visited:hover { color: #fff; }
+
 
 /* sidebar: últimos post */
 .post-sidebar-container .widget_smart_recent_entries .srpw-block li {
@@ -10638,9 +10706,16 @@ ul.post-author-social {
 .post-sidebar-container .widget_smart_recent_entries .srpw-title {
   display: table-row;
   line-height: 26px;
-  color: #fff;
 }
 
+.light-theme .post-sidebar-container .widget_smart_recent_entries .srpw-title {
+  color: rgb(36,43,63);
+}
+.dark-theme .post-sidebar-container .widget_smart_recent_entries .srpw-title {
+  display: table-row;
+  line-height: 26px;
+  color: #fff;
+}
 .post-sidebar-container .widget_smart_recent_entries .srpw-title:hover {
   color: #666;
 }
@@ -10686,7 +10761,10 @@ ul.post-author-social {
   transition: all 0.3s ease 0s;
 }
 
-.widget_social_follow .social a:hover {
+.light-theme .widget_social_follow .social a:hover {
+  color: rgb(36, 43 ,63);
+}
+.dark-theme .widget_social_follow .social a:hover {
   color: #fff;
 }
 
@@ -10720,7 +10798,6 @@ ul.post-author-social {
 }
 
 .post-share-buttons a:hover i {
-  color: #fff;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
   -o-transition: all .5s;
@@ -10728,6 +10805,12 @@ ul.post-author-social {
   transition: all .5s;
 }
 
+.light-theme .post-share-buttons a:hover i {
+  color: #A4A4A4;
+}
+.dark-theme post-share-buttons a:hover i {
+  color: #fff;
+}
 
 /* ------------------------------------------------------------------- 
  * ## Responsive: ENTRADAS -> Noticias
