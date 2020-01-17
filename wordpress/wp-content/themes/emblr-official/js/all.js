@@ -334,13 +334,16 @@
     * ------------------------------------------------------ */
    var scrollToTopButton = function() {
 
+        let handler = function () {
+            $('#return-to-top').toggleClass('dissapear')
+            $('#qlwapp').toggleClass('no-return-to-top')
+        }
+
         if ( document.body.id === 'main-page' ) {
 
             $('#inicio').waypoint({
                 offset: '-50%',
-                handler: function () {
-                    $('#return-to-top').toggleClass('dissapear');
-                }
+                handler: handler
             })
 
             $('#return-to-top').click(function () {
@@ -351,10 +354,7 @@
 
             $('body').waypoint({
                 offset: '-50%',
-                handler: function () {
-                    $('#return-to-top').toggleClass('dissapear')
-                    $('#qlwapp').toggleClass('no-return-to-top')
-                }
+                handler: handler
             })
 
             $('#return-to-top').click(function () {
