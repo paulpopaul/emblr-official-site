@@ -10999,7 +10999,7 @@ body.dark-theme .toggle-control .control {
   height: 30px;
   width: 70px;
   border-radius: 25px;
-  border: 1px solid;
+  border: 2px solid;
   /* transition: all 0.3s ease-in; */
 }
 
@@ -11008,7 +11008,7 @@ body.dark-theme .toggle-control .control {
   content: "";
   position: absolute;
   left: 5px;
-  top: 4px;
+  top: 3px;
   width: 20px;
   height: 20px;
   border-radius: 25px;
