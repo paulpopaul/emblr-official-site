@@ -3,10 +3,6 @@
  *
  * ------------------------------------------------------------------- */
 
- // Imports
-import { storiesSlider } from './exports.js'
-
-
 (function($) {
 
     "use strict";
@@ -448,7 +444,6 @@ $(".btn-with-icon").on("click", function() {
         loadParticles();
         scrollWaypoint();
         logoEnableDisableParticles();
-        storiesSlider();
         shuffleText();
         typeitInit();
         teamSlider();

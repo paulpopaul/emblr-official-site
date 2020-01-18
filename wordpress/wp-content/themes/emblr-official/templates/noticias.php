@@ -96,3 +96,13 @@
 	</div> <!-- .slick-stories-container -->
 
 </section>
+
+
+<script type="module">
+	import { storiesSlider } from '<?= get_template_directory_uri() ?>/js/exports.js'
+
+	(function($) {
+		// Init:
+		storiesSlider()
+	})(jQuery)
+</script>
