@@ -295,13 +295,13 @@
 	 */
 	function emblr_theme ( ) {
 
-		$hour = (int)( date('H') );
+		$emblr_theme = $_COOKIE[ 'emblr_theme' ];
 
-		if ( true || ( $hour >= 6 and $hour < 21 ) )
-			echo 'light-theme';
-			
+		if ( $emblr_theme )
+			echo $emblr_theme;
+
 		else
-			echo 'dark-theme'
+			echo 'light-theme'
 		;
 		
 	}

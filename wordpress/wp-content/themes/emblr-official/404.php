@@ -2,7 +2,7 @@
 
 <body id="not-found" class="<? emblr_theme() ?>">
 
-<!-- Contenido página 404 aquí -->
+    <!-- Contenido página 404 aquí -->
 
     <div id="notfound">
         <div class="notfound-bg">
@@ -64,6 +64,12 @@
         </div>
     </div>
 
-<!-- Contenido página 404 aquí -->
+    <!-- Contenido página 404 aquí -->
 
-    <?php get_footer() ?>
+
+    <!-- Check for Theme function -->
+    <script src="<?= get_template_directory_uri() ?>/js/emblr-theme.js"></script>
+    <!-- Check for Theme function -->
+
+
+    <?php //get_footer() ?>

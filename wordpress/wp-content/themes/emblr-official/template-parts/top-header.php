@@ -48,7 +48,7 @@
     <header class="s-header">
 
         <label class="toggle-control" id="chk" >
-            <input type="checkbox" checked="checked" for="chk">
+            <input type="checkbox" id="emblr-theme-check" checked="checked" for="chk">
             <span class="control"></span>
         </label>
 

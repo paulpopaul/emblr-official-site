@@ -60,7 +60,7 @@
      * 
      */
     $etiquetas = get_the_tags( $post-> ID );
-
+    
 ?>
 
 
@@ -328,7 +328,6 @@
 
 
     <script type="text/javascript">
-
         ($ => {
 
             $(window).resize(() => {
@@ -352,7 +351,6 @@
             $(window).trigger( 'resize' )
 
         })( jQuery )
-
     </script>
 
 

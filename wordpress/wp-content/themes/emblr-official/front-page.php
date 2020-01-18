@@ -27,16 +27,6 @@
 
 
 <body id="main-page" class="<? emblr_theme() ?>">
-    
-    <!-- ( preloader )
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader" class="dots-jump">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
 
 
     <? get_template_part( 'template-parts/top-header' ) ?>

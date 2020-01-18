@@ -99,7 +99,6 @@
         });
     };
 
-
    /* OffCanvas Menu
     * ------------------------------------------------------ */
     var ssOffCanvas = function() {
@@ -317,14 +316,33 @@
 
         const chk = document.getElementById('chk')
         
-        chk.addEventListener('change', () => {
-            document.body.classList.add('in-transition')
-            document.body.classList.toggle('light-theme')
-            document.body.classList.toggle('dark-theme')
+        chk.addEventListener('change', (e) => {
 
-            setTimeout(() => {
+            document.body.classList.add('in-transition')
+
+            let theme;
+
+            if ( e.target.checked ) {
+                document.body.classList.add('light-theme')
+                document.body.classList.remove('dark-theme')
+
+                theme = 'light-theme'
+
+            } else {
+                document.body.classList.add('dark-theme')
+                document.body.classList.remove('light-theme')
+
+                theme = 'dark-theme'
+            }
+            
+            // Hacemos update de la variable de tema local:
+            localStorage.setItem( 'emblr-theme', theme )
+            // Actualizamos Cookie que se envía al servidor
+            document.cookie = `emblr_theme=${theme}`
+
+            setTimeout( () => {
                 document.body.classList.remove('in-transition')
-            }, 100);
+            }, 100)
         })
 
     };
