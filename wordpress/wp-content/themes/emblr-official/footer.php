@@ -136,7 +136,7 @@
         <script src="<?= get_template_directory_uri() ?>/js/terminal-functions.js"></script>
         <script src="<?= get_template_directory_uri() ?>/js/contact-map.js"></script>
 
-        <script src="<?= get_template_directory_uri() ?>/js/main.js"></script>
+        <script type="module" src="<?= get_template_directory_uri() ?>/js/main.js"></script>
 
     <? endif ?>
 

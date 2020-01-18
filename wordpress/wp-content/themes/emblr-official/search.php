@@ -79,8 +79,19 @@
     </section>
     <!-- Sección: Resultado búsqueda -->
 
-    
+
+    <!-- importa noticias stories -->
     <? get_template_part( 'templates/noticias' ) ?>
 
+    <script type="module">
+        import { storiesSlider } from '<?= get_template_directory_uri() ?>/js/exports.js'
+
+        (function($) {
+            // Init:
+            storiesSlider()
+        })(jQuery)
+    </script>
+    <!-- importa noticias stories -->
+    
 
     <? get_footer() ?>

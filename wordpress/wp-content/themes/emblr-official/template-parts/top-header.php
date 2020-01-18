@@ -56,12 +56,14 @@
         <?  if ( $logo_esquina ) :  ?>
 
             <div class="header-logo">
-                <a class="site-logo" href="#">
+                <a class="site-logo" href="<?= home_url() ?>">
+                
+                    <span class="header-logo-container">
+                        <img src="<?= get_template_directory_uri() ?>/images/logo-light-theme.svg">
+                        <img src="<?= get_template_directory_uri() ?>/images/logo-dark-theme.svg">
+                    </span>
 
-                <span class="header-logo-container">
-                    <img src="<?= get_template_directory_uri() ?>/images/logo-light-theme.svg">
-                    <img src="<?= get_template_directory_uri() ?>/images/logo-dark-theme.svg">
-                </span>
+                </a>
 
                 <? if ( $posts_number_results ) :
 
@@ -74,11 +76,8 @@
                         endif
                 ?>
 
-                    <span class="marca"> <?= __( 'total', 'emblr' ) ?> <?= $total_resultados ?> </span>
-
                 <? endif ?>
 
-                </a>
             </div> <!-- end header-logo -->
 
         <?  endif  ?>
@@ -196,7 +195,7 @@
             <span class="header-menu-icon"></span>
         </a>
 
-        
+
         <!-- botonSubir
         ================================================== -->
         <div>
