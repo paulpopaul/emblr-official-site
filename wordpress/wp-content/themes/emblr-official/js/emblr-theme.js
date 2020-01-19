@@ -18,14 +18,18 @@
 
     document.cookie = `emblr_theme=${theme};path=/`
 
-
-    if ( theme === 'light-theme' && false === theme_checkbx.checked )
-        theme_checkbx.checked = true
     
-    else if ( theme === 'dark-theme' && theme_checkbx.checked )
-        theme_checkbx.checked = false
+    if ( theme_checkbx ) {
 
-    ;
+        if ( theme === 'light-theme' && false === theme_checkbx.checked )
+            theme_checkbx.checked = true
+        
+        else if ( theme === 'dark-theme' && theme_checkbx.checked )
+            theme_checkbx.checked = false
+
+        ;
+        
+    }
 
 
     if ( false === document.body.classList.contains(theme) ) {
