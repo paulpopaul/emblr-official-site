@@ -121,11 +121,11 @@
         $('.container-team').slick({
             arrows: false,
             dots: true,
-            infinite: true,
+            infinite: false,
             slidesToScroll: 1,
             mobileFirst: true,
             focusOnSelect: false,
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 3500,
 
             responsive: [
@@ -188,7 +188,7 @@ $(".btn-with-icon").on("click", function() {
     /* Services
     * ------------------------------------------------------ */
 
-    var more_services_button = function() {
+    var moreButtonServices = function() {
 
         $("#more-services").on("click", function() {
             $("#nuestros-servicios").find(".hidden-service").show("normal");
@@ -447,12 +447,14 @@ $(".btn-with-icon").on("click", function() {
         shuffleText();
         typeitInit();
         teamSlider();
-        more_services_button();
+        moreButtonServices();
         aboutUsAnimation();
         filterList.init();
         contactCursorDissapear();
         buildNavigationControl();
         traditionalFormValidate();
+
+        $('.services-cubes, .contact-bg, .glitch, #spot-text, #spot-shuffle-text').remove() && $('#spot, #pricing').css('background', 'none');
 
     })();
 
