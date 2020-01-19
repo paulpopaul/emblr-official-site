@@ -335,10 +335,13 @@
                 theme = 'dark-theme'
             }
             
+            
             // Hacemos update de la variable de tema local:
             localStorage.setItem( 'emblr-theme', theme )
+
             // Actualizamos Cookie que se envía al servidor
-            document.cookie = `emblr_theme=${theme}`
+            document.cookie = `emblr_theme=${theme};path=/`
+
 
             setTimeout( () => {
                 document.body.classList.remove('in-transition')

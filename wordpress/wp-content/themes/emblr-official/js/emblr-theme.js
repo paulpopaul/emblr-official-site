@@ -14,9 +14,9 @@
         )
 
     ;
+    
 
-
-    document.cookie = `emblr_theme=${theme}`
+    document.cookie = `emblr_theme=${theme};path=/`
 
 
     if ( theme === 'light-theme' && false === theme_checkbx.checked )
