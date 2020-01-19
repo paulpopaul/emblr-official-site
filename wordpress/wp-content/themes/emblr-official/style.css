@@ -4813,6 +4813,8 @@ body.dark-theme .our-team {
     margin-top: 42px;
 }
 
+.our-team:hover .pic {  }
+
 .team-content h3.title { margin-top: 30px; }
 
 .our-team .pic:before {
@@ -4933,6 +4935,10 @@ body.dark-theme .our-team {
     margin-left: 15px;
     margin-right: 15px;
   }
+}
+
+@media only screen and (min-width: 1025px) {
+  .our-team .pic { min-width: 190px; }
 }
 
 @media only screen and (max-width:1024px) {

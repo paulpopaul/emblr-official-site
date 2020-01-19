@@ -454,8 +454,6 @@ $(".btn-with-icon").on("click", function() {
         buildNavigationControl();
         traditionalFormValidate();
 
-        $('.services-cubes, .contact-bg, .glitch, #spot-text, #spot-shuffle-text').remove() && $('#spot, #pricing').css('background', 'none');
-
     })();
 
 })(jQuery);
