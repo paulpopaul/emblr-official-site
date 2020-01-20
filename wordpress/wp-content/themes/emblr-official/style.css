@@ -810,7 +810,6 @@ select {
   padding: 1.5rem 2.4rem;
   border: 0;
   outline: none;
-
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.5rem;
   line-height: 3rem;
@@ -818,6 +817,10 @@ select {
   background: rgba(255, 255, 255, 0.05);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+.light-theme input[type="text"] {
+  color: #666;
 }
 
 .light-theme input[type="text"]:focus, .light-theme textarea, .light-theme select {
@@ -10560,6 +10563,15 @@ form#commentform p.form-submit { order: 5; }
 }
 
 .post-comments textarea { resize: none; }
+
+.light-theme .post-comments textarea { 
+  color: #666;
+ }
+
+.dark-theme .post-comments textarea { 
+  color: rgba(255, 255, 255, 0.7);
+ }
+
 .post-comments input[type="submit"] {
   background: #1fbda2;
   text-transform: capitalize;
