@@ -290,6 +290,25 @@
 
 	/**
 	 * 
+	 * Retorna excerpt más corto para vista de categorías y etiquetas
+	 * 
+	 */
+	add_filter( 'excerpt_length', 'archive_custom_excerpt_length', 999 );
+	function archive_custom_excerpt_length( $length ) {
+
+		if( is_category() || is_tag() )
+			return 30;
+
+		else
+			return $length
+		;
+
+	}
+
+
+
+	/**
+	 * 
 	 * 	Agrega clase Light/Dark Theme en body
 	 * 
 	 */
