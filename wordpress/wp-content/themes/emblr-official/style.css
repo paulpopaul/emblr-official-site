@@ -9042,7 +9042,12 @@ body.dark-theme .terminal__window textarea {
   text-rendering: optimizeLegibility;
 }
 
-.terminal__window .input_enabled {
+body.light-theme  .terminal__window .input_enabled {
+  border: 2px solid #D8D8D8 !important;
+  background: transparent;
+}
+
+body.dark-theme .terminal__window .input_enabled {
   border: 2px solid #1a1a1a !important;
 }
 
@@ -9079,7 +9084,7 @@ body.dark-theme .terminal__window .input_disabled {
 }
 
 body.light-theme .terminal__window #prompt {
-  color: rgba(36,43,63);
+  color: rgb(36,43,63);
 }
 body.dark-theme .terminal__window #prompt {
   color: rgba(255, 255, 255, 0.75);
@@ -9093,8 +9098,12 @@ body.dark-theme .terminal__window #prompt {
   background: #000;
 }
 
-.terminal__window .err {
-  color: #c3707d;
+body.light-theme .terminal__window .err {
+  color: #242B3F;
+}
+
+body.dark-theme .terminal__window .err {
+  color: #1fbda2;
 }
 
 .terminal__window .ok {
@@ -9112,7 +9121,20 @@ body.dark-theme .terminal__window #prompt {
 .terminal__window .out_i,
 .terminal__window .out_a {
   color: #666;
+
 }
+
+body.light-theme .terminal__window .out_i,
+body.light-theme .terminal__window .out_a {
+  color: #666;
+  background: #E5E5E5;
+}
+
+body.dark-theme .terminal__window .out_i,
+body.dark-theme .terminal__window .out_a {
+  color: #666;
+}
+
 
 .terminal__window .out_i {
   border: 2px solid transparent;
