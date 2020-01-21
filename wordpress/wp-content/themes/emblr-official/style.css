@@ -11077,7 +11077,7 @@ body.dark-theme .archive-grid-container article {
 }
 
 .archive-grid-container article:hover .archive-img {
-  background-position-x: 43%;
+  background-position-x: 48%;
   transition: background-position 0.3s ease;
 }
 
