@@ -444,8 +444,8 @@ $(".btn-with-icon").on("click", function() {
         loadParticles();
         scrollWaypoint();
         logoEnableDisableParticles();
-        shuffleText();
-        typeitInit();
+        // shuffleText();
+        // typeitInit();
         teamSlider();
         moreButtonServices();
         aboutUsAnimation();

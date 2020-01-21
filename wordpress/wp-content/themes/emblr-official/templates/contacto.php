@@ -42,7 +42,7 @@
     <h1 data-aos="fade-up" data-text="<? the_title() ?>" class="glitch"> <? the_title() ?> </h1>
     <h2 class="glitch contact-sub" data-text="<?= get_field( 'subtitulo', $post->ID ) ?>">
       <?= get_field( 'subtitulo', $post->ID ) ?>
-      <span class="cursor"></span>
+      <!-- <span class="cursor"></span> -->
     </h2>
   
     <div class="contact-content">

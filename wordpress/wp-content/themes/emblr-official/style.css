@@ -6407,7 +6407,7 @@ body.dark-theme .loader:after {
 
   text-align: center;
 
-  background-image: url(images/background/bg-02.svg);
+  /* background-image: url(images/background/bg-02.svg); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -8319,7 +8319,7 @@ body.dark-theme #testimonials-clientes-logo {
  * ------------------------------------------------------------------- */
 .spot {
   text-align: center;
-  background: url(images/background/bg-01.svg);
+  /* background: url(images/background/bg-01.svg); */
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
@@ -8361,7 +8361,7 @@ body.dark-theme .spot { background-color: #121212; }
 .spot #spot-shuffle-text {
   display: block;
   /*visibility: hidden;*/
-  opacity: 0;
+  /* opacity: 0; */
   /*transition: all 0.3s ease-in-out;*/
 }
 
@@ -8565,7 +8565,7 @@ body.dark-theme .s-contact {
   margin-bottom: 70px;
 }
 
-@keyframes blink {
+/* @keyframes blink {
   0% {
     stroke: rgba(51, 204, 153, 1);
     stroke-width: 1;
@@ -8574,15 +8574,16 @@ body.dark-theme .s-contact {
     stroke: rgba(51, 204, 153, 0.1);
     stroke-width: 15;
   }
-}
+} */
 
-circle[fill="#FBD9E"] { /* color marcador debe coincidir */
+/* color marcador debe coincidir */
+/* circle[fill="#FBD9E"] {
   padding: 20px;
   position: relative;
   -webkit-animation: blink 1.5s infinite ease-out;
   -moz-animation: blink 1.5s infinite ease-out;
   animation: blink 1.5s infinite ease-out;
-}
+} */
 
 body.light-theme .traditional-form pre {
   color: #242B3F;
@@ -9306,7 +9307,6 @@ body.dark-theme .terminal__window .out_a {
 * EFECTO GLITCH -> Contacto ------------------------------------------
 *
 */
-
 @media only screen and (min-width: 1025px) {
   .glitch {
     color: white;
@@ -9321,6 +9321,9 @@ body.dark-theme .terminal__window .out_a {
     font-size: 24px;
     font-weight: 700;
   }
+}
+
+/* @media only screen and (min-width: 1025px) {
 
   @keyframes noise-anim {
     0% {
@@ -9388,7 +9391,7 @@ body.dark-theme .terminal__window .out_a {
     }
   }
 
-  body.dark-theme .glitch::after {
+  .glitch::after {
     content: attr(data-text);
     position: absolute;
     left: 2px;
@@ -9504,7 +9507,7 @@ body.dark-theme .terminal__window .out_a {
       border-color: transparent;
     }
   }
-}
+} */
 
 /* ===================================================================
 * # pagina 404

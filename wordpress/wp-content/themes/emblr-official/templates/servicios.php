@@ -55,7 +55,7 @@
     </div> <!-- end section-header -->
 
     <div class="services-cubes" data-aos="fade-left">
-        <div class="loader">
+        <!-- <div class="loader">
           <div class="box box0"> <div></div> </div>
           <div class="box box1"> <div></div> </div>
           <div class="box box2"> <div></div> </div>
@@ -65,7 +65,7 @@
           <div class="box box6"> <div></div> </div>
           <div class="box box7"> <div></div> </div>
           <div class="ground"> <div></div> </div>
-        </div>
+        </div> -->
     </div> <!-- services-cubes -->
 
     <div class="bit-narrow services block-1-2 block-tab-full">
