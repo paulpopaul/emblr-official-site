@@ -78,16 +78,18 @@
 
                         <? the_excerpt() ?>
 
-                        <a class="read-more" href="<? the_permalink() ?>">
-                            <?= __( 'Leer más', 'emblr' ) ?> <i class="fas fa-arrow-right"></i>
-                        </a>
+                        <span class="read-more">
+                            <a href="<? the_permalink() ?>">
+                                <?= __( 'Leer más', 'emblr' ) ?> <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </span>
 
                         <span class="archive-labels">
 
                             <? $categories = get_the_category() ?>
 
                             <? foreach ( $categories as $n => $category ): ?>
-                                <? //if ( $n == 3 ) break ?>
+                                <? if ( $n == 3 ) break ?>
                                 <a href="<?= get_category_link( $category ) ?>" class="btn--pill"> <?= $category->name ?> </a>
                             <? endforeach ?>
 

@@ -11021,7 +11021,12 @@ h1.archive-title {
   text-transform: capitalize;
 }
 
-body.light-theme h1.archive-title span { color: #666; text-transform: initial; }
+h1.archive-title span { text-transform: initial; }
+
+body.dark-theme h1.archive-title { color: #fff; }
+body.dark-theme h1.archive-title span { color: #666; }
+
+body.light-theme h1.archive-title span { color: #666; }
 
 .archive-grid-container {
   display: grid;
@@ -11037,13 +11042,27 @@ body.light-theme h1.archive-title span { color: #666; text-transform: initial; }
   height: fit-content;
 }
 
+body.light-theme .archive-grid-container article {
+  border: 1px solid rgba(164, 164, 164, 0.27);
+}
+
+body.dark-theme .archive-grid-container article {
+  border: 1px solid rgba(102, 102, 102, 0.35);
+}
+
 .archive-grid-container article {
   display: grid;
   grid-template-columns: max-content auto;
   column-gap: 20px;
   padding: 20px;
 
-  border: 1px solid rgba(164, 164, 164, 0.27);
+  transition: border-color 0.3s linear;
+}
+
+.archive-grid-container article:hover {
+  border-color: #1fbda2 !important;
+  transition: border-color 0.3s linear;
+  box-shadow: 0 2px 15px rgba(31, 189, 162, 0.1);
 }
 
 .archive-grid-container article:not(:last-of-type) { margin-bottom: 20px; }
@@ -11054,12 +11073,16 @@ body.light-theme h1.archive-title span { color: #666; text-transform: initial; }
   position: relative;
   background-size: cover;
   background-position: center;
-  transition: background-position 0.5s ease-out;
+  transition: background-position 0.4s ease-out;
 }
 
 .archive-grid-container article:hover .archive-img {
   background-position-x: 43%;
-  transition: background-position 0.4s ease;
+  transition: background-position 0.3s ease;
+}
+
+.archive-grid-container .archive-img-bottom {
+  color: #fff;
 }
 
 .archive-grid-container .archive-img-top,
@@ -11079,7 +11102,14 @@ body.light-theme h1.archive-title span { color: #666; text-transform: initial; }
   font-size: 16px;
   text-align: center;
   text-transform: capitalize;
+}
+
+body.light-theme .archive-grid-container .archive-img-top {
   color: #fff;
+}
+
+body.dark-theme .archive-grid-container .archive-img-top {
+  color: #000;
 }
 
 .archive-grid-container .archive-img-top {
@@ -11091,8 +11121,15 @@ body.light-theme h1.archive-title span { color: #666; text-transform: initial; }
   color: #1fbda2 !important;
 }
 
-.archive-grid-container .archive-img-bottom {
+body.light-theme .archive-grid-container .archive-img-bottom {
   background-color: #242b3f;
+}
+
+body.dark-theme .archive-grid-container .archive-img-bottom {
+  background-color: #000;
+}
+
+.archive-grid-container .archive-img-bottom {
   bottom: 0;
 }
 
@@ -11106,6 +11143,13 @@ body.light-theme h1.archive-title span { color: #666; text-transform: initial; }
   font-family: "Nunito Sans";
   font-weight: normal;
   font-size: 34px;
+
+  transition: color 0.3s ease-in-out;
+}
+
+.archive-grid-container article:hover div.archive-body h2 {
+  color: #1fbda2;
+  transition: color 0.3s ease-in-out;
 }
 
 .archive-grid-container div.archive-body p {
@@ -11126,26 +11170,57 @@ body.light-theme h1.archive-title span { color: #666; text-transform: initial; }
 
   font-size: 16px;
   color: #a4a4a4;
+  
+  border: 1px solid;
+}
 
-  border: 1px solid rgba(151, 151, 151, 0.27);
+body.dark-theme .archive-grid-container .archive-labels a.btn--pill {
+  border-color: rgba(151, 151, 151, 0.27);
+}
+
+body.light-theme .archive-grid-container .archive-labels a.btn--pill {
+  /* border-color: rgba(102, 102, 102, 0.35); */
+  border-color: rgba(151, 151, 151, 0.27);
 }
 
 .archive-grid-container .archive-labels a.btn--pill:not(:last-of-type) {
   margin-right: 11px;
 }
 
-.archive-grid-container a.read-more {
+body.light-theme .archive-grid-container .archive-labels a.btn--pill:hover {
   color: #242b3f;
+}
+
+body.dark-theme .archive-grid-container .archive-labels a.btn--pill:hover {
+  color: #1fbda2;
+}
+
+.archive-grid-container .read-more {
+  display: inline;
   font-size: 21px;
   font-weight: normal;
 }
 
-.archive-grid-container a.read-more i {
-  color: #1fbda2;
+body.light-theme .archive-grid-container .read-more a {
+  color: #242b3f;
+}
 
+body.dark-theme .archive-grid-container .read-more a {
+  color: #fff;
+}
+
+.archive-grid-container .read-more i {
+  color: #1fbda2;
   margin-left: 5px;
   position: relative;
   top: 2px;
+
+  transition: margin-left 0.4s ease;
+}
+
+.archive-grid-container article:hover .read-more i {
+  margin-left: 10px;
+  transition: margin-left 0.3s ease;
 }
 
 /* -------------------------------------------------------------------
