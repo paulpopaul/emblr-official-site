@@ -2439,10 +2439,18 @@ body.dark-theme .icon-search { border-right-color: #fff; }
   height: 140%;
   width: 100%;
   overflow: visible;
-  background-color: rgba(0, 0, 0, 0.9);
   filter: blur(25px); /* or 15px */
   -webkit-filter: blur(25px);
 }
+.light-theme .header-nav__bg {
+  background-color: #fff;
+}
+
+.dark-theme .header-nav__bg {
+  background-color: rgba(0, 0, 0, 0.9);
+
+}
+
 
 .header-nav__content-container {
     padding: 3.6rem 3rem 3.6rem 30%;
@@ -2451,16 +2459,26 @@ body.dark-theme .icon-search { border-right-color: #fff; }
     height: 100%;
 }
 
-.header-nav a,
-.header-nav a:visited {
+.light-theme .header-nav a,
+.light-theme .header-nav a:visited {
+  color: #1fbda2;
+}
+
+.dark-theme .header-nav a,
+.dark-theme .header-nav a:visited {
   color: rgba(255, 255, 255, 0.5);
 }
 
 
+.light-theme .header-nav a:hover,
+.light-theme .header-nav a:focus,
+.light-theme .header-nav a:active {
+  color:rgb(36,43,63) !important;
+}
 
-.header-nav a:hover,
-.header-nav a:focus,
-.header-nav a:active {
+.dark-theme .header-nav a:hover,
+.dark-theme.header-nav a:focus,
+.dark-theme .header-nav a:active {
   color: white;
 }
 
@@ -2503,6 +2521,10 @@ body.dark-theme .icon-search { border-right-color: #fff; }
   -webkit-backface-visibility: hidden;
 }
 
+.light-theme .header-nav__content {
+  color: #666;
+}
+
 .header-nav-bg {
 
 }
@@ -2523,15 +2545,25 @@ body.dark-theme .icon-search { border-right-color: #fff; }
   counter-reset: ctr;
 }
 
+
+
+
+
 .header-nav__list ul li {
   padding: .9rem 0;
 }
 
 .header-nav__list a {
   display: block;
-  color: #FFFFFF;
   position: relative;
   text-transform: capitalize;
+}
+
+.light-theme .header-nav__list a {
+  color: rgb(36,43,63) !important;
+}
+.dark-theme .header-nav__list a {
+  color: #FFFFFF !important;
 }
 
 .header-nav__list a:hover {
@@ -2548,6 +2580,14 @@ body.dark-theme .icon-search { border-right-color: #fff; }
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   position: relative;
+}
+
+.light-theme .header-nav__list a::before {
+  color: #a4a4a4;
+}
+
+.dark-theme .header-nav__list a::before {
+  color: rgba(255, 255, 255, 0.25);
 }
 
 .header-nav__list a:hover::before {
