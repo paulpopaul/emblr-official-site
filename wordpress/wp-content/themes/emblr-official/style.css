@@ -11391,3 +11391,13 @@ body.dark-theme #return-to-top i{
     text-decoration: none;
   }
 }
+
+/* -------------------------------------------------------------------
+ * ## BOTON ENVIAR MAILCHIMP
+ * ------------------------------------------------------------------- */
+ 
+.mc4wp-response p {
+  padding-top: 20px;
+  color:#29ceae;
+}
+
