@@ -2473,13 +2473,13 @@ body.dark-theme .icon-search { border-right-color: #fff; }
 .light-theme .header-nav a:hover,
 .light-theme .header-nav a:focus,
 .light-theme .header-nav a:active {
-  color:rgb(36,43,63) !important;
+  color:#1fbda2 !important;
 }
 
 .dark-theme .header-nav a:hover,
 .dark-theme .header-nav a:focus,
 .dark-theme .header-nav a:active {
-  color: #fff !important;
+  color: #1fbda2 !important;
 }
 
 .header-nav h3 {
@@ -2643,13 +2643,21 @@ body.dark-theme .icon-search { border-right-color: #fff; }
   display: block;
   height: 2px;
   width: 16px;
-  background-color: #FFFFFF;
   position: absolute;
   top: 50%;
   left: 7px;
   margin-top: -1px;
 }
 
+.light-theme .header-nav__close span::before,
+.light-theme .header-nav__close span::after {
+  background-color: rgb(36,43,63) !important;
+}
+
+.dark-theme .header-nav__close span::before,
+.dark-theme .header-nav__close span::after {
+  background-color: #FFFFFF;
+}
 .header-nav__close span::before {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
