@@ -2466,7 +2466,7 @@ body.dark-theme .icon-search { border-right-color: #fff; }
 
 .dark-theme .header-nav a,
 .dark-theme .header-nav a:visited {
-  color: rgba(255, 255, 255, 0.5);
+  color: #1fbda2 !important;
 }
 
 
@@ -2477,9 +2477,9 @@ body.dark-theme .icon-search { border-right-color: #fff; }
 }
 
 .dark-theme .header-nav a:hover,
-.dark-theme.header-nav a:focus,
+.dark-theme .header-nav a:focus,
 .dark-theme .header-nav a:active {
-  color: white;
+  color: #fff !important;
 }
 
 .header-nav h3 {
