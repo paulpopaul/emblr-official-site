@@ -6484,7 +6484,7 @@ body.dark-theme .s-pricing { background-color: #232323; border-top-color: #1a1a1
   border-radius: 10px;
 }
 body.light-theme .pricing-table { border: none; }
-body.dark-theme .pricing-table { border: 2px solid #000; }
+body.dark-theme .pricing-table { border: none}
 
 
 body.light-theme .pricing-table.pro {
@@ -6494,11 +6494,14 @@ body.dark-theme .pricing-table.pro {
   background: #121212;
 }
 
+body.light-theme .pricing-table:hover {
+  box-shadow: 0 0 10px 0 rgba(31, 189, 162, 0.4);
+  border: none;
+}
 
-
-.pricing-table:hover {
-  box-shadow: 0 0 10px 0 rgba(31, 189, 162, 1);
-  border: 2px solid #1fbda2;
+body.dark-theme .pricing-table:hover {
+  box-shadow: 0 0 10px 0 rgba(31, 189, 162, 0.9);
+  border: none;
 }
 
 .pricing-table .price-header {
