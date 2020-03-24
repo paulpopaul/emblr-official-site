@@ -45,13 +45,13 @@
                             <a href="#feature-1" class="fas fa-users btn-with-icon __active">
                                 <span class="sq-bt-label label-top-left">Nosotros</span>
                             </a>
-                            <a href="#feature-2" class="fas fa-bullseye btn-with-icon">
+                            <a href="#feature-3" class="fas fa-bullseye btn-with-icon">
                                 <span class="sq-bt-label label-top">Misión</span>
                             </a>
-                            <a href="#feature-3" class="far fa-eye btn-with-icon">
+                            <a href="#feature-4" class="far fa-eye btn-with-icon">
                                 <span class="sq-bt-label label-top-right">Visión</span>
                             </a>
-                            <a href="#feature-4" class="fas fa-quote-left btn-with-icon">
+                            <a href="#feature-6" class="fas fa-quote-left btn-with-icon">
                             <span class="sq-bt-label label-bottom-left">Fundación</span>
                             </a>
                             <a href="#feature-5" class="fas fa-check btn-with-icon">

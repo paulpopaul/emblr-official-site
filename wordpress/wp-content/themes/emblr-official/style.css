@@ -4321,6 +4321,7 @@ body.dark-theme #sobre-nosotros .features-graph .sq-bt-label {
     text-align: center;
     top: -3px;
 }
+
 #sobre-nosotros .features-graph .wave2 {
     position: absolute;
     width: 9em;
@@ -4783,7 +4784,7 @@ body.dark-theme #view-team.btn {
   }
 
   #figure-block2  .features-graph .btn-with-icon {
-    width: 20%;
+    width: 15%;
   }
 
   #view-team.btn {
@@ -4794,6 +4795,13 @@ body.dark-theme #view-team.btn {
     padding: 0px !important;
     font-size: 1rem;
     color: #000 !important;
+  }
+
+  #text-top a:last-child{
+    display:none !important;
+  }
+  #text-top a:nth-child(5){
+    display:none !important;
   }
 
 }
@@ -4809,6 +4817,10 @@ body.dark-theme #view-team.btn {
     width: 39px;
     line-height: 39px;
     top: -5px;
+  }
+
+  #figure-block2  .features-graph .btn-with-icon {
+    width: 20%;
   }
 
   .item-process:nth-child(n) {
@@ -4859,8 +4871,6 @@ body.light-theme .team-section {
 body.dark-theme .team-section {
     background:#121212 !important;
 }
-
-
 
 .slick-team-container {
   position: relative;
