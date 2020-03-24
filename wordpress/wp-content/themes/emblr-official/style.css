@@ -5532,10 +5532,8 @@ body.light-theme .form-tradicional textarea {
 body.dark-theme .form-tradicional input[type="text"],
 body.dark-theme .form-tradicional input[type="email"],
 body.dark-theme .form-tradicional textarea {
-  color: rgba(255, 255, 255, 0.4);
-  border: 1px solid transparent !important;
+  border: solid 1px #1fbda22e;
 }
-
 
 .form-tradicional input[type="text"],
 .form-tradicional input[type="email"],
