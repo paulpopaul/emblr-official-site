@@ -1,6 +1,6 @@
 <?php get_header() ?>
 
-<body id="not-found" class="<? emblr_theme() ?>">
+<body id="solicitud-plan" class="<? emblr_theme() ?>">
 
     <!-- Contenido solicitud de planes -->
 

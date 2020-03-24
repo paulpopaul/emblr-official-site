@@ -5456,11 +5456,42 @@ body.dark-theme .our-team {
     margin-left: 4.5%;
 }
 
+body.light-theme #solicitar-plan {
+  background-color: #ffffff;
+}
+
+body.dark-theme #solicitar-plan {
+  background-color: #000;
+}
 
 body.light-theme .form-tradicional pre {
   color: #242B3F;
 }
+
 body.dark-theme .form-tradicional pre {
+  color: #fff;
+}
+
+body.light-theme #solicitar-plan .features-content .list-form-items li{
+  color:#242b3f;
+}
+
+body.dark-theme #solicitar-plan .features-content .list-form-items li{
+  color:#ffffff;
+}
+
+body.light-theme .list-form-items hr{
+  border: 1px solid #97979752;
+}
+
+body.dark-theme .list-form-items hr{
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+body.light-theme #solicitar-plan .features-content h1 {
+  color: #242b3f;
+}
+body.dark-theme #solicitar-plan .features-content h1 {
   color: #fff;
 }
 
