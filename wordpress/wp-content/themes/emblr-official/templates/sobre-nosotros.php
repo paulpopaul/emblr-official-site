@@ -75,22 +75,17 @@ Nuestros conocimientos y experiencias con las tecnologías actuales del mercado,
             </div>
 
             <div id="feature-2" class="features-textblock animated fadeIn">
-                <p>Misión</p>
-                <p> Apasionados por abordar las problemáticas de nuestros clientes, buscamos entregar la mejor solución acorde a su presupuesto.
-
-Ensambler tiene como propuesta, hacer uso de metodologías de desarrollo ágil, que permitan lanzar proyectos lo más rápido posible, utilizando herramientas de integración y despliegue, que permiten al cliente monitorear todos los avances que se van generando en cada etapa.
-
-Nuestra lema “Ingeniería de software para Soluciones Empresariales Integradas” tiene como respaldo un equipo altamente capacitado que desde la Ingeniería es capaz de hacer uso de herramientas, infraestructura y equipos de alto estándar tecnológico para crear soluciones que pueda integrarse a tu empresa, ayudándote a alcanzar tus metas de forma ágil y segura.</p>
+                
             
             </div>
             <div id="feature-3" class="features-textblock animated fadeIn">
-                <p>Visión</p>
-                <p> La tecnología en la actualidad es una herramienta imprescindible para las empresas e instituciones que buscan crecer y producir de forma eficaz. Buscamos ser un referente en el mercado nacional en áreas de las tecnologías de información, por esto es que hemos decidido ser una empresa en constante innovación, capaz de solucionar cualquier problemática que el sector de la tecnología requiera.
-                </p>
+                <p>Misión</p>
+                <p> 
+                Nuestra lema “Ingeniería de software para Soluciones Empresariales Integradas” tiene como respaldo un equipo altamente capacitado que desde la Ingeniería es capaz de hacer uso de herramientas, infraestructura y equipos de alto estándar tecnológico para crear soluciones que se integran a tu empresa, ayudándote a alcanzar tus metas de forma ágil y segura.</p>
             </div>
             <div id="feature-4" class="features-textblock animated fadeIn">
-                <p>Fundación</p>
-                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                <p>Visión</p>
+                <p> La tecnología en la actualidad es una herramienta imprescindible para las empresas e instituciones que buscan crecer y producir de forma eficaz. Buscamos ser un referente en el mercado nacional en áreas de las tecnologías de información, por esto es que hemos decidido ser una empresa en constante innovación, capaz de solucionar cualquier problemática que el sector de la tecnología requiera.
                 </p>
             </div>
             <div id="feature-5" class="features-textblock animated fadeIn">
@@ -99,24 +94,20 @@ Nuestra lema “Ingeniería de software para Soluciones Empresariales Integradas
                 </p>
             </div>
             <div id="feature-6" class="features-textblock animated fadeIn">
-                <p>Derecho</p>
-                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                </p>
+               <p>Fundación</p>
+                <p> Somos un equipo formado en el año 2019, en donde cada uno cuenta con más de 5 años de experiencia en todo tipo. Los fundadores son Diego Ulloa (CEO), Alvaro Arriagada (CCO) y Paul Pineda (CTO) provenientes de la región de Los Rios (Valdivia) y la región metropolitana (Santiago)
             </div>
              
         </div>
-
         <div id="figure-block" class="features-content-col">
             <div data-features-nav="" class="features-graph">
                     <div class="button-holder" id="text-top">
                         <a href="#feature-1" class="fas fa-users btn-with-icon __active">
                             <span class="sq-bt-label label-top-left">Nosotros</span>
                         </a>
-                        <a href="#feature-2" class="fas fa-bullseye btn-with-icon">
-                            <span class="sq-bt-label label-top">Misión</span>
-                        </a>
-                        <a href="#feature-3" class="far fa-eye btn-with-icon">
-                            <span class="sq-bt-label label-top-right">Visión</span>
+            
+                        <a href="#feature-3" class="fas fa-bullseye btn-with-icon">
+                            <span class="sq-bt-label label-top-right">Misión</span>
                         </a>
                     </div>
                 <div class="animation-holder">
@@ -128,15 +119,13 @@ Nuestra lema “Ingeniería de software para Soluciones Empresariales Integradas
                     </span>
                 </div>
 
-                <div class="button-holder">
-                    <a href="#feature-4" class="fas fa-quote-left btn-with-icon">
-                        <span class="sq-bt-label label-bottom-left">Fundación</span>
+                <div class="button-holder" id="text-bottom">
+                    <a href="#feature-4" class="far fa-eye btn-with-icon">
+                        <span id="label-vision" class="sq-bt-label label-bottom-left">Vision</span>
                     </a>
-                    <a href="#feature-5" class="fas fa-check btn-with-icon">
-                        <span class="sq-bt-label label-bottom">Features</span>
-                    </a>
-                    <a href="#feature-6" class="far fa-registered btn-with-icon">
-                        <span class="sq-bt-label label-bottom-right">Derecho</span>
+    
+                    <a href="#feature-6" class="fas fa-quote-left btn-with-icon">
+                        <span id="label-fundacion" class="sq-bt-label label-bottom-right">Fundación</span>
                     </a>
                 </div>
             </div>

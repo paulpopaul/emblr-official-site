@@ -169,7 +169,6 @@
         </div><!--/gallery-wrap-->
 
     </div> <!-- /wrap -->
-
 </section>
 
 
